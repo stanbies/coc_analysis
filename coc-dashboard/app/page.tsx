@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { DashboardData, Player } from './types';
+import { DashboardData, Player, CWLSeason } from './types';
 import ClanHeader from './components/ClanHeader';
 import StatCard from './components/StatCard';
 import PlayerCard from './components/PlayerCard';
@@ -11,13 +11,16 @@ import THDistributionChart from './components/THDistributionChart';
 import RushAnalysisChart from './components/RushAnalysisChart';
 import WarLogTable from './components/WarLogTable';
 import CapitalRaidsCard from './components/CapitalRaidsCard';
+import CWLSeasonCard from './components/CWLSeasonCard';
+import CWLSeasonDetail from './components/CWLSeasonDetail';
 
 export default function Home() {
   const [data, setData] = useState<DashboardData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
-  const [activeTab, setActiveTab] = useState<'overview' | 'players' | 'wars' | 'capital'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'players' | 'wars' | 'cwl' | 'capital'>('overview');
+  const [selectedCWLSeason, setSelectedCWLSeason] = useState<CWLSeason | null>(null);
 
   useEffect(() => {
     fetch('/clan_data.json')
@@ -72,6 +75,7 @@ export default function Home() {
             { id: 'overview', label: '📊 Overview', icon: '📊' },
             { id: 'players', label: '👥 Players', icon: '👥' },
             { id: 'wars', label: '⚔️ Wars', icon: '⚔️' },
+            { id: 'cwl', label: '🏆 CWL', icon: '🏆' },
             { id: 'capital', label: '🏛️ Capital', icon: '🏛️' },
           ].map(tab => (
             <button
@@ -195,6 +199,50 @@ export default function Home() {
             </div>
             
             <WarLogTable warLog={warLog} />
+          </div>
+        )}
+
+        {/* CWL Tab */}
+        {activeTab === 'cwl' && (
+          <div className="space-y-6">
+            {selectedCWLSeason ? (
+              <CWLSeasonDetail 
+                season={selectedCWLSeason} 
+                onBack={() => setSelectedCWLSeason(null)} 
+              />
+            ) : (
+              <>
+                <div className="card p-6">
+                  <h2 className="text-xl font-bold text-white mb-2">🏆 Clan War League History</h2>
+                  <p className="text-slate-400 text-sm">
+                    Select a season to view detailed statistics and player performance
+                  </p>
+                </div>
+                
+                {data.cwlSeasons && data.cwlSeasons.length > 0 ? (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {data.cwlSeasons.map((season) => (
+                      <CWLSeasonCard
+                        key={season.season}
+                        season={season}
+                        onClick={() => setSelectedCWLSeason(season)}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="card p-8 text-center">
+                    <div className="text-6xl mb-4">🏆</div>
+                    <h3 className="text-xl font-bold text-white mb-2">No CWL Data Available</h3>
+                    <p className="text-slate-400 mb-4">
+                      CWL data will appear here once the clan participates in Clan War League.
+                    </p>
+                    <p className="text-sm text-slate-500">
+                      Run the analyzer during an active CWL to capture detailed attack data.
+                    </p>
+                  </div>
+                )}
+              </>
+            )}
           </div>
         )}
 

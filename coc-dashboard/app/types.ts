@@ -214,6 +214,78 @@ export interface Statistics {
   averageRushScore: number;
 }
 
+export interface CWLPlayerAttack {
+  warId: string;
+  round: number;
+  stars: number;
+  destruction: number;
+  defenderTh: number;
+  attackerTh: number;
+  hitType: string;
+  date: string;
+}
+
+export interface CWLPlayerStats {
+  tag: string;
+  name: string;
+  townHallLevel: number;
+  totalStars: number;
+  totalDestruction: number;
+  attacksUsed: number;
+  threeStars: number;
+  twoStars: number;
+  oneStars: number;
+  zeroStars: number;
+  warsParticipated: number;
+  hitUp: number;
+  hitSame: number;
+  hitDown: number;
+  averageStars: number;
+  averageDestruction: number;
+  attacks: CWLPlayerAttack[];
+}
+
+export interface CWLRoundWar {
+  round: number;
+  warTag: string;
+  state: string;
+  opponent: {
+    tag: string;
+    name: string;
+    stars: number;
+    destructionPercentage: number;
+    badgeUrl?: string;
+  };
+  clan: {
+    tag: string;
+    name: string;
+    stars: number;
+    destructionPercentage: number;
+  };
+  result: 'win' | 'lose' | 'tie' | 'ongoing' | 'upcoming';
+  teamSize: number;
+}
+
+export interface CWLSeason {
+  season: string;
+  state: string;
+  league?: string;
+  clansInGroup: {
+    tag: string;
+    name: string;
+    clanLevel: number;
+    badgeUrl?: string;
+  }[];
+  wars: CWLRoundWar[];
+  playerStats: CWLPlayerStats[];
+  totalRounds: number;
+  roundsCompleted: number;
+  totalStars: number;
+  totalAttacks: number;
+  threeStarRate: number;
+  averageStars: number;
+}
+
 export interface DashboardData {
   lastUpdated: string;
   clan: Clan;
@@ -226,6 +298,7 @@ export interface DashboardData {
     endTime: string;
   } | null;
   cwlGroup: unknown | null;
+  cwlSeasons: CWLSeason[];
   historicalData: {
     cwlSeasons: Record<string, unknown>;
     lastUpdated: string;
