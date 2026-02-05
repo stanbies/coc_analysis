@@ -48,9 +48,9 @@ HEADERS = {
 # Updated for 2025 with Hero Hall system - levels are approximate max at each TH
 # Note: Actual max depends on Hero Hall level, these are typical maximums
 HERO_MAX_LEVELS = {
-    "Barbarian King": {7: 5, 8: 10, 9: 30, 10: 40, 11: 50, 12: 65, 13: 75, 14: 85, 15: 90, 16: 95, 17: 100, 18: 105},
+    "Barbarian King": {7: 10, 8: 20, 9: 30, 10: 40, 11: 50, 12: 65, 13: 75, 14: 85, 15: 90, 16: 95, 17: 100, 18: 105},
     "Archer Queen": {8: 10, 9: 30, 10: 40, 11: 50, 12: 65, 13: 75, 14: 85, 15: 90, 16: 95, 17: 100, 18: 105},
-    "Grand Warden": {11: 20, 12: 40, 13: 50, 14: 55, 15: 65, 16: 70, 17: 75, 18: 80},
+    "Grand Warden": {11: 20, 12: 40, 13: 50, 14: 60, 15: 65, 16: 70, 17: 75, 18: 80},
     "Royal Champion": {13: 25, 14: 30, 15: 40, 16: 45, 17: 50, 18: 55},
     "Minion Prince": {9: 10, 10: 20, 11: 30, 12: 40, 13: 50, 14: 60, 15: 70, 16: 80, 17: 90, 18: 95},
 }
