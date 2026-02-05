@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --primary: #f97316;
+  --primary-foreground: #ffffff;
+  --secondary: #334155;
+  --accent: #22d3ee;
+  --muted: #475569;
+  --border: #334155;
+  --ring: #f97316;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--background);
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  border-radius: 1rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.stat-card:hover {
+  border-color: rgba(249, 115, 22, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.rush-maxed { background: linear-gradient(135deg, #22c55e, #16a34a); }
+.rush-slight { background: linear-gradient(135deg, #84cc16, #65a30d); }
+.rush-moderate { background: linear-gradient(135deg, #eab308, #ca8a04); }
+.rush-rushed { background: linear-gradient(135deg, #f97316, #ea580c); }
+.rush-severe { background: linear-gradient(135deg, #ef4444, #dc2626); }
+
+.progress-bar {
+  background: rgba(71, 85, 105, 0.5);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #f97316, #fb923c);
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+.glow-orange {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
+
+.table-row:hover {
+  background: rgba(249, 115, 22, 0.1);
+}
