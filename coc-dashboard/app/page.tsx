@@ -51,6 +51,7 @@ export default function Home() {
           <div className="bg-slate-800 rounded-lg p-4 text-left">
             <p className="text-sm text-slate-300 mb-2">To generate data, run:</p>
             <code className="text-orange-400 text-sm">python api/clan_analyzer.py</code>
+            
           </div>
         </div>
       </div>
