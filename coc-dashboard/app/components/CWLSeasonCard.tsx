@@ -5,7 +5,7 @@ import { CWLSeason } from '../types';
 interface CWLSeasonCardProps {
   season: CWLSeason;
   onClick: () => void;
-  isSelected: boolean;
+  isSelected?: boolean;
 }
 
 export default function CWLSeasonCard({ season, onClick, isSelected }: CWLSeasonCardProps) {

@@ -5,12 +5,13 @@ import { CWLSeason, CWLPlayerStats } from '../types';
 
 interface CWLSeasonDetailProps {
   season: CWLSeason;
+  onBack: () => void;
 }
 
 type SortKey = 'totalStars' | 'averageStars' | 'threeStars' | 'attacksUsed' | 'averageDestruction' | 'name';
 type SortDirection = 'asc' | 'desc';
 
-export default function CWLSeasonDetail({ season }: CWLSeasonDetailProps) {
+export default function CWLSeasonDetail({ season, onBack }: CWLSeasonDetailProps) {
   const [sortKey, setSortKey] = useState<SortKey>('totalStars');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null);
@@ -87,6 +88,12 @@ export default function CWLSeasonDetail({ season }: CWLSeasonDetailProps) {
       <div className="card p-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
+            <button
+              onClick={onBack}
+              className="text-slate-400 hover:text-white text-sm mb-2 flex items-center gap-1 transition-colors"
+            >
+              ← Back to all seasons
+            </button>
             <h2 className="text-2xl font-bold text-white">
               🏆 CWL {formatSeasonDate(season.season)}
             </h2>
