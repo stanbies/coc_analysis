@@ -19,7 +19,7 @@ env_path = Path(__file__).resolve().parent.parent / '.env'
 load_dotenv(env_path)
 
 # API Configuration - Load from environment
-API_TOKEN = os.getenv('api_key', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImZlMTE0NDEzLWNiOWMtNDRhNC1hMDNiLWZhMDc4Mjg2MjQ2ZiIsImlhdCI6MTc3MDIyMjM4MSwic3ViIjoiZGV2ZWxvcGVyLzA3NTQ5MDExLTMwYjktMzc3ZS1mMjg5LWQ0OTdmMTBmN2NmYiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjc4LjIyLjk5LjE1OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.9nmjuP3Lf86r9aYAGH2vW1MFLpftkKUTk_MUWkyczEoR_gk6BLMfUAxVIEO3QnZUiwNgbWhQYxsxBS6Ss93AjQ')
+API_TOKEN = os.getenv('api_key', '')
 if not API_TOKEN:
     raise ValueError("API key not found! Please set 'api_key' in your .env file")
 

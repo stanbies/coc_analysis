@@ -22,6 +22,9 @@ Thumbs.db
 secrets.json
 config.local.py
 
+# API key manager logs
+api_key_manager*.log
+
 # Generated files
 *.html
 screenshots/
