@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(jq:*)",
+      "Bash(git add:*)",
+      "Bash(git:*)"
+    ]
+  }
+}
