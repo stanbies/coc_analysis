@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T10:35:57.252418+00:00",
+  "lastUpdated": "2026-10-28T10:51:38.065421+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -145,6 +145,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000033,
+        "name": "Electro League 33",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/VFqkaQimExWtSmIf9PC8WEpj4Vd58oLjPWyZqfVb5VE.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/VFqkaQimExWtSmIf9PC8WEpj4Vd58oLjPWyZqfVb5VE.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000031,
         "name": "Titanium League I"
@@ -1480,6 +1488,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/L-HrwYpFbDwWjdmhJQiZiTRa_zXPPOgUTdmbsaq4meo.png"
         }
       },
+      "leagueTier": {
+        "id": 105000032,
+        "name": "Electro League 32",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/iX8uNhG6jBcQATWFS8a0gtidGy9O1PRYtXZZMTtUK3U.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/iX8uNhG6jBcQATWFS8a0gtidGy9O1PRYtXZZMTtUK3U.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000023,
         "name": "Iron League III"
@@ -1803,10 +1819,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 138100,
+          "value": 138250,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 138100",
+          "completionInfo": "Total Season Challenges points: 138250",
           "village": "home"
         },
         {
@@ -3001,6 +3017,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000032,
+        "name": "Electro League 32",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/iX8uNhG6jBcQATWFS8a0gtidGy9O1PRYtXZZMTtUK3U.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/iX8uNhG6jBcQATWFS8a0gtidGy9O1PRYtXZZMTtUK3U.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000025,
         "name": "Iron League I"
@@ -4444,6 +4468,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000031,
+        "name": "Electro League 31",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/qVORiRguZ-xMq8L0g7rE1-rZuiA-lKlI8VKuMndRy4w.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/qVORiRguZ-xMq8L0g7rE1-rZuiA-lKlI8VKuMndRy4w.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000030,
         "name": "Titanium League II"
@@ -4479,10 +4511,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 5840,
+          "value": 5849,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 5840",
+          "completionInfo": "Total obstacles removed: 5849",
           "village": "home"
         },
         {
@@ -4641,10 +4673,10 @@
         {
           "name": "Clan War Wealth",
           "stars": 3,
-          "value": 1038937524,
+          "value": 1041457524,
           "target": 100000000,
           "info": "Collect 100000000 Gold from the Clan Castle",
-          "completionInfo": "Total Gold collected in Clan War bonuses: 1038937524",
+          "completionInfo": "Total Gold collected in Clan War bonuses: 1041457524",
           "village": "home"
         },
         {
@@ -4767,10 +4799,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 153210,
+          "value": 153360,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 153210",
+          "completionInfo": "Total Season Challenges points: 153360",
           "village": "home"
         },
         {
@@ -5872,6 +5904,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000031,
+        "name": "Electro League 31",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/qVORiRguZ-xMq8L0g7rE1-rZuiA-lKlI8VKuMndRy4w.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/qVORiRguZ-xMq8L0g7rE1-rZuiA-lKlI8VKuMndRy4w.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000029,
         "name": "Titanium League III"
@@ -7395,6 +7435,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png"
         }
       },
+      "leagueTier": {
+        "id": 105000030,
+        "name": "Dragon League 30",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/g7m9aF8YoYj9b0olPsyT4eUIxyYEmkqr53wYxWmzpE4.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/g7m9aF8YoYj9b0olPsyT4eUIxyYEmkqr53wYxWmzpE4.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000032,
         "name": "Platinum League III"
@@ -8760,6 +8808,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000030,
+        "name": "Dragon League 30",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/g7m9aF8YoYj9b0olPsyT4eUIxyYEmkqr53wYxWmzpE4.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/g7m9aF8YoYj9b0olPsyT4eUIxyYEmkqr53wYxWmzpE4.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000028,
         "name": "Steel League I"
@@ -10072,6 +10128,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000026,
         "name": "Steel League III"
@@ -11539,6 +11603,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000027,
         "name": "Steel League II"
@@ -13043,6 +13115,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000024,
         "name": "Iron League II"
@@ -13078,10 +13158,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 4993,
+          "value": 4994,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 4993",
+          "completionInfo": "Total obstacles removed: 4994",
           "village": "home"
         },
         {
@@ -13132,37 +13212,37 @@
         {
           "name": "Wall Buster",
           "stars": 3,
-          "value": 27938,
+          "value": 27966,
           "target": 2000,
           "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 27938",
+          "completionInfo": "Total Walls destroyed: 27966",
           "village": "home"
         },
         {
           "name": "Humiliator",
           "stars": 3,
-          "value": 2004,
+          "value": 2005,
           "target": 2000,
           "info": "Destroy 2000 Town Halls in Multiplayer battles",
-          "completionInfo": "Total Town Halls destroyed: 2004",
+          "completionInfo": "Total Town Halls destroyed: 2005",
           "village": "home"
         },
         {
           "name": "Union Buster",
           "stars": 3,
-          "value": 9705,
+          "value": 9710,
           "target": 2500,
           "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 9705",
+          "completionInfo": "Total Builder's Huts destroyed: 9710",
           "village": "home"
         },
         {
           "name": "Conqueror",
           "stars": 2,
-          "value": 2412,
+          "value": 2413,
           "target": 5000,
           "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 2412",
+          "completionInfo": "Total multiplayer battles won: 2413",
           "village": "home"
         },
         {
@@ -13186,19 +13266,19 @@
         {
           "name": "Mortar Mauler",
           "stars": 3,
-          "value": 8174,
+          "value": 8178,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 8174",
+          "completionInfo": "Total Mortars destroyed: 8178",
           "village": "home"
         },
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 20173550,
+          "value": 20181217,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 20173550",
+          "completionInfo": "Total Dark Elixir looted: 20181217",
           "village": "home"
         },
         {
@@ -13213,19 +13293,19 @@
         {
           "name": "X-Bow Exterminator",
           "stars": 3,
-          "value": 6606,
+          "value": 6610,
           "target": 2500,
           "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 6606",
+          "completionInfo": "Total X-Bows destroyed: 6610",
           "village": "home"
         },
         {
           "name": "Firefighter",
           "stars": 2,
-          "value": 4502,
+          "value": 4505,
           "target": 5000,
           "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 4502",
+          "completionInfo": "Total Inferno Towers destroyed: 4505",
           "village": "home"
         },
         {
@@ -13249,10 +13329,10 @@
         {
           "name": "Anti-Artillery",
           "stars": 2,
-          "value": 1510,
+          "value": 1511,
           "target": 2000,
           "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
-          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 1510",
+          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 1511",
           "village": "home"
         },
         {
@@ -13366,37 +13446,37 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 96160,
+          "value": 96360,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 96160",
+          "completionInfo": "Total Season Challenges points: 96360",
           "village": "home"
         },
         {
           "name": "Shattered and Scattered",
           "stars": 2,
-          "value": 2452,
+          "value": 2454,
           "target": 4000,
           "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 2452",
+          "completionInfo": "Total Scattershots destroyed: 2454",
           "village": "home"
         },
         {
           "name": "Not So Easy This Time",
           "stars": 2,
-          "value": 1480,
+          "value": 1481,
           "target": 2000,
           "info": "Destroy 2000 weaponized Town Halls in Multiplayer battles",
-          "completionInfo": "Weaponized Town Halls destroyed: 1480",
+          "completionInfo": "Weaponized Town Halls destroyed: 1481",
           "village": "home"
         },
         {
           "name": "Bust This!",
           "stars": 3,
-          "value": 3905,
+          "value": 3910,
           "target": 2500,
           "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 3905",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 3910",
           "village": "home"
         },
         {
@@ -13438,19 +13518,19 @@
         {
           "name": "Counterspell",
           "stars": 2,
-          "value": 881,
+          "value": 883,
           "target": 4000,
           "info": "Destroy 4000 Spell Towers in Multiplayer Battles",
-          "completionInfo": "Total Spell Towers Destroyed: 881",
+          "completionInfo": "Total Spell Towers Destroyed: 883",
           "village": "home"
         },
         {
           "name": "Monolith Masher",
           "stars": 2,
-          "value": 435,
+          "value": 436,
           "target": 2000,
           "info": "Destroy 2000 Monoliths in Multiplayer Battles",
-          "completionInfo": "Total Monoliths Destroyed: 435",
+          "completionInfo": "Total Monoliths Destroyed: 436",
           "village": "home"
         },
         {
@@ -13474,19 +13554,19 @@
         {
           "name": "Multi-Archer Tower Terminator",
           "stars": 1,
-          "value": 447,
+          "value": 449,
           "target": 500,
           "info": "Destroy 500 Multi-Archer Towers in Multiplayer Battles",
-          "completionInfo": "Total Multi-Archer Towers Destroyed: 447",
+          "completionInfo": "Total Multi-Archer Towers Destroyed: 449",
           "village": "home"
         },
         {
           "name": "Ricochet Cannon Crusher",
           "stars": 1,
-          "value": 454,
+          "value": 456,
           "target": 500,
           "info": "Destroy 500 Ricochet Cannons in Multiplayer Battles",
-          "completionInfo": "Total Ricochet Cannons Destroyed: 454",
+          "completionInfo": "Total Ricochet Cannons Destroyed: 456",
           "village": "home"
         },
         {
@@ -14350,6 +14430,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000022,
         "name": "Brass League I"
@@ -15754,6 +15842,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png"
         }
       },
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000027,
         "name": "Steel League II"
@@ -17136,6 +17232,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000024,
         "name": "Iron League II"
@@ -18471,6 +18575,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000022,
         "name": "Brass League I"
@@ -19705,6 +19817,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000029,
+        "name": "Dragon League 29",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000024,
         "name": "Iron League II"
@@ -21100,6 +21220,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/9v_04LHmd1LWq7IoY45dAdGhrBkrc2ZFMZVhe23PdCE.png"
         }
       },
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -22450,6 +22578,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000022,
         "name": "Brass League I"
@@ -23836,6 +23972,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000022,
         "name": "Brass League I"
@@ -25029,6 +25173,14 @@
           "small": "https://api-assets.clashofclans.com/leagues/72/JmmTbspV86xBigM7OP5_SjsEDPuE7oXjZC9aOy8xO3s.png",
           "tiny": "https://api-assets.clashofclans.com/leagues/36/JmmTbspV86xBigM7OP5_SjsEDPuE7oXjZC9aOy8xO3s.png",
           "medium": "https://api-assets.clashofclans.com/leagues/288/JmmTbspV86xBigM7OP5_SjsEDPuE7oXjZC9aOy8xO3s.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
         }
       },
       "builderBaseLeague": {
@@ -26277,6 +26429,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000031,
         "name": "Titanium League I"
@@ -27586,6 +27746,14 @@
           "small": "https://api-assets.clashofclans.com/leagues/72/R2zmhyqQ0_lKcDR5EyghXCxgyC9mm_mVMIjAbmGoZtw.png",
           "tiny": "https://api-assets.clashofclans.com/leagues/36/R2zmhyqQ0_lKcDR5EyghXCxgyC9mm_mVMIjAbmGoZtw.png",
           "medium": "https://api-assets.clashofclans.com/leagues/288/R2zmhyqQ0_lKcDR5EyghXCxgyC9mm_mVMIjAbmGoZtw.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
         }
       },
       "builderBaseLeague": {
@@ -28997,6 +29165,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000028,
+        "name": "Dragon League 28",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000029,
         "name": "Titanium League III"
@@ -30447,6 +30623,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/kSfTyNNVSvogX3dMvpFUTt72VW74w6vEsEFuuOV4osQ.png"
         }
       },
+      "leagueTier": {
+        "id": 105000027,
+        "name": "Titan League 27",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/1AhObOl55grQIWnGmn1J9qMWq5pmRA3aBObfYkQEjko.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/1AhObOl55grQIWnGmn1J9qMWq5pmRA3aBObfYkQEjko.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000023,
         "name": "Iron League III"
@@ -31875,6 +32059,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000027,
+        "name": "Titan League 27",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/1AhObOl55grQIWnGmn1J9qMWq5pmRA3aBObfYkQEjko.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/1AhObOl55grQIWnGmn1J9qMWq5pmRA3aBObfYkQEjko.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000027,
         "name": "Steel League II"
@@ -33165,6 +33357,14 @@
           "small": "https://api-assets.clashofclans.com/leagues/72/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png",
           "tiny": "https://api-assets.clashofclans.com/leagues/36/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png",
           "medium": "https://api-assets.clashofclans.com/leagues/288/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000026,
+        "name": "Titan League 26",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yIfqSgrhiYRcuMbAPCoeCj1FTmfylCLxnrAljEZc8K0.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yIfqSgrhiYRcuMbAPCoeCj1FTmfylCLxnrAljEZc8K0.png"
         }
       },
       "builderBaseLeague": {
@@ -34606,6 +34806,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/9v_04LHmd1LWq7IoY45dAdGhrBkrc2ZFMZVhe23PdCE.png"
         }
       },
+      "leagueTier": {
+        "id": 105000023,
+        "name": "P.E.K.K.A League 23",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/0eDMQmsiZ0gs8xzViGfVETnYjwzgELTKwYhH3izevT4.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/0eDMQmsiZ0gs8xzViGfVETnYjwzgELTKwYhH3izevT4.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000027,
         "name": "Steel League II"
@@ -35951,6 +36159,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000022,
+        "name": "P.E.K.K.A League 22",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -37240,6 +37456,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000022,
+        "name": "P.E.K.K.A League 22",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -38366,6 +38590,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000022,
+        "name": "P.E.K.K.A League 22",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000026,
         "name": "Steel League III"
@@ -39693,6 +39925,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000020,
+        "name": "Golem League 20",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000031,
         "name": "Titanium League I"
@@ -41013,6 +41253,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000020,
+        "name": "Golem League 20",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -41066,19 +41314,19 @@
         {
           "name": "Gold Grab",
           "stars": 3,
-          "value": 982568351,
+          "value": 983505001,
           "target": 100000000,
           "info": "Steal 100000000 Gold",
-          "completionInfo": "Total Gold looted: 982568351",
+          "completionInfo": "Total Gold looted: 983505001",
           "village": "home"
         },
         {
           "name": "Elixir Escapade",
           "stars": 3,
-          "value": 1005826409,
+          "value": 1006627741,
           "target": 100000000,
           "info": "Steal 100000000 elixir",
-          "completionInfo": "Total Elixir looted: 1005826409",
+          "completionInfo": "Total Elixir looted: 1006627741",
           "village": "home"
         },
         {
@@ -41102,10 +41350,10 @@
         {
           "name": "Wall Buster",
           "stars": 3,
-          "value": 15319,
+          "value": 15320,
           "target": 2000,
           "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 15319",
+          "completionInfo": "Total Walls destroyed: 15320",
           "village": "home"
         },
         {
@@ -41120,19 +41368,19 @@
         {
           "name": "Union Buster",
           "stars": 3,
-          "value": 5800,
+          "value": 5805,
           "target": 2500,
           "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 5800",
+          "completionInfo": "Total Builder's Huts destroyed: 5805",
           "village": "home"
         },
         {
           "name": "Conqueror",
           "stars": 2,
-          "value": 1431,
+          "value": 1432,
           "target": 5000,
           "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 1431",
+          "completionInfo": "Total multiplayer battles won: 1432",
           "village": "home"
         },
         {
@@ -41156,19 +41404,19 @@
         {
           "name": "Mortar Mauler",
           "stars": 2,
-          "value": 4840,
+          "value": 4843,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 4840",
+          "completionInfo": "Total Mortars destroyed: 4843",
           "village": "home"
         },
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 8593937,
+          "value": 8601697,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 8593937",
+          "completionInfo": "Total Dark Elixir looted: 8601697",
           "village": "home"
         },
         {
@@ -41183,19 +41431,19 @@
         {
           "name": "X-Bow Exterminator",
           "stars": 3,
-          "value": 3696,
+          "value": 3698,
           "target": 2500,
           "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 3696",
+          "completionInfo": "Total X-Bows destroyed: 3698",
           "village": "home"
         },
         {
           "name": "Firefighter",
           "stars": 2,
-          "value": 2372,
+          "value": 2374,
           "target": 5000,
           "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 2372",
+          "completionInfo": "Total Inferno Towers destroyed: 2374",
           "village": "home"
         },
         {
@@ -41219,10 +41467,10 @@
         {
           "name": "Anti-Artillery",
           "stars": 2,
-          "value": 805,
+          "value": 806,
           "target": 2000,
           "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
-          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 805",
+          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 806",
           "village": "home"
         },
         {
@@ -41336,19 +41584,19 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 82780,
+          "value": 82830,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 82780",
+          "completionInfo": "Total Season Challenges points: 82830",
           "village": "home"
         },
         {
           "name": "Shattered and Scattered",
           "stars": 2,
-          "value": 746,
+          "value": 747,
           "target": 4000,
           "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 746",
+          "completionInfo": "Total Scattershots destroyed: 747",
           "village": "home"
         },
         {
@@ -41363,10 +41611,10 @@
         {
           "name": "Bust This!",
           "stars": 2,
-          "value": 782,
+          "value": 787,
           "target": 2500,
           "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 782",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 787",
           "village": "home"
         },
         {
@@ -41489,10 +41737,10 @@
         {
           "name": "Crafter’s Nightmare",
           "stars": 1,
-          "value": 166,
+          "value": 167,
           "target": 200,
           "info": "Destroy 200 Crafted Defenses in Multiplayer Battles",
-          "completionInfo": "Total Crafted Defenses Destroyed: 166",
+          "completionInfo": "Total Crafted Defenses Destroyed: 167",
           "village": "home"
         },
         {
@@ -42233,6 +42481,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000019,
+        "name": "Golem League 19",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000023,
         "name": "Iron League III"
@@ -43440,6 +43696,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000019,
+        "name": "Golem League 19",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000025,
         "name": "Iron League I"
@@ -44672,6 +44936,14 @@
           "medium": "https://api-assets.clashofclans.com/leagues/288/L-HrwYpFbDwWjdmhJQiZiTRa_zXPPOgUTdmbsaq4meo.png"
         }
       },
+      "leagueTier": {
+        "id": 105000019,
+        "name": "Golem League 19",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000025,
         "name": "Iron League I"
@@ -45871,6 +46143,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000018,
+        "name": "Witch League 18",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000022,
         "name": "Brass League I"
@@ -46978,6 +47258,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000018,
+        "name": "Witch League 18",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000028,
         "name": "Steel League I"
@@ -48255,6 +48543,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000018,
+        "name": "Witch League 18",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000025,
         "name": "Iron League I"
@@ -49442,6 +49738,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000018,
+        "name": "Witch League 18",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000023,
         "name": "Iron League III"
@@ -50578,6 +50882,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000017,
+        "name": "Witch League 17",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000026,
         "name": "Steel League III"
@@ -51840,6 +52152,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000017,
+        "name": "Witch League 17",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/3mEMvpajLceJ3EKu7u_JIh_cOEsT7wyh701zum9hqCY.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000023,
         "name": "Iron League III"
@@ -53088,6 +53408,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000015,
+        "name": "Valkyrie League 15",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/vT-0ssHYx5zJbBbbjB5NHPXnlHk76MDxJmG7iKmghc4.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -54044,6 +54372,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000013,
+        "name": "Valkyrie League 13",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000023,
         "name": "Iron League III"
@@ -55056,6 +55392,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000013,
+        "name": "Valkyrie League 13",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -56106,6 +56450,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000013,
+        "name": "Valkyrie League 13",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -57303,6 +57655,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000012,
+        "name": "Wizard League 12",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/A_ZoGbh1g8wYRWygsQ_wMgbVz8GXvvfavKwlSx8C8PQ.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000022,
         "name": "Brass League I"
@@ -58430,6 +58790,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000010,
+        "name": "Wizard League 10",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/3kJYaYpDwKF8AEkwRLkm-947_t2mAhpEQcZJYulPPIA.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -59442,6 +59810,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000015,
         "name": "Copper League V"
@@ -60331,6 +60707,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/pQHVG1p0IboE8Ggp0U1YR7U8dWhVn4YSS1zSPH61F0I.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/pQHVG1p0IboE8Ggp0U1YR7U8dWhVn4YSS1zSPH61F0I.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000004,
         "name": "Wood League I"
@@ -61257,6 +61641,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000033,
         "name": "Platinum League II"
@@ -62675,6 +63067,14 @@
         }
       },
       "league": null,
+      "leagueTier": {
+        "id": 105000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+        }
+      },
       "builderBaseLeague": {
         "id": 44000026,
         "name": "Steel League III"
@@ -71487,7 +71887,7 @@
         "complete": false
       }
     },
-    "lastUpdated": "2026-10-28T10:35:57.247473+00:00"
+    "lastUpdated": "2026-10-28T10:51:38.060948+00:00"
   },
   "rushMethod": {
     "weights": {
@@ -71609,13 +72009,27 @@
       "leader": 1
     },
     "leagueDistribution": {
-      "Unranked": 40,
-      "Titan League III": 2,
-      "Titan League I": 3,
-      "Champion League I": 2,
-      "Champion League III": 1,
-      "Legend League": 1,
-      "Crystal League I": 1
+      "Electro League 33": 1,
+      "Electro League 32": 2,
+      "Electro League 31": 2,
+      "Dragon League 30": 2,
+      "Dragon League 29": 8,
+      "Dragon League 28": 7,
+      "Titan League 27": 2,
+      "Titan League 26": 1,
+      "P.E.K.K.A League 23": 1,
+      "P.E.K.K.A League 22": 3,
+      "Golem League 20": 2,
+      "Golem League 19": 3,
+      "Witch League 18": 4,
+      "Witch League 17": 2,
+      "Valkyrie League 15": 1,
+      "Valkyrie League 13": 3,
+      "Wizard League 12": 1,
+      "Wizard League 10": 1,
+      "Archer League 9": 1,
+      "Barbarian League 6": 1,
+      "Unranked": 2
     },
     "rushDistribution": {
       "Severely Rushed": 8,
