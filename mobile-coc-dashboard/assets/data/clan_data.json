@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T10:28:42.958830+00:00",
+  "lastUpdated": "2026-10-28T10:35:57.252418+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -5640,7 +5640,7 @@
         "rushScore": 16.9,
         "rushPercentage": 6.6,
         "status": "🟡 Moderately Rushed",
-        "heroScore": 3,
+        "heroScore": 3.0,
         "troopScore": 8.7,
         "spellScore": 5.2,
         "totalMissingHeroLevels": 3,
@@ -9972,7 +9972,7 @@
         "rushScore": 6.4,
         "rushPercentage": 2.0,
         "status": "🟢 Slightly Behind",
-        "heroScore": 1,
+        "heroScore": 1.0,
         "troopScore": 0.6,
         "spellScore": 4.8,
         "totalMissingHeroLevels": 1,
@@ -11241,7 +11241,7 @@
         "rushScore": 104.1,
         "rushPercentage": 29.8,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 56,
+        "heroScore": 56.0,
         "troopScore": 29.7,
         "spellScore": 18.4,
         "totalMissingHeroLevels": 56,
@@ -12733,7 +12733,7 @@
         "rushScore": 120.3,
         "rushPercentage": 23.0,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 95,
+        "heroScore": 95.0,
         "troopScore": 14.1,
         "spellScore": 11.2,
         "totalMissingHeroLevels": 95,
@@ -15484,7 +15484,7 @@
         "rushScore": 31.1,
         "rushPercentage": 14.7,
         "status": "🟠 Rushed",
-        "heroScore": 2,
+        "heroScore": 2.0,
         "troopScore": 18.3,
         "spellScore": 10.8,
         "totalMissingHeroLevels": 2,
@@ -18251,7 +18251,7 @@
         "rushScore": 112.8,
         "rushPercentage": 30.1,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 81,
+        "heroScore": 81.0,
         "troopScore": 21.0,
         "spellScore": 10.8,
         "totalMissingHeroLevels": 81,
@@ -20878,7 +20878,7 @@
         "rushScore": 27.2,
         "rushPercentage": 8.8,
         "status": "🟠 Rushed",
-        "heroScore": 14,
+        "heroScore": 14.0,
         "troopScore": 8.4,
         "spellScore": 4.8,
         "totalMissingHeroLevels": 14,
@@ -22212,7 +22212,7 @@
         "rushScore": 43.4,
         "rushPercentage": 12.6,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 26,
+        "heroScore": 26.0,
         "troopScore": 9.0,
         "spellScore": 8.4,
         "totalMissingHeroLevels": 26,
@@ -23652,7 +23652,7 @@
         "rushScore": 16.4,
         "rushPercentage": 5.3,
         "status": "🟡 Moderately Rushed",
-        "heroScore": 6,
+        "heroScore": 6.0,
         "troopScore": 4.8,
         "spellScore": 5.6,
         "totalMissingHeroLevels": 6,
@@ -24958,10 +24958,10 @@
       ],
       "rushAnalysis": {
         "isRushed": false,
-        "rushScore": 9,
+        "rushScore": 9.0,
         "rushPercentage": 1.7,
         "status": "🟢 Slightly Behind",
-        "heroScore": 9,
+        "heroScore": 9.0,
         "troopScore": 0,
         "spellScore": 0,
         "totalMissingHeroLevels": 9,
@@ -28783,7 +28783,7 @@
         "rushScore": 39.5,
         "rushPercentage": 11.2,
         "status": "🟠 Rushed",
-        "heroScore": 20,
+        "heroScore": 20.0,
         "troopScore": 8.7,
         "spellScore": 10.8,
         "totalMissingHeroLevels": 20,
@@ -30177,7 +30177,7 @@
         "rushScore": 25.5,
         "rushPercentage": 8.0,
         "status": "🟠 Rushed",
-        "heroScore": 11,
+        "heroScore": 11.0,
         "troopScore": 8.1,
         "spellScore": 6.4,
         "totalMissingHeroLevels": 11,
@@ -35749,7 +35749,7 @@
         "rushScore": 27.8,
         "rushPercentage": 12.2,
         "status": "🟠 Rushed",
-        "heroScore": 7,
+        "heroScore": 7.0,
         "troopScore": 8.4,
         "spellScore": 12.4,
         "totalMissingHeroLevels": 7,
@@ -38285,7 +38285,7 @@
         "rushScore": 3.2,
         "rushPercentage": 1.3,
         "status": "🟢 Slightly Behind",
-        "heroScore": 2,
+        "heroScore": 2.0,
         "troopScore": 1.2,
         "spellScore": 0,
         "totalMissingHeroLevels": 2,
@@ -39497,7 +39497,7 @@
         "rushScore": 50.2,
         "rushPercentage": 16.5,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 30,
+        "heroScore": 30.0,
         "troopScore": 10.2,
         "spellScore": 10.0,
         "totalMissingHeroLevels": 30,
@@ -40841,7 +40841,7 @@
         "rushScore": 19.1,
         "rushPercentage": 5.5,
         "status": "🟡 Moderately Rushed",
-        "heroScore": 11,
+        "heroScore": 11.0,
         "troopScore": 3.3,
         "spellScore": 4.8,
         "totalMissingHeroLevels": 11,
@@ -41336,10 +41336,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 82730,
+          "value": 82780,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 82730",
+          "completionInfo": "Total Season Challenges points: 82780",
           "village": "home"
         },
         {
@@ -41480,10 +41480,10 @@
         {
           "name": "Crafting Connoisseur",
           "stars": 1,
-          "value": 10,
+          "value": 11,
           "target": 25,
           "info": "Upgrade Crafted Defenses 25 times",
-          "completionInfo": "Total Crafted Defense upgrades: 10",
+          "completionInfo": "Total Crafted Defense upgrades: 11",
           "village": "home"
         },
         {
@@ -42067,7 +42067,7 @@
         "rushScore": 20.2,
         "rushPercentage": 8.8,
         "status": "🟡 Moderately Rushed",
-        "heroScore": 9,
+        "heroScore": 9.0,
         "troopScore": 6.0,
         "spellScore": 5.2,
         "totalMissingHeroLevels": 9,
@@ -43334,7 +43334,7 @@
         "rushScore": 35.8,
         "rushPercentage": 7.8,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 32,
+        "heroScore": 32.0,
         "troopScore": 0.6,
         "spellScore": 3.2,
         "totalMissingHeroLevels": 32,
@@ -44468,7 +44468,7 @@
         "rushScore": 33.5,
         "rushPercentage": 15.4,
         "status": "🟠 Rushed",
-        "heroScore": 14,
+        "heroScore": 14.0,
         "troopScore": 12.3,
         "spellScore": 7.2,
         "totalMissingHeroLevels": 14,
@@ -48017,7 +48017,7 @@
         "rushScore": 48.7,
         "rushPercentage": 22.3,
         "status": "🟠 Rushed",
-        "heroScore": 19,
+        "heroScore": 19.0,
         "troopScore": 15.3,
         "spellScore": 14.4,
         "totalMissingHeroLevels": 19,
@@ -49324,7 +49324,7 @@
         "rushScore": 43.8,
         "rushPercentage": 10.2,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 38,
+        "heroScore": 38.0,
         "troopScore": 3.0,
         "spellScore": 2.8,
         "totalMissingHeroLevels": 38,
@@ -51656,7 +51656,7 @@
         "rushScore": 32.1,
         "rushPercentage": 13.9,
         "status": "🟠 Rushed",
-        "heroScore": 10,
+        "heroScore": 10.0,
         "troopScore": 11.7,
         "spellScore": 10.4,
         "totalMissingHeroLevels": 10,
@@ -57095,7 +57095,7 @@
         "rushScore": 37.5,
         "rushPercentage": 17.4,
         "status": "🔴 Severely Rushed (Heroes)",
-        "heroScore": 21,
+        "heroScore": 21.0,
         "troopScore": 6.9,
         "spellScore": 9.6,
         "totalMissingHeroLevels": 21,
@@ -58294,7 +58294,7 @@
         "rushScore": 8.4,
         "rushPercentage": 5.4,
         "status": "🟢 Slightly Behind",
-        "heroScore": 2,
+        "heroScore": 2.0,
         "troopScore": 3.6,
         "spellScore": 2.8,
         "totalMissingHeroLevels": 2,
@@ -59354,7 +59354,7 @@
         "rushScore": 2.7,
         "rushPercentage": 2.0,
         "status": "✅ Maxed",
-        "heroScore": 1,
+        "heroScore": 1.0,
         "troopScore": 0.9,
         "spellScore": 0.8,
         "totalMissingHeroLevels": 1,
@@ -61139,7 +61139,7 @@
         "rushScore": 19.9,
         "rushPercentage": 18.6,
         "status": "🟡 Moderately Rushed",
-        "heroScore": 15,
+        "heroScore": 15.0,
         "troopScore": 4.5,
         "spellScore": 0.4,
         "totalMissingHeroLevels": 15,
@@ -62395,7 +62395,7 @@
         "rushScore": 42.0,
         "rushPercentage": 17.6,
         "status": "🟠 Rushed",
-        "heroScore": 9,
+        "heroScore": 9.0,
         "troopScore": 19.8,
         "spellScore": 13.2,
         "totalMissingHeroLevels": 9,
@@ -65261,7 +65261,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 11324,
               "attacks": [
@@ -65304,7 +65304,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9487,
               "attacks": [
@@ -65347,7 +65347,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6932,
               "attacks": [
@@ -65382,7 +65382,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7814,
               "attacks": [
@@ -65417,7 +65417,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8799,
               "attacks": [
@@ -65452,7 +65452,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6754,
               "attacks": [
@@ -65487,7 +65487,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6845,
               "attacks": [
@@ -65514,7 +65514,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6109,
               "attacks": [
@@ -65558,7 +65558,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10997,
               "attacks": [
@@ -65601,7 +65601,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9781,
               "attacks": [
@@ -65644,7 +65644,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7373,
               "attacks": [
@@ -65679,7 +65679,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8090,
               "attacks": [
@@ -65714,7 +65714,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8300,
               "attacks": [
@@ -65749,7 +65749,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6943,
               "attacks": [
@@ -65784,7 +65784,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6849,
               "attacks": [
@@ -65811,7 +65811,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5222,
               "attacks": [
@@ -65855,7 +65855,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10921,
               "attacks": [
@@ -65906,7 +65906,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9715,
               "attacks": [
@@ -65949,7 +65949,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7131,
               "attacks": [
@@ -65992,7 +65992,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7880,
               "attacks": [
@@ -66027,7 +66027,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8607,
               "attacks": [
@@ -66062,7 +66062,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7069,
               "attacks": [
@@ -66105,7 +66105,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6572,
               "attacks": [
@@ -66132,7 +66132,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 3101,
               "attacks": [
@@ -66168,7 +66168,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 10835,
               "attacks": [
@@ -66203,7 +66203,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9124,
               "attacks": [
@@ -66238,7 +66238,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6884,
               "attacks": [
@@ -66273,7 +66273,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7876,
               "attacks": [
@@ -66308,7 +66308,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8876,
               "attacks": [
@@ -66343,7 +66343,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7121,
               "attacks": [
@@ -66378,7 +66378,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6884,
               "attacks": [
@@ -66405,7 +66405,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7640,
               "attacks": [
@@ -66457,7 +66457,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 6,
               "totalLooted": 11111,
               "attacks": [
@@ -66516,7 +66516,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9488,
               "attacks": [
@@ -66551,7 +66551,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7230,
               "attacks": [
@@ -66586,7 +66586,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8075,
               "attacks": [
@@ -66621,7 +66621,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8554,
               "attacks": [
@@ -66656,7 +66656,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6865,
               "attacks": [
@@ -66691,7 +66691,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6986,
               "attacks": [
@@ -66718,7 +66718,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 7080,
               "attacks": [
@@ -66762,7 +66762,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 92,
-              "stars": 0,
+              "stars": 2,
               "attackCount": 3,
               "totalLooted": 9355,
               "attacks": [
@@ -66797,7 +66797,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9206,
               "attacks": [
@@ -66832,7 +66832,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7703,
               "attacks": [
@@ -66867,7 +66867,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7711,
               "attacks": [
@@ -66902,7 +66902,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8719,
               "attacks": [
@@ -66937,7 +66937,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 8083,
               "attacks": [
@@ -66988,7 +66988,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8137,
               "attacks": [
@@ -67023,7 +67023,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 7112,
               "attacks": [
@@ -67082,7 +67082,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 11185
             },
@@ -67091,7 +67091,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9253
             },
@@ -67100,7 +67100,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6823
             },
@@ -67109,7 +67109,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7882
             },
@@ -67118,7 +67118,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8506
             },
@@ -67127,7 +67127,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7761
             },
@@ -67136,7 +67136,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8105
             },
@@ -67145,7 +67145,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7476
             }
@@ -67171,7 +67171,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10614
             },
@@ -67180,7 +67180,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9751
             },
@@ -67189,7 +67189,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7100
             },
@@ -67198,7 +67198,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7998
             },
@@ -67207,7 +67207,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8658
             },
@@ -67216,7 +67216,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7033
             },
@@ -67225,7 +67225,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6572
             },
@@ -67234,7 +67234,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5079
             }
@@ -67260,7 +67260,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 11097
             },
@@ -67269,7 +67269,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9622
             },
@@ -67278,7 +67278,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7185
             },
@@ -67287,7 +67287,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7881
             },
@@ -67296,7 +67296,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8282
             },
@@ -67305,7 +67305,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6440
             },
@@ -67314,7 +67314,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6760
             },
@@ -67323,7 +67323,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 3586
             }
@@ -67349,7 +67349,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10788
             },
@@ -67358,7 +67358,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9052
             },
@@ -67367,7 +67367,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7253
             },
@@ -67376,7 +67376,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8125
             },
@@ -67385,7 +67385,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 8070
             },
@@ -67394,7 +67394,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 8082
             },
@@ -67403,7 +67403,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6806
             },
@@ -67412,7 +67412,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 3942
             }
@@ -67438,7 +67438,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 11168
             },
@@ -67447,7 +67447,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9690
             },
@@ -67456,7 +67456,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6053
             },
@@ -67465,7 +67465,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6671
             },
@@ -67474,7 +67474,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6793
             },
@@ -67483,7 +67483,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6837
             },
@@ -67492,7 +67492,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6832
             },
@@ -67501,7 +67501,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 4222
             }
@@ -67554,7 +67554,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 50,
-              "stars": 0,
+              "stars": 1,
               "attackCount": 1,
               "totalLooted": 3560
             },
@@ -67563,7 +67563,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8674
             },
@@ -67581,7 +67581,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 60,
-              "stars": 0,
+              "stars": 2,
               "attackCount": 1,
               "totalLooted": 4010
             },
@@ -67590,7 +67590,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6112
             }
@@ -67631,7 +67631,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 11029
             },
@@ -67640,7 +67640,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9142
             },
@@ -67649,7 +67649,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7362
             },
@@ -67658,7 +67658,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7847
             },
@@ -67667,7 +67667,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 8107
             },
@@ -67676,7 +67676,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7100
             },
@@ -67685,7 +67685,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6854
             },
@@ -67694,7 +67694,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 4849
             }
@@ -67720,7 +67720,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10840
             },
@@ -67729,7 +67729,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9411
             },
@@ -67738,7 +67738,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7426
             },
@@ -67747,7 +67747,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7894
             },
@@ -67756,7 +67756,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8720
             },
@@ -67765,7 +67765,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6890
             },
@@ -67774,7 +67774,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6674
             },
@@ -67783,7 +67783,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 3175
             }
@@ -67809,7 +67809,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10763
             },
@@ -67818,7 +67818,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9460
             },
@@ -67827,7 +67827,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7024
             },
@@ -67836,7 +67836,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 7630
             },
@@ -67845,7 +67845,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8708
             },
@@ -67854,7 +67854,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7023
             },
@@ -67863,7 +67863,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7130
             },
@@ -67872,7 +67872,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5511
             }
@@ -67898,7 +67898,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 59,
-              "stars": 0,
+              "stars": 1,
               "attackCount": 2,
               "totalLooted": 3160
             },
@@ -67907,7 +67907,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9372
             },
@@ -67916,7 +67916,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7139
             },
@@ -67925,7 +67925,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 7686
             },
@@ -67934,7 +67934,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8719
             },
@@ -67943,7 +67943,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7231
             },
@@ -67952,7 +67952,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7496
             },
@@ -67961,7 +67961,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5031
             }
@@ -67989,7 +67989,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10688
             },
@@ -67998,7 +67998,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9219
             },
@@ -68007,7 +68007,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7241
             },
@@ -68016,7 +68016,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8031
             },
@@ -68025,7 +68025,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8690
             },
@@ -68034,7 +68034,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6652
             },
@@ -68043,7 +68043,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7495
             },
@@ -68052,7 +68052,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6868
             }
@@ -68092,7 +68092,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 6,
               "totalLooted": 10136
             },
@@ -68101,7 +68101,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9479
             },
@@ -68110,7 +68110,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6687
             },
@@ -68119,7 +68119,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 7462
             },
@@ -68128,7 +68128,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8785
             },
@@ -68137,7 +68137,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6669
             },
@@ -68146,7 +68146,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7023
             },
@@ -68155,7 +68155,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 2907
             }
@@ -68181,7 +68181,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10495
             },
@@ -68190,7 +68190,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8510
             },
@@ -68199,7 +68199,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7494
             },
@@ -68208,7 +68208,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7841
             },
@@ -68217,7 +68217,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8126
             },
@@ -68226,7 +68226,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7295
             },
@@ -68235,7 +68235,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7140
             },
@@ -68244,7 +68244,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5041
             }
@@ -68270,7 +68270,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10882
             },
@@ -68279,7 +68279,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8995
             },
@@ -68288,7 +68288,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 7315
             },
@@ -68297,7 +68297,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7810
             },
@@ -68306,7 +68306,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8487
             },
@@ -68315,7 +68315,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6747
             },
@@ -68324,7 +68324,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7101
             },
@@ -68333,7 +68333,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 7003
             }
@@ -68359,7 +68359,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 10839
             },
@@ -68368,7 +68368,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9130
             },
@@ -68377,7 +68377,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8132
             },
@@ -68386,7 +68386,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7883
             },
@@ -68395,7 +68395,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 8161
             },
@@ -68404,7 +68404,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6931
             },
@@ -68413,7 +68413,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6650
             },
@@ -68422,7 +68422,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 3222
             }
@@ -68448,7 +68448,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10996
             },
@@ -68457,7 +68457,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9248
             },
@@ -68466,7 +68466,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6885
             },
@@ -68475,7 +68475,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8394
             },
@@ -68484,7 +68484,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 8408
             },
@@ -68493,7 +68493,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7055
             },
@@ -68502,7 +68502,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6806
             },
@@ -68511,7 +68511,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 2775
             }
@@ -68591,7 +68591,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7010
             }
@@ -68619,7 +68619,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 11133
             },
@@ -68628,7 +68628,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9072
             },
@@ -68637,7 +68637,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7250
             },
@@ -68646,7 +68646,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8199
             },
@@ -68655,7 +68655,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8618
             },
@@ -68664,7 +68664,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 6685
             },
@@ -68673,7 +68673,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7013
             },
@@ -68682,7 +68682,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5914
             }
@@ -68722,7 +68722,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10164
             },
@@ -68731,7 +68731,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9045
             },
@@ -68740,7 +68740,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7172
             },
@@ -68749,7 +68749,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8098
             },
@@ -68758,7 +68758,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8986
             },
@@ -68767,7 +68767,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7320
             },
@@ -68776,7 +68776,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6582
             },
@@ -68785,7 +68785,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 4554
             }
@@ -68811,7 +68811,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10424
             },
@@ -68820,7 +68820,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9976
             },
@@ -68829,7 +68829,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7082
             },
@@ -68838,7 +68838,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8075
             },
@@ -68847,7 +68847,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8405
             },
@@ -68856,7 +68856,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6426
             },
@@ -68865,7 +68865,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6560
             },
@@ -68874,7 +68874,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 2823
             }
@@ -68900,7 +68900,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10139
             },
@@ -68909,7 +68909,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8976
             },
@@ -68918,7 +68918,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 7468
             },
@@ -68927,7 +68927,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7968
             },
@@ -68936,7 +68936,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8686
             },
@@ -68945,7 +68945,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7195
             },
@@ -68954,7 +68954,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6794
             }
@@ -68980,7 +68980,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 8,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 11097
             },
@@ -68989,7 +68989,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9424
             },
@@ -68998,7 +68998,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7204
             },
@@ -69007,7 +69007,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7300
             },
@@ -69016,7 +69016,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7341
             },
@@ -69025,7 +69025,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6577
             },
@@ -69034,7 +69034,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7118
             },
@@ -69043,7 +69043,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 1,
               "totalLooted": 2865
             }
@@ -69123,7 +69123,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6621
             },
@@ -69187,7 +69187,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7923
             },
@@ -69214,7 +69214,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6512
             },
@@ -69223,7 +69223,7 @@
               "name": "Skeleton Park",
               "districtHallLevel": 1,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 5787
             }
@@ -69263,7 +69263,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10432
             },
@@ -69272,7 +69272,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8887
             },
@@ -69281,7 +69281,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7117
             },
@@ -69290,7 +69290,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8104
             },
@@ -69299,7 +69299,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8744
             },
@@ -69308,7 +69308,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6892
             },
@@ -69317,7 +69317,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6791
             }
@@ -69343,7 +69343,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10279
             },
@@ -69352,7 +69352,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9427
             },
@@ -69361,7 +69361,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7513
             },
@@ -69370,7 +69370,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8162
             },
@@ -69379,7 +69379,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8485
             },
@@ -69388,7 +69388,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6732
             },
@@ -69397,7 +69397,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6627
             }
@@ -69423,7 +69423,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 10174
             },
@@ -69432,7 +69432,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7133
             },
@@ -69441,7 +69441,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6974
             },
@@ -69450,7 +69450,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8129
             },
@@ -69459,7 +69459,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9024
             },
@@ -69468,7 +69468,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7138
             },
@@ -69477,7 +69477,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6824
             }
@@ -69503,7 +69503,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10051
             },
@@ -69512,7 +69512,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9830
             },
@@ -69521,7 +69521,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6682
             },
@@ -69530,7 +69530,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7844
             },
@@ -69539,7 +69539,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8447
             },
@@ -69548,7 +69548,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6731
             },
@@ -69557,7 +69557,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6983
             }
@@ -69583,7 +69583,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10515
             },
@@ -69592,7 +69592,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8884
             },
@@ -69601,7 +69601,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6805
             },
@@ -69610,7 +69610,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8119
             },
@@ -69619,7 +69619,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8588
             },
@@ -69628,7 +69628,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7051
             },
@@ -69637,7 +69637,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7103
             }
@@ -69745,7 +69745,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10267
             },
@@ -69754,7 +69754,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9638
             },
@@ -69763,7 +69763,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6894
             },
@@ -69772,7 +69772,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8035
             },
@@ -69781,7 +69781,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8348
             },
@@ -69790,7 +69790,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 6922
             },
@@ -69799,7 +69799,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6878
             }
@@ -69839,7 +69839,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10555
             },
@@ -69848,7 +69848,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9813
             },
@@ -69857,7 +69857,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7185
             },
@@ -69866,7 +69866,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7596
             },
@@ -69875,7 +69875,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8465
             },
@@ -69884,7 +69884,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6656
             },
@@ -69893,7 +69893,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6671
             }
@@ -69919,7 +69919,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10240
             },
@@ -69928,7 +69928,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9734
             },
@@ -69937,7 +69937,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7168
             },
@@ -69946,7 +69946,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7663
             },
@@ -69955,7 +69955,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8367
             },
@@ -69964,7 +69964,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6506
             },
@@ -69973,7 +69973,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6602
             }
@@ -69999,7 +69999,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10411
             },
@@ -70008,7 +70008,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9757
             },
@@ -70017,7 +70017,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7028
             },
@@ -70026,7 +70026,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8047
             },
@@ -70035,7 +70035,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8610
             },
@@ -70044,7 +70044,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6560
             },
@@ -70053,7 +70053,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6542
             }
@@ -70106,7 +70106,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 79,
-              "stars": 0,
+              "stars": 2,
               "attackCount": 2,
               "totalLooted": 5980
             },
@@ -70115,7 +70115,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 93,
-              "stars": 0,
+              "stars": 2,
               "attackCount": 2,
               "totalLooted": 7505
             },
@@ -70124,7 +70124,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 64,
-              "stars": 0,
+              "stars": 2,
               "attackCount": 2,
               "totalLooted": 4025
             },
@@ -70133,7 +70133,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6560
             }
@@ -70174,7 +70174,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10507
             },
@@ -70183,7 +70183,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8917
             },
@@ -70192,7 +70192,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7297
             },
@@ -70201,7 +70201,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7968
             },
@@ -70210,7 +70210,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 8439
             },
@@ -70219,7 +70219,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6945
             },
@@ -70228,7 +70228,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6623
             }
@@ -70254,7 +70254,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10165
             },
@@ -70263,7 +70263,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9033
             },
@@ -70272,7 +70272,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7214
             },
@@ -70281,7 +70281,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8099
             },
@@ -70290,7 +70290,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8491
             },
@@ -70299,7 +70299,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6871
             },
@@ -70308,7 +70308,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7073
             }
@@ -70334,7 +70334,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10132
             },
@@ -70343,7 +70343,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8815
             },
@@ -70352,7 +70352,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6809
             },
@@ -70361,7 +70361,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7830
             },
@@ -70370,7 +70370,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8422
             },
@@ -70379,7 +70379,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6553
             },
@@ -70388,7 +70388,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6935
             }
@@ -70423,7 +70423,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9180
             },
@@ -70432,7 +70432,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6902
             },
@@ -70441,7 +70441,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8057
             },
@@ -70450,7 +70450,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8475
             },
@@ -70459,7 +70459,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6978
             },
@@ -70468,7 +70468,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7001
             }
@@ -70523,7 +70523,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7868
             },
@@ -70532,7 +70532,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8600
             },
@@ -70550,7 +70550,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7118
             }
@@ -70590,7 +70590,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10444
             },
@@ -70599,7 +70599,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9168
             },
@@ -70608,7 +70608,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6717
             },
@@ -70617,7 +70617,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7905
             },
@@ -70626,7 +70626,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8296
             },
@@ -70635,7 +70635,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6924
             },
@@ -70644,7 +70644,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6932
             }
@@ -70670,7 +70670,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10195
             },
@@ -70679,7 +70679,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9218
             },
@@ -70688,7 +70688,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7012
             },
@@ -70697,7 +70697,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 7980
             },
@@ -70706,7 +70706,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8309
             },
@@ -70715,7 +70715,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7133
             },
@@ -70724,7 +70724,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7130
             }
@@ -70750,7 +70750,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10363
             },
@@ -70759,7 +70759,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9026
             },
@@ -70768,7 +70768,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7170
             },
@@ -70777,7 +70777,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8113
             },
@@ -70786,7 +70786,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8858
             },
@@ -70795,7 +70795,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6577
             },
@@ -70804,7 +70804,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6654
             }
@@ -70830,7 +70830,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10555
             },
@@ -70839,7 +70839,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8546
             },
@@ -70848,7 +70848,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7006
             },
@@ -70857,7 +70857,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7963
             },
@@ -70866,7 +70866,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8576
             },
@@ -70875,7 +70875,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6701
             },
@@ -70884,7 +70884,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6569
             }
@@ -70910,7 +70910,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 86,
-              "stars": 0,
+              "stars": 2,
               "attackCount": 2,
               "totalLooted": 7880
             },
@@ -70919,7 +70919,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9722
             },
@@ -70928,7 +70928,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7114
             },
@@ -70937,7 +70937,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7973
             },
@@ -70946,7 +70946,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8590
             },
@@ -70955,7 +70955,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6826
             },
@@ -70964,7 +70964,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6591
             }
@@ -70992,7 +70992,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 10312
             },
@@ -71001,7 +71001,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 8933
             },
@@ -71010,7 +71010,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 7017
             },
@@ -71019,7 +71019,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7925
             },
@@ -71028,7 +71028,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8216
             },
@@ -71037,7 +71037,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6822
             },
@@ -71046,7 +71046,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6614
             }
@@ -71086,7 +71086,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10216
             },
@@ -71095,7 +71095,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 9327
             },
@@ -71104,7 +71104,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7143
             },
@@ -71113,7 +71113,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7408
             },
@@ -71122,7 +71122,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 8961
             },
@@ -71131,7 +71131,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7114
             },
@@ -71140,7 +71140,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6843
             }
@@ -71166,7 +71166,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 10432
             },
@@ -71175,7 +71175,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9230
             },
@@ -71184,7 +71184,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6563
             },
@@ -71193,7 +71193,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6766
             },
@@ -71202,7 +71202,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8771
             },
@@ -71211,7 +71211,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 6620
             },
@@ -71220,7 +71220,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6617
             }
@@ -71246,7 +71246,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9925
             },
@@ -71255,7 +71255,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 9477
             },
@@ -71264,7 +71264,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7193
             },
@@ -71273,7 +71273,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8113
             },
@@ -71282,7 +71282,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 8764
             },
@@ -71291,7 +71291,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6714
             },
@@ -71300,7 +71300,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 6752
             }
@@ -71380,7 +71380,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 47,
-              "stars": 0,
+              "stars": 1,
               "attackCount": 1,
               "totalLooted": 3210
             }
@@ -71408,7 +71408,7 @@
               "name": "Capital Peak",
               "districtHallLevel": 7,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 6,
               "totalLooted": 10360
             },
@@ -71417,7 +71417,7 @@
               "name": "Barbarian Camp",
               "districtHallLevel": 4,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 5,
               "totalLooted": 9539
             },
@@ -71426,7 +71426,7 @@
               "name": "Wizard Valley",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 3,
               "totalLooted": 7152
             },
@@ -71435,7 +71435,7 @@
               "name": "Balloon Lagoon",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 7759
             },
@@ -71444,7 +71444,7 @@
               "name": "Builder's Workshop",
               "districtHallLevel": 3,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 2,
               "totalLooted": 8042
             },
@@ -71453,7 +71453,7 @@
               "name": "Dragon Cliffs",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6567
             },
@@ -71462,7 +71462,7 @@
               "name": "Golem Quarry",
               "districtHallLevel": 2,
               "destructionPercent": 100,
-              "stars": 0,
+              "stars": 3,
               "attackCount": 4,
               "totalLooted": 6989
             }
@@ -71487,7 +71487,109 @@
         "complete": false
       }
     },
-    "lastUpdated": "2026-10-28T10:28:42.953767+00:00"
+    "lastUpdated": "2026-10-28T10:35:57.247473+00:00"
+  },
+  "rushMethod": {
+    "weights": {
+      "hero": 1.0,
+      "troop": 0.3,
+      "spell": 0.4
+    },
+    "statusThresholds": [
+      {
+        "maxScore": 3,
+        "status": "✅ Maxed",
+        "isRushed": false
+      },
+      {
+        "maxScore": 10,
+        "status": "🟢 Slightly Behind",
+        "isRushed": false
+      },
+      {
+        "maxScore": 25,
+        "status": "🟡 Moderately Rushed",
+        "isRushed": true
+      },
+      {
+        "maxScore": 50,
+        "status": "🟠 Rushed",
+        "isRushed": true
+      }
+    ],
+    "severeStatus": "🔴 Severely Rushed",
+    "heroSevereMissing": 20,
+    "heroSevereStatus": "🔴 Severely Rushed (Heroes)",
+    "excludedHeroes": [
+      "Minion Prince"
+    ],
+    "heroCaps": {
+      "Barbarian King": {
+        "7": 10,
+        "8": 20,
+        "9": 30,
+        "10": 40,
+        "11": 50,
+        "12": 65,
+        "13": 75,
+        "14": 85,
+        "15": 90,
+        "16": 95,
+        "17": 100,
+        "18": 110
+      },
+      "Archer Queen": {
+        "8": 10,
+        "9": 30,
+        "10": 40,
+        "11": 50,
+        "12": 65,
+        "13": 75,
+        "14": 85,
+        "15": 90,
+        "16": 95,
+        "17": 100,
+        "18": 110
+      },
+      "Minion Prince": {
+        "9": 10,
+        "10": 20,
+        "11": 30,
+        "12": 40,
+        "13": 50,
+        "14": 60,
+        "15": 70,
+        "16": 80,
+        "17": 90,
+        "18": 95
+      },
+      "Grand Warden": {
+        "11": 20,
+        "12": 40,
+        "13": 50,
+        "14": 60,
+        "15": 65,
+        "16": 70,
+        "17": 75,
+        "18": 85
+      },
+      "Royal Champion": {
+        "13": 25,
+        "14": 30,
+        "15": 40,
+        "16": 45,
+        "17": 50,
+        "18": 55
+      },
+      "Dragon Duke": {
+        "15": 10,
+        "16": 15,
+        "17": 20,
+        "18": 25
+      }
+    },
+    "scoredTroopCount": 32,
+    "scoredSpellCount": 18
   },
   "statistics": {
     "thDistribution": {
