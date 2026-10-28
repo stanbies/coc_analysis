@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-10-28T17:55:56.645524+00:00",
+  "last_updated": "2026-10-28T22:15:26.492291+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -47,7 +47,7 @@
     "#R080CV0Q": {
       "name": "De Buikies",
       "tag": "#R080CV0Q",
-      "current_th": 17,
+      "current_th": 18,
       "total_attacks": 2,
       "total_stars": 4,
       "total_destruction": 170.0,
@@ -133,11 +133,11 @@
       "name": "jari",
       "tag": "#8RUGYCVG9",
       "current_th": 17,
-      "total_attacks": 2,
-      "total_stars": 4,
-      "total_destruction": 188.0,
-      "three_stars": 0,
-      "two_stars": 2,
+      "total_attacks": 4,
+      "total_stars": 9,
+      "total_destruction": 380.0,
+      "three_stars": 1,
+      "two_stars": 3,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 5,
@@ -162,6 +162,26 @@
           "defender_th": 18,
           "attacker_th": 16,
           "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-28T19:03:52+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-28T19:03:52+00:00",
+          "stars": 2,
+          "destruction": 92,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
@@ -754,16 +774,37 @@
       "name": "bram",
       "tag": "#Q8QY9JULJ",
       "current_th": 16,
-      "total_attacks": 0,
-      "total_stars": 0,
-      "total_destruction": 0.0,
-      "three_stars": 0,
+      "total_attacks": 2,
+      "total_stars": 6,
+      "total_destruction": 200.0,
+      "three_stars": 2,
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 1,
       "cwl_seasons": 0,
-      "attacks_history": [],
+      "attacks_history": [
+        {
+          "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-28T19:03:52+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 15,
+          "attacker_th": 16,
+          "hit_type": "↓ DOWN"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-28T19:03:52+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 16,
+          "attacker_th": 16,
+          "hit_type": "= SAME"
+        }
+      ],
       "war_ids": [
         "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z"
       ]
@@ -808,16 +849,27 @@
       "name": "itsjeff",
       "tag": "#9U08VL8JU",
       "current_th": 15,
-      "total_attacks": 0,
-      "total_stars": 0,
-      "total_destruction": 0.0,
-      "three_stars": 0,
+      "total_attacks": 1,
+      "total_stars": 3,
+      "total_destruction": 100.0,
+      "three_stars": 1,
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 1,
       "cwl_seasons": 0,
-      "attacks_history": [],
+      "attacks_history": [
+        {
+          "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-28T19:03:52+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 14,
+          "attacker_th": 15,
+          "hit_type": "↓ DOWN"
+        }
+      ],
       "war_ids": [
         "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z"
       ]
