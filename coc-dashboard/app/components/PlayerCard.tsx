@@ -1,6 +1,7 @@
 'use client';
 
 import { Player } from '../types';
+import LeagueBadge from './LeagueBadge';
 
 interface PlayerCardProps {
   player: Player;
@@ -49,11 +50,12 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
         </div>
       </div>
       
-      <div className="grid grid-cols-3 gap-2 mb-3 text-center">
-        <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
-          <p className="text-base font-bold whitespace-nowrap text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
-          <p className="text-xs text-slate-400">Trophies</p>
-        </div>
+      <div className="flex items-center gap-2 mb-3 bg-slate-800/50 rounded-lg px-2 py-1.5">
+        <LeagueBadge league={player.leagueTier} />
+        <span className="ml-auto text-sm font-bold whitespace-nowrap text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</span>
+      </div>
+
+      <div className="grid grid-cols-2 gap-2 mb-3 text-center">
         <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
           <p className="text-base font-bold whitespace-nowrap text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
           <p className="text-xs text-slate-400">War Stars</p>

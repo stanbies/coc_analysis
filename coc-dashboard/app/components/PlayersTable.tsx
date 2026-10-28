@@ -2,13 +2,14 @@
 
 import { useState } from 'react';
 import { Player } from '../types';
+import LeagueBadge, { compareByLeague } from './LeagueBadge';
 
 interface PlayersTableProps {
   players: Player[];
   onPlayerClick: (player: Player) => void;
 }
 
-type SortField = 'name' | 'townHallLevel' | 'trophies' | 'warStars' | 'donations' | 'rushScore' | 'heroLevels';
+type SortField = 'name' | 'townHallLevel' | 'league' | 'warStars' | 'donations' | 'rushScore' | 'heroLevels';
 type SortDirection = 'asc' | 'desc';
 
 function getRushStatusClass(status: string): string {
@@ -78,9 +79,13 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
       return matchesSearch && matchesRush;
     })
     .sort((a, b) => {
+      if (sortField === 'league') {
+        return sortDirection === 'desc' ? compareByLeague(a, b) : compareByLeague(b, a);
+      }
+
       let aVal: number | string;
       let bVal: number | string;
-      
+
       switch (sortField) {
         case 'name':
           aVal = a.name.toLowerCase();
@@ -89,10 +94,6 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
         case 'townHallLevel':
           aVal = a.townHallLevel;
           bVal = b.townHallLevel;
-          break;
-        case 'trophies':
-          aVal = a.trophies;
-          bVal = b.trophies;
           break;
         case 'warStars':
           aVal = a.warStars;
@@ -155,7 +156,7 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
               <th className="text-left py-3 px-2 text-slate-400 text-sm font-medium">#</th>
               <SortHeader field="name" {...sortProps}>Name</SortHeader>
               <SortHeader field="townHallLevel" {...sortProps}>TH</SortHeader>
-              <SortHeader field="trophies" {...sortProps}>Trophies</SortHeader>
+              <SortHeader field="league" {...sortProps}>League</SortHeader>
               <SortHeader field="warStars" {...sortProps}>War Stars</SortHeader>
               <SortHeader field="heroLevels" {...sortProps}>Heroes</SortHeader>
               <SortHeader field="donations" {...sortProps}>Donations</SortHeader>
@@ -186,7 +187,17 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
                       {player.townHallLevel}
                     </span>
                   </td>
-                  <td className="py-3 px-2 text-yellow-400">{player.trophies.toLocaleString('en-US')}</td>
+                  <td className="py-3 px-2">
+                    <div className="flex items-center gap-2 whitespace-nowrap">
+                      <LeagueBadge league={player.leagueTier} showName={false} />
+                      <div className="leading-tight">
+                        <p className={`text-sm ${player.leagueTier ? 'text-white' : 'text-slate-500'}`}>
+                          {player.leagueTier?.name ?? 'Unranked'}
+                        </p>
+                        <p className="text-xs text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
+                      </div>
+                    </div>
+                  </td>
                   <td className="py-3 px-2 text-purple-400">{player.warStars.toLocaleString('en-US')}</td>
                   <td className="py-3 px-2 text-cyan-400">{totalHeroLevels}</td>
                   <td className="py-3 px-2">

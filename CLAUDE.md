@@ -80,6 +80,7 @@ The scraper exits non-zero if the clan or member fetches fail, or if more than `
 - `app/rush-score/page.tsx` explains the rush score (linked from the Most Rushed table, the rush chart and the player modal). It's data-driven from `rushMethod`, with a worked example using a real player, and shows a placeholder when `rushMethod` is missing. Data loading for both pages is in `app/lib/data.ts`.
 - Never sort `players` in place (`[...players].sort(...)`); it's shared across tabs.
 - Both dashboards share the same `DashboardData` TypeScript interface shape (defined separately in `coc-dashboard/app/types.ts` and `mobile-coc-dashboard/types/index.ts`). Keep these in sync with `export.py` when modifying data structures. `coc-dashboard/scripts/check-data.ts` assigns the real `clan_data.json` to `DashboardData`, so a mismatch fails `npm run typecheck`, the workflow (before committing) and `next build`. Fields the scraper can emit as `null` must be typed `| null`.
+- Ranked battles (since Oct 2025) live in the player's `leagueTier`; the old `league` field is always `null` and `trophies` resets every weekly tournament. The dashboards show and sort by `leagueTier` (tier ids increase with the league).
 
 ### Mobile App
 - Expo SDK 54, React Native 0.81, expo-router with file-based routing

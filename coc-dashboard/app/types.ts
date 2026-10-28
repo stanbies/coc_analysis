@@ -24,6 +24,7 @@ export interface Player {
     badgeUrls: BadgeUrls;
   };
   league?: League | null;
+  leagueTier?: LeagueTier | null;
   builderBaseLeague?: League;
   achievements: Achievement[];
   labels: Label[];
@@ -87,6 +88,19 @@ export interface League {
     small: string;
     tiny: string;
     medium?: string;
+  };
+}
+
+// Ranked battles league. The icon sizes the API returns aren't documented,
+// so every size is optional; use getLeagueIcon() to pick one.
+export interface LeagueTier {
+  id: number;
+  name: string;
+  iconUrls?: {
+    tiny?: string;
+    small?: string;
+    medium?: string;
+    large?: string;
   };
 }
 

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Player } from '../types';
+import LeagueBadge from './LeagueBadge';
 
 interface PlayerModalProps {
   player: Player;
@@ -61,10 +62,11 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
         <div className="p-6 space-y-6">
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
-              <p className="text-xs text-slate-400">Current Trophies</p>
-              <p className="text-xs text-slate-500">Best: {player.bestTrophies.toLocaleString('en-US')}</p>
+            <div className="bg-slate-800 rounded-xl p-4 flex flex-col items-center text-center">
+              <LeagueBadge league={player.leagueTier} size="lg" showName={false} />
+              <p className="text-sm font-bold text-white mt-1">{player.leagueTier?.name ?? 'Unranked'}</p>
+              <p className="text-xs text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')} this week</p>
+              <p className="text-xs text-slate-500">Best ever: {player.bestTrophies.toLocaleString('en-US')}</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
               <p className="text-2xl font-bold text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>

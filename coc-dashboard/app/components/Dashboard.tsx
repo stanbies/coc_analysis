@@ -6,6 +6,7 @@ import { DashboardData, Player } from '../types';
 import ClanHeader from './ClanHeader';
 import StatCard from './StatCard';
 import PlayerCard from './PlayerCard';
+import { compareByLeague } from './LeagueBadge';
 import PlayerModal from './PlayerModal';
 import PlayersTable from './PlayersTable';
 import THDistributionChart from './THDistributionChart';
@@ -72,7 +73,7 @@ export default function Dashboard({ data }: { data: DashboardData }) {
               <h2 className="text-xl font-bold text-white mb-4">🏆 Top Players</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {[...players]
-                  .sort((a, b) => b.trophies - a.trophies)
+                  .sort(compareByLeague)
                   .slice(0, 4)
                   .map(player => (
                     <PlayerCard

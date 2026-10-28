@@ -97,6 +97,8 @@ def export_dashboard_data(clan: dict, players_data: list, rush_reports: list,
             'clanCapitalContributions': player.get('clanCapitalContributions'),
             'clan': player.get('clan'),
             'league': player.get('league'),
+            # Ranked battles league (since Oct 2025); 'league' is no longer filled
+            'leagueTier': player.get('leagueTier'),
             'builderBaseLeague': player.get('builderBaseLeague'),
             'achievements': player.get('achievements', []),
             'labels': player.get('labels', []),
@@ -198,7 +200,8 @@ def export_dashboard_data(clan: dict, players_data: list, rush_reports: list,
     for player in players_data:
         th_distribution[player.get('townHallLevel', 0)] += 1
         role_distribution[player.get('role', 'unknown')] += 1
-        league_name = player.get('league', {}).get('name', 'Unranked') if player.get('league') else 'Unranked'
+        league = player.get('leagueTier') or player.get('league')
+        league_name = league.get('name', 'Unranked') if league else 'Unranked'
         league_distribution[league_name] += 1
     
     for report in rush_reports:
