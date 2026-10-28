@@ -25,17 +25,17 @@ export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
           <div>
             <h1 className="text-3xl font-bold text-white">{clan.name}</h1>
             <p className="text-slate-400">{clan.tag}</p>
-            <div className="flex items-center gap-2 mt-1">
-              <span className="bg-orange-500/20 text-orange-400 text-sm px-2 py-0.5 rounded">
+            <div className="flex flex-wrap items-center gap-2 mt-1">
+              <span className="bg-orange-500/20 text-orange-400 text-sm px-2 py-0.5 rounded whitespace-nowrap">
                 Level {clan.clanLevel}
               </span>
               {clan.location && (
-                <span className="bg-blue-500/20 text-blue-400 text-sm px-2 py-0.5 rounded">
+                <span className="bg-blue-500/20 text-blue-400 text-sm px-2 py-0.5 rounded whitespace-nowrap">
                   📍 {clan.location.name}
                 </span>
               )}
               {clan.warLeague && (
-                <span className="bg-purple-500/20 text-purple-400 text-sm px-2 py-0.5 rounded">
+                <span className="bg-purple-500/20 text-purple-400 text-sm px-2 py-0.5 rounded whitespace-nowrap">
                   ⚔️ {clan.warLeague.name}
                 </span>
               )}
@@ -69,10 +69,10 @@ export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
         </p>
       )}
       
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-slate-700">
-        <div className="flex items-center gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-4 pt-4 border-t border-slate-700">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
           {clan.labels?.map((label, i) => (
-            <div key={i} className="flex items-center gap-1">
+            <div key={i} className="flex items-center gap-1 whitespace-nowrap">
               {label.iconUrls?.small && (
                 <img src={label.iconUrls.small} alt={label.name} className="w-5 h-5" />
               )}

@@ -64,13 +64,13 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
         </div>
       </div>
       
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2 whitespace-nowrap">
           <span className="text-green-400 text-sm">↑{player.donations}</span>
           <span className="text-slate-500">/</span>
           <span className="text-red-400 text-sm">↓{player.donationsReceived}</span>
         </div>
-        <span className={`${rushClass} text-xs px-2 py-1 rounded-full text-white font-medium`}>
+        <span className={`${rushClass} text-xs px-2 py-1 rounded-full text-white font-medium whitespace-nowrap`}>
           {player.rushAnalysis.status.replace(/[✅🟢🟡🟠🔴]\s?/g, '')}
         </span>
       </div>

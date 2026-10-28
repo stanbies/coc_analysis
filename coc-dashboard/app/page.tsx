@@ -276,9 +276,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="text-center text-slate-500 text-sm mt-8 pb-4">
           <p>Clash of Clans Dashboard • Data from CoC API</p>
-          <p className="text-xs mt-1">
-            Run <code className="text-orange-400">python api/clan_analyzer.py</code> to update data
-          </p>
+          <p className="text-xs mt-1">Data refreshes automatically every morning</p>
         </footer>
       </div>
     </div>

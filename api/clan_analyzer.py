@@ -7,7 +7,7 @@ With persistent data storage for historical tracking
 import requests
 import json
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 import urllib.parse
 import os
 import sys
@@ -1685,7 +1685,7 @@ def export_dashboard_data(clan: dict, players_data: list, rush_reports: list,
     
     # Build final export object
     dashboard_data = {
-        'lastUpdated': datetime.now().isoformat(),
+        'lastUpdated': datetime.now(timezone.utc).isoformat(),
         'clan': {
             'tag': clan.get('tag'),
             'name': clan.get('name'),

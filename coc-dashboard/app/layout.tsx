@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const clash = localFont({
+  src: "./fonts/Clash-Regular.otf",
+  // Only one weight exists and it is already heavy; cover the full range so
+  // font-bold/semibold use it as-is instead of a smeared synthetic bold.
+  weight: "100 900",
+  variable: "--font-clash",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} antialiased bg-slate-950 text-white`}>
+      <body className={`${clash.variable} antialiased bg-slate-950 text-white`}>
         {children}
       </body>
     </html>
