@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T09:59:00.221220",
+  "lastUpdated": "2026-10-28T09:06:22.050921",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -29181,37 +29181,37 @@
         {
           "name": "Wall Buster",
           "stars": 3,
-          "value": 29019,
+          "value": 29020,
           "target": 2000,
           "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 29019",
+          "completionInfo": "Total Walls destroyed: 29020",
           "village": "home"
         },
         {
           "name": "Humiliator",
           "stars": 3,
-          "value": 4340,
+          "value": 4342,
           "target": 2000,
           "info": "Destroy 2000 Town Halls in Multiplayer battles",
-          "completionInfo": "Total Town Halls destroyed: 4340",
+          "completionInfo": "Total Town Halls destroyed: 4342",
           "village": "home"
         },
         {
           "name": "Union Buster",
           "stars": 3,
-          "value": 20119,
+          "value": 20127,
           "target": 2500,
           "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 20119",
+          "completionInfo": "Total Builder's Huts destroyed: 20127",
           "village": "home"
         },
         {
           "name": "Conqueror",
           "stars": 3,
-          "value": 5659,
+          "value": 5661,
           "target": 5000,
           "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 5659",
+          "completionInfo": "Total multiplayer battles won: 5661",
           "village": "home"
         },
         {
@@ -29235,19 +29235,19 @@
         {
           "name": "Mortar Mauler",
           "stars": 3,
-          "value": 17464,
+          "value": 17471,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 17464",
+          "completionInfo": "Total Mortars destroyed: 17471",
           "village": "home"
         },
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 49798306,
+          "value": 49811375,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 49798306",
+          "completionInfo": "Total Dark Elixir looted: 49811375",
           "village": "home"
         },
         {
@@ -29262,19 +29262,19 @@
         {
           "name": "X-Bow Exterminator",
           "stars": 3,
-          "value": 14241,
+          "value": 14247,
           "target": 2500,
           "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 14241",
+          "completionInfo": "Total X-Bows destroyed: 14247",
           "village": "home"
         },
         {
           "name": "Firefighter",
           "stars": 3,
-          "value": 9578,
+          "value": 9584,
           "target": 5000,
           "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 9578",
+          "completionInfo": "Total Inferno Towers destroyed: 9584",
           "village": "home"
         },
         {
@@ -29298,10 +29298,10 @@
         {
           "name": "Anti-Artillery",
           "stars": 3,
-          "value": 3197,
+          "value": 3198,
           "target": 2000,
           "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
-          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 3197",
+          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 3198",
           "village": "home"
         },
         {
@@ -29415,37 +29415,37 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 94260,
+          "value": 94360,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 94260",
+          "completionInfo": "Total Season Challenges points: 94360",
           "village": "home"
         },
         {
           "name": "Shattered and Scattered",
           "stars": 3,
-          "value": 5628,
+          "value": 5631,
           "target": 4000,
           "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 5628",
+          "completionInfo": "Total Scattershots destroyed: 5631",
           "village": "home"
         },
         {
           "name": "Not So Easy This Time",
           "stars": 3,
-          "value": 3316,
+          "value": 3318,
           "target": 2000,
           "info": "Destroy 2000 weaponized Town Halls in Multiplayer battles",
-          "completionInfo": "Weaponized Town Halls destroyed: 3316",
+          "completionInfo": "Weaponized Town Halls destroyed: 3318",
           "village": "home"
         },
         {
           "name": "Bust This!",
           "stars": 3,
-          "value": 12537,
+          "value": 12545,
           "target": 2500,
           "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 12537",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 12545",
           "village": "home"
         },
         {
@@ -29487,19 +29487,19 @@
         {
           "name": "Counterspell",
           "stars": 3,
-          "value": 4143,
+          "value": 4146,
           "target": 4000,
           "info": "Destroy 4000 Spell Towers in Multiplayer Battles",
-          "completionInfo": "Total Spell Towers Destroyed: 4143",
+          "completionInfo": "Total Spell Towers Destroyed: 4146",
           "village": "home"
         },
         {
           "name": "Monolith Masher",
           "stars": 2,
-          "value": 1890,
+          "value": 1891,
           "target": 2000,
           "info": "Destroy 2000 Monoliths in Multiplayer Battles",
-          "completionInfo": "Total Monoliths Destroyed: 1890",
+          "completionInfo": "Total Monoliths Destroyed: 1891",
           "village": "home"
         },
         {
@@ -29523,37 +29523,37 @@
         {
           "name": "Multi-Archer Tower Terminator",
           "stars": 2,
-          "value": 2616,
+          "value": 2620,
           "target": 5000,
           "info": "Destroy 5000 Multi-Archer Towers in Multiplayer Battles",
-          "completionInfo": "Total Multi-Archer Towers Destroyed: 2616",
+          "completionInfo": "Total Multi-Archer Towers Destroyed: 2620",
           "village": "home"
         },
         {
           "name": "Ricochet Cannon Crusher",
           "stars": 2,
-          "value": 2578,
+          "value": 2582,
           "target": 5000,
           "info": "Destroy 5000 Ricochet Cannons in Multiplayer Battles",
-          "completionInfo": "Total Ricochet Cannons Destroyed: 2578",
+          "completionInfo": "Total Ricochet Cannons Destroyed: 2582",
           "village": "home"
         },
         {
           "name": "Firespitter Finisher",
           "stars": 2,
-          "value": 924,
+          "value": 926,
           "target": 4000,
           "info": "Destroy 4000 Firespitters in Multiplayer Battles",
-          "completionInfo": "Total Firespitters Destroyed: 924",
+          "completionInfo": "Total Firespitters Destroyed: 926",
           "village": "home"
         },
         {
           "name": "Multi-Gear Tower Trampler",
           "stars": 2,
-          "value": 435,
+          "value": 436,
           "target": 2000,
           "info": "Destroy 2000 Multi-Gear Towers in Multiplayer Battles",
-          "completionInfo": "Total Multi-Gear Towers Destroyed: 435",
+          "completionInfo": "Total Multi-Gear Towers Destroyed: 436",
           "village": "home"
         },
         {
@@ -69650,7 +69650,7 @@
         "complete": false
       }
     },
-    "lastUpdated": "2026-10-28T09:59:00.205296"
+    "lastUpdated": "2026-10-28T09:06:22.045979"
   },
   "statistics": {
     "thDistribution": {
