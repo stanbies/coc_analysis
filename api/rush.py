@@ -14,6 +14,10 @@ HERO_MAX_LEVELS = {
     "Dragon Duke":    {15: 10, 16: 15, 17: 20, 18: 25},
 }
 
+# Heroes the clan doesn't use; still shown on the dashboard (with their cap),
+# but not scored. Remove a name to count it again.
+RUSH_EXCLUDED_HEROES = {"Minion Prince"}
+
 
 TROOP_MAX_LEVELS = {
     "Barbarian":         {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 9, 14: 10, 15: 11, 16: 12, 17: 12, 18: 13},
@@ -132,8 +136,8 @@ def generate_rush_report(player: dict) -> dict:
         hero_level = hero.get('level', 0)
         village = hero.get('village', '')
         
-        # Only check home village heroes
-        if village != 'home':
+        # Only check home village heroes the clan actually uses
+        if village != 'home' or hero_name in RUSH_EXCLUDED_HEROES:
             continue
         
         # Get max level at previous TH
