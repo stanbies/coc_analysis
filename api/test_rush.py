@@ -61,6 +61,14 @@ def test_status_thresholds(score_levels, status):
     assert report["status"] == status
 
 
+def test_minion_prince_is_not_scored():
+    report = generate_rush_report(player(16, heroes=[("Barbarian King", 90), ("Minion Prince", 10)]))
+    assert report["rush_score"] == 0
+    assert report["total_missing_hero_levels"] == 0
+    assert report["rushed_heroes"] == []
+    assert report["rush_percentage"] == 0  # MP not part of the benchmark either
+
+
 def test_unknown_items_and_builder_base_are_ignored():
     p = player(16, heroes=[("Battle Machine", 1)], troops=[("Super Barbarian", 1)])
     p["heroes"].append({"name": "Barbarian King", "level": 1, "village": "builderBase"})

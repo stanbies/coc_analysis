@@ -157,7 +157,7 @@ The rush detection system compares each player's heroes, troops and spells again
 - **Troops**: 0.3 per missing level
 - **Spells**: 0.4 per missing level
 
-Levels above the benchmark earn no extra credit. Pets, siege machines and super troops are not counted.
+Levels above the benchmark earn no extra credit. Pets, siege machines and super troops are not counted. The Minion Prince isn't counted either, because the clan doesn't use it (`RUSH_EXCLUDED_HEROES` in `api/rush.py`); it's still shown on the dashboard.
 
 ### Status Classifications:
 - ✅ **Maxed** (score ≤ 3)
