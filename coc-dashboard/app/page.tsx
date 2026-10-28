@@ -1,22 +1,8 @@
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
-import { DashboardData } from './types';
+import { loadDashboardData } from './lib/data';
 import Dashboard from './components/Dashboard';
 
-// Read at build time: the page is pre-rendered on every deploy, and every data
-// commit triggers a deploy, so visitors get the data with the HTML instead of
-// a loading spinner and a separate fetch.
-async function loadData(): Promise<DashboardData | null> {
-  try {
-    const file = await readFile(path.join(process.cwd(), 'public', 'clan_data.json'), 'utf-8');
-    return JSON.parse(file) as DashboardData;
-  } catch {
-    return null;
-  }
-}
-
 export default async function Home() {
-  const data = await loadData();
+  const data = await loadDashboardData();
 
   if (!data) {
     return (

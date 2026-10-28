@@ -50,27 +50,27 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
       </div>
       
       <div className="grid grid-cols-3 gap-2 mb-3 text-center">
-        <div className="bg-slate-800/50 rounded-lg p-2">
-          <p className="text-lg font-bold text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
+        <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
+          <p className="text-base font-bold whitespace-nowrap text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
           <p className="text-xs text-slate-400">Trophies</p>
         </div>
-        <div className="bg-slate-800/50 rounded-lg p-2">
-          <p className="text-lg font-bold text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
+        <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
+          <p className="text-base font-bold whitespace-nowrap text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
           <p className="text-xs text-slate-400">War Stars</p>
         </div>
-        <div className="bg-slate-800/50 rounded-lg p-2">
-          <p className="text-lg font-bold text-cyan-400">🦸 {totalHeroLevels}</p>
+        <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
+          <p className="text-base font-bold whitespace-nowrap text-cyan-400">🦸 {totalHeroLevels}</p>
           <p className="text-xs text-slate-400">Hero Lvls</p>
         </div>
       </div>
       
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-2">
         <div className="flex items-center gap-2">
           <span className="text-green-400 text-sm">↑{player.donations}</span>
           <span className="text-slate-500">/</span>
           <span className="text-red-400 text-sm">↓{player.donationsReceived}</span>
         </div>
-        <span className={`${rushClass} text-xs px-2 py-1 rounded-full text-white font-medium`}>
+        <span className={`${rushClass} text-xs px-2 py-1 rounded-full text-white font-medium whitespace-nowrap`}>
           {player.rushAnalysis.status.replace(/[✅🟢🟡🟠🔴]\s?/g, '')}
         </span>
       </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { DashboardData, Player } from '../types';
 import ClanHeader from './ClanHeader';
 import StatCard from './StatCard';
@@ -85,7 +86,10 @@ export default function Dashboard({ data }: { data: DashboardData }) {
 
             {/* Most Rushed Players */}
             <div className="card p-6 mb-6">
-              <h2 className="text-xl font-bold text-white mb-4">⚠️ Most Rushed Players</h2>
+              <div className="flex items-center justify-between gap-4 mb-4">
+                <h2 className="text-xl font-bold text-white">⚠️ Most Rushed Players</h2>
+                <Link href="/rush-score" className="text-sm font-normal text-orange-400 hover:text-orange-300">How is this calculated?</Link>
+              </div>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>

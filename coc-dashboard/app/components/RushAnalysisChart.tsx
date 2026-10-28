@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Statistics } from '../types';
 
 interface RushAnalysisChartProps {
@@ -26,7 +27,10 @@ export default function RushAnalysisChart({ statistics }: RushAnalysisChartProps
 
   return (
     <div className="card p-6">
-      <h2 className="text-xl font-bold text-white mb-4">🔍 Rush Analysis Distribution</h2>
+      <div className="flex items-center justify-between gap-4 mb-4">
+        <h2 className="text-xl font-bold text-white">🔍 Rush Analysis Distribution</h2>
+        <Link href="/rush-score" className="text-sm font-normal text-orange-400 hover:text-orange-300">How is this calculated?</Link>
+      </div>
       
       <div className="flex items-center gap-4 mb-6">
         <div className="text-center">

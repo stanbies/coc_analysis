@@ -6,7 +6,7 @@ from collections import defaultdict
 
 from config import DASHBOARD_DATA_FILE
 from history import utc_now
-from rush import get_max_level_for_th
+from rush import get_max_level_for_th, rush_method
 
 
 def export_dashboard_data(clan: dict, players_data: list, rush_reports: list, 
@@ -254,6 +254,7 @@ def export_dashboard_data(clan: dict, players_data: list, rush_reports: list,
             'cwlSeasons': historical_data.get('cwl_seasons', {}),
             'lastUpdated': historical_data.get('last_updated'),
         },
+        'rushMethod': rush_method(),
         'statistics': {
             'thDistribution': dict(th_distribution),
             'roleDistribution': dict(role_distribution),

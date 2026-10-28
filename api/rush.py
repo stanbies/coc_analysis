@@ -18,6 +18,24 @@ HERO_MAX_LEVELS = {
 # but not scored. Remove a name to count it again.
 RUSH_EXCLUDED_HEROES = {"Minion Prince"}
 
+# Points per missing level, compared against the previous Town Hall's caps
+HERO_WEIGHT = 1.0
+TROOP_WEIGHT = 0.3
+SPELL_WEIGHT = 0.4
+
+# (highest score for this status, status, counts as rushed), checked in order
+STATUS_THRESHOLDS = [
+    (3, "✅ Maxed", False),
+    (10, "🟢 Slightly Behind", False),
+    (25, "🟡 Moderately Rushed", True),
+    (50, "🟠 Rushed", True),
+]
+SEVERE_STATUS = "🔴 Severely Rushed"  # anything above the last threshold
+
+# More missing hero levels than this always means severely rushed
+HERO_SEVERE_MISSING = 20
+HERO_SEVERE_STATUS = "🔴 Severely Rushed (Heroes)"
+
 
 TROOP_MAX_LEVELS = {
     "Barbarian":         {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 9, 14: 10, 15: 11, 16: 12, 17: 12, 18: 13},
@@ -126,7 +144,7 @@ def generate_rush_report(player: dict) -> dict:
         "status": "Not Rushed"
     }
     
-    # --- 1. CHECK HEROES (Most important - weight: 1.0 per level) ---
+    # --- 1. CHECK HEROES ---
     heroes = player.get('heroes', [])
     total_hero_possible = 0
     total_hero_current = 0
@@ -155,10 +173,10 @@ def generate_rush_report(player: dict) -> dict:
                     "target": max_at_prev,
                     "missing": missing_levels
                 })
-                rush_data["hero_score"] += missing_levels  # Full weight for heroes
+                rush_data["hero_score"] += missing_levels * HERO_WEIGHT
                 rush_data["total_missing_hero_levels"] += missing_levels
     
-    # --- 2. CHECK TROOPS (weight: 0.3 per level) ---
+    # --- 2. CHECK TROOPS ---
     troops = player.get('troops', [])
     total_troop_possible = 0
     total_troop_current = 0
@@ -186,9 +204,9 @@ def generate_rush_report(player: dict) -> dict:
                     "target": max_at_prev,
                     "missing": missing_levels
                 })
-                rush_data["troop_score"] += missing_levels * 0.3  # Lower weight
+                rush_data["troop_score"] += missing_levels * TROOP_WEIGHT
     
-    # --- 3. CHECK SPELLS (weight: 0.4 per level) ---
+    # --- 3. CHECK SPELLS ---
     spells = player.get('spells', [])
     total_spell_possible = 0
     total_spell_current = 0
@@ -215,9 +233,10 @@ def generate_rush_report(player: dict) -> dict:
                     "target": max_at_prev,
                     "missing": missing_levels
                 })
-                rush_data["spell_score"] += missing_levels * 0.4
+                rush_data["spell_score"] += missing_levels * SPELL_WEIGHT
     
     # --- 4. CALCULATE FINAL SCORES ---
+    rush_data["hero_score"] = round(rush_data["hero_score"], 1)
     rush_data["troop_score"] = round(rush_data["troop_score"], 1)
     rush_data["spell_score"] = round(rush_data["spell_score"], 1)
     rush_data["rush_score"] = round(rush_data["hero_score"] + rush_data["troop_score"] + rush_data["spell_score"], 1)
@@ -234,25 +253,33 @@ def generate_rush_report(player: dict) -> dict:
     score = rush_data["rush_score"]
     hero_missing = rush_data["total_missing_hero_levels"]
     
-    if score <= 3:
-        rush_data["status"] = "✅ Maxed"
-        rush_data["is_rushed"] = False
-    elif score <= 10:
-        rush_data["status"] = "🟢 Slightly Behind"
-        rush_data["is_rushed"] = False
-    elif score <= 25:
-        rush_data["status"] = "🟡 Moderately Rushed"
-        rush_data["is_rushed"] = True
-    elif score <= 50:
-        rush_data["status"] = "🟠 Rushed"
-        rush_data["is_rushed"] = True
-    else:
-        rush_data["status"] = "🔴 Severely Rushed"
-        rush_data["is_rushed"] = True
-    
+    rush_data["status"], rush_data["is_rushed"] = SEVERE_STATUS, True
+    for max_score, status, is_rushed in STATUS_THRESHOLDS:
+        if score <= max_score:
+            rush_data["status"], rush_data["is_rushed"] = status, is_rushed
+            break
+
     # Extra penalty for very low heroes
-    if hero_missing > 20:
-        rush_data["status"] = "🔴 Severely Rushed (Heroes)"
-        rush_data["is_rushed"] = True
-    
+    if hero_missing > HERO_SEVERE_MISSING:
+        rush_data["status"], rush_data["is_rushed"] = HERO_SEVERE_STATUS, True
+
     return rush_data
+
+
+def rush_method() -> dict:
+    """The scoring rules, exported so the dashboard's explanation page can't drift from the code."""
+    return {
+        "weights": {"hero": HERO_WEIGHT, "troop": TROOP_WEIGHT, "spell": SPELL_WEIGHT},
+        "statusThresholds": [
+            {"maxScore": max_score, "status": status, "isRushed": is_rushed}
+            for max_score, status, is_rushed in STATUS_THRESHOLDS
+        ],
+        "severeStatus": SEVERE_STATUS,
+        "heroSevereMissing": HERO_SEVERE_MISSING,
+        "heroSevereStatus": HERO_SEVERE_STATUS,
+        "excludedHeroes": sorted(RUSH_EXCLUDED_HEROES),
+        "heroCaps": {name: {str(th): cap for th, cap in caps.items()}
+                     for name, caps in HERO_MAX_LEVELS.items()},
+        "scoredTroopCount": len(TROOP_MAX_LEVELS),
+        "scoredSpellCount": len(SPELL_MAX_LEVELS),
+    }

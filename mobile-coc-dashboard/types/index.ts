@@ -230,5 +230,19 @@ export interface DashboardData {
     cwlSeasons: Record<string, unknown>;
     lastUpdated: string;
   };
+  rushMethod?: RushMethod; // absent in exports from before Oct 2026
   statistics: Statistics;
+}
+
+// The scoring rules from api/rush.py (rush_method())
+export interface RushMethod {
+  weights: { hero: number; troop: number; spell: number };
+  statusThresholds: { maxScore: number; status: string; isRushed: boolean }[];
+  severeStatus: string;
+  heroSevereMissing: number;
+  heroSevereStatus: string;
+  excludedHeroes: string[];
+  heroCaps: Record<string, Record<string, number>>; // hero -> Town Hall -> max level
+  scoredTroopCount: number;
+  scoredSpellCount: number;
 }

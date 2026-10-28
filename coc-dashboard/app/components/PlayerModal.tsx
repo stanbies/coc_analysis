@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Player } from '../types';
 
 interface PlayerModalProps {
@@ -111,6 +112,9 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
                 {player.rushAnalysis.status.replace(/[✅🟢🟡🟠🔴]\s?/g, '')}
               </span>
             </div>
+            <p className="-mt-2 mb-4 text-xs">
+              <Link href="/rush-score" className="text-orange-400 hover:text-orange-300">How is the rush score calculated?</Link>
+            </p>
             
             <div className="grid grid-cols-3 gap-4 mb-4">
               <div className="text-center">

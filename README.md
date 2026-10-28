@@ -29,6 +29,7 @@ A GitHub Action (`.github/workflows/update-data.yml`) runs the scraper every 6 h
 - **Capital Tab**: Raid statistics and top contributors
 - **Player Details Modal**: Click any player for detailed breakdown
 - **Rush Analysis**: Visual indicators for rushed players
+- **Rush Score Explained** (`/rush-score`): How the score is calculated, with a worked example from your own clan
 
 ## Setup
 

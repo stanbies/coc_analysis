@@ -1,8 +1,11 @@
 """Tests for rush scoring and the max-level tables. Run: pytest api/"""
 
+import json
+
 import pytest
 
-from rush import HERO_MAX_LEVELS, SPELL_MAX_LEVELS, TROOP_MAX_LEVELS, generate_rush_report
+from rush import (HERO_MAX_LEVELS, SPELL_MAX_LEVELS, TROOP_MAX_LEVELS, generate_rush_report,
+                  rush_method)
 
 
 def player(th, heroes=(), troops=(), spells=()):
@@ -73,6 +76,23 @@ def test_unknown_items_and_builder_base_are_ignored():
     p = player(16, heroes=[("Battle Machine", 1)], troops=[("Super Barbarian", 1)])
     p["heroes"].append({"name": "Barbarian King", "level": 1, "village": "builderBase"})
     assert generate_rush_report(p)["rush_score"] == 0
+
+
+def test_rush_method_export_matches_scoring():
+    method = json.loads(json.dumps(rush_method()))  # must survive the JSON export
+    assert method["weights"] == {"hero": 1.0, "troop": 0.3, "spell": 0.4}
+    limits = [t["maxScore"] for t in method["statusThresholds"]]
+    assert limits == sorted(limits)
+    assert method["excludedHeroes"] == ["Minion Prince"]
+    assert method["heroCaps"]["Dragon Duke"]["17"] == 20
+    # Each threshold's top score really produces that status (above
+    # heroSevereMissing hero levels, the hero rule takes over)
+    for t in method["statusThresholds"]:
+        if t["maxScore"] > method["heroSevereMissing"]:
+            continue
+        hero_missing = int(t["maxScore"])
+        report = generate_rush_report(player(16, heroes=[("Barbarian King", 90 - hero_missing)]))
+        assert report["status"] == t["status"]
 
 
 @pytest.mark.parametrize("table", [HERO_MAX_LEVELS, TROOP_MAX_LEVELS, SPELL_MAX_LEVELS],
