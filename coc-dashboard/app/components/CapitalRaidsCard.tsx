@@ -31,7 +31,7 @@ export default function CapitalRaidsCard({ capitalRaids }: CapitalRaidsCardProps
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div className="bg-slate-800 rounded-lg p-3 text-center">
           <p className="text-2xl font-bold text-amber-400">
-            {latestRaid.capitalTotalLoot?.toLocaleString() || 0}
+            {latestRaid.capitalTotalLoot?.toLocaleString('en-US') || 0}
           </p>
           <p className="text-xs text-slate-400">Total Loot</p>
         </div>
@@ -78,7 +78,7 @@ export default function CapitalRaidsCard({ capitalRaids }: CapitalRaidsCardProps
                     {member.attacks}/{member.attackLimit + member.bonusAttackLimit} attacks
                   </span>
                   <span className="text-amber-400 font-medium">
-                    {member.capitalResourcesLooted.toLocaleString()}
+                    {member.capitalResourcesLooted.toLocaleString('en-US')}
                   </span>
                 </div>
               </div>

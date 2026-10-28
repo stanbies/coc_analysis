@@ -29,6 +29,30 @@ function getRoleIcon(role: string): string {
   }
 }
 
+interface SortHeaderProps {
+  field: SortField;
+  sortField: SortField;
+  sortDirection: SortDirection;
+  onSort: (field: SortField) => void;
+  children: React.ReactNode;
+}
+
+function SortHeader({ field, sortField, sortDirection, onSort, children }: SortHeaderProps) {
+  return (
+    <th
+      className="text-left py-3 px-2 text-slate-400 text-sm font-medium cursor-pointer hover:text-white transition-colors"
+      onClick={() => onSort(field)}
+    >
+      <div className="flex items-center gap-1">
+        {children}
+        {sortField === field && (
+          <span className="text-orange-400">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+        )}
+      </div>
+    </th>
+  );
+}
+
 export default function PlayersTable({ players, onPlayerClick }: PlayersTableProps) {
   const [sortField, setSortField] = useState<SortField>('townHallLevel');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
@@ -97,19 +121,7 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
       return sortDirection === 'asc' ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number);
     });
 
-  const SortHeader = ({ field, children }: { field: SortField; children: React.ReactNode }) => (
-    <th
-      className="text-left py-3 px-2 text-slate-400 text-sm font-medium cursor-pointer hover:text-white transition-colors"
-      onClick={() => handleSort(field)}
-    >
-      <div className="flex items-center gap-1">
-        {children}
-        {sortField === field && (
-          <span className="text-orange-400">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-        )}
-      </div>
-    </th>
-  );
+  const sortProps = { sortField, sortDirection, onSort: handleSort };
 
   return (
     <div className="card p-6">
@@ -141,13 +153,13 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
           <thead>
             <tr className="border-b border-slate-700">
               <th className="text-left py-3 px-2 text-slate-400 text-sm font-medium">#</th>
-              <SortHeader field="name">Name</SortHeader>
-              <SortHeader field="townHallLevel">TH</SortHeader>
-              <SortHeader field="trophies">Trophies</SortHeader>
-              <SortHeader field="warStars">War Stars</SortHeader>
-              <SortHeader field="heroLevels">Heroes</SortHeader>
-              <SortHeader field="donations">Donations</SortHeader>
-              <SortHeader field="rushScore">Rush Score</SortHeader>
+              <SortHeader field="name" {...sortProps}>Name</SortHeader>
+              <SortHeader field="townHallLevel" {...sortProps}>TH</SortHeader>
+              <SortHeader field="trophies" {...sortProps}>Trophies</SortHeader>
+              <SortHeader field="warStars" {...sortProps}>War Stars</SortHeader>
+              <SortHeader field="heroLevels" {...sortProps}>Heroes</SortHeader>
+              <SortHeader field="donations" {...sortProps}>Donations</SortHeader>
+              <SortHeader field="rushScore" {...sortProps}>Rush Score</SortHeader>
               <th className="text-left py-3 px-2 text-slate-400 text-sm font-medium">Status</th>
             </tr>
           </thead>
@@ -174,8 +186,8 @@ export default function PlayersTable({ players, onPlayerClick }: PlayersTablePro
                       {player.townHallLevel}
                     </span>
                   </td>
-                  <td className="py-3 px-2 text-yellow-400">{player.trophies.toLocaleString()}</td>
-                  <td className="py-3 px-2 text-purple-400">{player.warStars.toLocaleString()}</td>
+                  <td className="py-3 px-2 text-yellow-400">{player.trophies.toLocaleString('en-US')}</td>
+                  <td className="py-3 px-2 text-purple-400">{player.warStars.toLocaleString('en-US')}</td>
                   <td className="py-3 px-2 text-cyan-400">{totalHeroLevels}</td>
                   <td className="py-3 px-2">
                     <span className="text-green-400">↑{player.donations}</span>

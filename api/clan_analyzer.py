@@ -1,412 +1,36 @@
 """
 Clash of Clans Clan Analyzer
-Comprehensive analysis of clan and player data
-With persistent data storage for historical tracking
+Fetches clan, player, war and capital data, scores rushed players and
+exports clan_data.json for the dashboards. Entry point: python api/clan_analyzer.py
 """
 
-import requests
-import json
+import sys
+import time
 from collections import defaultdict
 from datetime import datetime
-import urllib.parse
-import os
-import sys
-from pathlib import Path
-from dotenv import load_dotenv
-import time
 
-# Load environment variables from .env file (look in parent directory)
-env_path = Path(__file__).resolve().parent.parent / '.env'
-load_dotenv(env_path)
+from coc_api import (get_capital_raid_seasons, get_clan_info, get_clan_members, get_clan_warlog,
+                     get_current_war, get_cwl_group, get_cwl_war, get_gold_pass_season,
+                     get_player_info)
+from config import API_TOKEN, CLAN_TAG, DASHBOARD_DATA_FILE
+from export import export_dashboard_data
+from history import (generate_war_id, load_historical_data, parse_coc_time,
+                     save_historical_data, update_player_historical_stats, utc_now)
+from rush import generate_rush_report
 
-# API Configuration - Load from environment
-API_TOKEN = os.getenv('api_key', '')
-if not API_TOKEN:
-    raise ValueError("API key not found! Please set 'api_key' in your .env file")
-
-BASE_URL = os.getenv('coc_base_url', "https://api.clashofclans.com/v1")
-CLAN_TAG = "#2J28LL2VU"
-
-# Data storage files
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_FILE = os.path.join(SCRIPT_DIR, "clan_history.json")
-# Comprehensive data output for Next.js dashboard
-DASHBOARD_DATA_FILE = os.path.join(SCRIPT_DIR, "..", "coc-dashboard", "public", "clan_data.json")
-
-# Headers for API requests
-HEADERS = {
-    "Authorization": f"Bearer {API_TOKEN}",
-    "Accept": "application/json"
-}
+# A few players may fail even after retries; more than this aborts the run
+# instead of publishing a half-empty roster.
+MAX_MISSING_PLAYERS = 3
 
 
-# ============================================================================
-# RUSH DETECTION DATA - Max levels per Town Hall
-# ============================================================================
 
-# Max levels per Town Hall (TH1-TH18), cross-checked against the live clan data
-# Heroes: Hero Hall caps (the Hero Hall level is capped by TH). Includes the June 2026
-# BK/AQ/GW increase. Troops/spells: laboratory caps, last checked 2026-10-28.
-# Pets, siege machines and super troops are not part of the rush score.
-HERO_MAX_LEVELS = {
-    "Barbarian King": {7: 10, 8: 20, 9: 30, 10: 40, 11: 50, 12: 65, 13: 75, 14: 85, 15: 90, 16: 95, 17: 100, 18: 110},
-    "Archer Queen":   {8: 10, 9: 30, 10: 40, 11: 50, 12: 65, 13: 75, 14: 85, 15: 90, 16: 95, 17: 100, 18: 110},
-    "Minion Prince":  {9: 10, 10: 20, 11: 30, 12: 40, 13: 50, 14: 60, 15: 70, 16: 80, 17: 90, 18: 95},
-    "Grand Warden":   {11: 20, 12: 40, 13: 50, 14: 60, 15: 65, 16: 70, 17: 75, 18: 85},
-    "Royal Champion": {13: 25, 14: 30, 15: 40, 16: 45, 17: 50, 18: 55},
-    "Dragon Duke":    {15: 10, 16: 15, 17: 20, 18: 25},
-}
-
-# Elixir + Dark Elixir troop max levels by Town Hall
-TROOP_MAX_LEVELS = {
-    "Barbarian":         {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 9, 14: 10, 15: 11, 16: 12, 17: 12, 18: 13},
-    "Archer":            {1: 1, 2: 1, 3: 2, 4: 2, 5: 3, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 9, 14: 10, 15: 11, 16: 12, 17: 13, 18: 14},
-    "Giant":             {1: 1, 2: 1, 3: 1, 4: 2, 5: 2, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 10, 14: 10, 15: 11, 16: 12, 17: 13, 18: 14},
-    "Goblin":            {2: 1, 3: 2, 4: 2, 5: 3, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 7, 12: 8, 13: 8, 14: 8, 15: 9, 16: 9, 17: 9, 18: 10},
-    "Wall Breaker":      {3: 1, 4: 2, 5: 2, 6: 3, 7: 4, 8: 5, 9: 5, 10: 6, 11: 7, 12: 8, 13: 9, 14: 10, 15: 11, 16: 12, 17: 13, 18: 14},
-    "Balloon":           {4: 2, 5: 2, 6: 3, 7: 4, 8: 5, 9: 6, 10: 6, 11: 7, 12: 8, 13: 9, 14: 10, 15: 10, 16: 11, 17: 12, 18: 13},
-    "Wizard":            {5: 2, 6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 10, 14: 10, 15: 11, 16: 12, 17: 13, 18: 14},
-    "Healer":            {6: 1, 7: 2, 8: 3, 9: 4, 10: 4, 11: 5, 12: 5, 13: 6, 14: 7, 15: 8, 16: 9, 17: 10, 18: 11},
-    "Dragon":            {7: 2, 8: 3, 9: 4, 10: 5, 11: 6, 12: 7, 13: 8, 14: 9, 15: 10, 16: 11, 17: 12, 18: 13},
-    "P.E.K.K.A":         {8: 3, 9: 4, 10: 6, 11: 7, 12: 8, 13: 9, 14: 9, 15: 10, 16: 11, 17: 12, 18: 13},
-    "Baby Dragon":       {9: 2, 10: 4, 11: 5, 12: 6, 13: 7, 14: 8, 15: 9, 16: 10, 17: 11, 18: 12},
-    "Miner":             {10: 3, 11: 5, 12: 6, 13: 7, 14: 8, 15: 9, 16: 10, 17: 11, 18: 12},
-    "Electro Dragon":    {11: 2, 12: 3, 13: 4, 14: 5, 15: 6, 16: 7, 17: 8, 18: 9},
-    "Yeti":              {12: 2, 13: 3, 14: 4, 15: 5, 16: 6, 17: 7, 18: 8},
-    "Dragon Rider":      {13: 2, 14: 3, 15: 3, 16: 4, 17: 5, 18: 6},
-    "Electro Titan":     {14: 2, 15: 3, 16: 4, 17: 4, 18: 5},
-    "Root Rider":        {15: 2, 16: 3, 17: 3, 18: 4},
-    "Thrower":           {16: 2, 17: 3, 18: 4},
-    "Meteor Golem":      {17: 2, 18: 3},
-    "Minion":            {7: 2, 8: 4, 9: 5, 10: 6, 11: 7, 12: 8, 13: 9, 14: 10, 15: 11, 16: 12, 17: 13, 18: 14},
-    "Hog Rider":         {7: 2, 8: 4, 9: 5, 10: 6, 11: 7, 12: 9, 13: 10, 14: 11, 15: 12, 16: 13, 17: 14, 18: 15},
-    "Valkyrie":          {8: 2, 9: 4, 10: 5, 11: 6, 12: 7, 13: 8, 14: 9, 15: 10, 16: 11, 17: 12, 18: 12},
-    "Golem":             {8: 2, 9: 4, 10: 5, 11: 7, 12: 9, 13: 10, 14: 11, 15: 12, 16: 13, 17: 14, 18: 15},
-    "Witch":             {9: 2, 10: 3, 11: 4, 12: 5, 13: 5, 14: 5, 15: 6, 16: 7, 17: 7, 18: 8},
-    "Lava Hound":        {9: 2, 10: 3, 11: 4, 12: 5, 13: 6, 14: 6, 15: 6, 16: 7, 17: 7, 18: 8},
-    "Bowler":            {10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7, 16: 8, 17: 9, 18: 10},
-    "Ice Golem":         {11: 3, 12: 5, 13: 5, 14: 6, 15: 7, 16: 8, 17: 9, 18: 9},
-    "Headhunter":        {12: 2, 13: 3, 14: 3, 15: 3, 16: 3, 17: 3, 18: 4},
-    "Apprentice Warden": {13: 2, 14: 3, 15: 4, 16: 4, 17: 4, 18: 4},
-    "Druid":             {14: 2, 15: 3, 16: 4, 17: 5, 18: 6},
-    "Furnace":           {15: 2, 16: 3, 17: 4, 18: 4},
-    "Ruin Witch":        {16: 2, 17: 3, 18: 4},
-}
-
-# Spell max levels by Town Hall
-SPELL_MAX_LEVELS = {
-    "Lightning Spell":    {5: 4, 6: 4, 7: 4, 8: 5, 9: 6, 10: 7, 11: 8, 12: 9, 13: 9, 14: 9, 15: 10, 16: 11, 17: 12, 18: 13},
-    "Healing Spell":      {6: 3, 7: 4, 8: 5, 9: 6, 10: 7, 11: 7, 12: 7, 13: 8, 14: 8, 15: 9, 16: 10, 17: 11, 18: 12},
-    "Rage Spell":         {7: 4, 8: 5, 9: 5, 10: 5, 11: 5, 12: 6, 13: 6, 14: 6, 15: 6, 16: 6, 17: 6, 18: 7},
-    "Jump Spell":         {9: 2, 10: 3, 11: 3, 12: 3, 13: 4, 14: 4, 15: 5, 16: 5, 17: 5, 18: 5},
-    "Freeze Spell":       {9: 2, 10: 5, 11: 6, 12: 7, 13: 7, 14: 7, 15: 7, 16: 7, 17: 7, 18: 8},
-    "Clone Spell":        {10: 3, 11: 5, 12: 5, 13: 6, 14: 7, 15: 8, 16: 8, 17: 8, 18: 9},
-    "Invisibility Spell": {11: 2, 12: 3, 13: 4, 14: 4, 15: 4, 16: 4, 17: 4, 18: 4},
-    "Recall Spell":       {13: 2, 14: 3, 15: 4, 16: 5, 17: 6, 18: 7},
-    "Revive Spell":       {15: 2, 16: 3, 17: 4, 18: 5},
-    "Totem Spell":        {16: 2, 17: 3, 18: 4},
-    "Poison Spell":       {8: 2, 9: 3, 10: 4, 11: 5, 12: 6, 13: 7, 14: 8, 15: 9, 16: 10, 17: 11, 18: 12},
-    "Earthquake Spell":   {8: 2, 9: 3, 10: 4, 11: 5, 12: 5, 13: 5, 14: 6, 15: 6, 16: 7, 17: 7, 18: 8},
-    "Haste Spell":        {9: 2, 10: 4, 11: 5, 12: 5, 13: 5, 14: 5, 15: 5, 16: 5, 17: 6, 18: 7},
-    "Skeleton Spell":     {9: 1, 10: 3, 11: 4, 12: 6, 13: 7, 14: 7, 15: 8, 16: 8, 17: 8, 18: 8},
-    "Bat Spell":          {10: 3, 11: 4, 12: 5, 13: 5, 14: 5, 15: 6, 16: 6, 17: 7, 18: 8},
-    "Overgrowth Spell":   {12: 2, 13: 2, 14: 3, 15: 3, 16: 4, 17: 4, 18: 5},
-    "Ice Block Spell":    {14: 2, 15: 3, 16: 4, 17: 5, 18: 6},
-    "Angry Spell":        {15: 1, 16: 2, 17: 3, 18: 4},
-}
-
-
-# ============================================================================
-# DATA PERSISTENCE FUNCTIONS
-# ============================================================================
-
-def load_historical_data() -> dict:
-    """Load historical data from JSON file."""
-    if os.path.exists(DATA_FILE):
-        try:
-            with open(DATA_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"⚠️  Warning: Could not load historical data: {e}")
-            return create_empty_data_structure()
-    return create_empty_data_structure()
-
-
-def save_historical_data(data: dict):
-    """Save historical data to JSON file."""
-    try:
-        with open(DATA_FILE, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"\n💾 Data saved to {DATA_FILE}")
-    except IOError as e:
-        print(f"❌ Error saving data: {e}")
-
-
-def create_empty_data_structure() -> dict:
-    """Create an empty data structure for historical tracking."""
-    return {
-        "clan_tag": CLAN_TAG,
-        "last_updated": None,
-        "players": {},  # Player tag -> player historical data
-        "cwl_seasons": {},  # Season ID -> CWL data
-        "wars": {},  # War ID -> war data
-        "war_log": [],  # List of war summaries
-    }
-
-
-def generate_war_id(war: dict) -> str:
-    """Generate a unique ID for a war based on participants and timing."""
-    clan_tag = war.get('clan', {}).get('tag', '')
-    opponent_tag = war.get('opponent', {}).get('tag', '')
-    # Use preparation start time if available, or generate from tags
-    prep_time = war.get('preparationStartTime', '')
-    return f"{clan_tag}_{opponent_tag}_{prep_time}"
-
-
-def update_player_historical_stats(historical_data: dict, player_tag: str, player_name: str, 
-                                    th_level: int, attack_data: dict, war_type: str, war_id: str):
-    """Update a player's historical statistics with new attack data."""
-    if player_tag not in historical_data["players"]:
-        historical_data["players"][player_tag] = {
-            "name": player_name,
-            "tag": player_tag,
-            "current_th": th_level,
-            "total_attacks": 0,
-            "total_stars": 0,
-            "total_destruction": 0.0,
-            "three_stars": 0,
-            "two_stars": 0,
-            "one_star": 0,
-            "zero_stars": 0,
-            "wars_participated": 0,
-            "cwl_seasons": 0,
-            "attacks_history": [],  # List of individual attacks
-            "war_ids": [],  # Track which wars they participated in
-        }
-    
-    player = historical_data["players"][player_tag]
-    player["name"] = player_name  # Update name in case it changed
-    player["current_th"] = max(player["current_th"], th_level)
-    
-    # Check if this war was already recorded
-    if war_id in player["war_ids"]:
-        return  # Already recorded this war
-    
-    player["war_ids"].append(war_id)
-    player["wars_participated"] += 1
-    
-    # Add attack data
-    for attack in attack_data.get('attacks', []):
-        attack_record = {
-            "war_id": war_id,
-            "war_type": war_type,
-            "date": datetime.now().isoformat(),
-            "stars": attack.get('stars', 0),
-            "destruction": attack.get('destruction', 0),
-            "defender_th": attack.get('defender_th', 0),
-            "attacker_th": th_level,
-            "hit_type": attack.get('hit_type', 'unknown')
-        }
-        player["attacks_history"].append(attack_record)
-        
-        player["total_attacks"] += 1
-        player["total_stars"] += attack.get('stars', 0)
-        player["total_destruction"] += attack.get('destruction', 0)
-        
-        stars = attack.get('stars', 0)
-        if stars == 3:
-            player["three_stars"] += 1
-        elif stars == 2:
-            player["two_stars"] += 1
-        elif stars == 1:
-            player["one_star"] += 1
-        else:
-            player["zero_stars"] += 1
-
-
-# ============================================================================
-# RUSH DETECTION FUNCTIONS
-# ============================================================================
-
-def get_max_level_for_th(item_name: str, th_level: int, item_type: str = "hero") -> int | None:
-    """Get the max level for an item at a specific Town Hall."""
-    if item_type == "hero":
-        levels = HERO_MAX_LEVELS.get(item_name, {})
-    elif item_type == "troop":
-        levels = TROOP_MAX_LEVELS.get(item_name, {})
-    elif item_type == "spell":
-        levels = SPELL_MAX_LEVELS.get(item_name, {})
+def print_separator(title: str = "", char: str = "=", length: int = 80):
+    """Print a separator line."""
+    if title:
+        padding = (length - len(title) - 2) // 2
+        print(f"\n{char * padding} {title} {char * padding}")
     else:
-        return None
-    
-    return levels.get(th_level)
-
-
-def generate_rush_report(player: dict) -> dict:
-    """
-    Generate a rush report for a player.
-    Compares current levels to max levels at PREVIOUS Town Hall.
-    """
-    th_level = player.get('townHallLevel', 1)
-    
-    # If player is TH1 or TH2, they can't really be rushed
-    if th_level <= 2:
-        return {
-            "is_rushed": False,
-            "rush_score": 0,
-            "rush_percentage": 0,
-            "rushed_heroes": [],
-            "rushed_troops": [],
-            "rushed_spells": [],
-            "status": "New Account"
-        }
-    
-    previous_th = th_level - 1
-    
-    rush_data = {
-        "is_rushed": False,
-        "rush_score": 0.0,
-        "rush_percentage": 0,
-        "rushed_heroes": [],
-        "rushed_troops": [],
-        "rushed_spells": [],
-        "hero_score": 0,
-        "troop_score": 0,
-        "spell_score": 0,
-        "total_missing_hero_levels": 0,
-        "status": "Not Rushed"
-    }
-    
-    # --- 1. CHECK HEROES (Most important - weight: 1.0 per level) ---
-    heroes = player.get('heroes', [])
-    total_hero_possible = 0
-    total_hero_current = 0
-    
-    for hero in heroes:
-        hero_name = hero.get('name', '')
-        hero_level = hero.get('level', 0)
-        village = hero.get('village', '')
-        
-        # Only check home village heroes
-        if village != 'home':
-            continue
-        
-        # Get max level at previous TH
-        max_at_prev = get_max_level_for_th(hero_name, previous_th, "hero")
-        
-        if max_at_prev is not None and max_at_prev > 0:
-            total_hero_possible += max_at_prev
-            total_hero_current += min(hero_level, max_at_prev)
-            
-            if hero_level < max_at_prev:
-                missing_levels = max_at_prev - hero_level
-                rush_data["rushed_heroes"].append({
-                    "name": hero_name,
-                    "current": hero_level,
-                    "target": max_at_prev,
-                    "missing": missing_levels
-                })
-                rush_data["hero_score"] += missing_levels  # Full weight for heroes
-                rush_data["total_missing_hero_levels"] += missing_levels
-    
-    # --- 2. CHECK TROOPS (weight: 0.3 per level) ---
-    troops = player.get('troops', [])
-    total_troop_possible = 0
-    total_troop_current = 0
-    
-    for troop in troops:
-        troop_name = troop.get('name', '')
-        troop_level = troop.get('level', 0)
-        village = troop.get('village', '')
-        
-        # Only check home village troops
-        if village != 'home':
-            continue
-        
-        max_at_prev = get_max_level_for_th(troop_name, previous_th, "troop")
-        
-        if max_at_prev is not None and max_at_prev > 0:
-            total_troop_possible += max_at_prev
-            total_troop_current += min(troop_level, max_at_prev)
-            
-            if troop_level < max_at_prev:
-                missing_levels = max_at_prev - troop_level
-                rush_data["rushed_troops"].append({
-                    "name": troop_name,
-                    "current": troop_level,
-                    "target": max_at_prev,
-                    "missing": missing_levels
-                })
-                rush_data["troop_score"] += missing_levels * 0.3  # Lower weight
-    
-    # --- 3. CHECK SPELLS (weight: 0.4 per level) ---
-    spells = player.get('spells', [])
-    total_spell_possible = 0
-    total_spell_current = 0
-    
-    for spell in spells:
-        spell_name = spell.get('name', '')
-        spell_level = spell.get('level', 0)
-        village = spell.get('village', '')
-        
-        if village != 'home':
-            continue
-        
-        max_at_prev = get_max_level_for_th(spell_name, previous_th, "spell")
-        
-        if max_at_prev is not None and max_at_prev > 0:
-            total_spell_possible += max_at_prev
-            total_spell_current += min(spell_level, max_at_prev)
-            
-            if spell_level < max_at_prev:
-                missing_levels = max_at_prev - spell_level
-                rush_data["rushed_spells"].append({
-                    "name": spell_name,
-                    "current": spell_level,
-                    "target": max_at_prev,
-                    "missing": missing_levels
-                })
-                rush_data["spell_score"] += missing_levels * 0.4
-    
-    # --- 4. CALCULATE FINAL SCORES ---
-    rush_data["troop_score"] = round(rush_data["troop_score"], 1)
-    rush_data["spell_score"] = round(rush_data["spell_score"], 1)
-    rush_data["rush_score"] = round(rush_data["hero_score"] + rush_data["troop_score"] + rush_data["spell_score"], 1)
-    
-    # Calculate overall rush percentage (how far behind they are)
-    total_possible = total_hero_possible + total_troop_possible + total_spell_possible
-    total_current = total_hero_current + total_troop_current + total_spell_current
-    
-    if total_possible > 0:
-        completion_pct = (total_current / total_possible) * 100
-        rush_data["rush_percentage"] = round(100 - completion_pct, 1)
-    
-    # --- 5. DETERMINE STATUS ---
-    score = rush_data["rush_score"]
-    hero_missing = rush_data["total_missing_hero_levels"]
-    
-    if score <= 3:
-        rush_data["status"] = "✅ Maxed"
-        rush_data["is_rushed"] = False
-    elif score <= 10:
-        rush_data["status"] = "🟢 Slightly Behind"
-        rush_data["is_rushed"] = False
-    elif score <= 25:
-        rush_data["status"] = "🟡 Moderately Rushed"
-        rush_data["is_rushed"] = True
-    elif score <= 50:
-        rush_data["status"] = "🟠 Rushed"
-        rush_data["is_rushed"] = True
-    else:
-        rush_data["status"] = "🔴 Severely Rushed"
-        rush_data["is_rushed"] = True
-    
-    # Extra penalty for very low heroes
-    if hero_missing > 20:
-        rush_data["status"] = "🔴 Severely Rushed (Heroes)"
-        rush_data["is_rushed"] = True
-    
-    return rush_data
+        print(char * length)
 
 
 def analyze_clan_rush(players_data: list) -> list:
@@ -467,162 +91,6 @@ def analyze_clan_rush(players_data: list) -> list:
         print(f"   • {name} (TH{th}): -{missing} levels [{hero_details}]")
     
     return rush_reports
-
-
-def encode_tag(tag: str) -> str:
-    """URL encode a clan or player tag."""
-    return urllib.parse.quote(tag)
-
-
-def api_request(endpoint: str, retries: int = 5) -> dict | None:
-    """Make an API request and return JSON response.
-
-    Retries server errors and connection failures with backoff, since the
-    proxy intermittently returns 5xx (Cloudflare 520/525, nginx 500).
-    """
-    url = f"{BASE_URL}{endpoint}"
-    for attempt in range(1, retries + 1):
-        try:
-            response = requests.get(url, headers=HEADERS, timeout=30)
-            if response.status_code >= 500 and attempt < retries:
-                time.sleep(2 ** attempt)
-                continue
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.HTTPError as e:
-            print(f"HTTP Error: {e}")
-            print(f"Response: {response.text[:300]}")
-            return None
-        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-            if attempt < retries:
-                time.sleep(2 ** attempt)
-                continue
-            print(f"Error: {e}")
-            return None
-        except Exception as e:
-            print(f"Error: {e}")
-            return None
-
-
-def get_clan_info(clan_tag: str) -> dict | None:
-    """Get detailed clan information."""
-    return api_request(f"/clans/{encode_tag(clan_tag)}")
-
-
-def get_clan_members(clan_tag: str) -> list | None:
-    """Get list of clan members."""
-    data = api_request(f"/clans/{encode_tag(clan_tag)}/members")
-    return data.get("items", []) if data else None
-
-
-def get_clan_warlog(clan_tag: str) -> list | None:
-    """Get clan war log."""
-    data = api_request(f"/clans/{encode_tag(clan_tag)}/warlog")
-    return data.get("items", []) if data else None
-
-
-def get_current_war(clan_tag: str) -> dict | None:
-    """Get current war information."""
-    return api_request(f"/clans/{encode_tag(clan_tag)}/currentwar")
-
-
-def get_player_info(player_tag: str) -> dict | None:
-    """Get detailed player information."""
-    return api_request(f"/players/{encode_tag(player_tag)}")
-
-
-def get_cwl_group(clan_tag: str) -> dict | None:
-    """Get CWL league group information."""
-    return api_request(f"/clans/{encode_tag(clan_tag)}/currentwar/leaguegroup")
-
-
-def get_cwl_war(war_tag: str) -> dict | None:
-    """Get specific CWL war details."""
-    return api_request(f"/clanwarleagues/wars/{encode_tag(war_tag)}")
-
-
-def get_capital_raid_seasons(clan_tag: str, limit: int = 10) -> list | None:
-    """Get clan's capital raid seasons."""
-    data = api_request(f"/clans/{encode_tag(clan_tag)}/capitalraidseasons?limit={limit}")
-    return data.get("items", []) if data else None
-
-
-# ============================================================================
-# ADDITIONAL API ENDPOINTS - Leagues, Locations, Labels, Gold Pass
-# ============================================================================
-
-def get_leagues() -> list | None:
-    """Get list of all leagues."""
-    data = api_request("/leagues")
-    return data.get("items", []) if data else None
-
-
-def get_war_leagues() -> list | None:
-    """Get list of all war leagues."""
-    data = api_request("/warleagues")
-    return data.get("items", []) if data else None
-
-
-def get_capital_leagues() -> list | None:
-    """Get list of all capital leagues."""
-    data = api_request("/capitalleagues")
-    return data.get("items", []) if data else None
-
-
-def get_builder_base_leagues() -> list | None:
-    """Get list of all builder base leagues."""
-    data = api_request("/builderbaseleagues")
-    return data.get("items", []) if data else None
-
-
-def get_locations() -> list | None:
-    """Get list of all locations."""
-    data = api_request("/locations")
-    return data.get("items", []) if data else None
-
-
-def get_location_clan_rankings(location_id: int, limit: int = 200) -> list | None:
-    """Get clan rankings for a specific location."""
-    data = api_request(f"/locations/{location_id}/rankings/clans?limit={limit}")
-    return data.get("items", []) if data else None
-
-
-def get_location_player_rankings(location_id: int, limit: int = 200) -> list | None:
-    """Get player rankings for a specific location."""
-    data = api_request(f"/locations/{location_id}/rankings/players?limit={limit}")
-    return data.get("items", []) if data else None
-
-
-def get_location_capital_rankings(location_id: int, limit: int = 200) -> list | None:
-    """Get capital rankings for a specific location."""
-    data = api_request(f"/locations/{location_id}/rankings/capitals?limit={limit}")
-    return data.get("items", []) if data else None
-
-
-def get_player_labels() -> list | None:
-    """Get list of all player labels."""
-    data = api_request("/labels/players")
-    return data.get("items", []) if data else None
-
-
-def get_clan_labels() -> list | None:
-    """Get list of all clan labels."""
-    data = api_request("/labels/clans")
-    return data.get("items", []) if data else None
-
-
-def get_gold_pass_season() -> dict | None:
-    """Get current gold pass season information."""
-    return api_request("/goldpass/seasons/current")
-
-
-def print_separator(title: str = "", char: str = "=", length: int = 80):
-    """Print a separator line."""
-    if title:
-        padding = (length - len(title) - 2) // 2
-        print(f"\n{char * padding} {title} {char * padding}")
-    else:
-        print(char * length)
 
 
 def analyze_clan_info(clan: dict):
@@ -1245,7 +713,8 @@ def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
                         th_level=stats['th'],
                         attack_data=stats,
                         war_type=f"CWL_{season}",
-                        war_id=war_id
+                        war_id=war_id,
+                        war_date=parse_coc_time(war.get('startTime'))
                     )
             elif state == 'preparation':
                 print(f"\n   ⏳ War is in preparation phase")
@@ -1257,7 +726,7 @@ def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
             "wars_analyzed": wars_analyzed,
             "total_attacks": sum(p['attacks_used'] for p in all_player_stats.values()),
             "total_stars": sum(p['total_stars'] for p in all_player_stats.values()),
-            "recorded_date": datetime.now().isoformat(),
+            "recorded_date": utc_now(),
             "complete": state == "ended"  # Mark as complete if CWL is over
         }
     
@@ -1476,276 +945,6 @@ def clan_strength_analysis(players_data: list):
         print(f"   ⚠️  {len(low_activity)} members have 0 donations this season (possible inactives)")
 
 
-def export_dashboard_data(clan: dict, players_data: list, rush_reports: list, 
-                          historical_data: dict, warlog: list, current_war: dict,
-                          capital_raids: list, gold_pass: dict, cwl_group: dict):
-    """Export comprehensive data to JSON for the Next.js dashboard."""
-    print("\n⏳ Exporting data for Next.js dashboard...")
-    
-    # Build comprehensive player data with rush info
-    players_export = []
-    for player in players_data:
-        # Find matching rush report
-        rush_report = next((r for r in rush_reports if r.get('player_tag') == player.get('tag')), {})
-        
-        # Get historical stats for this player
-        hist_player = historical_data.get('players', {}).get(player.get('tag'), {})
-        
-        # Extract hero data with correct max levels for player's TH
-        th_level = player.get('townHallLevel', 1)
-        heroes = []
-        for hero in player.get('heroes', []):
-            if hero.get('village') == 'home':
-                hero_name = hero.get('name')
-                # Get max level for this hero at player's current TH from our defined data
-                max_at_th = get_max_level_for_th(hero_name, th_level, "hero")
-                heroes.append({
-                    'name': hero_name,
-                    'level': hero.get('level'),
-                    'maxLevel': max_at_th if max_at_th else hero.get('maxLevel'),
-                })
-        
-        # Extract key troops with correct max levels for player's TH
-        troops = []
-        for troop in player.get('troops', []):
-            if troop.get('village') == 'home':
-                troop_name = troop.get('name')
-                # Get max level for this troop at player's current TH from our defined data
-                max_at_th = get_max_level_for_th(troop_name, th_level, "troop")
-                troops.append({
-                    'name': troop_name,
-                    'level': troop.get('level'),
-                    # Use our defined max if available, otherwise fall back to API value
-                    'maxLevel': max_at_th if max_at_th else troop.get('maxLevel'),
-                })
-        
-        # Extract spells with correct max levels for player's TH
-        spells = []
-        for spell in player.get('spells', []):
-            if spell.get('village') == 'home':
-                spell_name = spell.get('name')
-                # Get max level for this spell at player's current TH from our defined data
-                max_at_th = get_max_level_for_th(spell_name, th_level, "spell")
-                spells.append({
-                    'name': spell_name,
-                    'level': spell.get('level'),
-                    # Use our defined max if available, otherwise fall back to API value
-                    'maxLevel': max_at_th if max_at_th else spell.get('maxLevel'),
-                })
-        
-        # Extract hero equipment
-        hero_equipment = []
-        for equip in player.get('heroEquipment', []):
-            hero_equipment.append({
-                'name': equip.get('name'),
-                'level': equip.get('level'),
-                'maxLevel': equip.get('maxLevel'),
-                'village': equip.get('village'),
-            })
-        
-        player_export = {
-            'tag': player.get('tag'),
-            'name': player.get('name'),
-            'townHallLevel': player.get('townHallLevel'),
-            'townHallWeaponLevel': player.get('townHallWeaponLevel'),
-            'expLevel': player.get('expLevel'),
-            'trophies': player.get('trophies'),
-            'bestTrophies': player.get('bestTrophies'),
-            'warStars': player.get('warStars'),
-            'attackWins': player.get('attackWins'),
-            'defenseWins': player.get('defenseWins'),
-            'builderHallLevel': player.get('builderHallLevel'),
-            'builderBaseTrophies': player.get('builderBaseTrophies'),
-            'bestBuilderBaseTrophies': player.get('bestBuilderBaseTrophies'),
-            'role': player.get('role'),
-            'warPreference': player.get('warPreference'),
-            'donations': player.get('donations'),
-            'donationsReceived': player.get('donationsReceived'),
-            'clanCapitalContributions': player.get('clanCapitalContributions'),
-            'clan': player.get('clan'),
-            'league': player.get('league'),
-            'builderBaseLeague': player.get('builderBaseLeague'),
-            'achievements': player.get('achievements', []),
-            'labels': player.get('labels', []),
-            'heroes': heroes,
-            'troops': troops,
-            'spells': spells,
-            'heroEquipment': hero_equipment,
-            # Rush analysis
-            'rushAnalysis': {
-                'isRushed': rush_report.get('is_rushed', False),
-                'rushScore': rush_report.get('rush_score', 0),
-                'rushPercentage': rush_report.get('rush_percentage', 0),
-                'status': rush_report.get('status', 'Unknown'),
-                'heroScore': rush_report.get('hero_score', 0),
-                'troopScore': rush_report.get('troop_score', 0),
-                'spellScore': rush_report.get('spell_score', 0),
-                'totalMissingHeroLevels': rush_report.get('total_missing_hero_levels', 0),
-                'rushedHeroes': rush_report.get('rushed_heroes', []),
-                'rushedTroops': rush_report.get('rushed_troops', []),
-                'rushedSpells': rush_report.get('rushed_spells', []),
-            },
-            # Historical war stats
-            'warStats': {
-                'totalAttacks': hist_player.get('total_attacks', 0),
-                'totalStars': hist_player.get('total_stars', 0),
-                'totalDestruction': hist_player.get('total_destruction', 0),
-                'threeStars': hist_player.get('three_stars', 0),
-                'twoStars': hist_player.get('two_stars', 0),
-                'oneStars': hist_player.get('one_star', 0),
-                'zeroStars': hist_player.get('zero_stars', 0),
-                'warsParticipated': hist_player.get('wars_participated', 0),
-            }
-        }
-        players_export.append(player_export)
-    
-    # Process war log
-    warlog_export = []
-    if warlog:
-        for war in warlog[:50]:  # Last 50 wars
-            warlog_export.append({
-                'result': war.get('result'),
-                'endTime': war.get('endTime'),
-                'teamSize': war.get('teamSize'),
-                'attacksPerMember': war.get('attacksPerMember'),
-                'clan': {
-                    'tag': war.get('clan', {}).get('tag'),
-                    'name': war.get('clan', {}).get('name'),
-                    'stars': war.get('clan', {}).get('stars'),
-                    'destructionPercentage': war.get('clan', {}).get('destructionPercentage'),
-                    'expEarned': war.get('clan', {}).get('expEarned'),
-                },
-                'opponent': {
-                    'tag': war.get('opponent', {}).get('tag'),
-                    'name': war.get('opponent', {}).get('name'),
-                    'stars': war.get('opponent', {}).get('stars'),
-                    'destructionPercentage': war.get('opponent', {}).get('destructionPercentage'),
-                }
-            })
-    
-    # Process current war
-    current_war_export = None
-    if current_war and current_war.get('state') not in ['notInWar', None]:
-        current_war_export = {
-            'state': current_war.get('state'),
-            'teamSize': current_war.get('teamSize'),
-            'attacksPerMember': current_war.get('attacksPerMember'),
-            'preparationStartTime': current_war.get('preparationStartTime'),
-            'startTime': current_war.get('startTime'),
-            'endTime': current_war.get('endTime'),
-            'clan': current_war.get('clan'),
-            'opponent': current_war.get('opponent'),
-        }
-    
-    # Process capital raids
-    capital_raids_export = []
-    if capital_raids:
-        for raid in capital_raids[:10]:
-            capital_raids_export.append({
-                'state': raid.get('state'),
-                'startTime': raid.get('startTime'),
-                'endTime': raid.get('endTime'),
-                'capitalTotalLoot': raid.get('capitalTotalLoot'),
-                'raidsCompleted': raid.get('raidsCompleted'),
-                'totalAttacks': raid.get('totalAttacks'),
-                'enemyDistrictsDestroyed': raid.get('enemyDistrictsDestroyed'),
-                'offensiveReward': raid.get('offensiveReward'),
-                'defensiveReward': raid.get('defensiveReward'),
-                'members': raid.get('members', []),
-                'attackLog': raid.get('attackLog', []),
-                'defenseLog': raid.get('defenseLog', []),
-            })
-    
-    # Calculate clan statistics
-    th_distribution = defaultdict(int)
-    role_distribution = defaultdict(int)
-    league_distribution = defaultdict(int)
-    rush_distribution = defaultdict(int)
-    
-    for player in players_data:
-        th_distribution[player.get('townHallLevel', 0)] += 1
-        role_distribution[player.get('role', 'unknown')] += 1
-        league_name = player.get('league', {}).get('name', 'Unranked') if player.get('league') else 'Unranked'
-        league_distribution[league_name] += 1
-    
-    for report in rush_reports:
-        status = report.get('status', 'Unknown')
-        if 'Maxed' in status:
-            rush_distribution['Maxed'] += 1
-        elif 'Slightly' in status:
-            rush_distribution['Slightly Behind'] += 1
-        elif 'Moderately' in status:
-            rush_distribution['Moderately Rushed'] += 1
-        elif 'Severely' in status:
-            rush_distribution['Severely Rushed'] += 1
-        elif 'Rushed' in status:
-            rush_distribution['Rushed'] += 1
-        else:
-            rush_distribution['Other'] += 1
-    
-    # Build final export object
-    dashboard_data = {
-        'lastUpdated': datetime.now().isoformat(),
-        'clan': {
-            'tag': clan.get('tag'),
-            'name': clan.get('name'),
-            'description': clan.get('description'),
-            'type': clan.get('type'),
-            'location': clan.get('location'),
-            'chatLanguage': clan.get('chatLanguage'),
-            'clanLevel': clan.get('clanLevel'),
-            'clanPoints': clan.get('clanPoints'),
-            'clanBuilderBasePoints': clan.get('clanBuilderBasePoints'),
-            'clanCapitalPoints': clan.get('clanCapitalPoints'),
-            'capitalLeague': clan.get('capitalLeague'),
-            'requiredTrophies': clan.get('requiredTrophies'),
-            'warFrequency': clan.get('warFrequency'),
-            'warWinStreak': clan.get('warWinStreak'),
-            'warWins': clan.get('warWins'),
-            'warTies': clan.get('warTies'),
-            'warLosses': clan.get('warLosses'),
-            'isWarLogPublic': clan.get('isWarLogPublic'),
-            'warLeague': clan.get('warLeague'),
-            'members': clan.get('members'),
-            'labels': clan.get('labels', []),
-            'clanCapital': clan.get('clanCapital'),
-            'badgeUrls': clan.get('badgeUrls'),
-        },
-        'players': players_export,
-        'warLog': warlog_export,
-        'currentWar': current_war_export,
-        'capitalRaids': capital_raids_export,
-        'goldPass': gold_pass,
-        'cwlGroup': cwl_group,
-        'historicalData': {
-            'cwlSeasons': historical_data.get('cwl_seasons', {}),
-            'lastUpdated': historical_data.get('last_updated'),
-        },
-        'statistics': {
-            'thDistribution': dict(th_distribution),
-            'roleDistribution': dict(role_distribution),
-            'leagueDistribution': dict(league_distribution),
-            'rushDistribution': dict(rush_distribution),
-            'totalWarStars': sum(p.get('warStars', 0) for p in players_data),
-            'totalDonations': sum(p.get('donations', 0) for p in players_data),
-            'totalCapitalContributions': sum(p.get('clanCapitalContributions', 0) for p in players_data),
-            'averageTrophies': sum(p.get('trophies', 0) for p in players_data) / len(players_data) if players_data else 0,
-            'rushedCount': sum(1 for r in rush_reports if r.get('is_rushed', False)),
-            'averageRushScore': sum(r.get('rush_score', 0) for r in rush_reports) / len(rush_reports) if rush_reports else 0,
-        }
-    }
-    
-    # Ensure output directory exists
-    os.makedirs(os.path.dirname(DASHBOARD_DATA_FILE), exist_ok=True)
-    
-    # Save to JSON file
-    with open(DASHBOARD_DATA_FILE, 'w', encoding='utf-8') as f:
-        json.dump(dashboard_data, f, indent=2, ensure_ascii=False)
-    
-    print(f"   ✅ Dashboard data exported to: {DASHBOARD_DATA_FILE}")
-    return dashboard_data
-
-
 def main():
     """Main function to run all analyses."""
     print("\n" + "="*80)
@@ -1753,7 +952,11 @@ def main():
     print("="*80)
     print(f"\n📅 Analysis Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"🏷️  Clan Tag: {CLAN_TAG}")
-    
+
+    if not API_TOKEN:
+        print("❌ API key not found! Set 'api_key' in your .env file (or as an environment variable).")
+        sys.exit(1)
+
     # Load historical data
     print("\n💾 Loading historical data...")
     historical_data = load_historical_data()
@@ -1777,18 +980,37 @@ def main():
     # Get detailed player info for each member
     print(f"\n⏳ Fetching detailed info for {len(members)} players...")
     players_data = []
+    failed = []
     for i, member in enumerate(members, 1):
         player_tag = member.get('tag')
         print(f"   Fetching player {i}/{len(members)}: {member.get('name')}", end='\r')
         player = get_player_info(player_tag)
         if player:
             players_data.append(player)
+        else:
+            failed.append(member)
         time.sleep(0.05)  # Small delay to avoid rate limiting
     print(" " * 60)  # Clear the line
-    
-    if not players_data:
-        print("❌ Failed to fetch player details.")
+
+    # The proxy has bad spells; give failed players a second chance after a pause
+    if failed:
+        print(f"\n⏳ Retrying {len(failed)} player(s) that failed...")
+        time.sleep(30)
+        still_failed = []
+        for member in failed:
+            player = get_player_info(member.get('tag'))
+            if player:
+                players_data.append(player)
+            else:
+                still_failed.append(member)
+        failed = still_failed
+
+    if len(failed) > MAX_MISSING_PLAYERS:
+        print(f"❌ Failed to fetch {len(failed)} of {len(members)} players; not exporting incomplete data.")
         sys.exit(1)
+    for member in failed:
+        # GitHub Actions annotation, shown on the workflow run summary
+        print(f"::warning::Player {member.get('name')} ({member.get('tag')}) could not be fetched and is missing from this export")
     
     # Run all analyses
     analyze_members(members, players_data)
@@ -1809,8 +1031,10 @@ def main():
     current_war = get_current_war(CLAN_TAG)
     if current_war and current_war.get('state') not in ['notInWar', None]:
         war_stats = analyze_current_war(current_war)
-        if war_stats:
+        # Prep day has no attacks yet; recording it would only add empty entries
+        if war_stats and current_war.get('state') in ('inWar', 'warEnded'):
             war_id = generate_war_id(current_war)
+            war_date = parse_coc_time(current_war.get('startTime'))
             for tag, stats in war_stats.items():
                 update_player_historical_stats(
                     historical_data,
@@ -1819,7 +1043,8 @@ def main():
                     th_level=stats['th'],
                     attack_data=stats,
                     war_type="regular_war",
-                    war_id=war_id
+                    war_id=war_id,
+                    war_date=war_date
                 )
     else:
         print_separator("CURRENT WAR")
@@ -1841,7 +1066,7 @@ def main():
     print_historical_summary(historical_data)
     
     # Update timestamp and save
-    historical_data["last_updated"] = datetime.now().isoformat()
+    historical_data["last_updated"] = utc_now()
     save_historical_data(historical_data)
 
     # Export comprehensive data for Next.js dashboard

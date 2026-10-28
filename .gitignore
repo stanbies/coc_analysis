@@ -25,3 +25,9 @@ config.local.py
 # Generated files
 *.html
 screenshots/
+
+# Local scraper output (only the GitHub workflow publishes data)
+api/out/
+
+# Personal Claude Code settings
+.claude/settings.local.json

@@ -1,6 +1,9 @@
 'use client';
 
+import { useSyncExternalStore } from 'react';
 import { Clan } from '../types';
+
+const noopSubscribe = () => () => {};
 
 interface ClanHeaderProps {
   clan: Clan;
@@ -10,7 +13,15 @@ interface ClanHeaderProps {
 export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
   const totalWars = clan.warWins + clan.warTies + clan.warLosses;
   const winRate = totalWars > 0 ? ((clan.warWins / totalWars) * 100).toFixed(1) : '0';
-  
+
+  // Formatted in the browser so it shows the visitor's local time; the page is
+  // pre-rendered on the server, which would otherwise print UTC.
+  const updatedText = useSyncExternalStore(
+    noopSubscribe,
+    () => new Date(lastUpdated).toLocaleString(),
+    () => '',
+  );
+
   return (
     <div className="card p-6 mb-6 glow-orange">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -49,7 +60,7 @@ export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
             <p className="text-xs text-slate-400">Members</p>
           </div>
           <div>
-            <p className="text-2xl font-bold text-yellow-400">{clan.clanPoints.toLocaleString()}</p>
+            <p className="text-2xl font-bold text-yellow-400">{clan.clanPoints.toLocaleString('en-US')}</p>
             <p className="text-xs text-slate-400">Clan Points</p>
           </div>
           <div>
@@ -81,7 +92,7 @@ export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
           ))}
         </div>
         <p className="text-xs text-slate-500">
-          Last updated: {new Date(lastUpdated).toLocaleString()}
+          Last updated: {updatedText}
         </p>
       </div>
     </div>

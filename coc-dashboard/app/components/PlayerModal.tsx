@@ -61,20 +61,20 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-yellow-400">🏆 {player.trophies.toLocaleString()}</p>
+              <p className="text-2xl font-bold text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">Current Trophies</p>
-              <p className="text-xs text-slate-500">Best: {player.bestTrophies.toLocaleString()}</p>
+              <p className="text-xs text-slate-500">Best: {player.bestTrophies.toLocaleString('en-US')}</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-purple-400">⭐ {player.warStars.toLocaleString()}</p>
+              <p className="text-2xl font-bold text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">War Stars</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-green-400">⚔️ {player.attackWins.toLocaleString()}</p>
+              <p className="text-2xl font-bold text-green-400">⚔️ {player.attackWins.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">Attack Wins</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-blue-400">🛡️ {player.defenseWins.toLocaleString()}</p>
+              <p className="text-2xl font-bold text-blue-400">🛡️ {player.defenseWins.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">Defense Wins</p>
             </div>
           </div>
@@ -85,8 +85,8 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
             <div className="flex items-center gap-4">
               <div className="flex-1">
                 <div className="flex justify-between text-sm mb-1">
-                  <span className="text-green-400">Donated: {player.donations.toLocaleString()}</span>
-                  <span className="text-red-400">Received: {player.donationsReceived.toLocaleString()}</span>
+                  <span className="text-green-400">Donated: {player.donations.toLocaleString('en-US')}</span>
+                  <span className="text-red-400">Received: {player.donationsReceived.toLocaleString('en-US')}</span>
                 </div>
                 <div className="progress-bar h-3">
                   <div 
@@ -194,7 +194,7 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
           <div className="bg-slate-800 rounded-xl p-4">
             <h3 className="font-semibold text-white mb-2">🏛️ Clan Capital</h3>
             <p className="text-2xl font-bold text-amber-400">
-              {player.clanCapitalContributions.toLocaleString()}
+              {player.clanCapitalContributions.toLocaleString('en-US')}
               <span className="text-sm text-slate-400 font-normal ml-2">Gold Contributed</span>
             </p>
           </div>
