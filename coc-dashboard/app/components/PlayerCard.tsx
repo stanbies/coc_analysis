@@ -64,8 +64,8 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
         </div>
       </div>
       
-      <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-2">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2 whitespace-nowrap">
           <span className="text-green-400 text-sm">↑{player.donations}</span>
           <span className="text-slate-500">/</span>
           <span className="text-red-400 text-sm">↓{player.donationsReceived}</span>

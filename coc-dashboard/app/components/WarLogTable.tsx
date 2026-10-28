@@ -26,6 +26,18 @@ function getResultClass(result: string | null): string {
   }
 }
 
+// The API mixes Clan War League seasons into the war log: no opponent, stars and
+// destruction summed over all league rounds, and a result that is often missing.
+function isCwlEntry(war: WarLogEntry): boolean {
+  return !war.opponent?.tag;
+}
+
+function cwlSeasonLabel(endTime: string): string {
+  // endTime looks like 20261010T131722.000Z
+  const date = new Date(Date.UTC(Number(endTime.slice(0, 4)), Number(endTime.slice(4, 6)) - 1, 1));
+  return date.toLocaleString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+
 export default function WarLogTable({ warLog }: WarLogTableProps) {
   if (!warLog || warLog.length === 0) {
     return (
@@ -36,9 +48,10 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
     );
   }
 
-  const wins = warLog.filter(w => w.result === 'win').length;
-  const losses = warLog.filter(w => w.result === 'lose').length;
-  const ties = warLog.filter(w => w.result === 'tie').length;
+  const regularWars = warLog.filter(w => !isCwlEntry(w));
+  const wins = regularWars.filter(w => w.result === 'win').length;
+  const losses = regularWars.filter(w => w.result === 'lose').length;
+  const ties = regularWars.filter(w => w.result === 'tie').length;
 
   return (
     <div className="card p-6">
@@ -63,7 +76,29 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
             </tr>
           </thead>
           <tbody>
-            {warLog.slice(0, 20).map((war, i) => (
+            {warLog.slice(0, 20).map((war, i) => isCwlEntry(war) ? (
+              <tr key={i} className="border-b border-slate-800 table-row transition-colors">
+                <td className="py-3 px-2">
+                  <span className="font-medium text-purple-400">🏆 CWL</span>
+                </td>
+                <td className="py-3 px-2">
+                  <span className="text-white">Clan War League</span>
+                  {war.endTime && (
+                    <span className="text-slate-500 text-sm"> · {cwlSeasonLabel(war.endTime)}</span>
+                  )}
+                </td>
+                <td className="py-3 px-2 text-center text-slate-300">
+                  {war.teamSize}v{war.teamSize}
+                </td>
+                <td className="py-3 px-2 text-center">
+                  <span className="text-yellow-400">{war.clan.stars}</span>
+                  <span className="text-slate-500"> - </span>
+                  <span className="text-slate-400">{war.opponent.stars}</span>
+                  <span className="block text-xs text-slate-500">season total</span>
+                </td>
+                <td className="py-3 px-2 text-center text-slate-500">—</td>
+              </tr>
+            ) : (
               <tr key={i} className="border-b border-slate-800 table-row transition-colors">
                 <td className="py-3 px-2">
                   <span className={`font-medium ${getResultClass(war.result)}`}>
