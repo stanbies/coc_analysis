@@ -144,18 +144,25 @@ The scraper fetches data from these CoC API endpoints:
 
 ## Rush Detection Algorithm
 
-The rush detection system compares each player's current levels against the **maximum levels available at the previous Town Hall**:
+The rush detection system compares each player's heroes, troops and spells against the **maximum levels available at the previous Town Hall** (a TH17 player is measured against TH16 caps). Every missing level adds to the rush score:
 
-- **Heroes**: 50% weight (most important)
-- **Troops**: 35% weight
-- **Spells**: 15% weight
+- **Heroes**: 1.0 per missing level
+- **Troops**: 0.3 per missing level
+- **Spells**: 0.4 per missing level
+
+Levels above the benchmark earn no extra credit. Pets, siege machines and super troops are not counted.
 
 ### Status Classifications:
-- ✅ **Maxed** (score < 3): Fully caught up
-- 🟢 **Slightly Behind** (3-10): Minor gaps
-- 🟡 **Moderately Rushed** (10-25): Noticeable deficits
-- 🟠 **Rushed** (25-50): Significant gaps
-- 🔴 **Severely Rushed** (25+ with 15+ hero levels missing)
+- ✅ **Maxed** (score ≤ 3)
+- 🟢 **Slightly Behind** (≤ 10)
+- 🟡 **Moderately Rushed** (≤ 25)
+- 🟠 **Rushed** (≤ 50)
+- 🔴 **Severely Rushed** (> 50)
+- 🔴 **Severely Rushed (Heroes)**: more than 20 missing hero levels, regardless of total score
+
+**Rush %** is shown separately: the share of benchmark levels the player hasn't reached yet, unweighted.
+
+The max-level tables (`HERO_MAX_LEVELS`, `TROOP_MAX_LEVELS`, `SPELL_MAX_LEVELS` in `api/clan_analyzer.py`) need updating whenever a game update raises level caps.
 
 ## Data Persistence
 

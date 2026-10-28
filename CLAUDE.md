@@ -66,7 +66,10 @@ npx expo lint           # ESLint
 - To update mobile data, copy `coc-dashboard/public/clan_data.json` to `mobile-coc-dashboard/assets/data/`
 
 ### Rush Detection
-The scraper has a weighted rush scoring algorithm (heroes 50%, troops 35%, spells 15%) comparing player levels against max levels for their previous Town Hall. The classification thresholds and max-level lookup tables are defined inline in `clan_analyzer.py`.
+`generate_rush_report()` in `clan_analyzer.py` compares each home-village hero, troop and spell against the max level at the player's **previous** Town Hall. Each missing level adds to the score: heroes 1.0, troops 0.3, spells 0.4. Thresholds: ≤3 Maxed, ≤10 Slightly Behind, ≤25 Moderately Rushed, ≤50 Rushed, >50 Severely Rushed; more than 20 missing hero levels always means Severely Rushed (Heroes). `rush_percentage` is separate and unweighted (100 − % of benchmark levels reached).
+- Max levels live in `HERO_MAX_LEVELS`, `TROOP_MAX_LEVELS` and `SPELL_MAX_LEVELS` (TH → level). Items missing from these tables are ignored by the score. Pets, siege machines and super troops are deliberately excluded.
+- `export_dashboard_data()` also uses these tables for the `maxLevel` the dashboards display (cap at the player's current TH), falling back to the API value only for items not in the tables.
+- Don't rebuild these tables from the API's `maxLevel`: it's stale after updates and for many items it's the global max, not the TH cap. Update them from a current max-levels reference after each game update that raises caps, then check that no player in `clan_data.json` exceeds the cap for their TH.
 
 ## Key Configuration
 - **Clan tag**: hardcoded as `CLAN_TAG` in `api/clan_analyzer.py`
