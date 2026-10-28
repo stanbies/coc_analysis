@@ -4,11 +4,11 @@ A comprehensive tool for analyzing Clash of Clans clan data, tracking player sta
 
 ## Architecture
 
-1. **Python Scraper** (`api/clan_analyzer.py`) - Fetches all data from the CoC API
+1. **Python Scraper** (`api/`, entry point `clan_analyzer.py`) - Fetches all data from the CoC API
 2. **JSON Data File** (`coc-dashboard/public/clan_data.json`) - Intermediate storage for scraped data
 3. **Next.js Dashboard** (`coc-dashboard/`) - Web UI that reads from the JSON file, hosted on Vercel
 
-A GitHub Action (`.github/workflows/update-data.yml`) runs the scraper every day at 05:00 UTC and commits the updated JSON to `main`. Vercel redeploys on that push. Because CoC API keys are IP-locked and Action runners have changing IPs, the scraper goes through the [RoyaleAPI proxy](https://docs.royaleapi.com/proxy.html), which has a fixed IP.
+A GitHub Action (`.github/workflows/update-data.yml`) runs the scraper every 6 hours and commits the updated JSON to `main` (only when more than the timestamps changed). Vercel redeploys on that push. Because CoC API keys are IP-locked and Action runners have changing IPs, the scraper goes through the [RoyaleAPI proxy](https://docs.royaleapi.com/proxy.html), which has a fixed IP.
 
 ## Features
 
@@ -35,8 +35,7 @@ A GitHub Action (`.github/workflows/update-data.yml`) runs the scraper every day
 ### 1. Python Environment
 
 ```bash
-cd api
-pip install -r requirements.txt
+pip install -r api/requirements-dev.txt   # scraper deps + pytest
 ```
 
 ### 2. Configure API Key
@@ -52,11 +51,11 @@ Get your API token from [Clash of Clans Developer Portal](https://developer.clas
 
 > ⚠️ **Important**: API tokens are IP-locked. For the proxy, create the token with `45.79.218.79` as the allowed IP. To call the API directly instead, allow your own IP and leave out `coc_base_url`.
 
-For the daily update, add the same two values as GitHub Actions secrets (`api_key`, `coc_base_url`) under Settings → Secrets and variables → Actions.
+For the scheduled update, add the same two values as GitHub Actions secrets (`api_key`, `coc_base_url`) under Settings → Secrets and variables → Actions.
 
 ### 3. Update Clan Tag
 
-Edit `api/clan_analyzer.py` and update the `CLAN_TAG` variable:
+Edit `api/config.py` and update the `CLAN_TAG` variable:
 
 ```python
 CLAN_TAG = "#YOUR_CLAN_TAG"
@@ -76,8 +75,7 @@ npm install
 Run the Python scraper to fetch all clan data:
 
 ```bash
-cd api
-python clan_analyzer.py
+python api/clan_analyzer.py
 ```
 
 This will:
@@ -85,11 +83,13 @@ This will:
 - Analyze rush status for all members
 - Track war performance and CWL
 - Fetch capital raid data
-- Export everything to `coc-dashboard/public/clan_data.json`
+- Export everything to `api/out/clan_data.json`
+
+Local runs write to the gitignored `api/out/` so they never collide with the workflow's data commits. Only the workflow (with `publish_data=true`) writes the published files: `coc-dashboard/public/clan_data.json`, `api/clan_history.json` and the mobile copy. Run the tests with `python -m pytest api/`.
 
 ### Step 2: View Dashboard
 
-Start the Next.js development server:
+Start the Next.js development server. It shows the published data in `coc-dashboard/public/clan_data.json`; `git pull` for the latest:
 
 ```bash
 cd coc-dashboard
@@ -100,7 +100,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Updating Data
 
-The hosted site updates itself daily through the GitHub Action. To refresh sooner, open the repo's Actions tab, choose "Update clan data" and click **Run workflow**. Locally, re-run `python api/clan_analyzer.py` and refresh the page.
+The hosted site updates itself every 6 hours through the GitHub Action. To refresh sooner, open the repo's Actions tab, choose "Update clan data" and click **Run workflow**. Each run first runs the tests and afterwards warns (in the run summary) if the max-level tables look out of date.
 
 ## Project Structure
 
@@ -108,16 +108,23 @@ The hosted site updates itself daily through the GitHub Action. To refresh soone
 COC_analysis/
 ├── .env                    # API key + base URL (gitignored)
 ├── .github/workflows/
-│   └── update-data.yml     # Daily scrape + commit
+│   └── update-data.yml     # Scheduled scrape + commit
 ├── api/
-│   ├── clan_analyzer.py    # Main scraper script
+│   ├── clan_analyzer.py    # Entry point + console analysis
+│   ├── config.py           # Env, clan tag, output paths
+│   ├── coc_api.py          # API client with retries
+│   ├── rush.py             # Max-level tables + rush score
+│   ├── history.py          # War history (clan_history.json)
+│   ├── export.py           # Builds clan_data.json
+│   ├── check_caps.py       # Warns when max-level tables are outdated
+│   ├── test_*.py           # pytest tests
 │   ├── clan_history.json   # Historical data storage
-│   └── requirements.txt    # Python dependencies
+│   └── requirements*.txt   # Pinned Python dependencies
 ├── coc-dashboard/
 │   ├── app/
 │   │   ├── components/     # React components
 │   │   ├── types.ts        # TypeScript interfaces
-│   │   ├── page.tsx        # Main dashboard page
+│   │   ├── page.tsx        # Server component, reads the data at build time
 │   │   └── globals.css     # Styling
 │   ├── public/
 │   │   └── clan_data.json  # Scraped data (generated)
@@ -162,7 +169,7 @@ Levels above the benchmark earn no extra credit. Pets, siege machines and super 
 
 **Rush %** is shown separately: the share of benchmark levels the player hasn't reached yet, unweighted.
 
-The max-level tables (`HERO_MAX_LEVELS`, `TROOP_MAX_LEVELS`, `SPELL_MAX_LEVELS` in `api/clan_analyzer.py`) need updating whenever a game update raises level caps.
+The max-level tables (`HERO_MAX_LEVELS`, `TROOP_MAX_LEVELS`, `SPELL_MAX_LEVELS` in `api/rush.py`) need updating whenever a game update raises level caps. The workflow's cap check flags this.
 
 ## Data Persistence
 

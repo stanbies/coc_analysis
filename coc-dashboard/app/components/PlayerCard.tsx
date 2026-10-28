@@ -51,11 +51,11 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
       
       <div className="grid grid-cols-3 gap-2 mb-3 text-center">
         <div className="bg-slate-800/50 rounded-lg p-2">
-          <p className="text-lg font-bold text-yellow-400">🏆 {player.trophies.toLocaleString()}</p>
+          <p className="text-lg font-bold text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</p>
           <p className="text-xs text-slate-400">Trophies</p>
         </div>
         <div className="bg-slate-800/50 rounded-lg p-2">
-          <p className="text-lg font-bold text-purple-400">⭐ {player.warStars.toLocaleString()}</p>
+          <p className="text-lg font-bold text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
           <p className="text-xs text-slate-400">War Stars</p>
         </div>
         <div className="bg-slate-800/50 rounded-lg p-2">

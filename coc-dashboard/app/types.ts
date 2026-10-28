@@ -2,7 +2,7 @@ export interface Player {
   tag: string;
   name: string;
   townHallLevel: number;
-  townHallWeaponLevel?: number;
+  townHallWeaponLevel?: number | null;
   expLevel: number;
   trophies: number;
   bestTrophies: number;
@@ -23,7 +23,7 @@ export interface Player {
     clanLevel: number;
     badgeUrls: BadgeUrls;
   };
-  league?: League;
+  league?: League | null;
   builderBaseLeague?: League;
   achievements: Achievement[];
   labels: Label[];
@@ -105,7 +105,7 @@ export interface Achievement {
   value: number;
   target: number;
   info: string;
-  completionInfo?: string;
+  completionInfo?: string | null;
   village: string;
 }
 
@@ -158,7 +158,7 @@ export interface Clan {
 }
 
 export interface WarLogEntry {
-  result: string;
+  result: string | null; // null for CWL rounds
   endTime: string;
   teamSize: number;
   attacksPerMember: number;
@@ -170,8 +170,8 @@ export interface WarLogEntry {
     expEarned: number;
   };
   opponent: {
-    tag: string;
-    name: string;
+    tag: string | null; // null for CWL rounds
+    name: string | null;
     stars: number;
     destructionPercentage: number;
   };

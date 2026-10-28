@@ -15,7 +15,7 @@ export default function StatCard({ title, value, icon, subtitle, trend }: StatCa
         <div>
           <p className="text-slate-400 text-sm font-medium">{title}</p>
           <p className="text-3xl font-bold text-white mt-1">
-            {typeof value === 'number' ? value.toLocaleString() : value}
+            {typeof value === 'number' ? value.toLocaleString('en-US') : value}
           </p>
           {subtitle && (
             <p className="text-slate-500 text-xs mt-1">{subtitle}</p>

@@ -6,16 +6,18 @@ interface WarLogTableProps {
   warLog: WarLogEntry[];
 }
 
-function getResultIcon(result: string): string {
+// CWL rounds appear in the war log without a result or opponent
+function getResultIcon(result: string | null): string {
   switch (result) {
     case 'win': return '✅';
     case 'lose': return '❌';
     case 'tie': return '➖';
+    case null: return '🏆';
     default: return '❓';
   }
 }
 
-function getResultClass(result: string): string {
+function getResultClass(result: string | null): string {
   switch (result) {
     case 'win': return 'text-green-400';
     case 'lose': return 'text-red-400';
@@ -100,11 +102,11 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
               <tr key={i} className="border-b border-slate-800 table-row transition-colors">
                 <td className="py-3 px-2">
                   <span className={`font-medium ${getResultClass(war.result)}`}>
-                    {getResultIcon(war.result)} {war.result?.toUpperCase()}
+                    {getResultIcon(war.result)} {war.result?.toUpperCase() ?? 'CWL'}
                   </span>
                 </td>
                 <td className="py-3 px-2">
-                  <span className="text-white">{war.opponent.name}</span>
+                  <span className="text-white">{war.opponent.name ?? <span className="text-slate-400">Clan War League</span>}</span>
                 </td>
                 <td className="py-3 px-2 text-center text-slate-300">
                   {war.teamSize}v{war.teamSize}
