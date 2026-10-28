@@ -4,16 +4,11 @@ A comprehensive tool for analyzing Clash of Clans clan data, tracking player sta
 
 ## Architecture
 
-This project uses a **manual scraping approach** to work around the CoC API's static IP requirement:
-
-1. **Python Scraper** (`api/clan_analyzer.py`) - Run manually from your local machine to fetch all data
+1. **Python Scraper** (`api/clan_analyzer.py`) - Fetches all data from the CoC API
 2. **JSON Data File** (`coc-dashboard/public/clan_data.json`) - Intermediate storage for scraped data
-3. **Next.js Dashboard** (`coc-dashboard/`) - Beautiful web UI that reads from the JSON file
+3. **Next.js Dashboard** (`coc-dashboard/`) - Web UI that reads from the JSON file, hosted on Vercel
 
-This architecture allows you to:
-- Run the scraper from any machine with your API key
-- Host the dashboard anywhere (Vercel, Netlify, etc.) without needing API access
-- Update data on-demand without a server
+A GitHub Action (`.github/workflows/update-data.yml`) runs the scraper every day at 05:00 UTC and commits the updated JSON to `main`. Vercel redeploys on that push. Because CoC API keys are IP-locked and Action runners have changing IPs, the scraper goes through the [RoyaleAPI proxy](https://docs.royaleapi.com/proxy.html), which has a fixed IP.
 
 ## Features
 
@@ -50,11 +45,14 @@ Create a `.env` file in the root directory:
 
 ```env
 api_key=YOUR_COC_API_TOKEN_HERE
+coc_base_url=https://cocproxy.royaleapi.dev/v1
 ```
 
 Get your API token from [Clash of Clans Developer Portal](https://developer.clashofclans.com/)
 
-> ⚠️ **Important**: API tokens are IP-locked. Create a token for your current IP address.
+> ⚠️ **Important**: API tokens are IP-locked. For the proxy, create the token with `45.79.218.79` as the allowed IP. To call the API directly instead, allow your own IP and leave out `coc_base_url`.
+
+For the daily update, add the same two values as GitHub Actions secrets (`api_key`, `coc_base_url`) under Settings → Secrets and variables → Actions.
 
 ### 3. Update Clan Tag
 
@@ -102,24 +100,19 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Updating Data
 
-Simply re-run the Python scraper whenever you want fresh data:
-
-```bash
-python api/clan_analyzer.py
-```
-
-The dashboard will automatically show the new data on refresh.
+The hosted site updates itself daily through the GitHub Action. To refresh sooner, open the repo's Actions tab, choose "Update clan data" and click **Run workflow**. Locally, re-run `python api/clan_analyzer.py` and refresh the page.
 
 ## Project Structure
 
 ```
 COC_analysis/
-├── .env                    # API key (gitignored)
+├── .env                    # API key + base URL (gitignored)
+├── .github/workflows/
+│   └── update-data.yml     # Daily scrape + commit
 ├── api/
 │   ├── clan_analyzer.py    # Main scraper script
 │   ├── clan_history.json   # Historical data storage
-│   ├── requirements.txt    # Python dependencies
-│   └── streamlit_app.py    # Legacy Streamlit dashboard
+│   └── requirements.txt    # Python dependencies
 ├── coc-dashboard/
 │   ├── app/
 │   │   ├── components/     # React components
@@ -129,6 +122,8 @@ COC_analysis/
 │   ├── public/
 │   │   └── clan_data.json  # Scraped data (generated)
 │   └── package.json
+├── mobile-coc-dashboard/   # Expo mobile app
+├── legacy/                 # Old Streamlit app + HTML report (unmaintained)
 └── README.md
 ```
 

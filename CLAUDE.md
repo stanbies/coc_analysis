@@ -47,8 +47,9 @@ npx expo lint           # ESLint
 ## Architecture Details
 
 ### Data Pipeline
-- `api/clan_analyzer.py` is a single ~97KB script containing all scraping logic, rush detection algorithm, and data export. It reads `.env` from the repo root for `api_key`.
-- The scraper writes `clan_history.json` (historical war data) alongside itself in `api/`.
+- `api/clan_analyzer.py` is a single script containing all scraping logic, rush detection algorithm, and data export. It reads `.env` from the repo root for `api_key` and `coc_base_url`.
+- The scraper writes `clan_history.json` (historical war data) alongside itself in `api/`. It exits non-zero if the clan, member or player fetches fail.
+- `.github/workflows/update-data.yml` runs the scraper daily (05:00 UTC, or manually via workflow_dispatch) and commits `clan_data.json` + `clan_history.json` to `main`; Vercel redeploys on the push. It reads `api_key` and `coc_base_url` from repo secrets.
 - Both dashboards share the same `DashboardData` TypeScript interface shape (defined separately in `coc-dashboard/app/types.ts` and `mobile-coc-dashboard/types/index.ts`). Keep these in sync when modifying data structures.
 
 ### Web Dashboard
@@ -69,5 +70,6 @@ The scraper has a weighted rush scoring algorithm (heroes 50%, troops 35%, spell
 
 ## Key Configuration
 - **Clan tag**: hardcoded as `CLAN_TAG` in `api/clan_analyzer.py`
-- **API key**: stored in root `.env` as `api_key` (IP-locked CoC developer token)
-- `api/streamlit_app.py` is a legacy Streamlit dashboard (not actively used)
+- **API key**: stored in root `.env` as `api_key` (IP-locked CoC developer token, allowed IP `45.79.218.79` for the proxy)
+- **Base URL**: `coc_base_url` in `.env`, set to `https://cocproxy.royaleapi.dev/v1` (RoyaleAPI proxy, needed because Action runners have dynamic IPs). Defaults to the official API if unset.
+- `legacy/` holds unmaintained code (old Streamlit dashboard, old static HTML report). Don't extend it.
