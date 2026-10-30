@@ -18,7 +18,9 @@ import argparse
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
+
+import yaml
 
 from coc_api import get_clan_members, get_player_info, get_player_league_history
 from config import CLAN_TAG, PUBLISHED_RANKED_FILE, RANKED_FILE
@@ -128,6 +130,46 @@ def previous_status(data: dict, tag: str, before_week: str) -> tuple[str, dict] 
         if key < before_week and tag in data["weeks"][key]["players"]:
             return key, data["weeks"][key]["players"][tag]
     return None, None
+
+
+def load_th_table(path: str) -> dict:
+    """Load a {town hall: value} YAML table."""
+    with open(path, "r", encoding="utf-8") as f:
+        table = yaml.safe_load(f) or {}
+    if not all(isinstance(th, int) for th in table):
+        raise ValueError(f"{path}: keys must be Town Hall numbers")
+    return table
+
+
+def for_town_hall(table: dict, th: int):
+    """Value for this Town Hall, or for the closest lower one listed."""
+    lower = [level for level in table if level <= th]
+    return table[max(lower)] if lower else None
+
+
+def ranked_history_export(data: dict) -> list:
+    """All recorded weeks, oldest first, in the shape the dashboard reads.
+
+    Per player: the league, the Town Hall when the week was recorded live (not
+    for weeks backfilled from league history) and the result once finished.
+    """
+    weeks = []
+    for key in sorted(data["weeks"]):
+        year, week = key.split("-W")
+        players = {}
+        for tag, p in data["weeks"][key]["players"].items():
+            entry = {"league": p.get("league", 0)}
+            if p.get("townHallLevel"):
+                entry["townHallLevel"] = p["townHallLevel"]
+            if p.get("result"):
+                entry["result"] = p["result"]
+            players[tag] = entry
+        weeks.append({
+            "week": key,
+            "start": date.fromisocalendar(int(year), int(week), 1).isoformat(),
+            "players": players,
+        })
+    return weeks
 
 
 def inspect_player(tag: str, player: dict, history: list | None):

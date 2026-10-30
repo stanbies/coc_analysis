@@ -26,32 +26,16 @@ import sys
 import urllib.parse
 from datetime import datetime, timezone
 
-import yaml
-
 from coc_api import get_player_info, get_player_league_history
 from config import BENCHMARKS_FILE, MAIL_ADDRESS, MAIL_PREVIEW_DIR, STRATEGIES_FILE
 from mailer import Mailer, build_message
-from ranked import (LEAGUE_TIER_BASE_ID, league_name, league_number, load_snapshots,
+from ranked import (LEAGUE_TIER_BASE_ID, for_town_hall, league_name, league_number, load_snapshots,
+                    load_th_table,
                     previous_status, week_key)
 from subscribers import load_subscribers, normalize_tag
 
 WEEK_SECONDS = 7 * 24 * 3600
 MAX_VIDEOS = 3
-
-
-def load_th_table(path: str) -> dict:
-    """Load a {town hall: value} YAML table."""
-    with open(path, "r", encoding="utf-8") as f:
-        table = yaml.safe_load(f) or {}
-    if not all(isinstance(th, int) for th in table):
-        raise ValueError(f"{path}: keys must be Town Hall numbers")
-    return table
-
-
-def for_town_hall(table: dict, th: int):
-    """Value for this Town Hall, or for the closest lower one listed."""
-    lower = [level for level in table if level <= th]
-    return table[max(lower)] if lower else None
 
 
 def last_week_entry(player: dict, history: list) -> dict | None:

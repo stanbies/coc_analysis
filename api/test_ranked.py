@@ -4,8 +4,8 @@ from datetime import datetime, timezone
 
 import pytest
 
-from ranked import (league_number, previous_status, ranked_status, record_results, record_snapshot,
-                    week_key)
+from ranked import (league_number, previous_status, ranked_history_export, ranked_status, record_results,
+                    record_snapshot, week_key)
 from subscribers import parse_subscribers
 
 
@@ -83,3 +83,15 @@ def test_parse_subscribers_normalizes_and_skips_comments():
 def test_parse_subscribers_rejects_bad_lines(line):
     with pytest.raises(ValueError, match="line 1"):
         parse_subscribers(line)
+
+
+def test_history_export_is_oldest_first_with_week_start_and_optional_fields():
+    data = {"weeks": {}}
+    record_snapshot(data, {"#P1": ranked_status(player(th=17))}, at(26))          # W44, live
+    record_results(data, "#P1", [history_entry(datetime(2026, 10, 19, 5, tzinfo=timezone.utc), league=28)])  # W43
+    weeks = ranked_history_export(data)
+    assert [w["week"] for w in weeks] == ["2026-W43", "2026-W44"]
+    assert weeks[0]["start"] == "2026-10-19"
+    assert weeks[0]["players"]["#P1"] == {"league": 28, "result": {"league": 28, "placement": 12, "trophies": 640,
+                                                                  "attacks": 12, "maxAttacks": 14}}
+    assert weeks[1]["players"]["#P1"] == {"league": 29, "townHallLevel": 17}

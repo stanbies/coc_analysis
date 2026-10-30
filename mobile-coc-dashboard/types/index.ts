@@ -246,6 +246,8 @@ export interface DashboardData {
   };
   rushMethod?: RushMethod; // absent in exports from before Oct 2026
   statistics: Statistics;
+  rankedHistory?: RankedWeek[];
+  rankedBenchmarks?: Record<string, number>; // Town Hall -> minimum league
 }
 
 // The scoring rules from api/rush.py (rush_method())
@@ -259,4 +261,27 @@ export interface RushMethod {
   heroCaps: Record<string, Record<string, number>>; // hero -> Town Hall -> max level
   scoredTroopCount: number;
   scoredSpellCount: number;
+}
+
+// Weekly ranked league per member, oldest week first (api/ranked.py). Town Hall
+// is only known for weeks recorded live; result only once a week is finished.
+export interface RankedWeekResult {
+  league: number;
+  placement: number | null;
+  trophies: number | null;
+  attacks: number;
+  maxAttacks: number | null;
+}
+
+export interface RankedWeekPlayer {
+  league: number; // 0 unranked, 1-33 Skeleton..Electro, 34-36 Legend
+  townHallLevel?: number;
+  result?: RankedWeekResult;
+}
+
+export interface RankedWeek {
+  week: string; // ISO week, e.g. 2026-W44
+  start: string; // Monday of that week, YYYY-MM-DD
+  // By player tag; members who joined later or left are missing from some weeks
+  players: Record<string, RankedWeekPlayer | undefined>;
 }

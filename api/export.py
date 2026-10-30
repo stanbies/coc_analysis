@@ -4,8 +4,9 @@ import json
 import os
 from collections import defaultdict
 
-from config import DASHBOARD_DATA_FILE
+from config import BENCHMARKS_FILE, DASHBOARD_DATA_FILE
 from history import utc_now
+from ranked import load_snapshots, load_th_table, ranked_history_export
 from rush import get_max_level_for_th, rush_method
 
 
@@ -258,6 +259,10 @@ def export_dashboard_data(clan: dict, players_data: list, rush_reports: list,
             'lastUpdated': historical_data.get('last_updated'),
         },
         'rushMethod': rush_method(),
+        # Weekly ranked league per member and the minimum league we expect per
+        # Town Hall, for the Players tab (written by the weekly ranked workflow)
+        'rankedHistory': ranked_history_export(load_snapshots()),
+        'rankedBenchmarks': {str(th): league for th, league in sorted(load_th_table(BENCHMARKS_FILE).items())},
         'statistics': {
             'thDistribution': dict(th_distribution),
             'roleDistribution': dict(role_distribution),

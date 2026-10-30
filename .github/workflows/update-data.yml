@@ -6,6 +6,11 @@ on:
     # the next war starts. Repeat runs during a war just refresh its attacks.
     - cron: "0 */6 * * *"
   workflow_dispatch:
+  # Right after the Monday ranked snapshot, so the Players tab and "Zwegers of
+  # the Week" show the new week within minutes instead of at the next 6h run
+  workflow_run:
+    workflows: ["Weekly ranked snapshot and mail"]
+    types: [completed]
 
 permissions:
   contents: write
