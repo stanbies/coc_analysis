@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T21:58:00.825499+00:00",
+  "lastUpdated": "2026-10-30T22:38:27.960460+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -18,7 +18,7 @@
     },
     "clanLevel": 15,
     "clanPoints": 97650,
-    "clanBuilderBasePoints": 35653,
+    "clanBuilderBasePoints": 35652,
     "clanCapitalPoints": 2179,
     "capitalLeague": {
       "id": 85000010,
@@ -3004,7 +3004,7 @@
       "role": "coLeader",
       "warPreference": "in",
       "donations": 3082,
-      "donationsReceived": 4056,
+      "donationsReceived": 4142,
       "clanCapitalContributions": 1067375,
       "clan": {
         "tag": "#2J28LL2VU",
@@ -17039,10 +17039,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 6744,
+          "value": 6745,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 6744",
+          "completionInfo": "Total obstacles removed: 6745",
           "village": "home"
         },
         {
@@ -22570,7 +22570,7 @@
       "bestBuilderBaseTrophies": 3250,
       "role": "member",
       "warPreference": "in",
-      "donations": 2046,
+      "donations": 2077,
       "donationsReceived": 400,
       "clanCapitalContributions": 1189057,
       "clan": {
@@ -30670,7 +30670,7 @@
       "expLevel": 180,
       "trophies": 264,
       "bestTrophies": 2792,
-      "warStars": 584,
+      "warStars": 587,
       "attackWins": 0,
       "defenseWins": 0,
       "builderHallLevel": 10,
@@ -30678,7 +30678,7 @@
       "bestBuilderBaseTrophies": 3640,
       "role": "coLeader",
       "warPreference": "in",
-      "donations": 1402,
+      "donations": 1442,
       "donationsReceived": 3765,
       "clanCapitalContributions": 957219,
       "clan": {
@@ -30735,10 +30735,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 4832,
+          "value": 4833,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 4832",
+          "completionInfo": "Total obstacles removed: 4833",
           "village": "home"
         },
         {
@@ -30753,19 +30753,19 @@
         {
           "name": "Gold Grab",
           "stars": 3,
-          "value": 1768339285,
+          "value": 1768488285,
           "target": 100000000,
           "info": "Steal 100000000 Gold",
-          "completionInfo": "Total Gold looted: 1768339285",
+          "completionInfo": "Total Gold looted: 1768488285",
           "village": "home"
         },
         {
           "name": "Elixir Escapade",
           "stars": 3,
-          "value": 1841930616,
+          "value": 1842079616,
           "target": 100000000,
           "info": "Steal 100000000 elixir",
-          "completionInfo": "Total Elixir looted: 1841930616",
+          "completionInfo": "Total Elixir looted: 1842079616",
           "village": "home"
         },
         {
@@ -30834,10 +30834,10 @@
         {
           "name": "Friend in Need",
           "stars": 2,
-          "value": 21628,
+          "value": 21668,
           "target": 25000,
           "info": "Donate 25000 capacity worth of reinforcements to Clanmates",
-          "completionInfo": "Total capacity donated: 21628",
+          "completionInfo": "Total capacity donated: 21668",
           "village": "home"
         },
         {
@@ -30852,10 +30852,10 @@
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 16992074,
+          "value": 16992864,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 16992074",
+          "completionInfo": "Total Dark Elixir looted: 16992864",
           "village": "home"
         },
         {
@@ -30888,10 +30888,10 @@
         {
           "name": "War Hero",
           "stars": 2,
-          "value": 584,
+          "value": 587,
           "target": 1000,
           "info": "Score 1000 Stars for your clan in Clan War battles",
-          "completionInfo": "Total Stars scored for clan in Clan War battles: 584",
+          "completionInfo": "Total Stars scored for clan in Clan War battles: 587",
           "village": "home"
         },
         {
@@ -31023,10 +31023,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 92220,
+          "value": 92520,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 92220",
+          "completionInfo": "Total Season Challenges points: 92520",
           "village": "home"
         },
         {
@@ -31236,12 +31236,12 @@
         },
         {
           "name": "Royal Champion",
-          "level": 35,
+          "level": 36,
           "maxLevel": 40
         },
         {
           "name": "Minion Prince",
-          "level": 65,
+          "level": 66,
           "maxLevel": 70
         },
         {
@@ -31944,10 +31944,10 @@
         ]
       },
       "warStats": {
-        "totalAttacks": 1,
-        "totalStars": 3,
-        "totalDestruction": 100.0,
-        "threeStars": 1,
+        "totalAttacks": 2,
+        "totalStars": 6,
+        "totalDestruction": 200.0,
+        "threeStars": 2,
         "twoStars": 0,
         "oneStars": 0,
         "zeroStars": 0,
@@ -49503,12 +49503,12 @@
       "attackWins": 0,
       "defenseWins": 0,
       "builderHallLevel": 10,
-      "builderBaseTrophies": 3335,
-      "bestBuilderBaseTrophies": 3341,
+      "builderBaseTrophies": 3329,
+      "bestBuilderBaseTrophies": 3371,
       "role": "member",
       "warPreference": "in",
-      "donations": 119,
-      "donationsReceived": 523,
+      "donations": 174,
+      "donationsReceived": 563,
       "clanCapitalContributions": 633372,
       "clan": {
         "tag": "#2J28LL2VU",
@@ -49564,10 +49564,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 4844,
+          "value": 4849,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 4844",
+          "completionInfo": "Total obstacles removed: 4849",
           "village": "home"
         },
         {
@@ -49663,10 +49663,10 @@
         {
           "name": "Friend in Need",
           "stars": 2,
-          "value": 9974,
+          "value": 10029,
           "target": 25000,
           "info": "Donate 25000 capacity worth of reinforcements to Clanmates",
-          "completionInfo": "Total capacity donated: 9974",
+          "completionInfo": "Total capacity donated: 10029",
           "village": "home"
         },
         {
@@ -49780,19 +49780,19 @@
         {
           "name": "Un-Build It",
           "stars": 3,
-          "value": 2063,
+          "value": 2067,
           "target": 2000,
           "info": "Destroy 2000 Builder Halls in Builder Battles",
-          "completionInfo": "Total Builder Halls destroyed: 2063",
+          "completionInfo": "Total Builder Halls destroyed: 2067",
           "village": "builderBase"
         },
         {
           "name": "Champion Builder",
           "stars": 3,
-          "value": 3341,
+          "value": 3371,
           "target": 3000,
           "info": "Achieve a total of 3000 trophies in Builder Battles",
-          "completionInfo": "Builder Trophy record: 3341",
+          "completionInfo": "Builder Trophy record: 3371",
           "village": "builderBase"
         },
         {
@@ -49852,10 +49852,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 72190,
+          "value": 73190,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 72190",
+          "completionInfo": "Total Season Challenges points: 73190",
           "village": "home"
         },
         {
@@ -53005,7 +53005,7 @@
       "townHallLevel": 12,
       "townHallWeaponLevel": 1,
       "expLevel": 102,
-      "trophies": 255,
+      "trophies": 265,
       "bestTrophies": 2376,
       "warStars": 42,
       "attackWins": 0,
@@ -62800,15 +62800,25 @@
         "medium": "https://api-assets.clashofclans.com/badges/200/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png"
       },
       "clanLevel": 15,
-      "attacks": 1,
-      "stars": 3,
-      "destructionPercentage": 4.0,
+      "attacks": 2,
+      "stars": 6,
+      "destructionPercentage": 8.0,
       "members": [
         {
           "tag": "#9CRYUCRL",
           "name": "LukasXIV",
           "townhallLevel": 15,
           "mapPosition": 13,
+          "attacks": [
+            {
+              "attackerTag": "#9CRYUCRL",
+              "defenderTag": "#LVYC9P28Y",
+              "stars": 3,
+              "destructionPercentage": 100,
+              "order": 2,
+              "duration": 127
+            }
+          ],
           "opponentAttacks": 0
         },
         {
@@ -63164,7 +63174,15 @@
           "name": "Itachi Uchiha",
           "townhallLevel": 15,
           "mapPosition": 13,
-          "opponentAttacks": 0
+          "opponentAttacks": 1,
+          "bestOpponentAttack": {
+            "attackerTag": "#9CRYUCRL",
+            "defenderTag": "#LVYC9P28Y",
+            "stars": 3,
+            "destructionPercentage": 100,
+            "order": 2,
+            "duration": 127
+          }
         },
         {
           "tag": "#GJGGV0RCQ",
@@ -68935,7 +68953,7 @@
         "complete": false
       }
     },
-    "lastUpdated": "2026-10-30T21:58:00.821904+00:00"
+    "lastUpdated": "2026-10-30T22:38:27.956357+00:00"
   },
   "rushMethod": {
     "weights": {
@@ -69039,6 +69057,3099 @@
     "scoredTroopCount": 32,
     "scoredSpellCount": 18
   },
+  "rankedHistory": [
+    {
+      "week": "2026-W36",
+      "start": "2026-08-31",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 14,
+            "trophies": 611,
+            "attacks": 13,
+            "maxAttacks": 14
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 43,
+            "trophies": 635,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 29,
+            "trophies": 576,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 31,
+            "trophies": 562,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 31,
+            "trophies": 480,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 99,
+            "trophies": 201,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 53,
+            "trophies": 263,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 18,
+            "trophies": 453,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 18,
+            "trophies": 535,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 11,
+            "trophies": 588,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 62,
+            "trophies": 405,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 22,
+            "trophies": 499,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 21,
+            "trophies": 597,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 4,
+            "trophies": 629,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PJJ099YG": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 13,
+            "trophies": 534,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 16,
+            "trophies": 520,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 4,
+            "trophies": 712,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 39,
+            "trophies": 423,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 31,
+            "trophies": 561,
+            "attacks": 13,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 35,
+            "trophies": 537,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 33,
+            "trophies": 456,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 31,
+            "trophies": 515,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 30,
+            "trophies": 449,
+            "attacks": 7,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 49,
+            "trophies": 268,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 89,
+            "trophies": 151,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 5,
+            "trophies": 625,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 16,
+          "result": {
+            "league": 16,
+            "placement": 97,
+            "trophies": 141,
+            "attacks": 3,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 11,
+          "result": {
+            "league": 11,
+            "placement": 15,
+            "trophies": 384,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 25,
+            "trophies": 387,
+            "attacks": 8,
+            "maxAttacks": 10
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 10,
+          "result": {
+            "league": 10,
+            "placement": 25,
+            "trophies": 356,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "result": {
+            "league": 13,
+            "placement": 82,
+            "trophies": 201,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 60,
+            "trophies": 200,
+            "attacks": 1,
+            "maxAttacks": 8
+          }
+        },
+        "#9CGVPCJU2": {
+          "league": 9,
+          "result": {
+            "league": 9,
+            "placement": 60,
+            "trophies": 236,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 7,
+          "result": {
+            "league": 7,
+            "placement": 37,
+            "trophies": 315,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 3,
+          "result": {
+            "league": 3,
+            "placement": 60,
+            "trophies": 170,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W37",
+      "start": "2026-09-07",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 7,
+            "trophies": 846,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 57,
+            "trophies": 654,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 28,
+            "trophies": 557,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 94,
+            "trophies": 240,
+            "attacks": 3,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 5,
+            "trophies": 734,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 91,
+            "trophies": 225,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 21,
+            "trophies": 473,
+            "attacks": 8,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 31,
+            "trophies": 538,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 35,
+            "trophies": 420,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 95,
+            "trophies": 98,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 62,
+            "trophies": 398,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 13,
+            "trophies": 596,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 80,
+            "trophies": 363,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 35,
+            "trophies": 381,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PJJ099YG": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 49,
+            "trophies": 433,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 2,
+            "trophies": 670,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 7,
+            "trophies": 739,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 30,
+            "trophies": 460,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 35,
+            "trophies": 554,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 98,
+            "trophies": 202,
+            "attacks": 7,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 23,
+            "trophies": 497,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 48,
+            "trophies": 444,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 85,
+            "trophies": 162,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 41,
+            "trophies": 287,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 21,
+            "trophies": 506,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 78,
+            "trophies": 163,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 15,
+          "result": {
+            "league": 15,
+            "placement": 17,
+            "trophies": 434,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 11,
+            "trophies": 408,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 25,
+            "trophies": 521,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 11,
+          "result": {
+            "league": 11,
+            "placement": 24,
+            "trophies": 317,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 92,
+            "trophies": 146,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#9CGVPCJU2": {
+          "league": 9,
+          "result": {
+            "league": 9,
+            "placement": 69,
+            "trophies": 161,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 8,
+          "result": {
+            "league": 8,
+            "placement": 32,
+            "trophies": 266,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 3,
+          "result": {
+            "league": 3,
+            "placement": 17,
+            "trophies": 314,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W38",
+      "start": "2026-09-14",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 32,
+          "result": {
+            "league": 32,
+            "placement": 3,
+            "trophies": 915,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 23,
+            "trophies": 777,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 5,
+            "trophies": 714,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 8,
+            "trophies": 666,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 30,
+            "trophies": 545,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 7,
+            "trophies": 707,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 47,
+            "trophies": 361,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 21,
+            "trophies": 548,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 54,
+            "trophies": 410,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 14,
+            "trophies": 579,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 41,
+            "trophies": 502,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 25,
+            "trophies": 465,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PJJ099YG": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 35,
+            "trophies": 466,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 1,
+            "trophies": 784,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 1,
+            "trophies": 796,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 30,
+            "trophies": 588,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 35,
+            "trophies": 406,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 100,
+            "trophies": 52,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 95,
+            "trophies": 172,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 80,
+            "trophies": 173,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 45,
+            "trophies": 465,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 71,
+            "trophies": 252,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 33,
+            "trophies": 368,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 21,
+            "trophies": 545,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 62,
+            "trophies": 201,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 16,
+          "result": {
+            "league": 16,
+            "placement": 33,
+            "trophies": 386,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 13,
+          "result": {
+            "league": 13,
+            "placement": 29,
+            "trophies": 390,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 11,
+          "result": {
+            "league": 11,
+            "placement": 37,
+            "trophies": 224,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 7,
+            "trophies": 746,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 43,
+            "trophies": 272,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 6,
+          "result": {
+            "league": 6,
+            "placement": 46,
+            "trophies": 188,
+            "attacks": 4,
+            "maxAttacks": 6
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 9,
+          "result": {
+            "league": 9,
+            "placement": 89,
+            "trophies": 73,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 4,
+          "result": {
+            "league": 4,
+            "placement": 31,
+            "trophies": 207,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W39",
+      "start": "2026-09-21",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "result": {
+            "league": 33,
+            "placement": 41,
+            "trophies": 715,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 25,
+            "trophies": 711,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 58,
+            "trophies": 483,
+            "attacks": 12,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 88,
+            "trophies": 290,
+            "attacks": 5,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 21,
+            "trophies": 601,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 13,
+            "trophies": 454,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 69,
+            "trophies": 427,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 30,
+            "trophies": 424,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 9,
+            "trophies": 562,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 30,
+            "trophies": 504,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 18,
+            "trophies": 495,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 31,
+            "trophies": 542,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 18,
+            "trophies": 603,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 16,
+            "trophies": 557,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 1,
+            "trophies": 673,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 8,
+            "trophies": 627,
+            "attacks": 11,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 95,
+            "trophies": 257,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 65,
+            "trophies": 349,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 39,
+            "trophies": 492,
+            "attacks": 11,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 26,
+            "trophies": 478,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 93,
+            "trophies": 237,
+            "attacks": 6,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 91,
+            "trophies": 174,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 35,
+            "trophies": 456,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 2,
+            "trophies": 652,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 34,
+            "trophies": 422,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 25,
+            "trophies": 480,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 40,
+            "trophies": 403,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#8Q982L9": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 38,
+            "trophies": 323,
+            "attacks": 5,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 14,
+          "result": {
+            "league": 14,
+            "placement": 19,
+            "trophies": 421,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 95,
+            "trophies": 146,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 20,
+            "trophies": 344,
+            "attacks": 7,
+            "maxAttacks": 8
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 8,
+          "result": {
+            "league": 8,
+            "placement": 16,
+            "trophies": 386,
+            "attacks": 6,
+            "maxAttacks": 8
+          }
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "result": {
+            "league": 13,
+            "placement": 78,
+            "trophies": 204,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "result": {
+            "league": 5,
+            "placement": 94,
+            "trophies": 63,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W40",
+      "start": "2026-09-28",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "result": {
+            "league": 33,
+            "placement": 46,
+            "trophies": 698,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 24,
+            "trophies": 710,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 23,
+            "trophies": 585,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 9,
+            "trophies": 650,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 34,
+            "trophies": 532,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 8,
+            "trophies": 621,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 69,
+            "trophies": 393,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 35,
+            "trophies": 472,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 73,
+            "trophies": 252,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 71,
+            "trophies": 331,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 34,
+            "trophies": 413,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 56,
+            "trophies": 430,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 53,
+            "trophies": 444,
+            "attacks": 13,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 22,
+            "trophies": 445,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 3,
+            "trophies": 748,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 62,
+            "trophies": 361,
+            "attacks": 2,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 98,
+            "trophies": 183,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 63,
+            "trophies": 322,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 53,
+            "trophies": 414,
+            "attacks": 7,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 16,
+            "trophies": 487,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 50,
+            "trophies": 313,
+            "attacks": 9,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 45,
+            "trophies": 355,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 52,
+            "trophies": 345,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 5,
+            "trophies": 554,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 41,
+            "trophies": 422,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 20,
+            "trophies": 484,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 26,
+            "trophies": 399,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 15,
+          "result": {
+            "league": 15,
+            "placement": 37,
+            "trophies": 349,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 14,
+          "result": {
+            "league": 14,
+            "placement": 19,
+            "trophies": 434,
+            "attacks": 6,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 100,
+            "trophies": 0,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 13,
+          "result": {
+            "league": 13,
+            "placement": 82,
+            "trophies": 209,
+            "attacks": 3,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 9,
+          "result": {
+            "league": 9,
+            "placement": 10,
+            "trophies": 406,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 11,
+          "result": {
+            "league": 11,
+            "placement": 44,
+            "trophies": 216,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "result": {
+            "league": 5,
+            "placement": 80,
+            "trophies": 118,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W41",
+      "start": "2026-10-05",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "result": {
+            "league": 33,
+            "placement": 73,
+            "trophies": 597,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 15,
+            "trophies": 806,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 44,
+            "trophies": 673,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 25,
+            "trophies": 566,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 30,
+          "result": {
+            "league": 30,
+            "placement": 23,
+            "trophies": 575,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 10,
+            "trophies": 572,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 4,
+            "trophies": 626,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 1,
+            "trophies": 712,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 32,
+            "trophies": 540,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 48,
+            "trophies": 449,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 9,
+            "trophies": 592,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 64,
+            "trophies": 411,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 34,
+            "trophies": 515,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 81,
+            "trophies": 332,
+            "attacks": 12,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 47,
+            "trophies": 372,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 6,
+            "trophies": 642,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 3,
+            "trophies": 730,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 92,
+            "trophies": 244,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 28,
+            "trophies": 448,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 20,
+            "trophies": 592,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 24,
+          "result": {
+            "league": 24,
+            "placement": 37,
+            "trophies": 407,
+            "attacks": 10,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 91,
+            "trophies": 199,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 91,
+            "trophies": 108,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 19,
+            "trophies": 642,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 33,
+            "trophies": 449,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 89,
+            "trophies": 231,
+            "attacks": 7,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 91,
+            "trophies": 194,
+            "attacks": 5,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "league": 14,
+          "result": {
+            "league": 14,
+            "placement": 11,
+            "trophies": 499,
+            "attacks": 7,
+            "maxAttacks": 10
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 44,
+            "trophies": 365,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8Q982L9": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 20,
+            "trophies": 413,
+            "attacks": 5,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 16,
+          "result": {
+            "league": 16,
+            "placement": 64,
+            "trophies": 281,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 15,
+          "result": {
+            "league": 15,
+            "placement": 22,
+            "trophies": 389,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 61,
+            "trophies": 241,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 13,
+          "result": {
+            "league": 13,
+            "placement": 33,
+            "trophies": 375,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 10,
+          "result": {
+            "league": 10,
+            "placement": 25,
+            "trophies": 325,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "result": {
+            "league": 13,
+            "placement": 48,
+            "trophies": 299,
+            "attacks": 3,
+            "maxAttacks": 10
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "result": {
+            "league": 5,
+            "placement": 59,
+            "trophies": 154,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W42",
+      "start": "2026-10-12",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "result": {
+            "league": 33,
+            "placement": 26,
+            "trophies": 781,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 32,
+          "result": {
+            "league": 32,
+            "placement": 53,
+            "trophies": 652,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 9,
+            "trophies": 812,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 61,
+            "trophies": 570,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 72,
+            "trophies": 571,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 6,
+            "trophies": 714,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 3,
+            "trophies": 796,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 7,
+            "trophies": 599,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 52,
+            "trophies": 476,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 30,
+            "trophies": 534,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 64,
+            "trophies": 391,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 65,
+            "trophies": 416,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 16,
+            "trophies": 616,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 40,
+            "trophies": 518,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 27,
+            "trophies": 550,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 27,
+            "trophies": 461,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 2,
+            "trophies": 722,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 9,
+            "trophies": 593,
+            "attacks": 8,
+            "maxAttacks": 12
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 48,
+            "trophies": 434,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 98,
+            "trophies": 108,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 25,
+          "result": {
+            "league": 25,
+            "placement": 23,
+            "trophies": 522,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 46,
+            "trophies": 379,
+            "attacks": 10,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 7,
+            "trophies": 606,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 26,
+            "trophies": 452,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 20,
+          "result": {
+            "league": 20,
+            "placement": 3,
+            "trophies": 721,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#G082YJJJL": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 28,
+            "trophies": 496,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 60,
+            "trophies": 282,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 22,
+            "trophies": 432,
+            "attacks": 4,
+            "maxAttacks": 10
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 72,
+            "trophies": 258,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#V90LCPR0": {
+          "league": 16,
+          "result": {
+            "league": 16,
+            "placement": 7,
+            "trophies": 506,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 16,
+          "result": {
+            "league": 16,
+            "placement": 23,
+            "trophies": 426,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#LRQ0J2UJ": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 42,
+            "trophies": 314,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 14,
+          "result": {
+            "league": 14,
+            "placement": 43,
+            "trophies": 273,
+            "attacks": 8,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 11,
+          "result": {
+            "league": 11,
+            "placement": 37,
+            "trophies": 264,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "result": {
+            "league": 5,
+            "placement": 56,
+            "trophies": 158,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W43",
+      "start": "2026-10-19",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "result": {
+            "league": 33,
+            "placement": 24,
+            "trophies": 771,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 32,
+          "result": {
+            "league": 32,
+            "placement": 39,
+            "trophies": 688,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 32,
+          "result": {
+            "league": 32,
+            "placement": 51,
+            "trophies": 678,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 58,
+            "trophies": 595,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 31,
+          "result": {
+            "league": 31,
+            "placement": 46,
+            "trophies": 657,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 17,
+            "trophies": 649,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 6,
+            "trophies": 707,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 4,
+            "trophies": 823,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 47,
+            "trophies": 503,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 41,
+            "trophies": 505,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 16,
+            "trophies": 574,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 67,
+            "trophies": 431,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 27,
+            "trophies": 548,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 46,
+            "trophies": 498,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "result": {
+            "league": 29,
+            "placement": 74,
+            "trophies": 274,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 37,
+            "trophies": 491,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 6,
+            "trophies": 579,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 9,
+            "trophies": 601,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 2,
+            "trophies": 645,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 85,
+            "trophies": 286,
+            "attacks": 9,
+            "maxAttacks": 14
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 76,
+            "trophies": 320,
+            "attacks": 5,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 28,
+          "result": {
+            "league": 28,
+            "placement": 99,
+            "trophies": 201,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 26,
+          "result": {
+            "league": 26,
+            "placement": 43,
+            "trophies": 354,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 27,
+          "result": {
+            "league": 27,
+            "placement": 95,
+            "trophies": 178,
+            "attacks": 4,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "result": {
+            "league": 23,
+            "placement": 60,
+            "trophies": 255,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 63,
+            "trophies": 333,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 9,
+            "trophies": 624,
+            "attacks": 11,
+            "maxAttacks": 12
+          }
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "result": {
+            "league": 22,
+            "placement": 68,
+            "trophies": 384,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 21,
+          "result": {
+            "league": 21,
+            "placement": 94,
+            "trophies": 101,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "league": 18,
+          "result": {
+            "league": 18,
+            "placement": 32,
+            "trophies": 406,
+            "attacks": 5,
+            "maxAttacks": 10
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 56,
+            "trophies": 330,
+            "attacks": 11,
+            "maxAttacks": 12
+          }
+        },
+        "#8Q982L9": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 79,
+            "trophies": 244,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#V90LCPR0": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 24,
+            "trophies": 443,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 17,
+          "result": {
+            "league": 17,
+            "placement": 42,
+            "trophies": 366,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 19,
+          "result": {
+            "league": 19,
+            "placement": 100,
+            "trophies": 49,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 15,
+          "result": {
+            "league": 15,
+            "placement": 62,
+            "trophies": 243,
+            "attacks": 7,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 39,
+            "trophies": 264,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "result": {
+            "league": 12,
+            "placement": 64,
+            "trophies": 186,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#9CGVPCJU2": {
+          "league": 9,
+          "result": {
+            "league": 9,
+            "placement": 17,
+            "trophies": 431,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 9,
+          "result": {
+            "league": 9,
+            "placement": 52,
+            "trophies": 219,
+            "attacks": 7,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "result": {
+            "league": 5,
+            "placement": 26,
+            "trophies": 252,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    {
+      "week": "2026-W44",
+      "start": "2026-10-26",
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "townHallLevel": 18
+        },
+        "#JQ9GP2RP": {
+          "league": 32,
+          "townHallLevel": 18
+        },
+        "#2GJGRYCP0": {
+          "league": 32,
+          "townHallLevel": 18
+        },
+        "#Y98J8J9VJ": {
+          "league": 31,
+          "townHallLevel": 17
+        },
+        "#8C8JU2LQV": {
+          "league": 31,
+          "townHallLevel": 18
+        },
+        "#8RUGYCVG9": {
+          "league": 30,
+          "townHallLevel": 17
+        },
+        "#8CGPQYG88": {
+          "league": 30,
+          "townHallLevel": 18
+        },
+        "#LJRP8QPPC": {
+          "league": 29,
+          "townHallLevel": 17
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "townHallLevel": 17
+        },
+        "#Q8QY9JULJ": {
+          "league": 29,
+          "townHallLevel": 16
+        },
+        "#LYVLQ8C02": {
+          "league": 29,
+          "townHallLevel": 15
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "townHallLevel": 16
+        },
+        "#88VCU9C8": {
+          "league": 29,
+          "townHallLevel": 18
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "townHallLevel": 16
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "townHallLevel": 16
+        },
+        "#PJJ099YG": {
+          "league": 28,
+          "townHallLevel": 16
+        },
+        "#LVRQRQCR": {
+          "league": 28,
+          "townHallLevel": 17
+        },
+        "#R080CV0Q": {
+          "league": 28,
+          "townHallLevel": 18
+        },
+        "#2LRURCY92": {
+          "league": 28,
+          "townHallLevel": 18
+        },
+        "#8PGLYQVV9": {
+          "league": 28,
+          "townHallLevel": 15
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "townHallLevel": 16
+        },
+        "#2LYLYGYU2": {
+          "league": 27,
+          "townHallLevel": 17
+        },
+        "#9CRYUCRL": {
+          "league": 27,
+          "townHallLevel": 15
+        },
+        "#P2CVRCG0": {
+          "league": 26,
+          "townHallLevel": 17
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "townHallLevel": 15
+        },
+        "#2LY9RCUJP": {
+          "league": 22,
+          "townHallLevel": 15
+        },
+        "#9J0RPQ9C": {
+          "league": 22,
+          "townHallLevel": 15
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "townHallLevel": 14
+        },
+        "#YYU2CQY2C": {
+          "league": 20,
+          "townHallLevel": 16
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "townHallLevel": 14
+        },
+        "#9U08VL8JU": {
+          "league": 19,
+          "townHallLevel": 15
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "townHallLevel": 14
+        },
+        "#8Q982L9": {
+          "league": 19,
+          "townHallLevel": 15
+        },
+        "#V90LCPR0": {
+          "league": 18,
+          "townHallLevel": 13
+        },
+        "#YUYVPQRP9": {
+          "league": 18,
+          "townHallLevel": 14
+        },
+        "#LRQ0J2UJ": {
+          "league": 18,
+          "townHallLevel": 15
+        },
+        "#Y0LJY82Q8": {
+          "league": 18,
+          "townHallLevel": 14
+        },
+        "#PVYY9GJJP": {
+          "league": 17,
+          "townHallLevel": 15
+        },
+        "#9CPLG0Y9C": {
+          "league": 17,
+          "townHallLevel": 15
+        },
+        "#YG8Q92GJ9": {
+          "league": 15,
+          "townHallLevel": 12
+        },
+        "#L9JQPCPV8": {
+          "league": 13,
+          "townHallLevel": 12
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "townHallLevel": 13
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "townHallLevel": 13
+        },
+        "#9CGVPCJU2": {
+          "league": 10,
+          "townHallLevel": 12
+        },
+        "#PJ80PJP8Q": {
+          "league": 9,
+          "townHallLevel": 10
+        },
+        "#R2QPVCGJY": {
+          "league": 6,
+          "townHallLevel": 10
+        },
+        "#YG9YYGY0Q": {
+          "league": 0,
+          "townHallLevel": 16
+        },
+        "#2L98UV0U0": {
+          "league": 0,
+          "townHallLevel": 15
+        }
+      }
+    }
+  ],
+  "rankedBenchmarks": {
+    "1": 1,
+    "7": 3,
+    "8": 5,
+    "9": 7,
+    "10": 9,
+    "11": 11,
+    "12": 13,
+    "13": 16,
+    "14": 19,
+    "15": 22,
+    "16": 27,
+    "17": 29,
+    "18": 31
+  },
   "statistics": {
     "thDistribution": {
       "18": 8,
@@ -69086,10 +72197,10 @@
       "Slightly Behind": 11,
       "Maxed": 9
     },
-    "totalWarStars": 36666,
-    "totalDonations": 34445,
+    "totalWarStars": 36669,
+    "totalDonations": 34571,
     "totalCapitalContributions": 42887285,
-    "averageTrophies": 227.72916666666666,
+    "averageTrophies": 227.9375,
     "rushedCount": 28,
     "averageRushScore": 24.825
   }

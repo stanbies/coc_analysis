@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-10-30T21:58:00.821904+00:00",
+  "last_updated": "2026-10-30T22:38:27.956357+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -923,10 +923,10 @@
       "name": "LukasXIV",
       "tag": "#9CRYUCRL",
       "current_th": 15,
-      "total_attacks": 1,
-      "total_stars": 3,
-      "total_destruction": 100.0,
-      "three_stars": 1,
+      "total_attacks": 2,
+      "total_stars": 6,
+      "total_destruction": 200.0,
+      "three_stars": 2,
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
@@ -937,6 +937,16 @@
           "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
           "war_type": "regular_war",
           "date": "2026-10-28T19:03:52+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 15,
+          "attacker_th": 15,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-30T18:46:14+00:00",
           "stars": 3,
           "destruction": 100,
           "defender_th": 15,
