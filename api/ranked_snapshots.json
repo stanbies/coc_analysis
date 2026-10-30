@@ -1,0 +1,3490 @@
+{
+  "weeks": {
+    "2026-W44": {
+      "players": {
+        "#28VPLJQCY": {
+          "name": "Quinten",
+          "townHallLevel": 18,
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "trophies": 712
+        },
+        "#JQ9GP2RP": {
+          "name": "laurens",
+          "townHallLevel": 18,
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "trophies": 612
+        },
+        "#2GJGRYCP0": {
+          "name": "oli",
+          "townHallLevel": 18,
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "trophies": 322
+        },
+        "#Y98J8J9VJ": {
+          "name": "nicolaas",
+          "townHallLevel": 17,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 269
+        },
+        "#8C8JU2LQV": {
+          "name": "MrLarsDHG",
+          "townHallLevel": 18,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 254
+        },
+        "#8RUGYCVG9": {
+          "name": "jari",
+          "townHallLevel": 17,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 452
+        },
+        "#8CGPQYG88": {
+          "name": "nicolassss",
+          "townHallLevel": 18,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0
+        },
+        "#LJRP8QPPC": {
+          "name": "San Deere",
+          "townHallLevel": 17,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 571
+        },
+        "#PC8JQL9PJ": {
+          "name": "Andres",
+          "townHallLevel": 17,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 562
+        },
+        "#Q8QY9JULJ": {
+          "name": "bram",
+          "townHallLevel": 16,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 408
+        },
+        "#LYVLQ8C02": {
+          "name": "Quinquin",
+          "townHallLevel": 15,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 185
+        },
+        "#8CRCQ92QV": {
+          "name": "Nils",
+          "townHallLevel": 16,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 121
+        },
+        "#88VCU9C8": {
+          "name": "Servaas",
+          "townHallLevel": 18,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 119
+        },
+        "#J9G8Q2L2": {
+          "name": "quinie cuck",
+          "townHallLevel": 16,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 78
+        },
+        "#28GR98PC2": {
+          "name": "wannes",
+          "townHallLevel": 16,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 0
+        },
+        "#PJJ099YG": {
+          "name": "El Sambi",
+          "townHallLevel": 16,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 522
+        },
+        "#LVRQRQCR": {
+          "name": "linters42O",
+          "townHallLevel": 17,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 508
+        },
+        "#R080CV0Q": {
+          "name": "De Buikies",
+          "townHallLevel": 18,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 442
+        },
+        "#2LRURCY92": {
+          "name": "kenji",
+          "townHallLevel": 18,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 155
+        },
+        "#8PGLYQVV9": {
+          "name": "Kokovic",
+          "townHallLevel": 15,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 136
+        },
+        "#P2CVJUGL8": {
+          "name": "XWIZARDX",
+          "townHallLevel": 16,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 89
+        },
+        "#2LYLYGYU2": {
+          "name": "stan",
+          "townHallLevel": 17,
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "trophies": 431
+        },
+        "#9CRYUCRL": {
+          "name": "LukasXIV",
+          "townHallLevel": 15,
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "trophies": 264
+        },
+        "#P2CVRCG0": {
+          "name": "Jules",
+          "townHallLevel": 17,
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "trophies": 0
+        },
+        "#8VCUC88VP": {
+          "name": "florian",
+          "townHallLevel": 15,
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "trophies": 263
+        },
+        "#2LY9RCUJP": {
+          "name": "maan",
+          "townHallLevel": 15,
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "trophies": 232
+        },
+        "#9J0RPQ9C": {
+          "name": "Cavaleiro-Alex",
+          "townHallLevel": 15,
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "trophies": 122
+        },
+        "#G082YJJJL": {
+          "name": "Quinie",
+          "townHallLevel": 14,
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "trophies": 110
+        },
+        "#YYU2CQY2C": {
+          "name": "Bernaar",
+          "townHallLevel": 16,
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "trophies": 433
+        },
+        "#YUP00J02V": {
+          "name": "REZKA",
+          "townHallLevel": 14,
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "trophies": 0
+        },
+        "#9U08VL8JU": {
+          "name": "itsjeff",
+          "townHallLevel": 15,
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "trophies": 594
+        },
+        "#GRL2GV0JR": {
+          "name": "Goblin ✡️",
+          "townHallLevel": 14,
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "trophies": 192
+        },
+        "#8Q982L9": {
+          "name": "the OG wizard",
+          "townHallLevel": 15,
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "trophies": 0
+        },
+        "#V90LCPR0": {
+          "name": "Samber",
+          "townHallLevel": 13,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 362
+        },
+        "#YUYVPQRP9": {
+          "name": "kutkop",
+          "townHallLevel": 14,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 83
+        },
+        "#LRQ0J2UJ": {
+          "name": "Kappa",
+          "townHallLevel": 15,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 0
+        },
+        "#Y0LJY82Q8": {
+          "name": "kenji2.0",
+          "townHallLevel": 14,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 0
+        },
+        "#PVYY9GJJP": {
+          "name": "killer boy(d)",
+          "townHallLevel": 15,
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "trophies": 405
+        },
+        "#9CPLG0Y9C": {
+          "name": "Martini",
+          "townHallLevel": 15,
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "trophies": 0
+        },
+        "#YG8Q92GJ9": {
+          "name": "Hout Weylen",
+          "townHallLevel": 12,
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "trophies": 17
+        },
+        "#L9JQPCPV8": {
+          "name": "milanxxii",
+          "townHallLevel": 12,
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "trophies": 255
+        },
+        "#G8Y08920C": {
+          "name": "dj yonder",
+          "townHallLevel": 13,
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "trophies": 0
+        },
+        "#8VVC8VRYL": {
+          "name": "noudroels",
+          "townHallLevel": 13,
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "trophies": 441
+        },
+        "#9CGVPCJU2": {
+          "name": "lokeren7",
+          "townHallLevel": 12,
+          "league": 10,
+          "leagueName": "Wizard League 10",
+          "trophies": 0
+        },
+        "#PJ80PJP8Q": {
+          "name": "quinie cuck II",
+          "townHallLevel": 10,
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "trophies": 20
+        },
+        "#R2QPVCGJY": {
+          "name": "lever",
+          "townHallLevel": 10,
+          "league": 6,
+          "leagueName": "Barbarian League 6",
+          "trophies": 150
+        },
+        "#YG9YYGY0Q": {
+          "name": "jeensh",
+          "townHallLevel": 16,
+          "league": 0,
+          "leagueName": "Unranked",
+          "trophies": 0
+        },
+        "#2L98UV0U0": {
+          "name": "Ferre",
+          "townHallLevel": 15,
+          "league": 0,
+          "leagueName": "Unranked",
+          "trophies": 0
+        }
+      },
+      "recorded_at": "2026-10-30T21:13:24.630062+00:00"
+    },
+    "2026-W36": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 14,
+            "trophies": 611,
+            "attacks": 13,
+            "maxAttacks": 14
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 43,
+            "trophies": 635,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 29,
+            "trophies": 576,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 31,
+            "trophies": 562,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 31,
+            "trophies": 480,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 99,
+            "trophies": 201,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 53,
+            "trophies": 263,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 18,
+            "trophies": 453,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 18,
+            "trophies": 535,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 11,
+            "trophies": 588,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 62,
+            "trophies": 405,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 22,
+            "trophies": 499,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 21,
+            "trophies": 597,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 4,
+            "trophies": 629,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PJJ099YG": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 13,
+            "trophies": 534,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 16,
+            "trophies": 520,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 4,
+            "trophies": 712,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 39,
+            "trophies": 423,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 31,
+            "trophies": 561,
+            "attacks": 13,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 35,
+            "trophies": 537,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 33,
+            "trophies": 456,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 31,
+            "trophies": 515,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 30,
+            "trophies": 449,
+            "attacks": 7,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 49,
+            "trophies": 268,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 89,
+            "trophies": 151,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 5,
+            "trophies": 625,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 16,
+          "leagueName": "Witch League 16",
+          "result": {
+            "league": 16,
+            "placement": 97,
+            "trophies": 141,
+            "attacks": 3,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 11,
+          "leagueName": "Wizard League 11",
+          "result": {
+            "league": 11,
+            "placement": 15,
+            "trophies": 384,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 25,
+            "trophies": 387,
+            "attacks": 8,
+            "maxAttacks": 10
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 10,
+          "leagueName": "Wizard League 10",
+          "result": {
+            "league": 10,
+            "placement": 25,
+            "trophies": 356,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "result": {
+            "league": 13,
+            "placement": 82,
+            "trophies": 201,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 60,
+            "trophies": 200,
+            "attacks": 1,
+            "maxAttacks": 8
+          }
+        },
+        "#9CGVPCJU2": {
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "result": {
+            "league": 9,
+            "placement": 60,
+            "trophies": 236,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 7,
+          "leagueName": "Archer League 7",
+          "result": {
+            "league": 7,
+            "placement": 37,
+            "trophies": 315,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 3,
+          "leagueName": "Skeleton League 3",
+          "result": {
+            "league": 3,
+            "placement": 60,
+            "trophies": 170,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W37": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 7,
+            "trophies": 846,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 57,
+            "trophies": 654,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 28,
+            "trophies": 557,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 94,
+            "trophies": 240,
+            "attacks": 3,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 5,
+            "trophies": 734,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 91,
+            "trophies": 225,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 21,
+            "trophies": 473,
+            "attacks": 8,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 31,
+            "trophies": 538,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 35,
+            "trophies": 420,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 95,
+            "trophies": 98,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 62,
+            "trophies": 398,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 13,
+            "trophies": 596,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 80,
+            "trophies": 363,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 35,
+            "trophies": 381,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PJJ099YG": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 49,
+            "trophies": 433,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 2,
+            "trophies": 670,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 7,
+            "trophies": 739,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 30,
+            "trophies": 460,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 35,
+            "trophies": 554,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 98,
+            "trophies": 202,
+            "attacks": 7,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 23,
+            "trophies": 497,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 48,
+            "trophies": 444,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 85,
+            "trophies": 162,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 41,
+            "trophies": 287,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 21,
+            "trophies": 506,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 78,
+            "trophies": 163,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "result": {
+            "league": 15,
+            "placement": 17,
+            "trophies": 434,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 11,
+            "trophies": 408,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 25,
+            "trophies": 521,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 11,
+          "leagueName": "Wizard League 11",
+          "result": {
+            "league": 11,
+            "placement": 24,
+            "trophies": 317,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 92,
+            "trophies": 146,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#9CGVPCJU2": {
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "result": {
+            "league": 9,
+            "placement": 69,
+            "trophies": 161,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 8,
+          "leagueName": "Archer League 8",
+          "result": {
+            "league": 8,
+            "placement": 32,
+            "trophies": 266,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 3,
+          "leagueName": "Skeleton League 3",
+          "result": {
+            "league": 3,
+            "placement": 17,
+            "trophies": 314,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W38": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "result": {
+            "league": 32,
+            "placement": 3,
+            "trophies": 915,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 23,
+            "trophies": 777,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 5,
+            "trophies": 714,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 8,
+            "trophies": 666,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 30,
+            "trophies": 545,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 7,
+            "trophies": 707,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 47,
+            "trophies": 361,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 21,
+            "trophies": 548,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 54,
+            "trophies": 410,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 14,
+            "trophies": 579,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 41,
+            "trophies": 502,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 25,
+            "trophies": 465,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PJJ099YG": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 35,
+            "trophies": 466,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 1,
+            "trophies": 784,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 1,
+            "trophies": 796,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 30,
+            "trophies": 588,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 35,
+            "trophies": 406,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 100,
+            "trophies": 52,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 95,
+            "trophies": 172,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 80,
+            "trophies": 173,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 45,
+            "trophies": 465,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 71,
+            "trophies": 252,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 33,
+            "trophies": 368,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 21,
+            "trophies": 545,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 62,
+            "trophies": 201,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 16,
+          "leagueName": "Witch League 16",
+          "result": {
+            "league": 16,
+            "placement": 33,
+            "trophies": 386,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "result": {
+            "league": 13,
+            "placement": 29,
+            "trophies": 390,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 11,
+          "leagueName": "Wizard League 11",
+          "result": {
+            "league": 11,
+            "placement": 37,
+            "trophies": 224,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 7,
+            "trophies": 746,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 43,
+            "trophies": 272,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 6,
+          "leagueName": "Barbarian League 6",
+          "result": {
+            "league": 6,
+            "placement": 46,
+            "trophies": 188,
+            "attacks": 4,
+            "maxAttacks": 6
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "result": {
+            "league": 9,
+            "placement": 89,
+            "trophies": 73,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 4,
+          "leagueName": "Barbarian League 4",
+          "result": {
+            "league": 4,
+            "placement": 31,
+            "trophies": 207,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W39": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "result": {
+            "league": 33,
+            "placement": 41,
+            "trophies": 715,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 25,
+            "trophies": 711,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 58,
+            "trophies": 483,
+            "attacks": 12,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 88,
+            "trophies": 290,
+            "attacks": 5,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 21,
+            "trophies": 601,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 13,
+            "trophies": 454,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 69,
+            "trophies": 427,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 30,
+            "trophies": 424,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 9,
+            "trophies": 562,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 30,
+            "trophies": 504,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 18,
+            "trophies": 495,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 31,
+            "trophies": 542,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 18,
+            "trophies": 603,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 16,
+            "trophies": 557,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 1,
+            "trophies": 673,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 8,
+            "trophies": 627,
+            "attacks": 11,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 95,
+            "trophies": 257,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 65,
+            "trophies": 349,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 39,
+            "trophies": 492,
+            "attacks": 11,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 26,
+            "trophies": 478,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 93,
+            "trophies": 237,
+            "attacks": 6,
+            "maxAttacks": 14
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 91,
+            "trophies": 174,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 35,
+            "trophies": 456,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 2,
+            "trophies": 652,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 34,
+            "trophies": 422,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 25,
+            "trophies": 480,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 40,
+            "trophies": 403,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#8Q982L9": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 38,
+            "trophies": 323,
+            "attacks": 5,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 14,
+          "leagueName": "Valkyrie League 14",
+          "result": {
+            "league": 14,
+            "placement": 19,
+            "trophies": 421,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 95,
+            "trophies": 146,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 20,
+            "trophies": 344,
+            "attacks": 7,
+            "maxAttacks": 8
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 8,
+          "leagueName": "Archer League 8",
+          "result": {
+            "league": 8,
+            "placement": 16,
+            "trophies": 386,
+            "attacks": 6,
+            "maxAttacks": 8
+          }
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "result": {
+            "league": 13,
+            "placement": 78,
+            "trophies": 204,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "leagueName": "Barbarian League 5",
+          "result": {
+            "league": 5,
+            "placement": 94,
+            "trophies": 63,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W40": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "result": {
+            "league": 33,
+            "placement": 46,
+            "trophies": 698,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 24,
+            "trophies": 710,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 23,
+            "trophies": 585,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 9,
+            "trophies": 650,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 34,
+            "trophies": 532,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 8,
+            "trophies": 621,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 69,
+            "trophies": 393,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 35,
+            "trophies": 472,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 73,
+            "trophies": 252,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 71,
+            "trophies": 331,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 34,
+            "trophies": 413,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 56,
+            "trophies": 430,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 53,
+            "trophies": 444,
+            "attacks": 13,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 22,
+            "trophies": 445,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 3,
+            "trophies": 748,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 62,
+            "trophies": 361,
+            "attacks": 2,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 98,
+            "trophies": 183,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 63,
+            "trophies": 322,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 53,
+            "trophies": 414,
+            "attacks": 7,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 16,
+            "trophies": 487,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 50,
+            "trophies": 313,
+            "attacks": 9,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 45,
+            "trophies": 355,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 52,
+            "trophies": 345,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 5,
+            "trophies": 554,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 41,
+            "trophies": 422,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 20,
+            "trophies": 484,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 26,
+            "trophies": 399,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "result": {
+            "league": 15,
+            "placement": 37,
+            "trophies": 349,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 14,
+          "leagueName": "Valkyrie League 14",
+          "result": {
+            "league": 14,
+            "placement": 19,
+            "trophies": 434,
+            "attacks": 6,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 100,
+            "trophies": 0,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "result": {
+            "league": 13,
+            "placement": 82,
+            "trophies": 209,
+            "attacks": 3,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "result": {
+            "league": 9,
+            "placement": 10,
+            "trophies": 406,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 11,
+          "leagueName": "Wizard League 11",
+          "result": {
+            "league": 11,
+            "placement": 44,
+            "trophies": 216,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "leagueName": "Barbarian League 5",
+          "result": {
+            "league": 5,
+            "placement": 80,
+            "trophies": 118,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W41": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "result": {
+            "league": 33,
+            "placement": 73,
+            "trophies": 597,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 15,
+            "trophies": 806,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 44,
+            "trophies": 673,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 25,
+            "trophies": 566,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "result": {
+            "league": 30,
+            "placement": 23,
+            "trophies": 575,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 10,
+            "trophies": 572,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 4,
+            "trophies": 626,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 1,
+            "trophies": 712,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 32,
+            "trophies": 540,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 48,
+            "trophies": 449,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 9,
+            "trophies": 592,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 64,
+            "trophies": 411,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 34,
+            "trophies": 515,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 81,
+            "trophies": 332,
+            "attacks": 12,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 47,
+            "trophies": 372,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 6,
+            "trophies": 642,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 3,
+            "trophies": 730,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 92,
+            "trophies": 244,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 28,
+            "trophies": 448,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 20,
+            "trophies": 592,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
+          "result": {
+            "league": 24,
+            "placement": 37,
+            "trophies": 407,
+            "attacks": 10,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 91,
+            "trophies": 199,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 91,
+            "trophies": 108,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 19,
+            "trophies": 642,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 33,
+            "trophies": 449,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 89,
+            "trophies": 231,
+            "attacks": 7,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 91,
+            "trophies": 194,
+            "attacks": 5,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "league": 14,
+          "leagueName": "Valkyrie League 14",
+          "result": {
+            "league": 14,
+            "placement": 11,
+            "trophies": 499,
+            "attacks": 7,
+            "maxAttacks": 10
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 44,
+            "trophies": 365,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8Q982L9": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 20,
+            "trophies": 413,
+            "attacks": 5,
+            "maxAttacks": 10
+          }
+        },
+        "#V90LCPR0": {
+          "league": 16,
+          "leagueName": "Witch League 16",
+          "result": {
+            "league": 16,
+            "placement": 64,
+            "trophies": 281,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "result": {
+            "league": 15,
+            "placement": 22,
+            "trophies": 389,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 61,
+            "trophies": 241,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "result": {
+            "league": 13,
+            "placement": 33,
+            "trophies": 375,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 10,
+          "leagueName": "Wizard League 10",
+          "result": {
+            "league": 10,
+            "placement": 25,
+            "trophies": 325,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#G8Y08920C": {
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "result": {
+            "league": 13,
+            "placement": 48,
+            "trophies": 299,
+            "attacks": 3,
+            "maxAttacks": 10
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "leagueName": "Barbarian League 5",
+          "result": {
+            "league": 5,
+            "placement": 59,
+            "trophies": 154,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W42": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "result": {
+            "league": 33,
+            "placement": 26,
+            "trophies": 781,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "result": {
+            "league": 32,
+            "placement": 53,
+            "trophies": 652,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 9,
+            "trophies": 812,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 61,
+            "trophies": 570,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 72,
+            "trophies": 571,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 6,
+            "trophies": 714,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 3,
+            "trophies": 796,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 7,
+            "trophies": 599,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 52,
+            "trophies": 476,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 30,
+            "trophies": 534,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 64,
+            "trophies": 391,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 65,
+            "trophies": 416,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 16,
+            "trophies": 616,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 40,
+            "trophies": 518,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 27,
+            "trophies": 550,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 27,
+            "trophies": 461,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 2,
+            "trophies": 722,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 9,
+            "trophies": 593,
+            "attacks": 8,
+            "maxAttacks": 12
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 48,
+            "trophies": 434,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 98,
+            "trophies": 108,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "result": {
+            "league": 25,
+            "placement": 23,
+            "trophies": 522,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 46,
+            "trophies": 379,
+            "attacks": 10,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 7,
+            "trophies": 606,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 26,
+            "trophies": 452,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "result": {
+            "league": 20,
+            "placement": 3,
+            "trophies": 721,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#G082YJJJL": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 28,
+            "trophies": 496,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 60,
+            "trophies": 282,
+            "attacks": 6,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 22,
+            "trophies": 432,
+            "attacks": 4,
+            "maxAttacks": 10
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 72,
+            "trophies": 258,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#V90LCPR0": {
+          "league": 16,
+          "leagueName": "Witch League 16",
+          "result": {
+            "league": 16,
+            "placement": 7,
+            "trophies": 506,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 16,
+          "leagueName": "Witch League 16",
+          "result": {
+            "league": 16,
+            "placement": 23,
+            "trophies": 426,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#LRQ0J2UJ": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 42,
+            "trophies": 314,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 14,
+          "leagueName": "Valkyrie League 14",
+          "result": {
+            "league": 14,
+            "placement": 43,
+            "trophies": 273,
+            "attacks": 8,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 11,
+          "leagueName": "Wizard League 11",
+          "result": {
+            "league": 11,
+            "placement": 37,
+            "trophies": 264,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "leagueName": "Barbarian League 5",
+          "result": {
+            "league": 5,
+            "placement": 56,
+            "trophies": 158,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    },
+    "2026-W43": {
+      "players": {
+        "#28VPLJQCY": {
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "result": {
+            "league": 33,
+            "placement": 24,
+            "trophies": 771,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "result": {
+            "league": 32,
+            "placement": 39,
+            "trophies": 688,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2GJGRYCP0": {
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "result": {
+            "league": 32,
+            "placement": 51,
+            "trophies": 678,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 58,
+            "trophies": 595,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8C8JU2LQV": {
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "result": {
+            "league": 31,
+            "placement": 46,
+            "trophies": 657,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8RUGYCVG9": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 17,
+            "trophies": 649,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 6,
+            "trophies": 707,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LJRP8QPPC": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 4,
+            "trophies": 823,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PC8JQL9PJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 47,
+            "trophies": 503,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 41,
+            "trophies": 505,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 16,
+            "trophies": 574,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CRCQ92QV": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 67,
+            "trophies": 431,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 27,
+            "trophies": 548,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#J9G8Q2L2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 46,
+            "trophies": 498,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#28GR98PC2": {
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "result": {
+            "league": 29,
+            "placement": 74,
+            "trophies": 274,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 37,
+            "trophies": 491,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LVRQRQCR": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 6,
+            "trophies": 579,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#R080CV0Q": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 9,
+            "trophies": 601,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LRURCY92": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 2,
+            "trophies": 645,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8PGLYQVV9": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 85,
+            "trophies": 286,
+            "attacks": 9,
+            "maxAttacks": 14
+          }
+        },
+        "#P2CVJUGL8": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 76,
+            "trophies": 320,
+            "attacks": 5,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "result": {
+            "league": 28,
+            "placement": 99,
+            "trophies": 201,
+            "attacks": 0,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "result": {
+            "league": 26,
+            "placement": 43,
+            "trophies": 354,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#P2CVRCG0": {
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "result": {
+            "league": 27,
+            "placement": 95,
+            "trophies": 178,
+            "attacks": 4,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "result": {
+            "league": 23,
+            "placement": 60,
+            "trophies": 255,
+            "attacks": 3,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 63,
+            "trophies": 333,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 9,
+            "trophies": 624,
+            "attacks": 11,
+            "maxAttacks": 12
+          }
+        },
+        "#G082YJJJL": {
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "result": {
+            "league": 22,
+            "placement": 68,
+            "trophies": 384,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "result": {
+            "league": 21,
+            "placement": 94,
+            "trophies": 101,
+            "attacks": 1,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "result": {
+            "league": 18,
+            "placement": 32,
+            "trophies": 406,
+            "attacks": 5,
+            "maxAttacks": 10
+          }
+        },
+        "#GRL2GV0JR": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 56,
+            "trophies": 330,
+            "attacks": 11,
+            "maxAttacks": 12
+          }
+        },
+        "#8Q982L9": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 79,
+            "trophies": 244,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#V90LCPR0": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 24,
+            "trophies": 443,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#YUYVPQRP9": {
+          "league": 17,
+          "leagueName": "Witch League 17",
+          "result": {
+            "league": 17,
+            "placement": 42,
+            "trophies": 366,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#Y0LJY82Q8": {
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "result": {
+            "league": 19,
+            "placement": 100,
+            "trophies": 49,
+            "attacks": 0,
+            "maxAttacks": 12
+          }
+        },
+        "#YG8Q92GJ9": {
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "result": {
+            "league": 15,
+            "placement": 62,
+            "trophies": 243,
+            "attacks": 7,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 39,
+            "trophies": 264,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#8VVC8VRYL": {
+          "league": 12,
+          "leagueName": "Wizard League 12",
+          "result": {
+            "league": 12,
+            "placement": 64,
+            "trophies": 186,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#9CGVPCJU2": {
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "result": {
+            "league": 9,
+            "placement": 17,
+            "trophies": 431,
+            "attacks": 8,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "result": {
+            "league": 9,
+            "placement": 52,
+            "trophies": 219,
+            "attacks": 7,
+            "maxAttacks": 8
+          }
+        },
+        "#R2QPVCGJY": {
+          "league": 5,
+          "leagueName": "Barbarian League 5",
+          "result": {
+            "league": 5,
+            "placement": 26,
+            "trophies": 252,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        }
+      }
+    }
+  }
+}
