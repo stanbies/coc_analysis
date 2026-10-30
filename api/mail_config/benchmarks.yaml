@@ -1,0 +1,20 @@
+# Minimum ranked league we expect per Town Hall level, used by the weekly mail.
+# Leagues: 1-3 Skeleton, 4-6 Barbarian, 7-9 Archer, 10-12 Wizard, 13-15 Valkyrie,
+# 16-18 Witch, 19-21 Golem, 22-24 P.E.K.K.A, 25-27 Titan, 28-30 Dragon,
+# 31-33 Electro, 34 Legend III, 35 Legend II, 36 Legend I.
+#
+# First proposal (October 2026), set so roughly half to most of the clan
+# reaches it at each TH. Town Halls not listed use the closest lower one.
+18: 31   # Electro League 31
+17: 29   # Dragon League 29
+16: 27   # Titan League 27
+15: 22   # P.E.K.K.A League 22
+14: 19   # Golem League 19
+13: 16   # Witch League 16
+12: 13   # Valkyrie League 13
+11: 11   # Wizard League 11
+10: 9    # Archer League 9
+9: 7     # Archer League 7
+8: 5     # Barbarian League 5
+7: 3     # Skeleton League 3
+1: 1     # Skeleton League 1

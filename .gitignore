@@ -31,3 +31,6 @@ api/out/
 
 # Personal Claude Code settings
 .claude/settings.local.json
+
+# Weekly mail subscribers (personal data, lives in the mail_subscribers secret)
+api/subscribers.csv

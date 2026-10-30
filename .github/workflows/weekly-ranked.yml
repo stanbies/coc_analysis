@@ -1,0 +1,75 @@
+name: Weekly ranked snapshot and mail
+
+on:
+  schedule:
+    # Monday 07:00 UTC: the ranked week starts Monday 05:00 UTC, so last
+    # week's results are final and everyone is in their new league
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      send_mails:
+        description: "Also send the mails to all subscribers"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-ranked
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            api/requirements.txt
+            api/requirements-dev.txt
+
+      - name: Install dependencies
+        run: pip install -r api/requirements-dev.txt
+
+      - name: Run tests
+        run: python -m pytest api/ -q
+
+      - name: Record ranked snapshot
+        env:
+          api_key: ${{ secrets.api_key }}
+          coc_base_url: ${{ secrets.coc_base_url }}
+          publish_data: "true"
+          PYTHONIOENCODING: utf-8
+        run: python api/ranked.py
+
+      - name: Commit snapshot
+        run: |
+          if git diff --quiet -- api/ranked_snapshots.json && git ls-files --error-unmatch api/ranked_snapshots.json >/dev/null 2>&1; then
+            echo "No snapshot changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add api/ranked_snapshots.json
+          git commit -m "chore: weekly ranked snapshot"
+          # The 6-hourly data job may have pushed meanwhile; it never touches this file
+          git pull --rebase
+          git push
+
+      # After the commit, so a mail failure never loses the snapshot.
+      # Scheduled runs always send; manual runs only when asked.
+      - name: Send weekly mails
+        if: github.event_name == 'schedule' || inputs.send_mails
+        env:
+          api_key: ${{ secrets.api_key }}
+          coc_base_url: ${{ secrets.coc_base_url }}
+          smtp_password: ${{ secrets.smtp_password }}
+          mail_subscribers: ${{ secrets.mail_subscribers }}
+          publish_data: "true"
+          PYTHONIOENCODING: utf-8
+        run: python api/weekly_mail.py --send

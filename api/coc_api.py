@@ -75,6 +75,12 @@ def get_player_info(player_tag: str) -> dict | None:
     return api_request(f"/players/{encode_tag(player_tag)}")
 
 
+def get_player_league_history(player_tag: str) -> list | None:
+    """Get a player's past ranked league results."""
+    data = api_request(f"/players/{encode_tag(player_tag)}/leaguehistory")
+    return data.get("items", []) if data else None
+
+
 def get_cwl_group(clan_tag: str) -> dict | None:
     """Get CWL league group information."""
     return api_request(f"/clans/{encode_tag(clan_tag)}/currentwar/leaguegroup")

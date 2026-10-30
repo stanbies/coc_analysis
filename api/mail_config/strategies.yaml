@@ -1,0 +1,36 @@
+# Attack strategy videos per Town Hall level, sent to members below their
+# benchmark (at most 3 per mail). Town Halls not listed use the closest lower
+# one. Replace these YouTube searches with specific videos you recommend:
+#   17:
+#     - title: "Root Rider Blimp uitgelegd"
+#       url: https://www.youtube.com/watch?v=...
+18:
+  - title: TH18 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th18+attack+strategy
+17:
+  - title: TH17 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th17+attack+strategy
+16:
+  - title: TH16 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th16+attack+strategy
+15:
+  - title: TH15 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th15+attack+strategy
+14:
+  - title: TH14 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th14+attack+strategy
+13:
+  - title: TH13 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th13+attack+strategy
+12:
+  - title: TH12 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th12+attack+strategy
+11:
+  - title: TH11 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th11+attack+strategy
+10:
+  - title: TH10 aanvalsstrategieën
+    url: https://www.youtube.com/results?search_query=th10+attack+strategy
+1:
+  - title: Aanvalsstrategieën voor beginners
+    url: https://www.youtube.com/results?search_query=clash+of+clans+attack+strategy+beginner

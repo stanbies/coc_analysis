@@ -1,0 +1,5 @@
+# Weekly ranked mail subscribers: one per line, email,#TAG
+# Only add people who asked for the mail. Copy this file to api/subscribers.csv
+# (gitignored) and paste its contents into the mail_subscribers GitHub secret.
+voorbeeld@example.com,#2PP
+voorbeeld@example.com,#8YQ9CJ0

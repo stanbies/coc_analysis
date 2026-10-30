@@ -62,13 +62,20 @@ npx expo lint           # ESLint
 - `history.py` — `clan_history.json` persistence and per-war attack recording.
 - `export.py` — builds `clan_data.json`.
 - `check_caps.py` — warns when a player exceeds the max-level tables.
+- `ranked.py` — weekly ranked snapshots in `ranked_snapshots.json` (same publish/local split as the war history): per ISO week and player the TH + league when recorded, plus the finished week's `result` (league, placement, trophies, attacks played/allowed) merged in from the league history, which the API only keeps for 8 weeks.
+- `weekly_mail.py` — weekly personal ranked mail, written as a LinkedIn-style motivational post (copy in `OPENERS`/`SUBJECTS` and `compose_mail()`). `--dry-run` writes previews to `api/out/mails/`, `--test-to <email>` sends everything to one address, `--send` mails the subscribers. Benchmarks (TH → minimum league) and strategy videos are in `api/mail_config/*.yaml`; Town Halls not listed use the closest lower one. Sending logs tags only, never addresses.
+- `mailer.py` — Gmail SMTP from cocanalysis686@gmail.com. `smtp_password` must be a Google app password created on that account (the account password and app passwords of other accounts are rejected with 535).
+- `subscribers.py` — subscriber list (`email,#TAG` lines) from the `mail_subscribers` secret, or locally the gitignored `api/subscribers.csv`. Never commit email addresses.
 - `test_*.py` — pytest tests, run in the workflow before every scrape.
+
+Ranked facts (checked live, Oct 2026): `leagueTier.id` is 105000000 + league number (1–33 Skeleton…Electro, 34–36 Legend III/II/I). A tournament week starts Monday 05:00 UTC and `currentLeagueSeasonId` is that start as a unix timestamp. `/players/{tag}/leaguehistory` lists finished weeks oldest first, with `leagueTierId`, `placement`, `leagueTrophies` and battle counts.
 
 The scraper exits non-zero if the clan or member fetches fail, or if more than `MAX_MISSING_PLAYERS` (3) players still fail after a retry pass. Fewer missing players produce a `::warning::` annotation. All stored timestamps are UTC with an explicit offset.
 
 ### Publishing
 - Only the GitHub workflow publishes data. It sets `publish_data=true`, which makes the scraper write to `coc-dashboard/public/clan_data.json` and `api/clan_history.json`. Without it (local runs) output goes to the gitignored `api/out/`, and history is read from `api/out/` or else the committed file. Don't commit data files by hand: it collides with the bot's commits.
 - `.github/workflows/update-data.yml` runs every 6 hours (or via workflow_dispatch): tests → scraper → `check_caps.py` → dashboard `npm run typecheck` (data contract) → copies the JSON into `mobile-coc-dashboard/assets/data/` → commits to `main` unless only timestamps changed. Vercel redeploys on the push. Secrets: `api_key`, `coc_base_url`.
+- `.github/workflows/weekly-ranked.yml` runs Monday 07:00 UTC (after the 05:00 UTC ranked reset): tests → `ranked.py` → commits `api/ranked_snapshots.json` (pull-rebases first, since the data job may have pushed) → `weekly_mail.py --send`. Manual runs only send when the `send_mails` input is ticked. Extra secrets: `smtp_password`, `mail_subscribers`.
 
 ### War history
 `update_player_historical_stats()` replaces a war's attacks on every run (keyed by war id) and recomputes totals from `attacks_history`, so repeat runs during a war pick up new attacks without double counting. Prep-day wars are not recorded. Attack `date` is the war's start time. Only wars seen while `inWar`/`warEnded` are captured, hence the 6-hour schedule. History recorded before October 2026 undercounts attacks (it kept only the first snapshot of each war) and can't be recovered.
