@@ -1,0 +1,228 @@
+/* Clash of Clans look. Kept out of globals.css on purpose: the Tailwind
+   PostCSS plugin caches that file in the dev server, so edits there often
+   don't show until the .next cache is cleared. Plain CSS here hot-reloads. */
+
+:root {
+  --coc-outline: #1b1208;
+  --coc-wood-light: #b97b40;
+  --coc-wood: #8a5528;
+  --coc-wood-dark: #4a2a12;
+  --coc-parchment: #f6eacb;
+  --coc-parchment-dark: #dcc597;
+  --coc-ink: #4a2f17;
+  --coc-gold: #ffd84a;
+  --coc-gold-dark: #e2900c;
+  --coc-green: #a3e256;
+  --coc-green-dark: #3f8f1c;
+  --coc-blue: #7fd0ff;
+  --coc-blue-dark: #2266c2;
+  --coc-stone: #a7b2bf;
+  --coc-stone-dark: #58626e;
+  --coc-sky-top: #2f6a9b;
+  --coc-sky-bottom: #0b1727;
+}
+
+/* ---- Clash of Clans building blocks ---- */
+
+/* White text with a thick dark outline and a drop below, like in-game titles.
+   paint-order puts the stroke behind the fill so the letters keep their weight. */
+.coc-text {
+  color: #fff;
+  -webkit-text-stroke: 0.16em var(--coc-outline);
+  paint-order: stroke fill;
+  text-shadow: 0 0.08em 0 var(--coc-outline);
+  letter-spacing: 0.02em;
+}
+
+/* Wooden plank panel */
+.coc-wood {
+  background:
+    repeating-linear-gradient(180deg, transparent 0 30px, rgba(0, 0, 0, 0.16) 30px 32px),
+    repeating-linear-gradient(100deg, rgba(255, 255, 255, 0.035) 0 4px, rgba(0, 0, 0, 0.04) 4px 9px),
+    linear-gradient(180deg, var(--coc-wood-light), var(--coc-wood) 55%, var(--coc-wood-dark));
+  border: 3px solid var(--coc-outline);
+  border-radius: 20px;
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -6px 0 rgba(0, 0, 0, 0.3),
+    0 6px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Per-tab scenery from the fan kit, fixed behind the content (a fixed layer
+   rather than background-attachment: fixed, which iOS ignores). The overlay
+   gradient keeps text readable on top. */
+.scene {
+  position: relative;
+  isolation: isolate;
+}
+.scene::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.scene-overview::before {
+  background-image:
+    linear-gradient(180deg, rgba(10, 40, 10, 0.2), rgba(10, 40, 10, 0.55)),
+    url('/backgrounds/home-village.jpg');
+}
+/* Busier art than the other scenes, so a stronger overlay keeps the white panels readable */
+.scene-players::before {
+  background-image:
+    linear-gradient(180deg, rgba(10, 25, 45, 0.35), rgba(10, 25, 45, 0.7)),
+    url('/backgrounds/players.jpg');
+}
+.scene-wars::before {
+  background-image:
+    linear-gradient(180deg, rgba(25, 6, 0, 0.3), rgba(25, 6, 0, 0.6)),
+    url('/backgrounds/war.jpg');
+}
+.scene-capital::before {
+  background-image:
+    linear-gradient(180deg, rgba(10, 30, 60, 0.1), rgba(10, 30, 60, 0.55)),
+    url('/backgrounds/capital.jpg');
+}
+
+/* Light panel like the in-game clan screen, with member rows as strips */
+.coc-panel-light {
+  background: linear-gradient(180deg, #fbfbf6, #e8e7dd);
+  color: #3b3b33;
+  border: 3px solid var(--coc-outline);
+  border-radius: 20px;
+  box-shadow:
+    inset 0 3px 0 #fff,
+    inset 0 -5px 0 rgba(0, 0, 0, 0.08),
+    0 6px 0 rgba(0, 0, 0, 0.45);
+}
+.coc-row > td { background: #dde4ec; transition: background 0.15s; }
+.coc-row:nth-child(even) > td { background: #e7ecf2; }
+.coc-row:hover > td { background: #c8d6e8; }
+.coc-row > td:first-child { border-radius: 10px 0 0 10px; }
+.coc-row > td:last-child { border-radius: 0 10px 10px 0; }
+.coc-input {
+  background: #fff;
+  color: #333;
+  border: 2px solid #b9b7a8;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.06);
+}
+.coc-input:focus { outline: none; border-color: var(--coc-blue-dark); }
+
+/* Top section of a tab, coloured to match its scenery */
+.coc-hero {
+  border: 3px solid var(--coc-outline);
+  border-radius: 20px;
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -6px 0 rgba(0, 0, 0, 0.3),
+    0 6px 0 rgba(0, 0, 0, 0.45);
+}
+.coc-hero-players {
+  background: linear-gradient(180deg, #fbfbf6, #e8e7dd);
+  box-shadow: inset 0 3px 0 #fff, inset 0 -5px 0 rgba(0, 0, 0, 0.08), 0 6px 0 rgba(0, 0, 0, 0.45);
+}
+.coc-hero-wars {
+  background:
+    radial-gradient(ellipse 70% 90% at 15% 0%, rgba(255, 130, 40, 0.35), transparent 60%),
+    linear-gradient(180deg, #7d2b1c, #3b120c);
+}
+.coc-hero-capital {
+  background:
+    radial-gradient(ellipse 70% 90% at 85% 0%, rgba(255, 255, 255, 0.28), transparent 60%),
+    linear-gradient(180deg, #5384dc, #253f8f);
+}
+
+/* Inset stat plaque inside a hero */
+.coc-plaque {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+.coc-hero-players .coc-plaque {
+  background: #dde4ec;
+  border-color: #b4bfcc;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Parchment inset, for text blocks on wood */
+.coc-parchment {
+  background: linear-gradient(180deg, var(--coc-parchment), var(--coc-parchment-dark));
+  color: var(--coc-ink);
+  border: 2px solid var(--coc-wood-dark);
+  border-radius: 12px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* Small dark label chip */
+.coc-chip {
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  border-radius: 9999px;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Chunky 3D button that presses in; colour via the variant classes */
+.coc-btn {
+  --btn-top: var(--coc-stone);
+  --btn-bottom: var(--coc-stone-dark);
+  background: linear-gradient(180deg, var(--btn-top) 0%, var(--btn-top) 45%, var(--btn-bottom) 100%);
+  border: 2px solid var(--coc-outline);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -4px 0 rgba(0, 0, 0, 0.25),
+    0 4px 0 var(--coc-outline);
+  transition: transform 0.08s, box-shadow 0.08s, filter 0.15s;
+}
+.coc-btn:hover { filter: brightness(1.08); }
+.coc-btn:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.25),
+    0 1px 0 var(--coc-outline);
+}
+.coc-btn:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.coc-btn-gold { --btn-top: var(--coc-gold); --btn-bottom: var(--coc-gold-dark); }
+.coc-btn-green { --btn-top: var(--coc-green); --btn-bottom: var(--coc-green-dark); }
+.coc-btn-blue { --btn-top: var(--coc-blue); --btn-bottom: var(--coc-blue-dark); }
+
+/* Resource bar like the gold/elixir storages: --fill sets the colour */
+.coc-resource {
+  position: relative;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid var(--coc-outline);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.35);
+}
+.coc-resource-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--fill) 60%, white) 0%,
+    var(--fill) 45%,
+    color-mix(in srgb, var(--fill) 70%, black) 100%);
+}
+.coc-resource-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: radial-gradient(circle at 35% 30%, #4b5563, #111827);
+  border: 2px solid var(--coc-outline);
+  border-radius: 9999px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.45);
+}

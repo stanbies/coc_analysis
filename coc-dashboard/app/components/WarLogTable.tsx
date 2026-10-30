@@ -1,28 +1,18 @@
 'use client';
 
 import { WarLogEntry } from '../types';
+import GameIcon from './GameIcon';
 
 interface WarLogTableProps {
   warLog: WarLogEntry[];
 }
 
-// CWL rounds appear in the war log without a result or opponent
-function getResultIcon(result: string | null): string {
-  switch (result) {
-    case 'win': return '✅';
-    case 'lose': return '❌';
-    case 'tie': return '➖';
-    case null: return '🏆';
-    default: return '❓';
-  }
-}
-
 function getResultClass(result: string | null): string {
   switch (result) {
-    case 'win': return 'text-green-400';
-    case 'lose': return 'text-red-400';
-    case 'tie': return 'text-yellow-400';
-    default: return 'text-slate-400';
+    case 'win': return 'bg-green-600';
+    case 'lose': return 'bg-red-600';
+    case 'tie': return 'bg-yellow-600';
+    default: return 'bg-slate-600';
   }
 }
 
@@ -42,7 +32,7 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
   if (!warLog || warLog.length === 0) {
     return (
       <div className="card p-6">
-        <h2 className="text-xl font-bold text-white mb-4">📜 War Log</h2>
+        <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2"><GameIcon name="clanWar" size={28} /> War Log</h2>
         <p className="text-slate-400">No war log data available or war log is private.</p>
       </div>
     );
@@ -56,11 +46,11 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
   return (
     <div className="card p-6">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-bold text-white">📜 War Log</h2>
+        <h2 className="text-xl font-bold text-white flex items-center gap-2"><GameIcon name="clanWar" size={28} /> War Log</h2>
         <div className="flex items-center gap-4 text-sm">
-          <span className="text-green-400">✅ {wins}W</span>
-          <span className="text-red-400">❌ {losses}L</span>
-          <span className="text-yellow-400">➖ {ties}T</span>
+          <span className="text-green-400">{wins}W</span>
+          <span className="text-red-400">{losses}L</span>
+          <span className="text-yellow-400">{ties}T</span>
         </div>
       </div>
       
@@ -79,7 +69,7 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
             {warLog.slice(0, 20).map((war, i) => isCwlEntry(war) ? (
               <tr key={i} className="border-b border-slate-800 table-row transition-colors">
                 <td className="py-3 px-2">
-                  <span className="font-medium text-purple-400">🏆 CWL</span>
+                  <span className="font-medium text-purple-400 flex items-center gap-1.5"><GameIcon name="cwl" size={22} /> CWL</span>
                 </td>
                 <td className="py-3 px-2">
                   <span className="text-white">Clan War League</span>
@@ -101,8 +91,8 @@ export default function WarLogTable({ warLog }: WarLogTableProps) {
             ) : (
               <tr key={i} className="border-b border-slate-800 table-row transition-colors">
                 <td className="py-3 px-2">
-                  <span className={`font-medium ${getResultClass(war.result)}`}>
-                    {getResultIcon(war.result)} {war.result?.toUpperCase() ?? 'CWL'}
+                  <span className={`coc-text text-xs px-2.5 py-1 rounded-full border-2 border-black/50 ${getResultClass(war.result)}`}>
+                    {war.result?.toUpperCase() ?? 'CWL'}
                   </span>
                 </td>
                 <td className="py-3 px-2">

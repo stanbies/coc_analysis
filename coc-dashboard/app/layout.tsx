@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "./theme.css";
 
 const clash = localFont({
   src: "./fonts/Clash-Regular.otf",

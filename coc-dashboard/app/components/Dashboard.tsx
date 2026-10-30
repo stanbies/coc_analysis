@@ -1,9 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { DashboardData, Player } from '../types';
 import ClanHeader from './ClanHeader';
+import CompactHeader from './CompactHeader';
+import { CapitalHero, PlayersHero, WarsHero } from './TabHeroes';
+import { WarCompareCard, WarMarginCard, WarResultsCard } from './WarCharts';
+import { warSeries } from '../lib/wars';
+import { lastRaidResults, raidSeries } from '../lib/capital';
+import { benchmarkDots, clanRankedSeries, lastFinishedWeek, zwegersOfTheWeek } from '../lib/ranked';
+import ZwegersOfTheWeek from './ZwegersOfTheWeek';
+import { BenchmarkDotsCard, BenchmarkShareCard, MissedAttacksCard, RankedTrendCard } from './RankedCharts';
 import StatCard from './StatCard';
 import PlayerCard from './PlayerCard';
 import { compareByLeague } from './LeagueBadge';
@@ -12,55 +20,88 @@ import PlayersTable from './PlayersTable';
 import THDistributionChart from './THDistributionChart';
 import RushAnalysisChart from './RushAnalysisChart';
 import WarLogTable from './WarLogTable';
-import CapitalRaidsCard from './CapitalRaidsCard';
+import { CapitalLootCard, LastRaidCard, LootPerAttackCard, RaidsCompletedCard } from './CapitalCharts';
+import GameIcon, { IconName } from './GameIcon';
+
+type Tab = 'overview' | 'players' | 'wars' | 'capital';
+const TABS: Tab[] = ['overview', 'players', 'wars', 'capital'];
+
+// The active tab lives in the URL hash (#wars), so tabs can be linked to and
+// the back button moves between them. The server always renders the overview.
+function subscribeToHash(onChange: () => void) {
+  window.addEventListener('hashchange', onChange);
+  return () => window.removeEventListener('hashchange', onChange);
+}
+
+function tabFromHash(): Tab {
+  const hash = window.location.hash.slice(1);
+  return TABS.find(tab => tab === hash) ?? 'overview';
+}
+
+function setActiveTab(tab: Tab) {
+  window.location.hash = tab;
+}
 
 export default function Dashboard({ data }: { data: DashboardData }) {
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
-  const [activeTab, setActiveTab] = useState<'overview' | 'players' | 'wars' | 'capital'>('overview');
+  const activeTab = useSyncExternalStore(subscribeToHash, tabFromHash, () => 'overview' as Tab);
 
-  const { clan, players, statistics, warLog, capitalRaids } = data;
+  const { clan, players, statistics, warLog, capitalRaids, currentWar } = data;
   const totalWars = clan.warWins + clan.warTies + clan.warLosses;
   const winRate = totalWars > 0 ? ((clan.warWins / totalWars) * 100).toFixed(1) : '0';
+  const wars = warSeries(warLog);
+  const raids = raidSeries(capitalRaids);
+  const lastRaid = lastRaidResults(capitalRaids, players);
+  const rankedHistory = data.rankedHistory ?? [];
+  const benchmarks = data.rankedBenchmarks ?? {};
+  const rankedWeeks = clanRankedSeries(rankedHistory, players, benchmarks);
+  const dots = benchmarkDots(players, benchmarks);
+  const lastRanked = lastFinishedWeek(rankedHistory, players);
+  const weekStars = zwegersOfTheWeek(players, rankedHistory, benchmarks);
 
   return (
-    <div className="min-h-screen p-4 md:p-8">
+    <div className={`scene scene-${activeTab} min-h-screen p-4 md:p-8`}>
       <div className="max-w-7xl mx-auto">
-        <ClanHeader clan={clan} lastUpdated={data.lastUpdated} />
+        {/* Full clan banner on the overview, a slim bar on the other tabs */}
+        {activeTab === 'overview'
+          ? <ClanHeader clan={clan} lastUpdated={data.lastUpdated} />
+          : <CompactHeader clan={clan} />}
 
         {/* Navigation Tabs */}
-        <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-          {[
-            { id: 'overview', label: '📊 Overview', icon: '📊' },
-            { id: 'players', label: '👥 Players', icon: '👥' },
-            { id: 'wars', label: '⚔️ Wars', icon: '⚔️' },
-            { id: 'capital', label: '🏛️ Capital', icon: '🏛️' },
-          ].map(tab => (
+        <nav className="grid grid-cols-4 gap-2 sm:flex sm:gap-3 mb-6 px-1 pt-1 pb-3">
+          {([
+            { id: 'overview', label: 'Overview', icon: 'townHall' },
+            { id: 'players', label: 'Players', icon: 'barbarian' },
+            { id: 'wars', label: 'Wars', icon: 'clanWar' },
+            { id: 'capital', label: 'Capital', icon: 'capitalHall' },
+          ] satisfies { id: Tab; label: string; icon: IconName }[]).map(tab => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id as typeof activeTab)}
-              className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
-                activeTab === tab.id
-                  ? 'bg-orange-500 text-white'
-                  : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white'
-              }`}
+              onClick={() => setActiveTab(tab.id)}
+              aria-current={activeTab === tab.id ? 'page' : undefined}
+              className={`coc-btn ${activeTab === tab.id ? 'coc-btn-gold' : ''} flex flex-col sm:flex-row items-center gap-0.5 sm:gap-2 px-1 sm:px-5 py-1.5 sm:py-2 whitespace-nowrap`}
             >
-              {tab.label}
+              <GameIcon name={tab.icon} size={28} />
+              <span className="coc-text text-sm sm:text-lg">{tab.label}</span>
             </button>
           ))}
-        </div>
+        </nav>
 
         {/* Overview Tab */}
         {activeTab === 'overview' && (
           <>
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
-              <StatCard title="Members" value={clan.members} icon="👥" subtitle="/50" />
-              <StatCard title="Clan Level" value={clan.clanLevel} icon="⭐" />
-              <StatCard title="War Wins" value={clan.warWins} icon="🏆" />
-              <StatCard title="Win Rate" value={`${winRate}%`} icon="📈" />
-              <StatCard title="Rushed" value={statistics.rushedCount} icon="⚠️" subtitle={`of ${players.length}`} />
-              <StatCard title="Avg Rush Score" value={statistics.averageRushScore.toFixed(1)} icon="🔍" />
+              <StatCard title="Members" value={clan.members} icon="barbarian" subtitle="/50" />
+              <StatCard title="Clan Level" value={clan.clanLevel} icon="star" />
+              <StatCard title="War Wins" value={clan.warWins} icon="clanWar" />
+              <StatCard title="Win Rate" value={`${winRate}%`} icon="threeStars" />
+              <StatCard title="Rushed" value={statistics.rushedCount} icon="upgradeHammer" subtitle={`of ${players.length}`} />
+              <StatCard title="Avg Rush Score" value={statistics.averageRushScore.toFixed(1)} icon="magnifier" />
             </div>
+
+            {/* Only once the export carries ranked history and benchmarks (Nov 2026 onwards) */}
+            {weekStars && Object.keys(benchmarks).length > 0 && <ZwegersOfTheWeek {...weekStars} />}
 
             {/* Charts Row */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
@@ -70,7 +111,7 @@ export default function Dashboard({ data }: { data: DashboardData }) {
 
             {/* Top Players Cards */}
             <div className="mb-6">
-              <h2 className="text-xl font-bold text-white mb-4">🏆 Top Players</h2>
+              <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2"><GameIcon name="crown" size={28} /> Top Players</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {[...players]
                   .sort(compareByLeague)
@@ -88,7 +129,7 @@ export default function Dashboard({ data }: { data: DashboardData }) {
             {/* Most Rushed Players */}
             <div className="card p-6 mb-6">
               <div className="flex items-center justify-between gap-4 mb-4">
-                <h2 className="text-xl font-bold text-white">⚠️ Most Rushed Players</h2>
+                <h2 className="text-xl font-bold text-white flex items-center gap-2"><GameIcon name="upgradeHammer" size={28} /> Most Rushed Players</h2>
                 <Link href="/rush-score" className="text-sm font-normal text-orange-400 hover:text-orange-300">How is this calculated?</Link>
               </div>
               <div className="overflow-x-auto">
@@ -144,19 +185,41 @@ export default function Dashboard({ data }: { data: DashboardData }) {
 
         {/* Players Tab */}
         {activeTab === 'players' && (
-          <PlayersTable players={players} onPlayerClick={setSelectedPlayer} />
+          <div className="space-y-6">
+            <PlayersHero players={players} />
+            {rankedWeeks.length > 1 && (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <RankedTrendCard weeks={rankedWeeks} />
+                <BenchmarkShareCard weeks={rankedWeeks} />
+              </div>
+            )}
+            {dots.length > 0 && <BenchmarkDotsCard dots={dots} />}
+            {lastRanked && <MissedAttacksCard {...lastRanked} />}
+            <PlayersTable players={players} rankedHistory={rankedHistory} onPlayerClick={setSelectedPlayer} />
+          </div>
         )}
 
         {/* Wars Tab */}
         {activeTab === 'wars' && (
           <div className="space-y-6">
-            {/* War Stats Summary */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <StatCard title="Total Wars" value={totalWars} icon="⚔️" />
-              <StatCard title="Wins" value={clan.warWins} icon="✅" />
-              <StatCard title="Losses" value={clan.warLosses} icon="❌" />
-              <StatCard title="Win Streak" value={clan.warWinStreak} icon="🔥" />
-            </div>
+            <WarsHero clan={clan} currentWar={currentWar} />
+            {wars.length > 0 && (
+              <>
+                <WarResultsCard wars={wars} />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <WarMarginCard wars={wars} clanName={clan.name} />
+                  <WarCompareCard
+                    wars={wars}
+                    clanName={clan.name}
+                    icon="battle"
+                    title="Destruction per war"
+                    subtitle="Average destruction over all bases"
+                    ourKey="ourDestruction"
+                    theirKey="theirDestruction"
+                  />
+                </div>
+              </>
+            )}
 
             <WarLogTable warLog={warLog} />
           </div>
@@ -165,35 +228,22 @@ export default function Dashboard({ data }: { data: DashboardData }) {
         {/* Capital Tab */}
         {activeTab === 'capital' && (
           <div className="space-y-6">
-            {/* Capital Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <StatCard
-                title="Capital Points"
-                value={clan.clanCapitalPoints?.toLocaleString('en-US') || 0}
-                icon="🏛️"
-              />
-              <StatCard
-                title="Capital Hall"
-                value={clan.clanCapital?.capitalHallLevel || 0}
-                icon="🏰"
-              />
-              <StatCard
-                title="Districts"
-                value={clan.clanCapital?.districts?.length || 0}
-                icon="🏘️"
-              />
-              <StatCard
-                title="Total Contributions"
-                value={statistics.totalCapitalContributions.toLocaleString('en-US')}
-                icon="💰"
-              />
-            </div>
+            <CapitalHero clan={clan} capitalRaids={capitalRaids} players={players} />
 
-            <CapitalRaidsCard capitalRaids={capitalRaids} />
+            {raids.length > 0 && (
+              <>
+                <CapitalLootCard raids={raids} />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <LootPerAttackCard raids={raids} />
+                  <RaidsCompletedCard raids={raids} />
+                </div>
+              </>
+            )}
+            {lastRaid && <LastRaidCard {...lastRaid} />}
 
             {/* Top Contributors */}
             <div className="card p-6">
-              <h2 className="text-xl font-bold text-white mb-4">🏆 Top Capital Contributors</h2>
+              <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2"><GameIcon name="capitalGold" size={28} /> Top Capital Contributors</h2>
               <div className="space-y-2">
                 {[...players]
                   .sort((a, b) => b.clanCapitalContributions - a.clanCapitalContributions)
@@ -237,9 +287,15 @@ export default function Dashboard({ data }: { data: DashboardData }) {
         )}
 
         {/* Footer */}
-        <footer className="text-center text-slate-500 text-sm mt-8 pb-4">
+        <footer className="text-center text-slate-300 text-sm mt-8 pb-4">
           <p>Clash of Clans Dashboard • Data from CoC API</p>
           <p className="text-xs mt-1">Data updates automatically every 6 hours</p>
+          <p className="text-xs mt-3 text-slate-400">
+            This material is unofficial and is not endorsed by Supercell. For more information see{' '}
+            <a href="https://www.supercell.com/fan-content-policy" className="underline hover:text-white">
+              Supercell&apos;s Fan Content Policy
+            </a>.
+          </p>
         </footer>
       </div>
     </div>

@@ -60,7 +60,7 @@ npx expo lint           # ESLint
 - `coc_api.py` — API client; `api_request()` retries 5xx/connection errors with backoff (the proxy is flaky).
 - `rush.py` — max-level tables and `generate_rush_report()`.
 - `history.py` — `clan_history.json` persistence and per-war attack recording.
-- `export.py` — builds `clan_data.json`.
+- `export.py` — builds `clan_data.json`, including `rankedHistory` (from `ranked_snapshots.json`) and `rankedBenchmarks` (from `api/mail_config/benchmarks.yaml`) for the Players tab.
 - `check_caps.py` — warns when a player exceeds the max-level tables.
 - `ranked.py` — weekly ranked snapshots in `ranked_snapshots.json` (same publish/local split as the war history): per ISO week and player the TH + league when recorded, plus the finished week's `result` (league, placement, trophies, attacks played/allowed) merged in from the league history, which the API only keeps for 8 weeks.
 - `weekly_mail.py` — weekly personal ranked mail, written as a LinkedIn-style motivational post (copy in `OPENERS`/`SUBJECTS` and `compose_mail()`). `--dry-run` writes previews to `api/out/mails/`, `--test-to <email>` sends everything to one address, `--send` mails the subscribers. Benchmarks (TH → minimum league) and strategy videos are in `api/mail_config/*.yaml`; Town Halls not listed use the closest lower one. Sending logs tags only, never addresses.
@@ -74,7 +74,7 @@ The scraper exits non-zero if the clan or member fetches fail, or if more than `
 
 ### Publishing
 - Only the GitHub workflow publishes data. It sets `publish_data=true`, which makes the scraper write to `coc-dashboard/public/clan_data.json` and `api/clan_history.json`. Without it (local runs) output goes to the gitignored `api/out/`, and history is read from `api/out/` or else the committed file. Don't commit data files by hand: it collides with the bot's commits.
-- `.github/workflows/update-data.yml` runs every 6 hours (or via workflow_dispatch): tests → scraper → `check_caps.py` → dashboard `npm run typecheck` (data contract) → copies the JSON into `mobile-coc-dashboard/assets/data/` → commits to `main` unless only timestamps changed. Vercel redeploys on the push. Secrets: `api_key`, `coc_base_url`.
+- `.github/workflows/update-data.yml` runs every 6 hours, via workflow_dispatch, and right after the weekly ranked workflow (so the new ranked week reaches the site on Monday morning): tests → scraper → `check_caps.py` → dashboard `npm run typecheck` (data contract) → copies the JSON into `mobile-coc-dashboard/assets/data/` → commits to `main` unless only timestamps changed. Vercel redeploys on the push. Secrets: `api_key`, `coc_base_url`.
 - `.github/workflows/weekly-ranked.yml` runs Monday 07:00 UTC (after the 05:00 UTC ranked reset): tests → `ranked.py` → commits `api/ranked_snapshots.json` (pull-rebases first, since the data job may have pushed) → `weekly_mail.py --send`. Manual runs only send when the `send_mails` input is ticked. Extra secrets: `smtp_password`, `mail_subscribers`.
 
 ### War history
@@ -84,6 +84,10 @@ The scraper exits non-zero if the clan or member fetches fail, or if more than `
 - Next.js 16 with React 19, Tailwind CSS v4, TypeScript
 - `app/page.tsx` is a server component that reads `public/clan_data.json` at build time, so the page is pre-rendered on each deploy. The interactive UI (tabs, modal) is the client component `app/components/Dashboard.tsx`.
 - Because of pre-rendering, anything locale- or timezone-dependent must not differ between server and browser: numbers use `toLocaleString('en-US')`, and "Last updated" is formatted client-side in `ClanHeader`.
+- The overview's "Zwegers of the Week" lists members below their benchmark in the second-newest week of `rankedHistory` and at or above it in the newest (`zwegersOfTheWeek()` in `app/lib/ranked.ts`), so it changes once a week.
+- Each tab has its own layout: the overview keeps the full wooden `ClanHeader`; Players, Wars and Capital get `CompactHeader` plus a `TabHero` (`TabHeroes.tsx`) and their own graphs (`RankedCharts`, `WarCharts`, `CapitalCharts`; shared bits in `ChartParts`, data shaping in `app/lib/`). The active tab is in the URL hash (`#wars`). Graphs use Recharts; colours were checked with the dataviz palette validator, so keep them in `ChartParts.tsx`.
+- The Clash of Clans look lives in `app/theme.css`, not `globals.css`: the Tailwind PostCSS plugin caches `globals.css` in the dev server, so edits there often don't show until `.next` is deleted. Game art comes from Supercell's fan kit (`public/icons/`, `public/backgrounds/`, see `public/icons/README.md`); the footer carries the required fan content notice.
+- Preview a local scraper export without touching the published file: `DASHBOARD_DATA_FILE=../api/out/clan_data.json npm run dev`.
 - `app/rush-score/page.tsx` explains the rush score (linked from the Most Rushed table, the rush chart and the player modal). It's data-driven from `rushMethod`, with a worked example using a real player, and shows a placeholder when `rushMethod` is missing. Data loading for both pages is in `app/lib/data.ts`.
 - Never sort `players` in place (`[...players].sort(...)`); it's shared across tabs.
 - Both dashboards share the same `DashboardData` TypeScript interface shape (defined separately in `coc-dashboard/app/types.ts` and `mobile-coc-dashboard/types/index.ts`). Keep these in sync with `export.py` when modifying data structures. `coc-dashboard/scripts/check-data.ts` assigns the real `clan_data.json` to `DashboardData`, so a mismatch fails `npm run typecheck`, the workflow (before committing) and `next build`. Fields the scraper can emit as `null` must be typed `| null`.

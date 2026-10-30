@@ -191,6 +191,28 @@ export interface WarLogEntry {
   };
 }
 
+export interface CurrentWarSide {
+  tag: string;
+  name: string;
+  badgeUrls: BadgeUrls;
+  clanLevel: number;
+  attacks: number;
+  stars: number;
+  destructionPercentage: number;
+  members: unknown[];
+}
+
+export interface CurrentWar {
+  state: string; // preparation, inWar or warEnded
+  teamSize: number;
+  attacksPerMember: number | null;
+  preparationStartTime: string;
+  startTime: string;
+  endTime: string;
+  clan: CurrentWarSide;
+  opponent: CurrentWarSide;
+}
+
 export interface CapitalRaid {
   state: string;
   startTime: string;
@@ -233,7 +255,7 @@ export interface DashboardData {
   clan: Clan;
   players: Player[];
   warLog: WarLogEntry[];
-  currentWar: unknown | null;
+  currentWar: CurrentWar | null; // null when the clan isn't in a war
   capitalRaids: CapitalRaid[];
   goldPass: {
     startTime: string;
@@ -245,6 +267,8 @@ export interface DashboardData {
     lastUpdated: string;
   };
   rushMethod?: RushMethod; // absent in exports from before Oct 2026
+  rankedHistory?: RankedWeek[]; // absent in exports from before Nov 2026
+  rankedBenchmarks?: Record<string, number>; // Town Hall -> minimum league
   statistics: Statistics;
 }
 
@@ -259,4 +283,27 @@ export interface RushMethod {
   heroCaps: Record<string, Record<string, number>>; // hero -> Town Hall -> max level
   scoredTroopCount: number;
   scoredSpellCount: number;
+}
+
+// Weekly ranked league per member, oldest week first (api/ranked.py). Town Hall
+// is only known for weeks recorded live; result only once a week is finished.
+export interface RankedWeekResult {
+  league: number;
+  placement: number | null;
+  trophies: number | null;
+  attacks: number;
+  maxAttacks: number | null;
+}
+
+export interface RankedWeekPlayer {
+  league: number; // 0 unranked, 1-33 Skeleton..Electro, 34-36 Legend
+  townHallLevel?: number;
+  result?: RankedWeekResult;
+}
+
+export interface RankedWeek {
+  week: string; // ISO week, e.g. 2026-W44
+  start: string; // Monday of that week, YYYY-MM-DD
+  // By player tag; members who joined later or left are missing from some weeks
+  players: Record<string, RankedWeekPlayer | undefined>;
 }

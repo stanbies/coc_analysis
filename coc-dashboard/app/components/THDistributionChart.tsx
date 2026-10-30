@@ -1,6 +1,7 @@
 'use client';
 
 import { Statistics } from '../types';
+import GameIcon from './GameIcon';
 
 interface THDistributionChartProps {
   statistics: Statistics;
@@ -31,7 +32,7 @@ export default function THDistributionChart({ statistics }: THDistributionChartP
 
   return (
     <div className="card p-6">
-      <h2 className="text-xl font-bold text-white mb-4">🏠 Town Hall Distribution</h2>
+      <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2"><GameIcon name="townHall" size={28} /> Town Hall Distribution</h2>
       
       <div className="space-y-3">
         {sortedEntries.map(({ th, count }) => {

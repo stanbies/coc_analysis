@@ -1,9 +1,11 @@
 'use client';
 
+import GameIcon, { IconName } from './GameIcon';
+
 interface StatCardProps {
   title: string;
   value: string | number;
-  icon: string;
+  icon: IconName;
   subtitle?: string;
   trend?: 'up' | 'down' | 'neutral';
 }
@@ -21,7 +23,7 @@ export default function StatCard({ title, value, icon, subtitle, trend }: StatCa
             <p className="text-slate-500 text-xs mt-1">{subtitle}</p>
           )}
         </div>
-        <div className="text-4xl">{icon}</div>
+        <GameIcon name={icon} size={44} className="drop-shadow-[0_3px_0_rgba(0,0,0,0.4)]" />
       </div>
       {trend && (
         <div className={`mt-2 text-xs ${

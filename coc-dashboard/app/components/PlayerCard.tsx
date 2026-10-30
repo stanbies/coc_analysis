@@ -2,6 +2,7 @@
 
 import { Player } from '../types';
 import LeagueBadge from './LeagueBadge';
+import GameIcon, { roleIcon } from './GameIcon';
 
 interface PlayerCardProps {
   player: Player;
@@ -17,15 +18,6 @@ function getRushStatusClass(status: string): string {
   return 'bg-slate-600';
 }
 
-function getRoleIcon(role: string): string {
-  switch (role) {
-    case 'leader': return '👑';
-    case 'coLeader': return '⭐';
-    case 'admin': return '🛡️';
-    default: return '👤';
-  }
-}
-
 export default function PlayerCard({ player, onClick }: PlayerCardProps) {
   const rushClass = getRushStatusClass(player.rushAnalysis.status);
   const totalHeroLevels = player.heroes.reduce((sum, h) => sum + h.level, 0);
@@ -37,7 +29,7 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
     >
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
-          <span className="text-lg">{getRoleIcon(player.role)}</span>
+          <GameIcon name={roleIcon(player.role).icon} size={28} alt={roleIcon(player.role).label} />
           <div>
             <h3 className="font-semibold text-white">{player.name}</h3>
             <p className="text-xs text-slate-400">{player.tag}</p>
@@ -52,16 +44,16 @@ export default function PlayerCard({ player, onClick }: PlayerCardProps) {
       
       <div className="flex items-center gap-2 mb-3 bg-slate-800/50 rounded-lg px-2 py-1.5">
         <LeagueBadge league={player.leagueTier} />
-        <span className="ml-auto text-sm font-bold whitespace-nowrap text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')}</span>
+        <span className="ml-auto text-sm font-bold whitespace-nowrap text-yellow-400 flex items-center gap-1"><GameIcon name="trophy" size={18} /> {player.trophies.toLocaleString('en-US')}</span>
       </div>
 
       <div className="grid grid-cols-2 gap-2 mb-3 text-center">
         <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
-          <p className="text-base font-bold whitespace-nowrap text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
+          <p className="text-base font-bold whitespace-nowrap text-purple-400 flex items-center justify-center gap-1"><GameIcon name="star" size={18} /> {player.warStars.toLocaleString('en-US')}</p>
           <p className="text-xs text-slate-400">War Stars</p>
         </div>
         <div className="bg-slate-800/50 rounded-lg px-1 py-2 min-w-0">
-          <p className="text-base font-bold whitespace-nowrap text-cyan-400">🦸 {totalHeroLevels}</p>
+          <p className="text-base font-bold whitespace-nowrap text-cyan-400 flex items-center justify-center gap-1"><GameIcon name="barbarianKing" size={20} /> {totalHeroLevels}</p>
           <p className="text-xs text-slate-400">Hero Lvls</p>
         </div>
       </div>

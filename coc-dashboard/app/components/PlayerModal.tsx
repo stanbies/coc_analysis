@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Player } from '../types';
 import LeagueBadge from './LeagueBadge';
+import GameIcon, { roleIcon } from './GameIcon';
 
 interface PlayerModalProps {
   player: Player;
@@ -16,15 +17,6 @@ function getRushStatusClass(status: string): string {
   if (status.includes('Severely')) return 'rush-severe';
   if (status.includes('Rushed')) return 'rush-rushed';
   return 'bg-slate-600';
-}
-
-function getRoleLabel(role: string): string {
-  switch (role) {
-    case 'leader': return '👑 Leader';
-    case 'coLeader': return '⭐ Co-Leader';
-    case 'admin': return '🛡️ Elder';
-    default: return '👤 Member';
-  }
 }
 
 export default function PlayerModal({ player, onClose }: PlayerModalProps) {
@@ -42,7 +34,7 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
             <div>
               <h2 className="text-2xl font-bold text-white">{player.name}</h2>
               <p className="text-orange-100">{player.tag}</p>
-              <p className="text-orange-200 text-sm mt-1">{getRoleLabel(player.role)}</p>
+              <p className="text-orange-200 text-sm mt-1 flex items-center gap-1.5"><GameIcon name={roleIcon(player.role).icon} size={20} /> {roleIcon(player.role).label}</p>
             </div>
             <div className="text-right">
               <div className="bg-white/20 backdrop-blur text-white text-2xl font-bold px-4 py-2 rounded-xl">
@@ -65,26 +57,26 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
             <div className="bg-slate-800 rounded-xl p-4 flex flex-col items-center text-center">
               <LeagueBadge league={player.leagueTier} size="lg" showName={false} />
               <p className="text-sm font-bold text-white mt-1">{player.leagueTier?.name ?? 'Unranked'}</p>
-              <p className="text-xs text-yellow-400">🏆 {player.trophies.toLocaleString('en-US')} this week</p>
+              <p className="text-xs text-yellow-400 flex items-center gap-1"><GameIcon name="trophy" size={14} /> {player.trophies.toLocaleString('en-US')} this week</p>
               <p className="text-xs text-slate-500">Best ever: {player.bestTrophies.toLocaleString('en-US')}</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-purple-400">⭐ {player.warStars.toLocaleString('en-US')}</p>
+              <p className="text-2xl font-bold text-purple-400 flex items-center justify-center gap-2"><GameIcon name="star" size={26} /> {player.warStars.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">War Stars</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-green-400">⚔️ {player.attackWins.toLocaleString('en-US')}</p>
+              <p className="text-2xl font-bold text-green-400 flex items-center justify-center gap-2"><GameIcon name="battle" size={26} /> {player.attackWins.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">Attack Wins</p>
             </div>
             <div className="bg-slate-800 rounded-xl p-4 text-center">
-              <p className="text-2xl font-bold text-blue-400">🛡️ {player.defenseWins.toLocaleString('en-US')}</p>
+              <p className="text-2xl font-bold text-blue-400 flex items-center justify-center gap-2"><GameIcon name="standardShield" size={26} /> {player.defenseWins.toLocaleString('en-US')}</p>
               <p className="text-xs text-slate-400">Defense Wins</p>
             </div>
           </div>
           
           {/* Donations */}
           <div className="bg-slate-800 rounded-xl p-4">
-            <h3 className="font-semibold text-white mb-3">📦 Donations</h3>
+            <h3 className="font-semibold text-white mb-3 flex items-center gap-2"><GameIcon name="troops" size={24} /> Donations</h3>
             <div className="flex items-center gap-4">
               <div className="flex-1">
                 <div className="flex justify-between text-sm mb-1">
@@ -109,7 +101,7 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
           {/* Rush Analysis */}
           <div className="bg-slate-800 rounded-xl p-4">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="font-semibold text-white">🔍 Rush Analysis</h3>
+              <h3 className="font-semibold text-white flex items-center gap-2"><GameIcon name="magnifier" size={24} /> Rush Analysis</h3>
               <span className={`${rushClass} text-sm px-3 py-1 rounded-full text-white font-medium`}>
                 {player.rushAnalysis.status.replace(/[✅🟢🟡🟠🔴]\s?/g, '')}
               </span>
@@ -149,7 +141,7 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
           
           {/* Heroes */}
           <div className="bg-slate-800 rounded-xl p-4">
-            <h3 className="font-semibold text-white mb-3">🦸 Heroes</h3>
+            <h3 className="font-semibold text-white mb-3 flex items-center gap-2"><GameIcon name="barbarianKing" size={24} /> Heroes</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {player.heroes.map((hero, i) => (
                 <div key={i} className="bg-slate-700/50 rounded-lg p-3">
@@ -172,7 +164,7 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
           {/* War Performance */}
           {player.warStats.totalAttacks > 0 && (
             <div className="bg-slate-800 rounded-xl p-4">
-              <h3 className="font-semibold text-white mb-3">⚔️ War Performance</h3>
+              <h3 className="font-semibold text-white mb-3 flex items-center gap-2"><GameIcon name="clanWar" size={24} /> War Performance</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <p className="text-xl font-bold text-white">{player.warStats.totalAttacks}</p>
@@ -198,7 +190,7 @@ export default function PlayerModal({ player, onClose }: PlayerModalProps) {
           
           {/* Capital Contributions */}
           <div className="bg-slate-800 rounded-xl p-4">
-            <h3 className="font-semibold text-white mb-2">🏛️ Clan Capital</h3>
+            <h3 className="font-semibold text-white mb-2 flex items-center gap-2"><GameIcon name="capitalHall" size={24} /> Clan Capital</h3>
             <p className="text-2xl font-bold text-amber-400">
               {player.clanCapitalContributions.toLocaleString('en-US')}
               <span className="text-sm text-slate-400 font-normal ml-2">Gold Contributed</span>

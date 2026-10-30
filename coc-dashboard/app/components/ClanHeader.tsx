@@ -2,8 +2,14 @@
 
 import { useSyncExternalStore } from 'react';
 import { Clan } from '../types';
+import GameIcon from './GameIcon';
+import ResourceBar from './ResourceBar';
 
 const noopSubscribe = () => () => {};
+
+// Shown on the parchment instead of the in-game clan description.
+// Set to '' to show the description from the game again.
+const WELCOME_TEXT = 'Welkom kleine zwegers op de officiële Zwegerneet analyse website';
 
 interface ClanHeaderProps {
   clan: Clan;
@@ -12,7 +18,7 @@ interface ClanHeaderProps {
 
 export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
   const totalWars = clan.warWins + clan.warTies + clan.warLosses;
-  const winRate = totalWars > 0 ? ((clan.warWins / totalWars) * 100).toFixed(1) : '0';
+  const winRate = totalWars > 0 ? (clan.warWins / totalWars) * 100 : 0;
 
   // Formatted in the browser so it shows the visitor's local time; the page is
   // pre-rendered on the server, which would otherwise print UTC.
@@ -23,78 +29,70 @@ export default function ClanHeader({ clan, lastUpdated }: ClanHeaderProps) {
   );
 
   return (
-    <div className="card p-6 mb-6 glow-orange">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
+    <header className="coc-wood p-5 md:p-6 mb-6">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <div className="flex items-center gap-4 min-w-0">
           {clan.badgeUrls?.large && (
-            <img 
-              src={clan.badgeUrls.large} 
+            <img
+              src={clan.badgeUrls.large}
               alt={clan.name}
-              className="w-20 h-20 rounded-lg"
+              className="w-20 h-20 md:w-24 md:h-24 shrink-0 drop-shadow-[0_4px_0_rgba(0,0,0,0.45)]"
             />
           )}
-          <div>
-            <h1 className="text-3xl font-bold text-white">{clan.name}</h1>
-            <p className="text-slate-400">{clan.tag}</p>
-            <div className="flex flex-wrap items-center gap-2 mt-1">
-              <span className="bg-orange-500/20 text-orange-400 text-sm px-2 py-0.5 rounded whitespace-nowrap">
-                Level {clan.clanLevel}
+          <div className="min-w-0">
+            <h1 className="coc-text text-3xl md:text-4xl leading-tight break-words">{clan.name}</h1>
+            <p className="coc-text text-sm opacity-90">{clan.tag}</p>
+            <div className="flex flex-wrap items-center gap-2 mt-2">
+              <span className="coc-chip coc-text text-sm pl-1.5 pr-3 py-0.5 whitespace-nowrap flex items-center gap-1.5">
+                <GameIcon name="star" size={20} /> Level {clan.clanLevel}
               </span>
               {clan.location && (
-                <span className="bg-blue-500/20 text-blue-400 text-sm px-2 py-0.5 rounded whitespace-nowrap">
-                  📍 {clan.location.name}
+                <span className="coc-chip coc-text text-sm px-3 py-0.5 whitespace-nowrap">
+                  {clan.location.name}
                 </span>
               )}
               {clan.warLeague && (
-                <span className="bg-purple-500/20 text-purple-400 text-sm px-2 py-0.5 rounded whitespace-nowrap">
-                  ⚔️ {clan.warLeague.name}
+                <span className="coc-chip coc-text text-sm pl-1.5 pr-3 py-0.5 whitespace-nowrap flex items-center gap-1.5">
+                  <GameIcon name="cwl" size={20} /> {clan.warLeague.name}
                 </span>
               )}
             </div>
           </div>
         </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div>
-            <p className="text-2xl font-bold text-white">{clan.members}/50</p>
-            <p className="text-xs text-slate-400">Members</p>
-          </div>
-          <div>
-            <p className="text-2xl font-bold text-yellow-400">{clan.clanPoints.toLocaleString('en-US')}</p>
-            <p className="text-xs text-slate-400">Clan Points</p>
-          </div>
-          <div>
-            <p className="text-2xl font-bold text-green-400">{clan.warWins}</p>
-            <p className="text-xs text-slate-400">War Wins</p>
-          </div>
-          <div>
-            <p className="text-2xl font-bold text-cyan-400">{winRate}%</p>
-            <p className="text-xs text-slate-400">Win Rate</p>
-          </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-3 w-full lg:w-[440px] shrink-0">
+          <ResourceBar icon="barbarian" label="Members" value={`${clan.members}/50`}
+                       color="#7fd0ff" fill={(clan.members / 50) * 100} />
+          <ResourceBar icon="trophy" label="Clan Points" value={clan.clanPoints.toLocaleString('en-US')}
+                       color="#ffd84a" />
+          <ResourceBar icon="clanWar" label="War Wins" value={clan.warWins.toLocaleString('en-US')}
+                       color="#e05bd6" />
+          <ResourceBar icon="threeStars" label="Win Rate" value={`${winRate.toFixed(1)}%`}
+                       color="#a3e256" fill={winRate} />
         </div>
       </div>
-      
-      {clan.description && (
-        <p className="text-slate-300 mt-4 text-sm border-t border-slate-700 pt-4">
-          {clan.description}
+
+      {(WELCOME_TEXT || clan.description) && (
+        <p className="coc-parchment mt-5 px-4 py-3 text-sm leading-relaxed">
+          {WELCOME_TEXT || clan.description}
         </p>
       )}
-      
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-4 pt-4 border-t border-slate-700">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-4">
+        <div className="flex flex-wrap items-center gap-2">
           {clan.labels?.map((label, i) => (
-            <div key={i} className="flex items-center gap-1 whitespace-nowrap">
+            <span key={i} className="coc-chip flex items-center gap-1.5 pl-1 pr-3 py-0.5 whitespace-nowrap">
               {label.iconUrls?.small && (
-                <img src={label.iconUrls.small} alt={label.name} className="w-5 h-5" />
+                <img src={label.iconUrls.small} alt="" className="w-6 h-6" />
               )}
-              <span className="text-xs text-slate-400">{label.name}</span>
-            </div>
+              <span className="coc-text text-xs">{label.name}</span>
+            </span>
           ))}
         </div>
-        <p className="text-xs text-slate-500">
+        <p className="coc-text text-xs opacity-90">
           Last updated: {updatedText}
         </p>
       </div>
-    </div>
+    </header>
   );
 }

@@ -27,7 +27,10 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  background:
+    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(127, 208, 255, 0.25), transparent 70%),
+    linear-gradient(180deg, var(--coc-sky-top) 0%, #173a5c 35%, var(--coc-sky-bottom) 100%);
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-clash), system-ui, sans-serif;
   min-height: 100vh;

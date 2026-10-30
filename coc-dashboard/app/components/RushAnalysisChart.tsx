@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Statistics } from '../types';
+import GameIcon from './GameIcon';
 
 interface RushAnalysisChartProps {
   statistics: Statistics;
@@ -28,7 +29,7 @@ export default function RushAnalysisChart({ statistics }: RushAnalysisChartProps
   return (
     <div className="card p-6">
       <div className="flex items-center justify-between gap-4 mb-4">
-        <h2 className="text-xl font-bold text-white">🔍 Rush Analysis Distribution</h2>
+        <h2 className="text-xl font-bold text-white flex items-center gap-2"><GameIcon name="magnifier" size={28} /> Rush Analysis Distribution</h2>
         <Link href="/rush-score" className="text-sm font-normal text-orange-400 hover:text-orange-300">How is this calculated?</Link>
       </div>
       

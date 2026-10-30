@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { loadDashboardData } from '../lib/data';
 import { Player, RushedItem, RushMethod } from '../types';
+import GameIcon from '../components/GameIcon';
 
 export const metadata: Metadata = {
   title: 'How the Rush Score Works | Clash of Clans Dashboard',
@@ -100,7 +101,7 @@ export default async function RushScorePage() {
       <div className="max-w-4xl mx-auto space-y-6">
         <div>
           <Link href="/" className="text-sm text-orange-400 hover:text-orange-300">← Back to dashboard</Link>
-          <h1 className="text-3xl font-bold text-white mt-3">🔍 How the Rush Score Works</h1>
+          <h1 className="text-3xl font-bold text-white mt-3"><GameIcon name="magnifier" size={34} className="mr-2" />How the Rush Score Works</h1>
           <p className="text-slate-400 mt-2">
             A player is &ldquo;rushed&rdquo; when they upgraded their Town Hall before finishing the one
             before it. The rush score measures how far behind they still are.
