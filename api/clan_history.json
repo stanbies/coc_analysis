@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-10-31T16:52:30.998336+00:00",
+  "last_updated": "2026-10-31T21:02:17.784849+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -48,10 +48,10 @@
       "name": "De Buikies",
       "tag": "#R080CV0Q",
       "current_th": 18,
-      "total_attacks": 2,
-      "total_stars": 4,
-      "total_destruction": 170.0,
-      "three_stars": 0,
+      "total_attacks": 4,
+      "total_stars": 10,
+      "total_destruction": 370.0,
+      "three_stars": 2,
       "two_stars": 2,
       "one_star": 0,
       "zero_stars": 0,
@@ -77,6 +77,26 @@
           "defender_th": 18,
           "attacker_th": 16,
           "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-30T18:46:14+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-30T18:46:14+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
@@ -678,11 +698,11 @@
       "name": "stan",
       "tag": "#2LYLYGYU2",
       "current_th": 17,
-      "total_attacks": 4,
-      "total_stars": 9,
-      "total_destruction": 374.0,
-      "three_stars": 2,
-      "two_stars": 1,
+      "total_attacks": 6,
+      "total_stars": 14,
+      "total_destruction": 570.0,
+      "three_stars": 3,
+      "two_stars": 2,
       "one_star": 1,
       "zero_stars": 0,
       "wars_participated": 6,
@@ -722,6 +742,26 @@
           "war_id": "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
           "war_type": "regular_war",
           "date": "2026-10-28T19:03:52+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-30T18:46:14+00:00",
+          "stars": 2,
+          "destruction": 96,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-30T18:46:14+00:00",
           "stars": 3,
           "destruction": 100,
           "defender_th": 17,
@@ -1184,16 +1224,27 @@
       "name": "Goblin ✡️",
       "tag": "#GRL2GV0JR",
       "current_th": 14,
-      "total_attacks": 0,
-      "total_stars": 0,
-      "total_destruction": 0.0,
-      "three_stars": 0,
+      "total_attacks": 1,
+      "total_stars": 3,
+      "total_destruction": 100.0,
+      "three_stars": 1,
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 2,
       "cwl_seasons": 0,
-      "attacks_history": [],
+      "attacks_history": [
+        {
+          "war_id": "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+          "war_type": "regular_war",
+          "date": "2026-10-30T18:46:14+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 13,
+          "attacker_th": 14,
+          "hit_type": "↓ DOWN"
+        }
+      ],
       "war_ids": [
         "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
         "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z"
