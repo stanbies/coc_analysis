@@ -3752,28 +3752,28 @@
           "townHallLevel": 18,
           "league": 33,
           "leagueName": "Electro League 33",
-          "trophies": 0
+          "trophies": 10
         },
         "#2GJGRYCP0": {
           "name": "oli",
           "townHallLevel": 18,
           "league": 33,
           "leagueName": "Electro League 33",
-          "trophies": 0
+          "trophies": 302
         },
         "#JQ9GP2RP": {
           "name": "laurens",
           "townHallLevel": 18,
           "league": 32,
           "leagueName": "Electro League 32",
-          "trophies": 0
+          "trophies": 20
         },
         "#Y98J8J9VJ": {
           "name": "nicolaas",
           "townHallLevel": 17,
           "league": 31,
           "leagueName": "Electro League 31",
-          "trophies": 0
+          "trophies": 121
         },
         "#8RUGYCVG9": {
           "name": "jari",
@@ -3801,7 +3801,7 @@
           "townHallLevel": 17,
           "league": 30,
           "leagueName": "Dragon League 30",
-          "trophies": 0
+          "trophies": 28
         },
         "#8CGPQYG88": {
           "name": "nicolassss",
@@ -3822,14 +3822,14 @@
           "townHallLevel": 16,
           "league": 29,
           "leagueName": "Dragon League 29",
-          "trophies": 0
+          "trophies": 233
         },
         "#LVRQRQCR": {
           "name": "linters42O",
           "townHallLevel": 17,
           "league": 29,
           "leagueName": "Dragon League 29",
-          "trophies": 0
+          "trophies": 28
         },
         "#Q8QY9JULJ": {
           "name": "bram",
@@ -3850,14 +3850,14 @@
           "townHallLevel": 18,
           "league": 29,
           "leagueName": "Dragon League 29",
-          "trophies": 0
+          "trophies": 30
         },
         "#28GR98PC2": {
           "name": "wannes",
           "townHallLevel": 17,
           "league": 29,
           "leagueName": "Dragon League 29",
-          "trophies": 0
+          "trophies": 438
         },
         "#8CRCQ92QV": {
           "name": "Nils",
@@ -3871,32 +3871,32 @@
           "townHallLevel": 18,
           "league": 29,
           "leagueName": "Dragon League 29",
-          "trophies": 0
+          "trophies": 31
         },
         "#9CRYUCRL": {
           "name": "LukasXIV",
           "townHallLevel": 15,
           "league": 28,
           "leagueName": "Dragon League 28",
-          "trophies": 0
+          "trophies": 141
         },
         "#2LYLYGYU2": {
           "name": "stan",
           "townHallLevel": 17,
           "league": 28,
           "leagueName": "Dragon League 28",
-          "trophies": 0
+          "trophies": 30
         },
         "#8PGLYQVV9": {
           "name": "Kokovic",
           "townHallLevel": 15,
           "league": 28,
           "leagueName": "Dragon League 28",
-          "trophies": 0
+          "trophies": 13
         },
         "#LYVLQ8C02": {
           "name": "Quinquin",
-          "townHallLevel": 15,
+          "townHallLevel": 16,
           "league": 28,
           "leagueName": "Dragon League 28",
           "trophies": 0
@@ -3913,14 +3913,14 @@
           "townHallLevel": 17,
           "league": 25,
           "leagueName": "Titan League 25",
-          "trophies": 0
+          "trophies": 29
         },
         "#8VCUC88VP": {
           "name": "florian",
           "townHallLevel": 16,
           "league": 24,
           "leagueName": "P.E.K.K.A League 24",
-          "trophies": 0
+          "trophies": 22
         },
         "#9J0RPQ9C": {
           "name": "Cavaleiro-Alex",
@@ -3941,7 +3941,7 @@
           "townHallLevel": 16,
           "league": 21,
           "leagueName": "Golem League 21",
-          "trophies": 0
+          "trophies": 100
         },
         "#G082YJJJL": {
           "name": "Quinie",
@@ -4018,7 +4018,7 @@
           "townHallLevel": 15,
           "league": 18,
           "leagueName": "Witch League 18",
-          "trophies": 0
+          "trophies": 158
         },
         "#YG8Q92GJ9": {
           "name": "Hout Weylen",
@@ -4032,7 +4032,7 @@
           "townHallLevel": 13,
           "league": 13,
           "leagueName": "Valkyrie League 13",
-          "trophies": 0
+          "trophies": 27
         },
         "#L9JQPCPV8": {
           "name": "milanxxii",
@@ -4084,7 +4084,7 @@
           "trophies": 0
         }
       },
-      "recorded_at": "2026-11-02T16:57:12.328111+00:00"
+      "recorded_at": "2026-11-02T20:28:55.944671+00:00"
     }
   }
 }
