@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T23:15:36.565830+00:00",
+  "lastUpdated": "2026-11-05T05:19:42.547124+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -121,7 +121,7 @@
       "townHallLevel": 18,
       "townHallWeaponLevel": null,
       "expLevel": 206,
-      "trophies": 580,
+      "trophies": 591,
       "bestTrophies": 3459,
       "warStars": 840,
       "attackWins": 0,
@@ -242,10 +242,10 @@
         {
           "name": "Wall Buster",
           "stars": 3,
-          "value": 96234,
+          "value": 96243,
           "target": 2000,
           "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 96234",
+          "completionInfo": "Total Walls destroyed: 96243",
           "village": "home"
         },
         {
@@ -260,19 +260,19 @@
         {
           "name": "Union Buster",
           "stars": 3,
-          "value": 21665,
+          "value": 21670,
           "target": 2500,
           "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 21665",
+          "completionInfo": "Total Builder's Huts destroyed: 21670",
           "village": "home"
         },
         {
           "name": "Conqueror",
           "stars": 3,
-          "value": 5762,
+          "value": 5763,
           "target": 5000,
           "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 5762",
+          "completionInfo": "Total multiplayer battles won: 5763",
           "village": "home"
         },
         {
@@ -296,19 +296,19 @@
         {
           "name": "Mortar Mauler",
           "stars": 3,
-          "value": 18110,
+          "value": 18116,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 18110",
+          "completionInfo": "Total Mortars destroyed: 18116",
           "village": "home"
         },
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 48217448,
+          "value": 48234890,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 48217448",
+          "completionInfo": "Total Dark Elixir looted: 48234890",
           "village": "home"
         },
         {
@@ -323,19 +323,19 @@
         {
           "name": "X-Bow Exterminator",
           "stars": 3,
-          "value": 12700,
+          "value": 12703,
           "target": 2500,
           "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 12700",
+          "completionInfo": "Total X-Bows destroyed: 12703",
           "village": "home"
         },
         {
           "name": "Firefighter",
           "stars": 3,
-          "value": 8399,
+          "value": 8400,
           "target": 5000,
           "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 8399",
+          "completionInfo": "Total Inferno Towers destroyed: 8400",
           "village": "home"
         },
         {
@@ -485,10 +485,10 @@
         {
           "name": "Shattered and Scattered",
           "stars": 3,
-          "value": 4886,
+          "value": 4887,
           "target": 4000,
           "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 4886",
+          "completionInfo": "Total Scattershots destroyed: 4887",
           "village": "home"
         },
         {
@@ -503,10 +503,10 @@
         {
           "name": "Bust This!",
           "stars": 3,
-          "value": 11279,
+          "value": 11284,
           "target": 2500,
           "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 11279",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 11284",
           "village": "home"
         },
         {
@@ -557,10 +557,10 @@
         {
           "name": "Monolith Masher",
           "stars": 2,
-          "value": 1552,
+          "value": 1553,
           "target": 2000,
           "info": "Destroy 2000 Monoliths in Multiplayer Battles",
-          "completionInfo": "Total Monoliths Destroyed: 1552",
+          "completionInfo": "Total Monoliths Destroyed: 1553",
           "village": "home"
         },
         {
@@ -584,28 +584,28 @@
         {
           "name": "Multi-Archer Tower Terminator",
           "stars": 2,
-          "value": 3341,
+          "value": 3343,
           "target": 5000,
           "info": "Destroy 5000 Multi-Archer Towers in Multiplayer Battles",
-          "completionInfo": "Total Multi-Archer Towers Destroyed: 3341",
+          "completionInfo": "Total Multi-Archer Towers Destroyed: 3343",
           "village": "home"
         },
         {
           "name": "Ricochet Cannon Crusher",
           "stars": 2,
-          "value": 3382,
+          "value": 3386,
           "target": 5000,
           "info": "Destroy 5000 Ricochet Cannons in Multiplayer Battles",
-          "completionInfo": "Total Ricochet Cannons Destroyed: 3382",
+          "completionInfo": "Total Ricochet Cannons Destroyed: 3386",
           "village": "home"
         },
         {
           "name": "Firespitter Finisher",
           "stars": 2,
-          "value": 1455,
+          "value": 1456,
           "target": 4000,
           "info": "Destroy 4000 Firespitters in Multiplayer Battles",
-          "completionInfo": "Total Firespitters Destroyed: 1455",
+          "completionInfo": "Total Firespitters Destroyed: 1456",
           "village": "home"
         },
         {
@@ -1585,7 +1585,7 @@
       "expLevel": 247,
       "trophies": 18,
       "bestTrophies": 5305,
-      "warStars": 2609,
+      "warStars": 2612,
       "attackWins": 0,
       "defenseWins": 0,
       "builderHallLevel": 10,
@@ -1740,10 +1740,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 2023,
+          "value": 2024,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 2023",
+          "completionInfo": "Total defenses won: 2024",
           "village": "home"
         },
         {
@@ -1767,10 +1767,10 @@
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 59106817,
+          "value": 59107947,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 59106817",
+          "completionInfo": "Total Dark Elixir looted: 59107947",
           "village": "home"
         },
         {
@@ -1803,10 +1803,10 @@
         {
           "name": "War Hero",
           "stars": 3,
-          "value": 2609,
+          "value": 2612,
           "target": 1000,
           "info": "Score 1000 Stars for your clan in Clan War battles",
-          "completionInfo": "Total Stars scored for clan in Clan War battles: 2609",
+          "completionInfo": "Total Stars scored for clan in Clan War battles: 2612",
           "village": "home"
         },
         {
@@ -1920,10 +1920,10 @@
         {
           "name": "War League Legend",
           "stars": 3,
-          "value": 1128,
+          "value": 1131,
           "target": 250,
           "info": "Score 250 Stars for your clan in War League battles",
-          "completionInfo": "Total Stars scored for clan in War League battles: 1128",
+          "completionInfo": "Total Stars scored for clan in War League battles: 1131",
           "village": "home"
         },
         {
@@ -1938,10 +1938,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 239490,
+          "value": 239510,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 239490",
+          "completionInfo": "Total Season Challenges points: 239510",
           "village": "home"
         },
         {
@@ -2488,7 +2488,7 @@
         },
         {
           "name": "Greedy Raven",
-          "level": 5,
+          "level": 6,
           "maxLevel": 10
         }
       ],
@@ -2902,10 +2902,10 @@
         ]
       },
       "warStats": {
-        "totalAttacks": 4,
-        "totalStars": 11,
-        "totalDestruction": 389.0,
-        "threeStars": 3,
+        "totalAttacks": 5,
+        "totalStars": 14,
+        "totalDestruction": 489.0,
+        "threeStars": 4,
         "twoStars": 1,
         "oneStars": 0,
         "zeroStars": 0,
@@ -4454,7 +4454,7 @@
       "townHallLevel": 18,
       "townHallWeaponLevel": null,
       "expLevel": 211,
-      "trophies": 368,
+      "trophies": 386,
       "bestTrophies": 4412,
       "warStars": 658,
       "attackWins": 0,
@@ -5976,7 +5976,7 @@
       "name": "nicolaas",
       "townHallLevel": 17,
       "townHallWeaponLevel": 5,
-      "expLevel": 207,
+      "expLevel": 208,
       "trophies": 197,
       "bestTrophies": 4178,
       "warStars": 626,
@@ -10186,7 +10186,7 @@
       "townHallLevel": 17,
       "townHallWeaponLevel": 1,
       "expLevel": 185,
-      "trophies": 134,
+      "trophies": 143,
       "bestTrophies": 2870,
       "warStars": 324,
       "attackWins": 0,
@@ -14390,7 +14390,7 @@
       "townHallLevel": 17,
       "townHallWeaponLevel": 1,
       "expLevel": 210,
-      "trophies": 467,
+      "trophies": 481,
       "bestTrophies": 4238,
       "warStars": 1919,
       "attackWins": 0,
@@ -17912,7 +17912,7 @@
         },
         {
           "name": "Baby Dragon",
-          "level": 9,
+          "level": 10,
           "maxLevel": 12
         },
         {
@@ -18466,11 +18466,11 @@
       ],
       "rushAnalysis": {
         "isRushed": true,
-        "rushScore": 68.2,
-        "rushPercentage": 16.6,
+        "rushScore": 67.9,
+        "rushPercentage": 16.4,
         "status": "🔴 Severely Rushed (Heroes)",
         "heroScore": 40.0,
-        "troopScore": 13.8,
+        "troopScore": 13.5,
         "spellScore": 14.4,
         "totalMissingHeroLevels": 40,
         "rushedHeroes": [
@@ -18574,9 +18574,9 @@
           },
           {
             "name": "Baby Dragon",
-            "current": 9,
+            "current": 10,
             "target": 11,
-            "missing": 2
+            "missing": 1
           },
           {
             "name": "Miner",
@@ -21498,10 +21498,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 11913,
+          "value": 11914,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 11913",
+          "completionInfo": "Total obstacles removed: 11914",
           "village": "home"
         },
         {
@@ -21543,10 +21543,10 @@
         {
           "name": "Empire Builder",
           "stars": 3,
-          "value": 13,
+          "value": 14,
           "target": 4,
           "info": "Upgrade Clan Castle to level 4",
-          "completionInfo": "Current Clan Castle level: 13",
+          "completionInfo": "Current Clan Castle level: 14",
           "village": "home"
         },
         {
@@ -21786,10 +21786,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 199980,
+          "value": 199990,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 199980",
+          "completionInfo": "Total Season Challenges points: 199990",
           "village": "home"
         },
         {
@@ -26455,7 +26455,7 @@
         },
         {
           "name": "Diggy",
-          "level": 5,
+          "level": 6,
           "maxLevel": 15
         },
         {
@@ -29624,7 +29624,7 @@
       "expLevel": 200,
       "trophies": 13,
       "bestTrophies": 4079,
-      "warStars": 1746,
+      "warStars": 1749,
       "attackWins": 0,
       "defenseWins": 0,
       "builderHallLevel": 9,
@@ -29806,10 +29806,10 @@
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 21042932,
+          "value": 21043762,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 21042932",
+          "completionInfo": "Total Dark Elixir looted: 21043762",
           "village": "home"
         },
         {
@@ -29842,19 +29842,19 @@
         {
           "name": "War Hero",
           "stars": 3,
-          "value": 1746,
+          "value": 1749,
           "target": 1000,
           "info": "Score 1000 Stars for your clan in Clan War battles",
-          "completionInfo": "Total Stars scored for clan in Clan War battles: 1746",
+          "completionInfo": "Total Stars scored for clan in Clan War battles: 1749",
           "village": "home"
         },
         {
           "name": "Clan War Wealth",
           "stars": 3,
-          "value": 1190384771,
+          "value": 1192519771,
           "target": 100000000,
           "info": "Collect 100000000 Gold from the Clan Castle",
-          "completionInfo": "Total Gold collected in Clan War bonuses: 1190384771",
+          "completionInfo": "Total Gold collected in Clan War bonuses: 1192519771",
           "village": "home"
         },
         {
@@ -29959,10 +29959,10 @@
         {
           "name": "War League Legend",
           "stars": 3,
-          "value": 553,
+          "value": 556,
           "target": 250,
           "info": "Score 250 Stars for your clan in War League battles",
-          "completionInfo": "Total Stars scored for clan in War League battles: 553",
+          "completionInfo": "Total Stars scored for clan in War League battles: 556",
           "village": "home"
         },
         {
@@ -29977,10 +29977,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 151040,
+          "value": 151060,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 151040",
+          "completionInfo": "Total Season Challenges points: 151060",
           "village": "home"
         },
         {
@@ -30013,10 +30013,10 @@
         {
           "name": "Superb Work",
           "stars": 2,
-          "value": 132,
+          "value": 133,
           "target": 250,
           "info": "Boost a Super Troop 250 times",
-          "completionInfo": "Total times Super Troops boosted: 132",
+          "completionInfo": "Total times Super Troops boosted: 133",
           "village": "home"
         },
         {
@@ -30801,10 +30801,10 @@
         "rushedSpells": []
       },
       "warStats": {
-        "totalAttacks": 5,
-        "totalStars": 14,
-        "totalDestruction": 494.0,
-        "threeStars": 4,
+        "totalAttacks": 6,
+        "totalStars": 17,
+        "totalDestruction": 594.0,
+        "threeStars": 5,
         "twoStars": 1,
         "oneStars": 0,
         "zeroStars": 0,
@@ -38056,10 +38056,10 @@
         {
           "name": "Crafting Connoisseur",
           "stars": 1,
-          "value": 5,
+          "value": 6,
           "target": 25,
           "info": "Upgrade Crafted Defenses 25 times",
-          "completionInfo": "Total Crafted Defense upgrades: 5",
+          "completionInfo": "Total Crafted Defense upgrades: 6",
           "village": "home"
         },
         {
@@ -45562,7 +45562,7 @@
         },
         {
           "name": "Archer Queen",
-          "level": 80,
+          "level": 81,
           "maxLevel": 85
         },
         {
@@ -45572,7 +45572,7 @@
         },
         {
           "name": "Royal Champion",
-          "level": 25,
+          "level": 26,
           "maxLevel": 30
         },
         {
@@ -45834,7 +45834,7 @@
         },
         {
           "name": "Mighty Yak",
-          "level": 1,
+          "level": 2,
           "maxLevel": 15
         },
         {
@@ -54722,10 +54722,10 @@
         {
           "name": "Unbreakable",
           "stars": 2,
-          "value": 361,
+          "value": 362,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 361",
+          "completionInfo": "Total defenses won: 362",
           "village": "home"
         },
         {
@@ -55314,6 +55314,11 @@
           "maxLevel": 12
         },
         {
+          "name": "Dragon Rider",
+          "level": 1,
+          "maxLevel": 2
+        },
+        {
           "name": "Super Witch",
           "level": 1,
           "maxLevel": 8
@@ -55429,6 +55434,11 @@
           "name": "Invisibility Spell",
           "level": 3,
           "maxLevel": 4
+        },
+        {
+          "name": "Recall Spell",
+          "level": 1,
+          "maxLevel": 2
         },
         {
           "name": "Overgrowth Spell",
@@ -55862,10 +55872,10 @@
         {
           "name": "Unbreakable",
           "stars": 1,
-          "value": 27,
+          "value": 28,
           "target": 250,
           "info": "Successfully defend against 250 attacks",
-          "completionInfo": "Total defenses won: 27",
+          "completionInfo": "Total defenses won: 28",
           "village": "home"
         },
         {
@@ -56238,7 +56248,7 @@
         },
         {
           "name": "Archer Queen",
-          "level": 63,
+          "level": 64,
           "maxLevel": 65
         },
         {
@@ -58760,10 +58770,10 @@
         {
           "name": "Empire Builder",
           "stars": 3,
-          "value": 5,
+          "value": 6,
           "target": 4,
           "info": "Upgrade Clan Castle to level 4",
-          "completionInfo": "Current Clan Castle level: 5",
+          "completionInfo": "Current Clan Castle level: 6",
           "village": "home"
         },
         {
@@ -59003,10 +59013,10 @@
         {
           "name": "Well Seasoned",
           "stars": 2,
-          "value": 26670,
+          "value": 26710,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 26670",
+          "completionInfo": "Total Season Challenges points: 26710",
           "village": "home"
         },
         {
@@ -61187,10 +61197,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 1319,
+          "value": 1320,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 1319",
+          "completionInfo": "Total defenses won: 1320",
           "village": "home"
         },
         {
@@ -61905,7 +61915,7 @@
         },
         {
           "name": "Poison Lizard",
-          "level": 1,
+          "level": 2,
           "maxLevel": 15
         },
         {
@@ -72190,13 +72200,13 @@
       "cwl_2026-11-01": {
         "season": "2026-11-01",
         "wars_analyzed": 4,
-        "total_attacks": 69,
-        "total_stars": 195,
-        "recorded_date": "2026-11-04T23:15:36.154748+00:00",
+        "total_attacks": 71,
+        "total_stars": 201,
+        "recorded_date": "2026-11-05T05:19:42.118531+00:00",
         "complete": false
       }
     },
-    "lastUpdated": "2026-11-04T23:15:36.560652+00:00"
+    "lastUpdated": "2026-11-05T05:19:42.540388+00:00"
   },
   "rushMethod": {
     "weights": {
@@ -75896,11 +75906,11 @@
       "Slightly Behind": 10,
       "Maxed": 8
     },
-    "totalWarStars": 36941,
+    "totalWarStars": 36947,
     "totalDonations": 9050,
     "totalCapitalContributions": 43279781,
-    "averageTrophies": 201.0,
+    "averageTrophies": 202.08333333333334,
     "rushedCount": 30,
-    "averageRushScore": 25.95625
+    "averageRushScore": 25.950000000000003
   }
 }

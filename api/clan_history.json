@@ -1,15 +1,15 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-04T23:15:36.560652+00:00",
+  "last_updated": "2026-11-05T05:19:42.540388+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
       "tag": "#28VPLJQCY",
       "current_th": 18,
-      "total_attacks": 4,
-      "total_stars": 11,
-      "total_destruction": 389.0,
-      "three_stars": 3,
+      "total_attacks": 5,
+      "total_stars": 14,
+      "total_destruction": 489.0,
+      "three_stars": 4,
       "two_stars": 1,
       "one_star": 0,
       "zero_stars": 0,
@@ -50,6 +50,16 @@
           "war_id": "cwl_2026-11-01_round2_#8LGJV9LVP",
           "war_type": "CWL_2026-11-01",
           "date": "2026-11-03T20:33:10+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "cwl_2026-11-01_round3_#8LGVYYPUJ",
+          "war_type": "CWL_2026-11-01",
+          "date": "2026-11-04T21:05:35+00:00",
           "stars": 3,
           "destruction": 100,
           "defender_th": 18,
@@ -1239,10 +1249,10 @@
       "name": "Kokovic",
       "tag": "#8PGLYQVV9",
       "current_th": 15,
-      "total_attacks": 5,
-      "total_stars": 14,
-      "total_destruction": 494.0,
-      "three_stars": 4,
+      "total_attacks": 6,
+      "total_stars": 17,
+      "total_destruction": 594.0,
+      "three_stars": 5,
       "two_stars": 1,
       "one_star": 0,
       "zero_stars": 0,
@@ -1298,6 +1308,16 @@
           "defender_th": 14,
           "attacker_th": 15,
           "hit_type": "↓ DOWN"
+        },
+        {
+          "war_id": "cwl_2026-11-01_round3_#8LGVYYPUJ",
+          "war_type": "CWL_2026-11-01",
+          "date": "2026-11-04T21:05:35+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 17,
+          "attacker_th": 15,
+          "hit_type": "↑ UP"
         }
       ],
       "war_ids": [
@@ -2414,9 +2434,9 @@
     "cwl_2026-11-01": {
       "season": "2026-11-01",
       "wars_analyzed": 4,
-      "total_attacks": 69,
-      "total_stars": 195,
-      "recorded_date": "2026-11-04T23:15:36.154748+00:00",
+      "total_attacks": 71,
+      "total_stars": 201,
+      "recorded_date": "2026-11-05T05:19:42.118531+00:00",
       "complete": false
     }
   },
