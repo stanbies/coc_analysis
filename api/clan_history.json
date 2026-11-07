@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-06T22:45:02.744646+00:00",
+  "last_updated": "2026-11-07T04:48:27.668913+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -602,11 +602,11 @@
       "name": "nicolaas",
       "tag": "#Y98J8J9VJ",
       "current_th": 17,
-      "total_attacks": 7,
-      "total_stars": 18,
-      "total_destruction": 629.0,
+      "total_attacks": 8,
+      "total_stars": 20,
+      "total_destruction": 709.0,
       "three_stars": 4,
-      "two_stars": 3,
+      "two_stars": 4,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 9,
@@ -678,6 +678,16 @@
           "date": "2026-11-05T21:15:31+00:00",
           "stars": 3,
           "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 17,
+          "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "cwl_2026-11-01_round5_#8LRP28CLJ",
+          "war_type": "CWL_2026-11-01",
+          "date": "2026-11-06T21:37:29+00:00",
+          "stars": 2,
+          "destruction": 80,
           "defender_th": 18,
           "attacker_th": 17,
           "hit_type": "↑ UP"
@@ -2413,11 +2423,11 @@
       "name": "Nils",
       "tag": "#8CRCQ92QV",
       "current_th": 16,
-      "total_attacks": 4,
-      "total_stars": 10,
-      "total_destruction": 351.0,
+      "total_attacks": 5,
+      "total_stars": 12,
+      "total_destruction": 425.0,
       "three_stars": 2,
-      "two_stars": 2,
+      "two_stars": 3,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 6,
@@ -2459,6 +2469,16 @@
           "date": "2026-11-05T21:15:31+00:00",
           "stars": 2,
           "destruction": 66,
+          "defender_th": 18,
+          "attacker_th": 16,
+          "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "cwl_2026-11-01_round5_#8LRP28CLJ",
+          "war_type": "CWL_2026-11-01",
+          "date": "2026-11-06T21:37:29+00:00",
+          "stars": 2,
+          "destruction": 74,
           "defender_th": 18,
           "attacker_th": 16,
           "hit_type": "↑ UP"
@@ -2983,10 +3003,10 @@
     },
     "cwl_2026-11-01": {
       "season": "2026-11-01",
-      "wars_analyzed": 5,
-      "total_attacks": 120,
-      "total_stars": 323,
-      "recorded_date": "2026-11-06T22:45:02.188412+00:00",
+      "wars_analyzed": 6,
+      "total_attacks": 122,
+      "total_stars": 327,
+      "recorded_date": "2026-11-07T04:48:27.371053+00:00",
       "complete": false
     }
   },
