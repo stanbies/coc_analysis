@@ -13,6 +13,7 @@ from coc_api import (get_capital_raid_seasons, get_clan_info, get_clan_members, 
                      get_current_war, get_cwl_group, get_cwl_war, get_gold_pass_season,
                      get_player_info)
 from config import API_TOKEN, CLAN_TAG, DASHBOARD_DATA_FILE
+from cwl import save_season as save_cwl_season
 from export import export_dashboard_data
 from history import (generate_war_id, load_historical_data, parse_coc_time,
                      save_historical_data, update_player_historical_stats, utc_now)
@@ -580,12 +581,10 @@ def analyze_war_attacks(war: dict, war_label: str = "War") -> dict:
     return player_stats
 
 
-def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
-    """Analyze Clan War League performance."""
+def analyze_cwl(clan_tag: str, historical_data: dict, cwl_group: dict | None,
+                war_league: dict | None) -> dict:
+    """Analyze Clan War League performance and save the season to the CWL archive."""
     print_separator("CLAN WAR LEAGUE ANALYSIS")
-    
-    print("\n⏳ Fetching CWL group information...")
-    cwl_group = get_cwl_group(clan_tag)
     
     if not cwl_group:
         print("\n⚠️  No active CWL found or CWL data not available.")
@@ -634,6 +633,7 @@ def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
     
     wars_analyzed = 0
     our_clan_tag = clan_tag
+    fetched_wars = {}
     
     # Fetch and analyze each war
     for round_num, round_data in enumerate(rounds, 1):
@@ -648,6 +648,7 @@ def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
             
             if not war:
                 continue
+            fetched_wars[war_tag] = war
             
             # Check if our clan is in this war
             clan_data = war.get('clan', {})
@@ -667,17 +668,17 @@ def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
                 continue
             
             wars_analyzed += 1
-            state = war.get('state', 'unknown')
+            war_state = war.get('state', 'unknown')
             
             print(f"\n{'='*70}")
             print(f"   🏆 CWL ROUND {round_num}: {our_clan.get('name')} vs {opponent.get('name')}")
-            print(f"   State: {state}")
+            print(f"   State: {war_state}")
             print(f"{'='*70}")
             
             # Generate unique war ID for this CWL war
             war_id = f"cwl_{season}_round{round_num}_{war_tag}"
             
-            if state in ['inWar', 'warEnded']:
+            if war_state in ['inWar', 'warEnded']:
                 print(f"\n   Score: {our_clan.get('stars', 0)}⭐ vs {opponent.get('stars', 0)}⭐")
                 print(f"   Destruction: {our_clan.get('destructionPercentage', 0):.1f}% vs {opponent.get('destructionPercentage', 0):.1f}%")
                 
@@ -716,9 +717,11 @@ def analyze_cwl(clan_tag: str, historical_data: dict) -> dict:
                         war_id=war_id,
                         war_date=parse_coc_time(war.get('startTime'))
                     )
-            elif state == 'preparation':
+            elif war_state == 'preparation':
                 print(f"\n   ⏳ War is in preparation phase")
     
+    save_cwl_season(cwl_group, fetched_wars, clan_tag, war_league)
+
     # Store CWL season data
     if wars_analyzed > 0:
         historical_data["cwl_seasons"][season_key] = {
@@ -1053,7 +1056,7 @@ def main():
     # Analyze CWL
     print("\n⏳ Checking for Clan War League data...")
     cwl_group = get_cwl_group(CLAN_TAG)
-    historical_data = analyze_cwl(CLAN_TAG, historical_data)
+    historical_data = analyze_cwl(CLAN_TAG, historical_data, cwl_group, clan.get('warLeague'))
     
     # Fetch additional data for dashboard
     print("\n⏳ Fetching capital raid seasons...")

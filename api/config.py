@@ -20,6 +20,7 @@ CLAN_TAG = "#2J28LL2VU"
 PUBLISHED_HISTORY_FILE = os.path.join(SCRIPT_DIR, "clan_history.json")
 PUBLISHED_RANKED_FILE = os.path.join(SCRIPT_DIR, "ranked_snapshots.json")
 PUBLISHED_DASHBOARD_FILE = os.path.join(REPO_ROOT, "coc-dashboard", "public", "clan_data.json")
+PUBLISHED_CWL_DIR = os.path.join(SCRIPT_DIR, "cwl")
 
 # Only the daily workflow publishes (publish_data=true). Local runs write to
 # api/out/ (gitignored) so they never collide with the bot's data commits.
@@ -29,6 +30,9 @@ OUTPUT_DIR = os.path.join(SCRIPT_DIR, "out")
 DATA_FILE = PUBLISHED_HISTORY_FILE if PUBLISH else os.path.join(OUTPUT_DIR, "clan_history.json")
 DASHBOARD_DATA_FILE = PUBLISHED_DASHBOARD_FILE if PUBLISH else os.path.join(OUTPUT_DIR, "clan_data.json")
 RANKED_FILE = PUBLISHED_RANKED_FILE if PUBLISH else os.path.join(OUTPUT_DIR, "ranked_snapshots.json")
+CWL_DIR = PUBLISHED_CWL_DIR if PUBLISH else os.path.join(OUTPUT_DIR, "cwl")
+# CWL seasons whose recap mail went out (season -> send time), written by --send
+CWL_RECAPS_SENT_FILE = os.path.join(CWL_DIR, "recaps_sent.json")
 
 # Weekly mail subscribers (email,#TAG per line). The workflow gets them from
 # the mail_subscribers secret; locally they're read from this gitignored file.

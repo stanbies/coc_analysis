@@ -3,7 +3,8 @@
 Official Clash of Clans art from Supercell's fan kit
 (https://fankit.supercell.com/d/vkEdmkUCngKw/game-assets), used under
 Supercell's Fan Content Policy (https://supercell.com/en/fan-content-policy/).
-The footer of every page carries the required unofficial notice.
+The footer of every page carries the required unofficial notice. The CWL
+recap mail (`api/mail_art.py`) embeds the same files and carries the notice too.
 
 Each file is the fan kit PNG with its transparent padding trimmed, centred on
 a square and scaled down to at most 128px. Nothing else is changed: the

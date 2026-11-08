@@ -24,6 +24,7 @@ env:
     coc-dashboard/public/clan_data.json
     api/clan_history.json
     mobile-coc-dashboard/assets/data/clan_data.json
+    api/cwl
 
 jobs:
   update:
@@ -73,7 +74,8 @@ jobs:
 
       - name: Commit updated data
         run: |
-          # Skip the commit when only timestamps changed
+          # Skip the commit when only timestamps changed (-N so a new CWL season file counts)
+          git add -N $DATA_FILES
           changed=$(git diff -U0 -- $DATA_FILES \
             | grep -E '^[+-][^+-]' \
             | grep -vcE '"(lastUpdated|last_updated|recorded_date)":' || true)

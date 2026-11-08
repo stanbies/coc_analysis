@@ -13,8 +13,12 @@ SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
 
 
-def build_message(to: str, subject: str, text: str, html_body: str, unsubscribe_url: str) -> EmailMessage:
-    """A text + HTML mail; List-Unsubscribe lets mail apps show their own unsubscribe button."""
+def build_message(to: str, subject: str, text: str, html_body: str, unsubscribe_url: str,
+                  images: dict[str, bytes] | None = None) -> EmailMessage:
+    """A text + HTML mail; List-Unsubscribe lets mail apps show their own unsubscribe button.
+
+    images (cid -> PNG) are attached to the HTML part, for <img src="cid:...">.
+    """
     msg = EmailMessage()
     msg["From"] = formataddr((MAIL_SENDER_NAME, MAIL_ADDRESS))
     msg["To"] = to
@@ -22,6 +26,11 @@ def build_message(to: str, subject: str, text: str, html_body: str, unsubscribe_
     msg["List-Unsubscribe"] = f"<{unsubscribe_url}>"
     msg.set_content(text)
     msg.add_alternative(html_body, subtype="html")
+    if images:
+        html_part = msg.get_body(("html",))
+        for cid, data in images.items():
+            html_part.add_related(data, maintype="image", subtype="png", cid=f"<{cid}>",
+                                  disposition="inline")
     return msg
 
 
