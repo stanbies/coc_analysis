@@ -14,8 +14,11 @@ Usage:
     python api/weekly_mail.py --test-to me@x.be        # send every mail to one address
     python api/weekly_mail.py --send                   # send to the subscribers
 
-Sending only logs tags, never email addresses, since workflow logs are visible
-to everyone with access to the repo.
+--send mails each week once: it records the week in weekly_mails_sent.json and
+skips weeks already in there (unless --resend), so a manual workflow run and a
+late scheduled one can't both send. Run --send from the workflow, so that file
+is the committed one. Sending only logs tags, never email addresses, since
+workflow logs are visible to everyone with access to the repo.
 """
 
 import argparse
@@ -27,8 +30,9 @@ import urllib.parse
 from datetime import datetime, timezone
 
 from coc_api import get_player_info, get_player_league_history
-from config import BENCHMARKS_FILE, MAIL_ADDRESS, MAIL_PREVIEW_DIR, STRATEGIES_FILE
-from mailer import Mailer, build_message
+from config import (BENCHMARKS_FILE, MAIL_ADDRESS, MAIL_PREVIEW_DIR, STRATEGIES_FILE,
+                    WEEKLY_MAILS_SENT_FILE)
+from mailer import Mailer, build_message, load_sent_log, record_sent
 from ranked import (LEAGUE_TIER_BASE_ID, for_town_hall, league_name, league_number, load_snapshots,
                     load_th_table,
                     previous_status, week_key)
@@ -269,10 +273,15 @@ def main():
     mode.add_argument("--send", action="store_true", help="send to the subscribers")
     mode.add_argument("--test-to", metavar="EMAIL", help="send every mail to this address instead")
     parser.add_argument("--tag", action="append", help="only these players (not with --send)")
+    parser.add_argument("--resend", action="store_true", help="with --send: also if this week was sent")
     args = parser.parse_args()
 
     if args.tag and args.send:
         parser.error("--tag only works with --dry-run or --test-to")
+    now = datetime.now(timezone.utc)
+    if args.send and week_key(now) in load_sent_log(WEEKLY_MAILS_SENT_FILE) and not args.resend:
+        print(f"The mail for {week_key(now)} was already sent; nothing to do.")
+        return
     if args.tag:
         recipients = [{"email": None, "tag": normalize_tag(t)} for t in args.tag]
     else:
@@ -284,7 +293,6 @@ def main():
     benchmarks = load_th_table(BENCHMARKS_FILE)
     strategies = load_th_table(STRATEGIES_FILE)
     snapshots = load_snapshots()
-    now = datetime.now(timezone.utc)
 
     mails, missing = [], []
     for recipient in recipients:
@@ -304,6 +312,9 @@ def main():
     else:
         failed = send_mails(mails, args.test_to)
         print(f"✉️  {len(mails) - len(failed)} of {len(mails)} mail(s) sent")
+        # Recorded even after partial failures, so a rerun never mails everyone twice
+        if args.send and len(failed) < len(mails):
+            record_sent(WEEKLY_MAILS_SENT_FILE, week_key(now))
 
     if missing:
         print(f"::warning::No mail for {len(missing)} player(s) that couldn't be fetched: {', '.join(missing)}")

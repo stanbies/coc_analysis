@@ -20,7 +20,6 @@ is the committed one. Sending logs tags only, never addresses.
 
 import argparse
 import html
-import json
 import os
 import random
 import sys
@@ -30,9 +29,8 @@ from coc_api import get_clan_info, get_cwl_group, get_cwl_war, get_player_info
 from config import CLAN_TAG, CWL_RECAPS_SENT_FILE, MAIL_ADDRESS, MAIL_PREVIEW_DIR
 from cwl import (awards, build_season, clan_totals, is_finished, load_season, our_rounds,
                  player_stats, standings, star_ranking)
-from history import utc_now
 from mail_art import GOLD, MailArt
-from mailer import Mailer, build_message
+from mailer import Mailer, build_message, load_sent_log, record_sent
 from subscribers import load_subscribers, normalize_tag
 
 MONTHS = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus",
@@ -395,21 +393,6 @@ def fetch_live_season() -> dict | None:
     return build_season(group, wars, CLAN_TAG, clan.get("warLeague"), load_season(group["season"]))
 
 
-def load_sent() -> dict:
-    if os.path.exists(CWL_RECAPS_SENT_FILE):
-        with open(CWL_RECAPS_SENT_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {}
-
-
-def mark_sent(season: str):
-    sent = load_sent()
-    sent[season] = utc_now()
-    os.makedirs(os.path.dirname(CWL_RECAPS_SENT_FILE), exist_ok=True)
-    with open(CWL_RECAPS_SENT_FILE, "w", encoding="utf-8") as f:
-        json.dump(sent, f, indent=2)
-
-
 def write_preview(recipient: str | None, mail: dict, tag: str):
     directory = os.path.join(MAIL_PREVIEW_DIR, "cwl")
     os.makedirs(directory, exist_ok=True)
@@ -447,7 +430,7 @@ def main():
         if not is_finished(season):
             print(f"CWL {season['season']} is not finished yet; nothing sent.")
             return
-        if season["season"] in load_sent() and not args.resend:
+        if season["season"] in load_sent_log(CWL_RECAPS_SENT_FILE) and not args.resend:
             print(f"CWL {season['season']} recap was already sent; nothing to do.")
             return
     elif not is_finished(season):
@@ -496,7 +479,7 @@ def main():
         print(f"✉️  {len(mails) - len(failed)} of {len(mails)} mail(s) sent")
         # Recorded even after partial failures, so a daily run never mails everyone twice
         if args.send and len(failed) < len(mails):
-            mark_sent(season["season"])
+            record_sent(CWL_RECAPS_SENT_FILE, season["season"])
 
     if missing:
         print(f"::warning::No mail for {len(missing)} player(s) that couldn't be fetched: {', '.join(missing)}")

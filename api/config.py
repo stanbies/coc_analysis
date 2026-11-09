@@ -31,6 +31,10 @@ DATA_FILE = PUBLISHED_HISTORY_FILE if PUBLISH else os.path.join(OUTPUT_DIR, "cla
 DASHBOARD_DATA_FILE = PUBLISHED_DASHBOARD_FILE if PUBLISH else os.path.join(OUTPUT_DIR, "clan_data.json")
 RANKED_FILE = PUBLISHED_RANKED_FILE if PUBLISH else os.path.join(OUTPUT_DIR, "ranked_snapshots.json")
 CWL_DIR = PUBLISHED_CWL_DIR if PUBLISH else os.path.join(OUTPUT_DIR, "cwl")
+# Weeks whose ranked mail went out (week -> send time), written by --send
+PUBLISHED_WEEKLY_MAILS_SENT_FILE = os.path.join(SCRIPT_DIR, "weekly_mails_sent.json")
+WEEKLY_MAILS_SENT_FILE = (PUBLISHED_WEEKLY_MAILS_SENT_FILE if PUBLISH
+                          else os.path.join(OUTPUT_DIR, "weekly_mails_sent.json"))
 # CWL seasons whose recap mail went out (season -> send time), written by --send
 CWL_RECAPS_SENT_FILE = os.path.join(CWL_DIR, "recaps_sent.json")
 

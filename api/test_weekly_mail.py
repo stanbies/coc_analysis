@@ -135,3 +135,12 @@ def test_message_has_text_html_and_unsubscribe_header():
     assert msg["To"] == "lid@example.com"
     assert msg["List-Unsubscribe"] == "<mailto:cocanalysis686@gmail.com?subject=Uitschrijven%20%23P1>"
     assert [p.get_content_type() for p in msg.iter_parts()] == ["text/plain", "text/html"]
+
+
+def test_sent_log_remembers_each_week(tmp_path):
+    from mailer import load_sent_log, record_sent
+    path = str(tmp_path / "sent" / "weekly.json")
+    assert load_sent_log(path) == {}
+    record_sent(path, "2026-W46")
+    record_sent(path, "2026-W47")
+    assert set(load_sent_log(path)) == {"2026-W46", "2026-W47"}

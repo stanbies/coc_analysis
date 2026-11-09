@@ -1,7 +1,10 @@
 """Send mail through Gmail SMTP, logging in with smtp_user / smtp_password."""
 
+import json
+import os
 import smtplib
 import ssl
+from datetime import datetime, timezone
 from email.message import EmailMessage
 from email.utils import formataddr
 
@@ -51,3 +54,19 @@ class Mailer:
 
     def __exit__(self, *exc):
         self.smtp.quit()
+
+
+def load_sent_log(path: str) -> dict:
+    """Which mailings already went out ({key: send time}), so --send never mails twice."""
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def record_sent(path: str, key: str):
+    sent = load_sent_log(path)
+    sent[key] = datetime.now(timezone.utc).isoformat()
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(sent, f, indent=2)
