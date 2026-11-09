@@ -10644,9 +10644,9 @@
       "clan": {
         "tag": "#QPLGL88",
         "name": "INDIAN ELITES",
-        "stars": 31,
-        "destructionPercentage": 35.5,
-        "attacks": 11
+        "stars": 36,
+        "destructionPercentage": 42.13333333333333,
+        "attacks": 13
       },
       "opponent": {
         "tag": "#98YJ0JCV",
@@ -10684,9 +10684,9 @@
       "clan": {
         "tag": "#JLPQYLQY",
         "name": "M E T E O R",
-        "stars": 64,
-        "destructionPercentage": 74.03333333333333,
-        "attacks": 23,
+        "stars": 66,
+        "destructionPercentage": 76.26666666666667,
+        "attacks": 24,
         "members": [
           {
             "tag": "#GQC2QRV0P",
@@ -10927,6 +10927,16 @@
             "name": "Cloud_Strife",
             "townhallLevel": 14,
             "mapPosition": 35,
+            "attacks": [
+              {
+                "attackerTag": "#G29YLPLUG",
+                "defenderTag": "#G082YJJJL",
+                "stars": 2,
+                "destructionPercentage": 67,
+                "order": 48,
+                "duration": 171
+              }
+            ],
             "opponentAttacks": 1,
             "bestOpponentAttack": {
               "attackerTag": "#G082YJJJL",
@@ -10952,7 +10962,15 @@
                 "duration": 154
               }
             ],
-            "opponentAttacks": 0
+            "opponentAttacks": 1,
+            "bestOpponentAttack": {
+              "attackerTag": "#Y98J8J9VJ",
+              "defenderTag": "#8V0VQLQ99",
+              "stars": 2,
+              "destructionPercentage": 74,
+              "order": 46,
+              "duration": 127
+            }
           },
           {
             "tag": "#PPLG88CUY",
@@ -10969,7 +10987,15 @@
                 "duration": 123
               }
             ],
-            "opponentAttacks": 0
+            "opponentAttacks": 1,
+            "bestOpponentAttack": {
+              "attackerTag": "#R080CV0Q",
+              "defenderTag": "#PPLG88CUY",
+              "stars": 3,
+              "destructionPercentage": 100,
+              "order": 47,
+              "duration": 149
+            }
           },
           {
             "tag": "#29PCJCYV0",
@@ -11227,7 +11253,15 @@
                 "duration": 146
               }
             ],
-            "opponentAttacks": 0
+            "opponentAttacks": 1,
+            "bestOpponentAttack": {
+              "attackerTag": "#P2CVJUGL8",
+              "defenderTag": "#Q8098JYJ8",
+              "stars": 3,
+              "destructionPercentage": 100,
+              "order": 45,
+              "duration": 146
+            }
           },
           {
             "tag": "#GGC0CGLJ9",
@@ -11301,9 +11335,9 @@
       "opponent": {
         "tag": "#2J28LL2VU",
         "name": "Zwegerneet",
-        "stars": 58,
-        "destructionPercentage": 68.0,
-        "attacks": 21,
+        "stars": 66,
+        "destructionPercentage": 77.13333333333334,
+        "attacks": 24,
         "members": [
           {
             "tag": "#9CRYUCRL",
@@ -11549,13 +11583,31 @@
                 "duration": 64
               }
             ],
-            "opponentAttacks": 0
+            "opponentAttacks": 1,
+            "bestOpponentAttack": {
+              "attackerTag": "#G29YLPLUG",
+              "defenderTag": "#G082YJJJL",
+              "stars": 2,
+              "destructionPercentage": 67,
+              "order": 48,
+              "duration": 171
+            }
           },
           {
             "tag": "#Y98J8J9VJ",
             "name": "nicolaas",
             "townhallLevel": 17,
             "mapPosition": 10,
+            "attacks": [
+              {
+                "attackerTag": "#Y98J8J9VJ",
+                "defenderTag": "#8V0VQLQ99",
+                "stars": 2,
+                "destructionPercentage": 74,
+                "order": 46,
+                "duration": 127
+              }
+            ],
             "opponentAttacks": 1,
             "bestOpponentAttack": {
               "attackerTag": "#8V0VQLQ99",
@@ -11621,6 +11673,16 @@
             "name": "De Buikies",
             "townhallLevel": 18,
             "mapPosition": 7,
+            "attacks": [
+              {
+                "attackerTag": "#R080CV0Q",
+                "defenderTag": "#PPLG88CUY",
+                "stars": 3,
+                "destructionPercentage": 100,
+                "order": 47,
+                "duration": 149
+              }
+            ],
             "opponentAttacks": 1,
             "bestOpponentAttack": {
               "attackerTag": "#PPLG88CUY",
@@ -11882,6 +11944,16 @@
             "name": "XWIZARDX",
             "townhallLevel": 16,
             "mapPosition": 27,
+            "attacks": [
+              {
+                "attackerTag": "#P2CVJUGL8",
+                "defenderTag": "#Q8098JYJ8",
+                "stars": 3,
+                "destructionPercentage": 100,
+                "order": 45,
+                "duration": 146
+              }
+            ],
             "opponentAttacks": 1,
             "bestOpponentAttack": {
               "attackerTag": "#Q8098JYJ8",
