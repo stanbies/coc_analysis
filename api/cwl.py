@@ -14,6 +14,15 @@ from config import CWL_DIR, PUBLISHED_CWL_DIR
 # Standings: a won war adds 10 stars on top of the stars scored
 WIN_BONUS = 10
 
+# Rapportcijfer (1-10) for one war day, like a football paper's player rating:
+# a base per stars, adjusted for the target's Town Hall and for the defence.
+RATING_BY_STARS = {3: 8.0, 2: 6.0, 1: 5.0, 0: 4.0}
+RATING_MISSED = 3.0          # in the lineup, attack not used
+RATING_NEAR_THREE = 0.5      # two stars with at least 90% destruction
+RATING_HIT_UP = 1.0          # target has a higher Town Hall
+RATING_HIT_DOWN = -0.5       # three stars on a lower Town Hall
+RATING_HELD = 0.5            # attacked, but nobody three-starred the base
+
 
 def _side(side: dict, members: bool) -> dict:
     kept = {k: side.get(k) for k in ("tag", "name", "stars", "destructionPercentage", "attacks")}
@@ -156,7 +165,7 @@ def player_stats(season: dict) -> dict:
     """Per player of our clan: lineups, attacks, missed attacks and defences."""
     roster = next((c["members"] for c in season["clans"] if c["tag"] == season["clanTag"]), [])
     stats = {m["tag"]: {"tag": m["tag"], "name": m["name"], "th": m.get("townHallLevel", 0),
-                        "lineups": 0, "missed": 0, "attacks": [], "defenses": []} for m in roster}
+                        "lineups": 0, "missed": 0, "attacks": [], "defenses": [], "matches": []} for m in roster}
 
     for r in our_rounds(season):
         war, us, them = r["war"], r["us"], r["them"]
@@ -164,15 +173,21 @@ def player_stats(season: dict) -> dict:
             continue
         ours, theirs = _positions(us["members"]), _positions(them["members"])
         defenders = {m["tag"]: m for m in them["members"]}
+        conceded = {}  # our player -> best stars an opponent took off their base
+        for enemy in them["members"]:
+            for attack in enemy.get("attacks") or []:
+                tag = attack["defenderTag"]
+                conceded[tag] = max(conceded.get(tag, 0), attack["stars"])
         for member in us["members"]:
             player = stats.setdefault(member["tag"], {
                 "tag": member["tag"], "name": member["name"], "th": member.get("townhallLevel", 0),
-                "lineups": 0, "missed": 0, "attacks": [], "defenses": []})
+                "lineups": 0, "missed": 0, "attacks": [], "defenses": [], "matches": []})
             player["name"] = member["name"]
             player["th"] = max(player["th"], member.get("townhallLevel", 0))
             player["lineups"] += 1
             attacks = member.get("attacks") or []
-            if not attacks and war["state"] == "warEnded":
+            missed = not attacks and war["state"] == "warEnded"
+            if missed:
                 player["missed"] += 1
             for attack in attacks:
                 defender = defenders.get(attack["defenderTag"], {})
@@ -184,6 +199,11 @@ def player_stats(season: dict) -> dict:
                     "position": ours.get(member["tag"]),
                     "defenderPosition": theirs.get(attack["defenderTag"]),
                 })
+            match = {"round": r["round"], "opponent": them["name"], "position": ours.get(member["tag"]),
+                     "attack": player["attacks"][-1] if attacks else None, "missed": missed,
+                     "conceded": conceded.get(member["tag"])}
+            match["rating"] = match_rating(match)
+            player["matches"].append(match)
         for enemy in them["members"]:
             for attack in enemy.get("attacks") or []:
                 if attack["defenderTag"] in stats:
@@ -197,7 +217,29 @@ def player_stats(season: dict) -> dict:
         player["destructionTotal"] = sum(a["destruction"] for a in attacks)
         player["threeStars"] = sum(a["stars"] == 3 for a in attacks)
         player["hitUpStars"] = sum(a["stars"] for a in attacks if a["defenderTh"] > a["th"])
+        ratings = [m["rating"] for m in player["matches"] if m["rating"] is not None]
+        player["rating"] = sum(ratings) / len(ratings) if ratings else None
     return stats
+
+
+def match_rating(match: dict) -> float | None:
+    """Rapportcijfer for one war day; None while the attack can still come."""
+    attack = match["attack"]
+    if attack is None:
+        if not match["missed"]:
+            return None
+        rating = RATING_MISSED
+    else:
+        rating = RATING_BY_STARS[attack["stars"]]
+        if attack["stars"] == 2 and attack["destruction"] >= 90:
+            rating += RATING_NEAR_THREE
+        if attack["defenderTh"] > attack["th"]:
+            rating += RATING_HIT_UP
+        elif attack["stars"] == 3 and attack["defenderTh"] < attack["th"]:
+            rating += RATING_HIT_DOWN
+    if match["conceded"] is not None and match["conceded"] < 3:
+        rating += RATING_HELD
+    return max(1.0, min(10.0, rating))
 
 
 def clan_totals(season: dict, stats: dict) -> dict:
@@ -226,6 +268,10 @@ def awards(stats: dict) -> dict:
     result = {}
     if played:
         result["mvp"] = max(played, key=lambda p: (p["stars"], p["destructionTotal"]))
+    # Player of the month: best average rapportcijfer over at least 4 war days
+    regulars = [p for p in played if sum(m["rating"] is not None for m in p["matches"]) >= 4]
+    if regulars:
+        result["best"] = max(regulars, key=lambda p: (p["rating"], p["stars"]))
     perfect = [p for p in played if len(p["attacks"]) >= 4 and p["threeStars"] == len(p["attacks"])]
     if perfect:
         result["perfect"] = sorted(perfect, key=lambda p: -len(p["attacks"]))

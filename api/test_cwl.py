@@ -1,6 +1,6 @@
 """Tests for the CWL archive, standings and recap mail. Run: pytest api/"""
 
-from cwl import build_season, is_finished, player_stats, standings
+from cwl import build_season, is_finished, match_rating, player_stats, standings
 from cwl_mail import build_recap, compose_mail, render_html, render_text
 from mail_art import MailArt
 from mailer import build_message
@@ -89,21 +89,41 @@ def test_player_stats_attacks_misses_and_defences():
     assert stats["#US3"]["lineups"] == 0  # in the roster, never in a lineup
 
 
-def test_mail_has_clan_and_personal_parts():
+def test_match_ratings_like_a_football_paper():
+    stats = player_stats(season())
+    one, two = stats["#US1"]["matches"], stats["#US2"]["matches"]
+    # 3 stars on a higher TH (+1) and the base held (+0.5); 2 stars at 80% with the base held
+    assert [m["rating"] for m in one] == [9.5, 6.5] and stats["#US1"]["rating"] == 8.0
+    # missed attack; 0 stars on a higher TH and the base three-starred
+    assert [m["rating"] for m in two] == [3.0, 5.0]
+
+
+def test_attack_still_to_come_has_no_rating():
+    stats = player_stats(season(round2_state="inWar"))
+    assert stats["#US1"]["matches"][1]["rating"] == 6.5  # attacked already
+    assert stats["#US2"]["matches"][1]["rating"] == 5.0
+    assert match_rating({**stats["#US2"]["matches"][1], "attack": None, "missed": False}) is None
+
+
+def test_mail_reads_as_a_season_report_with_player_analysis():
     recap = build_recap(season())
     mail = compose_mail(recap, "#US1", "Een")
     text = render_text(mail)
-    assert "plaats 2 van 3 in Crystal League I" in text
-    assert mail["subject"].endswith("jij haalde 5 sterren")
-    assert "Je stond in 2 van de 2 line-ups en deed 2 aanvallen: 5 sterren" in text
-    assert "Daarmee sta je #1 van 2 in de clan" in text
-    assert "- MVP: US1, met 5 sterren uit 2 aanvallen." in text  # war names win over the roster
+    assert mail["subject"] == "Zilver voor US | Eindverslag CWL november 2026 | Jouw cijfer: 8,0"
+    assert "US sluit de CWL van november 2026 af op plaats 2 van 3 in Crystal League I, op 1 ster van leider A." in text
+    assert "De balans na twee speeldagen: 1 zege en 1 nederlaag." in text
+    assert "SPELERSANALYSE: EEN" in text
+    assert "Een (TH17) stond op alle twee speeldagen in de basis" in text
+    assert "Met 5 sterren eindigt Een op plaats 1 van 2 in het interne klassement." in text
+    assert "Ons oordeel: Sterke competitie." in text
+    assert "- Topschutter: US1, met 5 sterren uit 2 aanvallen." in text  # war names win over the roster
 
 
 def test_mail_for_players_outside_the_lineup():
     recap = build_recap(season())
-    assert "niet in de line-up" in render_text(compose_mail(recap, "#US3", "Reserve"))
-    assert "Je deed deze CWL niet mee" in render_text(compose_mail(recap, "#OTHER", "Gast"))
+    bench = render_text(compose_mail(recap, "#US3", "Reserve"))
+    assert "kwam op geen enkele speeldag van de bank" in bench and "Ons oordeel" not in bench
+    assert "stond deze CWL niet op het wedstrijdblad" in render_text(compose_mail(recap, "#OTHER", "Gast"))
 
 
 def test_html_escapes_names_and_highlights_our_row():

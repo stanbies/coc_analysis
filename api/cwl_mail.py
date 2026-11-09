@@ -84,16 +84,20 @@ def build_recap(season: dict) -> dict:
     }
 
 
-OPENERS = {
-    "first": ["We hebben onze groep gewonnen!",
-              "Eerste plaats in de groep. Wat een CWL."],
-    "podium": ["Plaats {position} in de groep: we staan op het podium.",
-               "Een plek op het podium, plaats {position} van {clans}."],
-    "middle": ["Een CWL met mooie overwinningen en een paar lastige oorlogen.",
-               "Zeven oorlogen verder, en we eindigen in de middenmoot."],
-    "bottom": ["Deze CWL liep niet zoals we wilden.",
-               "Geen makkelijke CWL deze keer."],
-}
+# The mail reads like a sports site's season report: the CWL is a league
+# that just ended, the clan is the team and each subscriber gets a player
+# analysis with football-style rapportcijfers (cwl.match_rating).
+
+NUMBER_WORDS = ["nul", "één", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen", "tien"]
+STAR_WORDS = {0: "geen ster", 1: "één ster", 2: "twee sterren", 3: "drie sterren"}
+
+
+def in_words(n: int) -> str:
+    return NUMBER_WORDS[n] if n < len(NUMBER_WORDS) else str(n)
+
+
+def join(items: list[str]) -> str:
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " en " + items[-1]
 
 
 def placing(position: int, clans: int) -> str:
@@ -104,157 +108,295 @@ def placing(position: int, clans: int) -> str:
     return "bottom" if position > clans - 2 else "middle"
 
 
-def verdict(average: float) -> str:
-    if average >= 2.7:
-        return "Sterk gespeeld, dit was een topmaand."
-    if average >= 2.3:
-        return "Een mooie, constante CWL."
-    if average >= 1.8:
-        return "Degelijk, en er zitten volgende keer nog sterren in."
-    return "Volgende maand beter: daar zitten zeker nog sterren in."
+def headline(recap: dict) -> str:
+    clan, position = recap["clan"], recap["position"]
+    status = placing(position, recap["clans"])
+    if status == "first":
+        return f"{clan} kampioen!"
+    if status == "podium":
+        return f"{'Zilver' if position == 2 else 'Brons'} voor {clan}"
+    if status == "middle":
+        return f"{clan} eindigt {position}e"
+    return f"Zware maand voor {clan}"
 
 
-def clan_section(recap: dict) -> dict:
-    t = recap["totals"]
+def margin(r: dict) -> int:
+    return r["us"]["stars"] - r["them"]["stars"]
+
+
+def score(r: dict) -> str:
+    return f"{r['us']['stars']}-{r['them']['stars']}"
+
+
+def match_label(r: dict) -> tuple[str, str]:
+    """Short verdict for the results table, coloured like the game's win/loss."""
+    if r["result"] is None:
+        return RESULT_LABELS[r["war"]["state"]]
+    m = margin(r)
+    if r["result"] == "draw":
+        return ("Gelijkspel", INK)
+    if r["result"] == "win":
+        text = ("Zege op vernietiging" if m == 0 else "Nipte zege" if m < 10
+                else "Overtuigende zege" if m < 25 else "Ruime zege")
+        return (text, GREEN)
+    text = "Nederlaag op vernietiging" if m == 0 else "Nipte nederlaag" if m > -10 else "Duidelijke nederlaag"
+    return (text, RED)
+
+
+def win_streak(rounds: list[dict]) -> tuple[int, int, int]:
+    """(length, first round, last round) of the longest run of wins."""
+    best, current, start = (0, 0, 0), 0, 0
+    for r in rounds:
+        if r["result"] == "win":
+            current += 1
+            start = r["round"] if current == 1 else start
+            if current > best[0]:
+                best = (current, start, r["round"])
+        else:
+            current = 0
+    return best
+
+
+def team_section(recap: dict) -> dict:
+    clan, t, table = recap["clan"], recap["totals"], recap["standings"]
+    ours = table[recap["position"] - 1]
     league = f" in {recap['league']}" if recap["league"] else ""
-    rate = round(100 * t["threeStars"] / t["attacks"]) if t["attacks"] else 0
-    paragraphs = [
-        f"We eindigden op plaats {recap['position']} van {recap['clans']}{league}, met "
-        f"{plural(t['wins'], 'overwinning', 'overwinningen')}, {t['draws']} gelijkspel en "
-        f"{plural(t['losses'], 'nederlaag', 'nederlagen')}.",
-        f"Samen haalden we {t['stars']} sterren uit {t['attacks']} van de {t['allowed']} aanvallen. "
-        f"{t['threeStars']} daarvan waren drie sterren, dat is {rate}%.",
-    ]
-    if t["missed"]:
-        paragraphs.append(f"{t['perfectAttendance']} van de {t['players']} spelers in de line-up deden "
-                          f"al hun aanvallen. {plural(t['missed'], 'aanval bleef', 'aanvallen bleven')} "
-                          "liggen, daar zitten volgende keer makkelijke sterren in.")
+    rounds = recap["rounds"]
+    ended = [r for r in rounds if r["result"]]
+
+    if recap["position"] == 1 and len(table) > 1:
+        gap = ours["stars"] - table[1]["stars"]
+        standing = (f"pas na de vernietiging beslist tegen {table[1]['name']}" if gap == 0 else
+                    f"met {gap} {'ster' if gap == 1 else 'sterren'} voorsprong op {table[1]['name']}")
+        lead = f"{clan} wint de CWL-groep van {recap['month']}{league}, {standing}."
     else:
-        paragraphs.append("Iedereen in de line-up deed al zijn aanvallen. Top!")
+        gap = table[0]["stars"] - ours["stars"]
+        behind = (f"met evenveel sterren als leider {table[0]['name']}, maar minder vernietiging" if gap == 0
+                  else f"op {gap} {'ster' if gap == 1 else 'sterren'} van leider {table[0]['name']}")
+        lead = (f"{clan} sluit de CWL van {recap['month']} af op plaats {recap['position']} van "
+                f"{recap['clans']}{league}, {behind}.")
+
+    record = [plural(t["wins"], "zege", "zeges")]
+    if t["draws"]:
+        record.append(plural(t["draws"], "gelijkspel", "gelijke spelen"))
+    record.append(plural(t["losses"], "nederlaag", "nederlagen"))
+    paragraphs = [f"De balans na {in_words(len(ended))} speeldagen: {join(record)}."]
+    length, first, last = win_streak(ended)
+    if length >= 3:
+        paragraphs[-1] += (f" {clan} begon met {in_words(length)} zeges op rij." if first == 1 else
+                           f" Van speeldag {first} tot {last} won {clan} {in_words(length)} keer op rij.")
+
+    wins = [r for r in ended if r["result"] == "win"]
+    losses = [r for r in ended if r["result"] == "loss"]
+    biggest = max(wins, key=margin, default=None)
+    story = []
+    if biggest:
+        story.append(f"De grootste zege kwam er op speeldag {biggest['round']} tegen {biggest['them']['name']}: "
+                     f"{score(biggest)}.")
+    if not losses and ended:
+        story.append("En wat nog meer telt: geen enkele nederlaag.")
+    elif len(losses) == 1:
+        r = losses[0]
+        story.append(f"Alleen tegen {r['them']['name']} ging het mis ({score(r)} op speeldag {r['round']}).")
+    elif losses:
+        story.append("Nederlagen waren er tegen " + join([f"{r['them']['name']} ({score(r)})" for r in losses]) + ".")
+    closest = min((r for r in ended if r is not biggest), key=lambda r: abs(margin(r)), default=None)
+    if closest and abs(margin(closest)) <= 5:
+        how = ("pas op vernietiging beslist werd" if margin(closest) == 0 else
+               "nipt gewonnen werd" if closest["result"] == "win" else "nipt verloren ging")
+        story.append(f"Het spannendste duel was speeldag {closest['round']} tegen {closest['them']['name']}, "
+                     f"dat met {score(closest)} {how}.")
+    if story:
+        paragraphs.append(" ".join(story))
+
+    rate = round(100 * t["threeStars"] / t["attacks"]) if t["attacks"] else 0
+    paragraphs.append(f"In totaal haalde de ploeg {t['stars']} sterren uit {t['attacks']} aanvallen. {rate}% "
+                      "daarvan was een drie-sterrenaanval, en " +
+                      (f"{plural(t['missed'], 'aanval bleef', 'aanvallen bleven')} onbenut." if t["missed"]
+                       else "er bleef geen enkele aanval liggen."))
     return {
         "icon": "clan-war",
-        "title": f"{recap['clan']} in {recap['month']}",
+        "title": "Wedstrijdverslag",
+        "lead": lead,
         "tiles": [(f"{recap['position']}/{recap['clans']}", "Plaats"),
                   (f"{t['wins']}-{t['draws']}-{t['losses']}", "W-G-V"),
                   (f"{t['stars']}{STAR}", "Sterren"),
                   (f"{rate}%", "Drie sterren")],
         "paragraphs": paragraphs,
         "tables": [
-            {"title": "Ronde per ronde",
-             "headers": ["Ronde", "Tegenstander", "Score", "Uitslag"],
+            {"title": "Speeldag per speeldag",
+             "headers": ["Speeldag", "Tegenstander", "Uitslag", ""],
              "rows": [[str(r["round"]), r["them"]["name"],
-                       f"{r['us']['stars']}{STAR} - {r['them']['stars']}{STAR}",
-                       RESULT_LABELS[r["result"] or r["war"]["state"]]]
-                      for r in recap["rounds"]]},
-            {"title": "Eindstand van de groep",
+                       f"{r['us']['stars']}{STAR} - {r['them']['stars']}{STAR}", match_label(r)]
+                      for r in rounds]},
+            {"title": "Eindklassement",
              "headers": ["#", "Clan", "Sterren", "W-G-V"],
              "rows": [[str(r["position"]), r["name"], str(r["stars"]),
-                       f"{r['wins']}-{r['draws']}-{r['losses']}"] for r in recap["standings"]],
+                       f"{r['wins']}-{r['draws']}-{r['losses']}"] for r in table],
              "highlight": recap["position"] - 1},
         ],
     }
 
 
-def awards_section(recap: dict) -> dict | None:
+def prizes_section(recap: dict) -> dict | None:
     a = recap["awards"]
     items = []
+    if "best" in a:
+        p = a["best"]
+        items.append(("legend-shield", "Speler van de maand",
+                      f"{p['name']}, met een gemiddeld rapportcijfer van {number(p['rating'], 1)}."))
     if "mvp" in a:
         p = a["mvp"]
-        items.append(("crown", "MVP", f"{p['name']}, met {p['stars']} sterren uit "
-                                      f"{plural(len(p['attacks']), 'aanval', 'aanvallen')}."))
+        items.append(("star", "Topschutter", f"{p['name']}, met {p['stars']} sterren uit "
+                                             f"{plural(len(p['attacks']), 'aanval', 'aanvallen')}."))
     if "perfect" in a:
-        names = ", ".join(p["name"] for p in a["perfect"])
-        items.append(("three-stars", "Altijd drie sterren", f"{names}. Geen enkele aanval onder de drie."))
+        names = join([p["name"] for p in a["perfect"]])
+        items.append(("three-stars", "Foutloos", f"{names}: bij elke aanval drie sterren."))
     if "daredevil" in a:
         p = a["daredevil"]
-        items.append(("barbarian", "Durfal", f"{p['name']}, met {p['hitUpStars']} sterren tegen hogere "
-                                             "Town Halls."))
+        items.append(("barbarian", "Durfal", f"{p['name']}, met {p['hitUpStars']} sterren tegen hogere Town Halls."))
     if "wall" in a:
         p = a["wall"]
         average = sum(d["stars"] for d in p["defenses"]) / len(p["defenses"])
-        items.append(("standard-shield", "De Muur", f"{p['name']}. {len(p['defenses'])} keer aangevallen "
-                                                    f"en gemiddeld maar {number(average, 1)} ster weggegeven."))
-    return {"icon": "legend-shield", "title": "Hall of Fame", "items": items} if items else None
+        items.append(("standard-shield", "De Muur", f"{p['name']}, {len(p['defenses'])} keer aangevallen en "
+                                                    f"gemiddeld maar {number(average, 1)} ster tegen."))
+    return {"icon": "crown", "title": "Prijzen van de maand", "items": items} if items else None
 
 
-def personal_section(recap: dict, tag: str) -> dict:
+def rating_cell(rating: float | None) -> tuple[str, str] | str:
+    if rating is None:
+        return "-"
+    return (number(rating, 1), GREEN if rating >= 7.5 else RED if rating < 5.5 else INK)
+
+
+def verdict(name: str, rating: float) -> str:
+    if rating >= 8.5:
+        return "Wereldklasse. Een sterkhouder waar elke ploeg van droomt."
+    if rating >= 7.5:
+        return "Sterke competitie. Een vaste waarde in de ploeg."
+    if rating >= 6.5:
+        return "Degelijk. Geen uitschieters, wel betrouwbaar."
+    if rating >= 5.5:
+        return f"Wisselvallig. Dat er meer in zit, bewees {name} zelf op de beste speeldagen."
+    return "Een competitie om snel te vergeten. Volgende maand revanche."
+
+
+def player_section(recap: dict, tag: str, name: str) -> dict:
     player = recap["players"].get(tag)
-    section = {"icon": "barbarian-king", "title": "Jouw CWL", "personal": True}
+    section = {"icon": "barbarian-king", "title": "Spelersanalyse", "subtitle": name, "personal": True}
     if not player or not player["lineups"]:
         if tag in recap["roster"]:
-            text = "Je stond deze keer in de selectie, maar niet in de line-up. Volgende maand is er een nieuwe kans."
+            text = [f"{name} zat deze maand in de selectie, maar kwam op geen enkele speeldag van de bank.",
+                    "Volgende maand ligt er een nieuwe kans om een basisplaats af te dwingen."]
         else:
-            text = "Je deed deze CWL niet mee. Wil je er volgende maand bij zijn? Laat het de leiding weten."
-        return {**section, "paragraphs": [text]}
+            text = [f"{name} stond deze CWL niet op het wedstrijdblad.",
+                    "Zin om er volgende maand bij te zijn? Laat het de leiding weten."]
+        return {**section, "paragraphs": text}
 
-    attacks = player["attacks"]
     rounds = len(recap["rounds"])
-    paragraphs = []
-    tiles = [(f"{player['lineups']}/{rounds}", "Line-ups"), (f"{player['stars']}{STAR}", "Sterren")]
+    attacks, matches = player["attacks"], player["matches"]
+    rated = [m for m in matches if m["rating"] is not None]
+    positions = [m["position"] for m in matches if m["position"]]
+    team_size = recap["rounds"][0]["war"].get("teamSize") or 1
+    average_position = sum(positions) / len(positions)
+    where = ("bovenaan in" if average_position <= team_size / 3 else
+             "in het midden van" if average_position <= 2 * team_size / 3 else "onderaan in")
+    paragraphs = [
+        (f"{name} (TH{player['th']}) stond op alle {in_words(rounds)} speeldagen in de basis"
+         if player["lineups"] == rounds else
+         f"{name} (TH{player['th']}) kreeg op {player['lineups']} van de {rounds} speeldagen een basisplaats")
+        + f", meestal {where} de line-up (gemiddeld positie {round(average_position)})."]
+
+    if len(attacks) >= 3 and player["threeStars"] == len(attacks) and not player["missed"]:
+        paragraphs.append(f"Elke aanval was raak: {in_words(len(attacks))} keer drie sterren. "
+                          "Een foutloze competitie.")
+    elif rated:
+        best = max(rated, key=lambda m: (m["rating"], -m["round"]))
+        worst = min(rated, key=lambda m: (m["rating"], m["round"]))
+        a = best["attack"]
+        form = [f"Hoogtepunt was speeldag {best['round']} tegen {best['opponent']}: {STAR_WORDS[a['stars']]} "
+                f"op een TH{a['defenderTh']}, goed voor een {number(best['rating'], 1)}."]
+        if worst["rating"] <= best["rating"] - 1:
+            if worst["missed"]:
+                form.append(f"Het dieptepunt: op speeldag {worst['round']} tegen {worst['opponent']} "
+                            "bleef de aanval liggen.")
+            else:
+                w = worst["attack"]
+                form.append(f"Minder ging het op speeldag {worst['round']} tegen {worst['opponent']}: "
+                            f"{STAR_WORDS[w['stars']]} en {w['destruction']}%, een {number(worst['rating'], 1)}.")
+        paragraphs.append(" ".join(form))
+    if len(rated) >= 4:
+        half = len(rated) // 2
+        first = sum(m["rating"] for m in rated[:half]) / half
+        second = sum(m["rating"] for m in rated[half:]) / (len(rated) - half)
+        if second - first >= 1:
+            paragraphs.append(f"{name} groeide in de competitie: de tweede helft was duidelijk sterker dan de eerste.")
+        elif first - second >= 1:
+            paragraphs.append(f"Na een sterke start zakte {name} in de slotfase wat terug.")
+
     if attacks:
-        average = player["stars"] / len(attacks)
-        destruction = player["destructionTotal"] / len(attacks)
         rank = next(i for i, p in enumerate(recap["ranking"], 1) if p["tag"] == tag)
         t = recap["totals"]
-        clan_average = t["stars"] / t["attacks"]
-        tiles += [(number(average, 2), "Per aanval"), (f"#{rank}", "In de clan")]
-        paragraphs.append(f"Je stond in {player['lineups']} van de {rounds} line-ups en deed "
-                          f"{plural(len(attacks), 'aanval', 'aanvallen')}: {player['stars']} sterren, "
-                          f"gemiddeld {number(average, 2)} per aanval en {number(destruction)}% vernietiging.")
-        comparison = ("daar zat je boven" if average > clan_average else
-                      "daar zat je net onder" if average < clan_average else "precies evenveel")
-        paragraphs.append(f"Daarmee sta je #{rank} van {len(recap['ranking'])} in de clan. Het clangemiddelde "
-                          f"was {number(clan_average, 2)} sterren per aanval, {comparison}.")
+        line = (f"Met {player['stars']} sterren eindigt {name} op plaats {rank} van {len(recap['ranking'])} in "
+                f"het interne klassement. Het ploeggemiddelde lag op {number(t['stars'] / t['attacks'], 2)} "
+                f"sterren per aanval, {name} haalde er {number(player['stars'] / len(attacks), 2)}.")
+        if player["hitUpStars"]:
+            line += f" Opvallend: {player['hitUpStars']} van die sterren kwamen tegen een hogere Town Hall."
+        paragraphs.append(line)
     if player["missed"]:
-        paragraphs.append(f"{plural(player['missed'], 'keer', 'keer')} heb je je aanval niet gedaan. "
-                          "Volgende keer alles pakken!")
+        paragraphs.append(f"Minpunt: {plural(player['missed'], 'keer', 'keer')} bleef de aanval liggen, "
+                          "en dat kost de ploeg sterren.")
     defenses = player["defenses"]
     if defenses:
         conceded = sum(d["stars"] for d in defenses) / len(defenses)
-        line = (f"Je basis werd {len(defenses)} keer aangevallen en gaf gemiddeld "
-                f"{number(conceded, 1)} sterren weg.")
+        line = (f"Verdedigend werd de basis van {name} {len(defenses)} keer aangevallen, met gemiddeld "
+                f"{number(conceded, 1)} sterren tegen.")
         if not any(d["stars"] == 3 for d in defenses):
-            line += " Niemand kreeg er drie sterren op."
+            line += " Geen enkele tegenstander haalde er drie sterren."
         paragraphs.append(line)
     if any(p is player or (isinstance(p, list) and player in p) for p in recap["awards"].values()):
-        paragraphs.append("Je staat ook in de Hall of Fame!")
+        paragraphs.append(f"{name} staat ook bij de prijzen van de maand.")
+
+    tiles = [(f"{player['lineups']}/{rounds}", "Speeldagen"), (f"{player['stars']}{STAR}", "Sterren")]
     if attacks:
-        paragraphs.append(verdict(player["stars"] / len(attacks)))
+        tiles.append((number(player["stars"] / len(attacks), 2), "Per aanval"))
+    if player["rating"] is not None:
+        tiles.append((number(player["rating"], 1), "Rapportcijfer"))
+    rows = []
+    for m in matches:
+        a = m["attack"]
+        what = (f"{STAR * a['stars'] if a['stars'] else '0' + STAR}  {a['destruction']}% op TH{a['defenderTh']}"
+                if a else "Niet aangevallen" if m["missed"] else "Nog bezig")
+        rows.append([str(m["round"]), m["opponent"], what, rating_cell(m["rating"])])
     return {
         **section,
         "tiles": tiles,
         "paragraphs": paragraphs,
-        "tables": [{
-            "title": "Jouw aanvallen",
-            "headers": ["Ronde", "Tegenstander", "Doelwit", "Resultaat"],
-            "rows": [[str(a["round"]), a["opponent"], f"#{a['defenderPosition']} · TH{a['defenderTh']}",
-                      f"{STAR * a['stars'] if a['stars'] else '0' + STAR}  {a['destruction']}%"]
-                     for a in attacks],
-        }] if attacks else [],
+        "verdict": verdict(name, player["rating"]) if player["rating"] is not None else None,
+        "tables": [{"title": "Rapportcijfers", "headers": ["Speeldag", "Tegenstander", "Aanval", "Cijfer"],
+                    "rows": rows}],
     }
 
 
 def compose_mail(recap: dict, tag: str, name: str) -> dict:
     player = recap["players"].get(tag)
-    # Same opener on reruns, a different one per player and season
-    rng = random.Random(f"{tag}{recap['season']}")
-    status = placing(recap["position"], recap["clans"])
-    league = f" in {recap['league']}" if recap["league"] else ""
-    subject = f"CWL {recap['month']}: {recap['clan']} {recap['position']}e{league}"
-    if player and player["attacks"]:
-        subject += f", jij haalde {player['stars']} sterren"
-    sections = [clan_section(recap), awards_section(recap), personal_section(recap, tag)]
+    title = headline(recap)
+    subject = f"{title} | Eindverslag CWL {recap['month']}"
+    if player and player["rating"] is not None:
+        subject += f" | Jouw cijfer: {number(player['rating'], 1)}"
+    sections = [team_section(recap), prizes_section(recap), player_section(recap, tag, name)]
     unsubscribe = f"Uitschrijven {tag}"
     return {
         "subject": subject,
-        "banner": f"CWL {recap['month']}",
-        "bannerSub": f"{recap['clan']} · plaats {recap['position']}{league}",
+        "kicker": f"CWL {recap['league']}" if recap["league"] else "Clan War League",
+        "banner": title,
+        "bannerSub": f"Eindverslag · {recap['month']}",
         "greeting": f"Hoi {name},",
-        "intro": [rng.choice(OPENERS[status]).format(position=recap["position"], clans=recap["clans"]),
-                  f"De Clan War League van {recap['month']} zit erop. Eerst hoe het de clan verging, "
-                  "daarna hoe jij het deed."],
+        "intro": [f"De Clan War League van {recap['month']} zit erop. Hieronder het eindverslag van de ploeg, "
+                  + ("en daarna de analyse van jouw competitie." if player and player["lineups"]
+                     else "en daarna een woordje over jou.")],
         "sections": [s for s in sections if s],
-        "closing": ["Bedankt voor jullie inzet, tot de volgende CWL!"],
+        "closing": ["Tot de volgende CWL!"],
         "signoff": f"Groetjes,\nDe leiding van {recap['clan']}",
         "unsubscribeSubject": unsubscribe,
         "unsubscribeUrl": f"mailto:{MAIL_ADDRESS}?subject={urllib.parse.quote(unsubscribe)}",
@@ -275,11 +417,16 @@ def render_text(mail: dict) -> str:
     for paragraph in mail["intro"]:
         lines += [paragraph, ""]
     for section in mail["sections"]:
-        lines += [section["title"].upper(), ""]
+        title = section["title"] + (f": {section['subtitle']}" if section.get("subtitle") else "")
+        lines += [title.upper(), ""]
+        if section.get("lead"):
+            lines += [section["lead"], ""]
         if section.get("tiles"):
             lines += [plain(" · ".join(f"{label}: {value}" for value, label in section["tiles"])), ""]
         for paragraph in section.get("paragraphs", []):
             lines += [paragraph, ""]
+        if section.get("verdict"):
+            lines += [f"Ons oordeel: {section['verdict']}", ""]
         for _, title, text in section.get("items", []):
             lines.append(f"- {title}: {text}")
         if section.get("items"):
@@ -352,9 +499,17 @@ def render_html(mail: dict, art: MailArt | None = None) -> str:
     for section in mail["sections"]:
         border = f"3px solid {GOLD_DARK}" if section.get("personal") else f"2px solid {PARCHMENT_DARK}"
         inner = [heading(section["icon"], section["title"], 20)]
+        if section.get("subtitle"):
+            inner.append(f'<p style="margin:8px 0 0;font-size:18px;font-weight:bold;color:{INK}">'
+                         f'{e(section["subtitle"])}</p>')
+        if section.get("lead"):
+            inner.append(f'<p style="font-size:17px;font-weight:bold;line-height:1.4">{e(section["lead"])}</p>')
         if section.get("tiles"):
             inner.append(tiles(section["tiles"]))
         inner += [f"<p>{e(p)}</p>" for p in section.get("paragraphs", [])]
+        if section.get("verdict"):
+            inner.append(f'<p style="background:#fffaf0;border-left:5px solid {GOLD_DARK};padding:10px 12px;'
+                         f'font-size:16px"><b>Ons oordeel:</b> {e(section["verdict"])}</p>')
         if section.get("items"):
             inner.append(awards(section["items"]))
         inner += [table(t) for t in section.get("tables", [])]
@@ -368,7 +523,7 @@ def render_html(mail: dict, art: MailArt | None = None) -> str:
               f'padding:14px 16px;margin-bottom:8px">'
               f'<table role="presentation" cellspacing="0" cellpadding="0"><tr>'
               f'<td style="padding-right:12px">{art.icon("cwl", 64, "Clan War League")}</td>'
-              f'<td><div>{art.text("Clan War League", 14, GOLD)}</div>'
+              f'<td><div>{art.text(mail["kicker"], 14, GOLD)}</div>'
               f'<div style="margin:4px 0">{art.text(mail["banner"], 26)}</div>'
               f'<div style="color:{PARCHMENT};font-size:14px">{e(mail["bannerSub"])}</div></td>'
               f'</tr></table></div>')
