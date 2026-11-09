@@ -2,8 +2,9 @@
 
 Compares each subscriber's ranked league with the benchmark for their Town
 Hall (mail_config/benchmarks.yaml) and with last week, and writes a Dutch
-mail. Members below the benchmark also get strategy videos for their Town
-Hall (mail_config/strategies.yaml).
+mail in this week's style (mail_styles/, a different style every week).
+Members below the benchmark also get strategy videos for their Town Hall
+(mail_config/strategies.yaml).
 
 Last week's league and placement come from the player's league history; when
 that has no entry for last week we fall back to our own ranked snapshots.
@@ -24,7 +25,6 @@ workflow logs are visible to everyone with access to the repo.
 import argparse
 import html
 import os
-import random
 import sys
 import urllib.parse
 from datetime import datetime, timezone
@@ -32,9 +32,9 @@ from datetime import datetime, timezone
 from coc_api import get_player_info, get_player_league_history
 from config import (BENCHMARKS_FILE, MAIL_ADDRESS, MAIL_PREVIEW_DIR, STRATEGIES_FILE,
                     WEEKLY_MAILS_SENT_FILE)
+from mail_styles import build_facts, compose, style_for_week
 from mailer import Mailer, build_message, load_sent_log, record_sent
-from ranked import (LEAGUE_TIER_BASE_ID, for_town_hall, league_name, league_number, load_snapshots,
-                    load_th_table,
+from ranked import (LEAGUE_TIER_BASE_ID, for_town_hall, league_number, load_snapshots, load_th_table,
                     previous_status, week_key)
 from subscribers import load_subscribers, normalize_tag
 
@@ -79,123 +79,27 @@ def build_report(player: dict, history: list, snapshots: dict, benchmarks: dict,
     }
 
 
-def leagues(n: int) -> str:
-    return f"{n} league" if n == 1 else f"{n} leagues"
-
-
-# The mail is written as a LinkedIn-style motivational post: a hook, short
-# lines, a "lesson" and hashtags. Openers rotate per player and week.
-OPENERS = {
-    "above": ["Ik wil even iets met je delen.",
-              "Iedereen wil resultaten. Weinigen leveren ze.",
-              "Soms moet je even stilstaan bij hoe ver je al gekomen bent."],
-    "equal": ["Er zijn twee soorten spelers: zij die over hun doelen praten, en zij die ze halen.",
-              "Een doel zonder plan is een wens. Jij had een plan.",
-              "Consistentie verslaat talent. Elke week opnieuw."],
-    "below": ["Elke legende begon ergens.",
-              "Succes is geen rechte lijn. Het is een trap.",
-              "Ik ga eerlijk met je zijn, want dat verdien je."],
-    "unranked": ["Het moeilijkste aan elke reis is de eerste stap.",
-                 "Elke grote carrière begon met een eerste aanval."],
-}
-
-SUBJECTS = {
-    "above": "{league}. Boven verwachting. Laat dat even bezinken. 🚀",
-    "equal": "{league}. Doel gehaald. 🎯",
-    "below": "{league}. Dit is waar je comeback begint. 💪",
-    "unranked": "Je ranked-verhaal moet nog beginnen. 🌱",
-    "none": "{league}. Je wekelijkse ranked-update. 📊",
-}
-
-
-def standing(league: int, benchmark: int | None) -> str:
-    if league == 0:
-        return "unranked"
-    if benchmark is None:
-        return "none"
-    return "above" if league > benchmark else "equal" if league == benchmark else "below"
-
-
-def compose_mail(report: dict) -> dict:
-    """Subject and paragraphs of the mail; rendered to text and HTML below."""
-    th, league, benchmark = report["townHall"], report["league"], report["benchmark"]
-    current = league_name(league)
-    target = league_name(benchmark) if benchmark else None
-    status = standing(league, benchmark)
-    # Same opener on reruns, a different one most weeks
-    rng = random.Random(f"{report['tag']}{report['week']}")
-    paragraphs = [rng.choice(OPENERS[status])] if status in OPENERS else []
-
-    if status == "unranked":
-        paragraphs.append("Je hebt deze week nog geen ranked league."
-                          + (f" Voor TH{th} mikken we op minstens {target}." if target else ""))
-        paragraphs.append("De beste tijd om te beginnen was vorige week. "
-                          "De op één na beste tijd is vandaag. 🌱")
-    elif status == "none":
-        paragraphs.append(f"Je zit in {current}.")
-    elif status == "above":
-        paragraphs.append(f"Deze week zit je in {current}.\nVoor TH{th} verwachten we {target}.\n"
-                          f"Jij zit er {leagues(league - benchmark)} boven.")
-        paragraphs.append("Dat is geen geluk. Dat is discipline. 💯")
-    elif status == "equal":
-        paragraphs.append(f"Jij zit in {current}: precies de lat die we voor TH{th} legden. "
-                          "Doel gehaald. ✅")
-    else:
-        paragraphs.append(f"Jij zit nu in {current}.\nVoor TH{th} mikken we op {target}. "
-                          f"Dat is {leagues(benchmark - league)} verder.")
-        paragraphs.append("Is dat een probleem? Nee. Dat is een kans. 🔥")
-
-    previous = report["previousLeague"]
-    if previous is not None and league > previous:
-        paragraphs.append(f"📈 Vorige week: {league_name(previous)}. Nu: {current}.\n"
-                          "Groei is geen toeval. Groei is een keuze.")
-    elif previous is not None and league < previous:
-        paragraphs.append(f"📉 Vorige week: {league_name(previous)}. Nu: {current}.\n"
-                          "Een terugval is geen mislukking. Het is feedback. "
-                          "En feedback is een cadeau. 🎁")
-    elif previous is not None:
-        paragraphs.append(f"Je staat in dezelfde league als vorige week. Een plateau is geen "
-                          "stilstand: het is de aanloop naar je volgende sprong. 🧗")
-
-    last_week = report["lastWeek"]
-    if last_week:
-        played = last_week.get("attackWins", 0) + last_week.get("attackLosses", 0)
-        allowed = last_week["maxBattles"]
-        paragraphs.append(f"Vorige week eindigde je op plaats {last_week['placement']} in je groep, "
-                          f"met {last_week['leagueTrophies']} trofeeën.")
-        if played < allowed:
-            missed = allowed - played
-            paragraphs.append(f"Hier zit je grootste groeikans: je speelde {played} van je {allowed} "
-                              f"aanvallen. Dat {'is 1 kans' if missed == 1 else f'zijn {missed} kansen'} "
-                              "die je liet liggen.\nJe mist 100% van de aanvallen die je niet doet. 🎯")
-        elif report["videos"]:
-            paragraphs.append(f"Je speelde al je {allowed} aanvallen. De inzet is er. "
-                              "Nu de techniek nog. 📚")
-        else:
-            paragraphs.append(f"Je speelde al je {allowed} aanvallen. Showing up is half the battle. "
-                              "Jij deed het volledige werk. 👏")
-
-    if status in ("below", "unranked"):
-        closing = ["Volgende week staat er een nieuwe groep klaar. De vraag is niet óf je stijgt. "
-                   "De vraag is wanneer. 💭"]
-    else:
-        closing = ["Blijf bouwen. Blijf aanvallen. Blijf groeien.", "Agree? 👇"]
-    closing.append(f"#Zwegerneet #RankedMindset #TH{th} #NeverStopAttacking")
-
-    clan = report["clan"] or "de clan"
+def compose_mail(report: dict, style=None) -> dict:
+    """Subject and paragraphs in this week's style (mail_styles); rendered to text and HTML below."""
+    facts = build_facts(report)
+    style = style or style_for_week(report["week"])
+    text = compose(facts, style)
+    signoff = f"{text['sign']}\nDe leiding van {facts.clan}\n{style.TITLE}"
+    if text.get("after"):
+        signoff += f"\n\n{text['after']}"
     unsubscribe = f"Uitschrijven {report['tag']}"
     return {
-        "subject": f"Week {report['week'][-2:]} · " + SUBJECTS[status].format(league=current),
-        "greeting": f"Hoi {report['name']},",
-        "paragraphs": paragraphs,
-        "videosIntro": f"Leren stopt nooit. Mijn tips van de week voor TH{th}: 👇",
+        "subject": f"Week {facts.week_number} · {text['subject']}",
+        "greeting": text["greeting"],
+        "paragraphs": text["paragraphs"],
+        "videosIntro": text["videos_intro"],
         "videos": report["videos"],
-        "closing": closing,
-        "signoff": f"Groetjes,\nDe leiding van {clan}\nChief Motivation Officers",
+        "closing": text["closing"],
+        "signoff": signoff,
         "unsubscribeSubject": unsubscribe,
         "unsubscribeUrl": f"mailto:{MAIL_ADDRESS}?subject={urllib.parse.quote(unsubscribe)}",
         "footer": f"Je krijgt deze mail omdat je je inschreef voor de wekelijkse ranked-update "
-                  f"van {clan}.",
+                  f"van {facts.clan}.",
     }
 
 

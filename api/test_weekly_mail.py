@@ -3,6 +3,7 @@
 from datetime import datetime, timezone
 
 from config import BENCHMARKS_FILE, STRATEGIES_FILE
+from mail_styles import linkedin
 from ranked import league_name, ranked_status, record_snapshot
 from weekly_mail import (WEEK_SECONDS, build_report, compose_mail, for_town_hall, load_th_table,
                          render_html, render_text)
@@ -26,8 +27,9 @@ def week_entry(league, weeks_ago=1, placement=12):
 
 
 def mail_for(p, history=(), snapshots=None):
+    """The original LinkedIn style; the rotation is tested in test_mail_styles.py."""
     report = build_report(p, list(history), snapshots or {"weeks": {}}, BENCHMARKS, STRATEGIES, NOW)
-    return report, compose_mail(report)
+    return report, compose_mail(report, style=linkedin)
 
 
 def test_league_names_match_the_api():
