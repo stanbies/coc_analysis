@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T23:17:08.871490+00:00",
+  "lastUpdated": "2026-11-14T05:06:27.445263+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -18,7 +18,7 @@
     },
     "clanLevel": 15,
     "clanPoints": 102550,
-    "clanBuilderBasePoints": 36061,
+    "clanBuilderBasePoints": 36223,
     "clanCapitalPoints": 2426,
     "capitalLeague": {
       "id": 85000012,
@@ -121,7 +121,7 @@
       "townHallLevel": 18,
       "townHallWeaponLevel": null,
       "expLevel": 207,
-      "trophies": 574,
+      "trophies": 600,
       "bestTrophies": 3459,
       "warStars": 849,
       "attackWins": 0,
@@ -3856,7 +3856,7 @@
         },
         {
           "name": "Sneezy",
-          "level": 8,
+          "level": 9,
           "maxLevel": 10
         },
         {
@@ -12395,7 +12395,7 @@
         },
         {
           "name": "Sneezy",
-          "level": 3,
+          "level": 4,
           "maxLevel": 10
         }
       ],
@@ -12935,10 +12935,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 5081,
+          "value": 5084,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 5081",
+          "completionInfo": "Total obstacles removed: 5084",
           "village": "home"
         },
         {
@@ -12989,37 +12989,37 @@
         {
           "name": "Wall Buster",
           "stars": 3,
-          "value": 31824,
+          "value": 31825,
           "target": 2000,
           "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 31824",
+          "completionInfo": "Total Walls destroyed: 31825",
           "village": "home"
         },
         {
           "name": "Humiliator",
           "stars": 3,
-          "value": 2155,
+          "value": 2156,
           "target": 2000,
           "info": "Destroy 2000 Town Halls in Multiplayer battles",
-          "completionInfo": "Total Town Halls destroyed: 2155",
+          "completionInfo": "Total Town Halls destroyed: 2156",
           "village": "home"
         },
         {
           "name": "Union Buster",
           "stars": 3,
-          "value": 10677,
+          "value": 10683,
           "target": 2500,
           "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 10677",
+          "completionInfo": "Total Builder's Huts destroyed: 10683",
           "village": "home"
         },
         {
           "name": "Conqueror",
           "stars": 2,
-          "value": 2691,
+          "value": 2692,
           "target": 5000,
           "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 2691",
+          "completionInfo": "Total multiplayer battles won: 2692",
           "village": "home"
         },
         {
@@ -13043,19 +13043,19 @@
         {
           "name": "Mortar Mauler",
           "stars": 3,
-          "value": 9056,
+          "value": 9069,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 9056",
+          "completionInfo": "Total Mortars destroyed: 9069",
           "village": "home"
         },
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 22417982,
+          "value": 22451157,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 22417982",
+          "completionInfo": "Total Dark Elixir looted: 22451157",
           "village": "home"
         },
         {
@@ -13070,19 +13070,19 @@
         {
           "name": "X-Bow Exterminator",
           "stars": 3,
-          "value": 7327,
+          "value": 7331,
           "target": 2500,
           "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 7327",
+          "completionInfo": "Total X-Bows destroyed: 7331",
           "village": "home"
         },
         {
           "name": "Firefighter",
           "stars": 3,
-          "value": 5000,
+          "value": 5002,
           "target": 5000,
           "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 5000",
+          "completionInfo": "Total Inferno Towers destroyed: 5002",
           "village": "home"
         },
         {
@@ -13106,10 +13106,10 @@
         {
           "name": "Anti-Artillery",
           "stars": 2,
-          "value": 1654,
+          "value": 1655,
           "target": 2000,
           "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
-          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 1654",
+          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 1655",
           "village": "home"
         },
         {
@@ -13232,28 +13232,28 @@
         {
           "name": "Shattered and Scattered",
           "stars": 2,
-          "value": 2779,
+          "value": 2780,
           "target": 4000,
           "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 2779",
+          "completionInfo": "Total Scattershots destroyed: 2780",
           "village": "home"
         },
         {
           "name": "Not So Easy This Time",
           "stars": 2,
-          "value": 1631,
+          "value": 1632,
           "target": 2000,
           "info": "Destroy 2000 weaponized Town Halls in Multiplayer battles",
-          "completionInfo": "Weaponized Town Halls destroyed: 1631",
+          "completionInfo": "Weaponized Town Halls destroyed: 1632",
           "village": "home"
         },
         {
           "name": "Bust This!",
           "stars": 3,
-          "value": 4758,
+          "value": 4764,
           "target": 2500,
           "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 4758",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 4764",
           "village": "home"
         },
         {
@@ -13295,10 +13295,10 @@
         {
           "name": "Counterspell",
           "stars": 2,
-          "value": 1208,
+          "value": 1210,
           "target": 4000,
           "info": "Destroy 4000 Spell Towers in Multiplayer Battles",
-          "completionInfo": "Total Spell Towers Destroyed: 1208",
+          "completionInfo": "Total Spell Towers Destroyed: 1210",
           "village": "home"
         },
         {
@@ -13340,10 +13340,10 @@
         {
           "name": "Ricochet Cannon Crusher",
           "stars": 2,
-          "value": 647,
+          "value": 648,
           "target": 5000,
           "info": "Destroy 5000 Ricochet Cannons in Multiplayer Battles",
-          "completionInfo": "Total Ricochet Cannons Destroyed: 647",
+          "completionInfo": "Total Ricochet Cannons Destroyed: 648",
           "village": "home"
         },
         {
@@ -13376,10 +13376,10 @@
         {
           "name": "Crafter’s Nightmare",
           "stars": 2,
-          "value": 493,
+          "value": 495,
           "target": 2000,
           "info": "Destroy 2000 Crafted Defenses in Multiplayer Battles",
-          "completionInfo": "Total Crafted Defenses Destroyed: 493",
+          "completionInfo": "Total Crafted Defenses Destroyed: 495",
           "village": "home"
         },
         {
@@ -13773,7 +13773,7 @@
         },
         {
           "name": "Spirit Fox",
-          "level": 5,
+          "level": 6,
           "maxLevel": 10
         }
       ],
@@ -14342,10 +14342,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 739,
+          "value": 740,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 739",
+          "completionInfo": "Total defenses won: 740",
           "village": "home"
         },
         {
@@ -15822,10 +15822,10 @@
         {
           "name": "Unbreakable",
           "stars": 1,
-          "value": 163,
+          "value": 164,
           "target": 250,
           "info": "Successfully defend against 250 attacks",
-          "completionInfo": "Total defenses won: 163",
+          "completionInfo": "Total defenses won: 164",
           "village": "home"
         },
         {
@@ -17069,10 +17069,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 12440,
+          "value": 12441,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 12440",
+          "completionInfo": "Total obstacles removed: 12441",
           "village": "home"
         },
         {
@@ -19809,11 +19809,11 @@
       "townHallLevel": 18,
       "townHallWeaponLevel": null,
       "expLevel": 197,
-      "trophies": 581,
+      "trophies": 591,
       "bestTrophies": 2569,
       "warStars": 1302,
       "attackWins": 14,
-      "defenseWins": 4,
+      "defenseWins": 5,
       "builderHallLevel": 9,
       "builderBaseTrophies": 2675,
       "bestBuilderBaseTrophies": 2840,
@@ -19974,10 +19974,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 1255,
+          "value": 1256,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 1255",
+          "completionInfo": "Total defenses won: 1256",
           "village": "home"
         },
         {
@@ -25971,7 +25971,7 @@
         },
         {
           "name": "Wall Breaker",
-          "level": 10,
+          "level": 11,
           "maxLevel": 14
         },
         {
@@ -26589,11 +26589,11 @@
       ],
       "rushAnalysis": {
         "isRushed": true,
-        "rushScore": 119.3,
-        "rushPercentage": 22.9,
+        "rushScore": 119.0,
+        "rushPercentage": 22.7,
         "status": "🔴 Severely Rushed (Heroes)",
         "heroScore": 94.0,
-        "troopScore": 14.1,
+        "troopScore": 13.8,
         "spellScore": 11.2,
         "totalMissingHeroLevels": 94,
         "rushedHeroes": [
@@ -26643,9 +26643,9 @@
           },
           {
             "name": "Wall Breaker",
-            "current": 10,
+            "current": 11,
             "target": 13,
-            "missing": 3
+            "missing": 2
           },
           {
             "name": "Wizard",
@@ -27446,7 +27446,7 @@
         },
         {
           "name": "Royal Champion",
-          "level": 44,
+          "level": 45,
           "maxLevel": 50
         },
         {
@@ -28086,25 +28086,19 @@
       ],
       "rushAnalysis": {
         "isRushed": true,
-        "rushScore": 41.9,
-        "rushPercentage": 13.1,
+        "rushScore": 40.9,
+        "rushPercentage": 13.0,
         "status": "🟠 Rushed",
-        "heroScore": 19.0,
+        "heroScore": 18.0,
         "troopScore": 15.3,
         "spellScore": 7.6,
-        "totalMissingHeroLevels": 19,
+        "totalMissingHeroLevels": 18,
         "rushedHeroes": [
           {
             "name": "Barbarian King",
             "current": 78,
             "target": 95,
             "missing": 17
-          },
-          {
-            "name": "Royal Champion",
-            "current": 44,
-            "target": 45,
-            "missing": 1
           },
           {
             "name": "Dragon Duke",
@@ -29678,7 +29672,7 @@
     {
       "tag": "#9CRYUCRL",
       "name": "LukasXIV",
-      "townHallLevel": 15,
+      "townHallLevel": 16,
       "townHallWeaponLevel": 1,
       "expLevel": 183,
       "trophies": 147,
@@ -29739,19 +29733,19 @@
         {
           "name": "Bigger & Better",
           "stars": 3,
-          "value": 15,
+          "value": 16,
           "target": 8,
           "info": "Upgrade Town Hall to level 8",
-          "completionInfo": "Current Town Hall level: 15",
+          "completionInfo": "Current Town Hall level: 16",
           "village": "home"
         },
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 4882,
+          "value": 4891,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 4882",
+          "completionInfo": "Total obstacles removed: 4891",
           "village": "home"
         },
         {
@@ -30036,10 +30030,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 94360,
+          "value": 94520,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 94360",
+          "completionInfo": "Total Season Challenges points: 94520",
           "village": "home"
         },
         {
@@ -30235,44 +30229,44 @@
         {
           "name": "Barbarian King",
           "level": 90,
-          "maxLevel": 90
+          "maxLevel": 95
         },
         {
           "name": "Archer Queen",
           "level": 90,
-          "maxLevel": 90
+          "maxLevel": 95
         },
         {
           "name": "Grand Warden",
           "level": 65,
-          "maxLevel": 65
+          "maxLevel": 70
         },
         {
           "name": "Royal Champion",
           "level": 40,
-          "maxLevel": 40
+          "maxLevel": 45
         },
         {
           "name": "Minion Prince",
           "level": 70,
-          "maxLevel": 70
+          "maxLevel": 80
         },
         {
           "name": "Dragon Duke",
           "level": 10,
-          "maxLevel": 10
+          "maxLevel": 15
         }
       ],
       "troops": [
         {
           "name": "Barbarian",
           "level": 11,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Archer",
           "level": 9,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Goblin",
@@ -30282,82 +30276,82 @@
         {
           "name": "Giant",
           "level": 11,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Wall Breaker",
           "level": 8,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Balloon",
           "level": 10,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "Wizard",
           "level": 9,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Healer",
           "level": 7,
-          "maxLevel": 8
+          "maxLevel": 9
         },
         {
           "name": "Dragon",
           "level": 10,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "P.E.K.K.A",
           "level": 9,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "Minion",
           "level": 9,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Hog Rider",
           "level": 10,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Valkyrie",
           "level": 9,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "Golem",
           "level": 11,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Witch",
           "level": 5,
-          "maxLevel": 6
+          "maxLevel": 7
         },
         {
           "name": "Lava Hound",
           "level": 6,
-          "maxLevel": 6
+          "maxLevel": 7
         },
         {
           "name": "Bowler",
           "level": 6,
-          "maxLevel": 7
+          "maxLevel": 8
         },
         {
           "name": "Baby Dragon",
           "level": 7,
-          "maxLevel": 9
+          "maxLevel": 10
         },
         {
           "name": "Miner",
           "level": 7,
-          "maxLevel": 9
+          "maxLevel": 10
         },
         {
           "name": "Super Barbarian",
@@ -30392,7 +30386,7 @@
         {
           "name": "Yeti",
           "level": 5,
-          "maxLevel": 5
+          "maxLevel": 6
         },
         {
           "name": "Sneaky Goblin",
@@ -30412,12 +30406,12 @@
         {
           "name": "Ice Golem",
           "level": 7,
-          "maxLevel": 7
+          "maxLevel": 8
         },
         {
           "name": "Electro Dragon",
           "level": 6,
-          "maxLevel": 6
+          "maxLevel": 7
         },
         {
           "name": "Stone Slammer",
@@ -30437,7 +30431,7 @@
         {
           "name": "Dragon Rider",
           "level": 3,
-          "maxLevel": 3
+          "maxLevel": 4
         },
         {
           "name": "Super Witch",
@@ -30497,7 +30491,7 @@
         {
           "name": "Electro Titan",
           "level": 2,
-          "maxLevel": 3
+          "maxLevel": 4
         },
         {
           "name": "Apprentice Warden",
@@ -30512,12 +30506,12 @@
         {
           "name": "Root Rider",
           "level": 2,
-          "maxLevel": 2
+          "maxLevel": 3
         },
         {
           "name": "Druid",
           "level": 1,
-          "maxLevel": 3
+          "maxLevel": 4
         },
         {
           "name": "Super Yeti",
@@ -30527,7 +30521,7 @@
         {
           "name": "Furnace",
           "level": 2,
-          "maxLevel": 2
+          "maxLevel": 3
         },
         {
           "name": "L.A.S.S.I",
@@ -30574,12 +30568,12 @@
         {
           "name": "Lightning Spell",
           "level": 9,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "Healing Spell",
           "level": 8,
-          "maxLevel": 9
+          "maxLevel": 10
         },
         {
           "name": "Rage Spell",
@@ -30599,12 +30593,12 @@
         {
           "name": "Poison Spell",
           "level": 7,
-          "maxLevel": 9
+          "maxLevel": 10
         },
         {
           "name": "Earthquake Spell",
           "level": 5,
-          "maxLevel": 6
+          "maxLevel": 7
         },
         {
           "name": "Haste Spell",
@@ -30634,27 +30628,27 @@
         {
           "name": "Recall Spell",
           "level": 2,
-          "maxLevel": 4
+          "maxLevel": 5
         },
         {
           "name": "Overgrowth Spell",
           "level": 3,
-          "maxLevel": 3
+          "maxLevel": 4
         },
         {
           "name": "Revive Spell",
           "level": 2,
-          "maxLevel": 2
+          "maxLevel": 3
         },
         {
           "name": "Ice Block Spell",
           "level": 3,
-          "maxLevel": 3
+          "maxLevel": 4
         },
         {
           "name": "Angry Spell",
           "level": 1,
-          "maxLevel": 1
+          "maxLevel": 2
         }
       ],
       "heroEquipment": [
@@ -30858,30 +30852,48 @@
         }
       ],
       "rushAnalysis": {
-        "isRushed": false,
-        "rushScore": 5.1,
-        "rushPercentage": 2.8,
-        "status": "🟢 Slightly Behind",
+        "isRushed": true,
+        "rushScore": 13.0,
+        "rushPercentage": 6.4,
+        "status": "🟡 Moderately Rushed",
         "heroScore": 0,
-        "troopScore": 2.7,
-        "spellScore": 2.4,
+        "troopScore": 7.8,
+        "spellScore": 5.2,
         "totalMissingHeroLevels": 0,
         "rushedHeroes": [],
         "rushedTroops": [
           {
             "name": "Archer",
             "current": 9,
-            "target": 10,
+            "target": 11,
+            "missing": 2
+          },
+          {
+            "name": "Goblin",
+            "current": 8,
+            "target": 9,
             "missing": 1
           },
           {
             "name": "Wall Breaker",
             "current": 8,
-            "target": 10,
-            "missing": 2
+            "target": 11,
+            "missing": 3
           },
           {
             "name": "Wizard",
+            "current": 9,
+            "target": 11,
+            "missing": 2
+          },
+          {
+            "name": "Healer",
+            "current": 7,
+            "target": 8,
+            "missing": 1
+          },
+          {
+            "name": "P.E.K.K.A",
             "current": 9,
             "target": 10,
             "missing": 1
@@ -30889,46 +30901,94 @@
           {
             "name": "Minion",
             "current": 9,
-            "target": 10,
-            "missing": 1
+            "target": 11,
+            "missing": 2
           },
           {
             "name": "Hog Rider",
             "current": 10,
-            "target": 11,
+            "target": 12,
+            "missing": 2
+          },
+          {
+            "name": "Valkyrie",
+            "current": 9,
+            "target": 10,
+            "missing": 1
+          },
+          {
+            "name": "Golem",
+            "current": 11,
+            "target": 12,
+            "missing": 1
+          },
+          {
+            "name": "Witch",
+            "current": 5,
+            "target": 6,
+            "missing": 1
+          },
+          {
+            "name": "Bowler",
+            "current": 6,
+            "target": 7,
             "missing": 1
           },
           {
             "name": "Baby Dragon",
             "current": 7,
-            "target": 8,
-            "missing": 1
+            "target": 9,
+            "missing": 2
           },
           {
             "name": "Miner",
             "current": 7,
-            "target": 8,
+            "target": 9,
+            "missing": 2
+          },
+          {
+            "name": "Electro Titan",
+            "current": 2,
+            "target": 3,
             "missing": 1
           },
           {
-            "name": "Druid",
-            "current": 1,
-            "target": 2,
-            "missing": 1
-          }
-        ],
-        "rushedSpells": [
-          {
-            "name": "Jump Spell",
+            "name": "Apprentice Warden",
             "current": 3,
             "target": 4,
             "missing": 1
           },
           {
+            "name": "Druid",
+            "current": 1,
+            "target": 3,
+            "missing": 2
+          }
+        ],
+        "rushedSpells": [
+          {
+            "name": "Lightning Spell",
+            "current": 9,
+            "target": 10,
+            "missing": 1
+          },
+          {
+            "name": "Healing Spell",
+            "current": 8,
+            "target": 9,
+            "missing": 1
+          },
+          {
+            "name": "Jump Spell",
+            "current": 3,
+            "target": 5,
+            "missing": 2
+          },
+          {
             "name": "Poison Spell",
             "current": 7,
-            "target": 8,
-            "missing": 1
+            "target": 9,
+            "missing": 2
           },
           {
             "name": "Earthquake Spell",
@@ -30939,14 +30999,20 @@
           {
             "name": "Skeleton Spell",
             "current": 5,
-            "target": 7,
-            "missing": 2
+            "target": 8,
+            "missing": 3
+          },
+          {
+            "name": "Bat Spell",
+            "current": 5,
+            "target": 6,
+            "missing": 1
           },
           {
             "name": "Recall Spell",
             "current": 2,
-            "target": 3,
-            "missing": 1
+            "target": 4,
+            "missing": 2
           }
         ]
       },
@@ -33085,7 +33151,7 @@
         },
         {
           "name": "Spirit Fox",
-          "level": 8,
+          "level": 9,
           "maxLevel": 10
         },
         {
@@ -35018,7 +35084,7 @@
       "townHallLevel": 16,
       "townHallWeaponLevel": 1,
       "expLevel": 196,
-      "trophies": 254,
+      "trophies": 281,
       "bestTrophies": 5002,
       "warStars": 387,
       "attackWins": 0,
@@ -40839,7 +40905,7 @@
         },
         {
           "name": "Archer Queen",
-          "level": 86,
+          "level": 87,
           "maxLevel": 90
         },
         {
@@ -45325,6 +45391,1325 @@
             "current": 7,
             "target": 8,
             "missing": 1
+          }
+        ]
+      },
+      "warStats": {
+        "totalAttacks": 0,
+        "totalStars": 0,
+        "totalDestruction": 0,
+        "threeStars": 0,
+        "twoStars": 0,
+        "oneStars": 0,
+        "zeroStars": 0,
+        "warsParticipated": 0
+      }
+    },
+    {
+      "tag": "#9JQLPLCLV",
+      "name": "henk",
+      "townHallLevel": 16,
+      "townHallWeaponLevel": 1,
+      "expLevel": 190,
+      "trophies": 0,
+      "bestTrophies": 5349,
+      "warStars": 610,
+      "attackWins": 0,
+      "defenseWins": 0,
+      "builderHallLevel": 9,
+      "builderBaseTrophies": 3601,
+      "bestBuilderBaseTrophies": 3665,
+      "role": "member",
+      "warPreference": "in",
+      "donations": 0,
+      "donationsReceived": 0,
+      "clanCapitalContributions": 2232396,
+      "clan": {
+        "tag": "#2J28LL2VU",
+        "name": "Zwegerneet",
+        "clanLevel": 15,
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png"
+        }
+      },
+      "league": {
+        "id": 29000021,
+        "name": "Titan League I",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leagues/72/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png",
+          "tiny": "https://api-assets.clashofclans.com/leagues/36/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png",
+          "medium": "https://api-assets.clashofclans.com/leagues/288/qVCZmeYH0lS7Gaa6YoB7LrNly7bfw7fV_d4Vp2CU-gk.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000020,
+        "name": "Golem League 20",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/uizNRh8glQZuAbLdCa-EQSf3oJnge3nqoXHjtQ6O8pw.png"
+        }
+      },
+      "builderBaseLeague": {
+        "id": 44000028,
+        "name": "Steel League I"
+      },
+      "achievements": [
+        {
+          "name": "Bigger Coffers",
+          "stars": 3,
+          "value": 16,
+          "target": 10,
+          "info": "Upgrade a Gold Storage to level 10",
+          "completionInfo": "Highest Gold Storage level: 16",
+          "village": "home"
+        },
+        {
+          "name": "Get even more Goblins!",
+          "stars": 2,
+          "value": 69,
+          "target": 270,
+          "info": "Win 270 Stars on the Campaign Map",
+          "completionInfo": "Stars in Campaign Map: 69",
+          "village": "home"
+        },
+        {
+          "name": "Bigger & Better",
+          "stars": 3,
+          "value": 16,
+          "target": 8,
+          "info": "Upgrade Town Hall to level 8",
+          "completionInfo": "Current Town Hall level: 16",
+          "village": "home"
+        },
+        {
+          "name": "Nice and Tidy",
+          "stars": 3,
+          "value": 1087,
+          "target": 500,
+          "info": "Remove 500 obstacles (trees, rocks, bushes)",
+          "completionInfo": "Total obstacles removed: 1087",
+          "village": "home"
+        },
+        {
+          "name": "Discover New Troops",
+          "stars": 3,
+          "value": 1,
+          "target": 1,
+          "info": "Unlock Dragon in the Barracks",
+          "completionInfo": null,
+          "village": "home"
+        },
+        {
+          "name": "Gold Grab",
+          "stars": 3,
+          "value": 1013456399,
+          "target": 100000000,
+          "info": "Steal 100000000 Gold",
+          "completionInfo": "Total Gold looted: 1013456399",
+          "village": "home"
+        },
+        {
+          "name": "Elixir Escapade",
+          "stars": 3,
+          "value": 1021122044,
+          "target": 100000000,
+          "info": "Steal 100000000 elixir",
+          "completionInfo": "Total Elixir looted: 1021122044",
+          "village": "home"
+        },
+        {
+          "name": "Sweet Victory!",
+          "stars": 3,
+          "value": 5349,
+          "target": 1250,
+          "info": "Achieve a total of 1250 trophies in Multiplayer battles",
+          "completionInfo": "Trophy record: 5349",
+          "village": "home"
+        },
+        {
+          "name": "Empire Builder",
+          "stars": 3,
+          "value": 11,
+          "target": 4,
+          "info": "Upgrade Clan Castle to level 4",
+          "completionInfo": "Current Clan Castle level: 11",
+          "village": "home"
+        },
+        {
+          "name": "Wall Buster",
+          "stars": 3,
+          "value": 25737,
+          "target": 2000,
+          "info": "Destroy 2000 Walls in Multiplayer battles",
+          "completionInfo": "Total Walls destroyed: 25737",
+          "village": "home"
+        },
+        {
+          "name": "Humiliator",
+          "stars": 2,
+          "value": 1298,
+          "target": 2000,
+          "info": "Destroy 2000 Town Halls in Multiplayer battles",
+          "completionInfo": "Total Town Halls destroyed: 1298",
+          "village": "home"
+        },
+        {
+          "name": "Union Buster",
+          "stars": 3,
+          "value": 5633,
+          "target": 2500,
+          "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
+          "completionInfo": "Total Builder's Huts destroyed: 5633",
+          "village": "home"
+        },
+        {
+          "name": "Conqueror",
+          "stars": 2,
+          "value": 1456,
+          "target": 5000,
+          "info": "Win 5000 Multiplayer battles",
+          "completionInfo": "Total multiplayer battles won: 1456",
+          "village": "home"
+        },
+        {
+          "name": "Unbreakable",
+          "stars": 3,
+          "value": 669,
+          "target": 500,
+          "info": "Successfully defend against 500 attacks",
+          "completionInfo": "Total defenses won: 669",
+          "village": "home"
+        },
+        {
+          "name": "Friend in Need",
+          "stars": 2,
+          "value": 20436,
+          "target": 25000,
+          "info": "Donate 25000 capacity worth of reinforcements to Clanmates",
+          "completionInfo": "Total capacity donated: 20436",
+          "village": "home"
+        },
+        {
+          "name": "Mortar Mauler",
+          "stars": 2,
+          "value": 4737,
+          "target": 5000,
+          "info": "Destroy 5000 Mortars in Multiplayer battles",
+          "completionInfo": "Total Mortars destroyed: 4737",
+          "village": "home"
+        },
+        {
+          "name": "Heroic Heist",
+          "stars": 3,
+          "value": 8723622,
+          "target": 1000000,
+          "info": "Steal 1000000 Dark Elixir",
+          "completionInfo": "Total Dark Elixir looted: 8723622",
+          "village": "home"
+        },
+        {
+          "name": "League All-Star",
+          "stars": 3,
+          "value": 22,
+          "target": 1,
+          "info": "Become a Champion!",
+          "completionInfo": null,
+          "village": "home"
+        },
+        {
+          "name": "X-Bow Exterminator",
+          "stars": 3,
+          "value": 3523,
+          "target": 2500,
+          "info": "Destroy 2500 X-Bows in Multiplayer battles",
+          "completionInfo": "Total X-Bows destroyed: 3523",
+          "village": "home"
+        },
+        {
+          "name": "Firefighter",
+          "stars": 2,
+          "value": 2347,
+          "target": 5000,
+          "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
+          "completionInfo": "Total Inferno Towers destroyed: 2347",
+          "village": "home"
+        },
+        {
+          "name": "War Hero",
+          "stars": 2,
+          "value": 610,
+          "target": 1000,
+          "info": "Score 1000 Stars for your clan in Clan War battles",
+          "completionInfo": "Total Stars scored for clan in Clan War battles: 610",
+          "village": "home"
+        },
+        {
+          "name": "Clan War Wealth",
+          "stars": 3,
+          "value": 846036668,
+          "target": 100000000,
+          "info": "Collect 100000000 Gold from the Clan Castle",
+          "completionInfo": "Total Gold collected in Clan War bonuses: 846036668",
+          "village": "home"
+        },
+        {
+          "name": "Anti-Artillery",
+          "stars": 2,
+          "value": 794,
+          "target": 2000,
+          "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
+          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 794",
+          "village": "home"
+        },
+        {
+          "name": "Sharing is caring",
+          "stars": 1,
+          "value": 877,
+          "target": 2000,
+          "info": "Donate 2000 Spell storage capacity worth of Spells",
+          "completionInfo": "Total Spell capacity donated: 877",
+          "village": "home"
+        },
+        {
+          "name": "Keep Your Account Safe!",
+          "stars": 0,
+          "value": 0,
+          "target": 1,
+          "info": "Protect your Village by connecting to a social network",
+          "completionInfo": "Completed!",
+          "village": "home"
+        },
+        {
+          "name": "Master Engineering",
+          "stars": 3,
+          "value": 9,
+          "target": 8,
+          "info": "Upgrade Builder Hall to level 8",
+          "completionInfo": "Current Builder Hall level: 9",
+          "village": "builderBase"
+        },
+        {
+          "name": "Next Generation Model",
+          "stars": 3,
+          "value": 1,
+          "target": 1,
+          "info": "Unlock Power P.E.K.K.A in the Builder Barracks",
+          "completionInfo": null,
+          "village": "builderBase"
+        },
+        {
+          "name": "Un-Build It",
+          "stars": 2,
+          "value": 442,
+          "target": 2000,
+          "info": "Destroy 2000 Builder Halls in Builder Battles",
+          "completionInfo": "Total Builder Halls destroyed: 442",
+          "village": "builderBase"
+        },
+        {
+          "name": "Champion Builder",
+          "stars": 3,
+          "value": 3665,
+          "target": 3000,
+          "info": "Achieve a total of 3000 trophies in Builder Battles",
+          "completionInfo": "Builder Trophy record: 3665",
+          "village": "builderBase"
+        },
+        {
+          "name": "High Gear",
+          "stars": 3,
+          "value": 3,
+          "target": 3,
+          "info": "Gear Up 3 buildings using the Master Builder",
+          "completionInfo": "Total buildings geared up: 3",
+          "village": "builderBase"
+        },
+        {
+          "name": "Hidden Treasures",
+          "stars": 3,
+          "value": 1,
+          "target": 1,
+          "info": "Rebuild Battle Machine",
+          "completionInfo": null,
+          "village": "builderBase"
+        },
+        {
+          "name": "Games Champion",
+          "stars": 2,
+          "value": 68085,
+          "target": 100000,
+          "info": "Earn 100000 points in Clan Games",
+          "completionInfo": "Total Clan Games points: 68085",
+          "village": "home"
+        },
+        {
+          "name": "Dragon Slayer",
+          "stars": 0,
+          "value": 0,
+          "target": 1,
+          "info": "Slay the Giant Dragon on the Campaign Map",
+          "completionInfo": null,
+          "village": "home"
+        },
+        {
+          "name": "War League Legend",
+          "stars": 3,
+          "value": 347,
+          "target": 250,
+          "info": "Score 250 Stars for your clan in War League battles",
+          "completionInfo": "Total Stars scored for clan in War League battles: 347",
+          "village": "home"
+        },
+        {
+          "name": "Keep Your Account Safe!",
+          "stars": 0,
+          "value": 0,
+          "target": 1,
+          "info": "Connect your account to Supercell ID for safe keeping.",
+          "completionInfo": "Completed!",
+          "village": "home"
+        },
+        {
+          "name": "Well Seasoned",
+          "stars": 3,
+          "value": 97910,
+          "target": 50000,
+          "info": "Earn 50000 points in Season Challenges",
+          "completionInfo": "Total Season Challenges points: 97910",
+          "village": "home"
+        },
+        {
+          "name": "Shattered and Scattered",
+          "stars": 2,
+          "value": 1009,
+          "target": 4000,
+          "info": "Destroy 4000 Scattershots in Multiplayer battles",
+          "completionInfo": "Total Scattershots destroyed: 1009",
+          "village": "home"
+        },
+        {
+          "name": "Not So Easy This Time",
+          "stars": 2,
+          "value": 753,
+          "target": 2000,
+          "info": "Destroy 2000 weaponized Town Halls in Multiplayer battles",
+          "completionInfo": "Weaponized Town Halls destroyed: 753",
+          "village": "home"
+        },
+        {
+          "name": "Bust This!",
+          "stars": 2,
+          "value": 1489,
+          "target": 2500,
+          "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 1489",
+          "village": "home"
+        },
+        {
+          "name": "Superb Work",
+          "stars": 1,
+          "value": 30,
+          "target": 100,
+          "info": "Boost a Super Troop 100 times",
+          "completionInfo": "Total times Super Troops boosted: 30",
+          "village": "home"
+        },
+        {
+          "name": "Siege Sharer",
+          "stars": 1,
+          "value": 178,
+          "target": 1000,
+          "info": "Donate 1000 Siege Machines",
+          "completionInfo": "Total Siege Machines donated: 178",
+          "village": "home"
+        },
+        {
+          "name": "Aggressive Capitalism",
+          "stars": 3,
+          "value": 2022836,
+          "target": 1000000,
+          "info": "Loot 1000000 Capital Gold during Raid attacks",
+          "completionInfo": "Total Capital Gold looted: 2022836",
+          "village": "clanCapital"
+        },
+        {
+          "name": "Most Valuable Clanmate",
+          "stars": 3,
+          "value": 2232396,
+          "target": 2000000,
+          "info": "Contribute 2000000 Capital Gold to upgrades in the Clan Capital",
+          "completionInfo": "Total Capital Gold contributed: 2232396",
+          "village": "clanCapital"
+        },
+        {
+          "name": "Counterspell",
+          "stars": 1,
+          "value": 377,
+          "target": 400,
+          "info": "Destroy 400 Spell Towers in Multiplayer Battles",
+          "completionInfo": "Total Spell Towers Destroyed: 377",
+          "village": "home"
+        },
+        {
+          "name": "Monolith Masher",
+          "stars": 1,
+          "value": 187,
+          "target": 200,
+          "info": "Destroy 200 Monoliths in Multiplayer Battles",
+          "completionInfo": "Total Monoliths Destroyed: 187",
+          "village": "home"
+        },
+        {
+          "name": "Ungrateful Child",
+          "stars": 0,
+          "value": 0,
+          "target": 1,
+          "info": "Defeat M.O.M.M.A on the Campaign Map",
+          "completionInfo": null,
+          "village": "home"
+        },
+        {
+          "name": "Supercharger",
+          "stars": 0,
+          "value": 0,
+          "target": 5,
+          "info": "Supercharge buildings 5 times",
+          "completionInfo": "Total Supercharges: 0",
+          "village": "home"
+        },
+        {
+          "name": "Multi-Archer Tower Terminator",
+          "stars": 1,
+          "value": 112,
+          "target": 500,
+          "info": "Destroy 500 Multi-Archer Towers in Multiplayer Battles",
+          "completionInfo": "Total Multi-Archer Towers Destroyed: 112",
+          "village": "home"
+        },
+        {
+          "name": "Ricochet Cannon Crusher",
+          "stars": 1,
+          "value": 112,
+          "target": 500,
+          "info": "Destroy 500 Ricochet Cannons in Multiplayer Battles",
+          "completionInfo": "Total Ricochet Cannons Destroyed: 112",
+          "village": "home"
+        },
+        {
+          "name": "Firespitter Finisher",
+          "stars": 1,
+          "value": 40,
+          "target": 400,
+          "info": "Destroy 400 Firespitters in Multiplayer Battles",
+          "completionInfo": "Total Firespitters Destroyed: 40",
+          "village": "home"
+        },
+        {
+          "name": "Multi-Gear Tower Trampler",
+          "stars": 0,
+          "value": 16,
+          "target": 20,
+          "info": "Destroy 20 Multi-Gear Towers in Multiplayer Battles",
+          "completionInfo": "Total Multi-Gear Towers Destroyed: 16",
+          "village": "home"
+        },
+        {
+          "name": "Crafting Connoisseur",
+          "stars": 0,
+          "value": 0,
+          "target": 5,
+          "info": "Upgrade Crafted Defenses 5 times",
+          "completionInfo": "Total Crafted Defense upgrades: 0",
+          "village": "home"
+        },
+        {
+          "name": "Crafter’s Nightmare",
+          "stars": 1,
+          "value": 23,
+          "target": 200,
+          "info": "Destroy 200 Crafted Defenses in Multiplayer Battles",
+          "completionInfo": "Total Crafted Defenses Destroyed: 23",
+          "village": "home"
+        },
+        {
+          "name": "League Follower",
+          "stars": 3,
+          "value": 21,
+          "target": 12,
+          "info": "Reach League Wizard 12",
+          "completionInfo": null,
+          "village": "home"
+        }
+      ],
+      "labels": [
+        {
+          "id": 57000001,
+          "name": "Clan War League",
+          "iconUrls": {
+            "small": "https://api-assets.clashofclans.com/labels/64/JOzAO4r91eVaJELAPB-iuAx6f_zBbRPCLM_ag5mpK4s.png",
+            "medium": "https://api-assets.clashofclans.com/labels/128/JOzAO4r91eVaJELAPB-iuAx6f_zBbRPCLM_ag5mpK4s.png"
+          }
+        },
+        {
+          "id": 57000004,
+          "name": "Clan Games",
+          "iconUrls": {
+            "small": "https://api-assets.clashofclans.com/labels/64/LIXkluJJeg4ATNVQgO6scLheXxmNpyBLRYGldtv-Miw.png",
+            "medium": "https://api-assets.clashofclans.com/labels/128/LIXkluJJeg4ATNVQgO6scLheXxmNpyBLRYGldtv-Miw.png"
+          }
+        },
+        {
+          "id": 57000008,
+          "name": "Active Donator",
+          "iconUrls": {
+            "small": "https://api-assets.clashofclans.com/labels/64/MvL0LDt0yv9AI-Vevpu8yE5NAJUIV05Ofpsr4IfGRxQ.png",
+            "medium": "https://api-assets.clashofclans.com/labels/128/MvL0LDt0yv9AI-Vevpu8yE5NAJUIV05Ofpsr4IfGRxQ.png"
+          }
+        }
+      ],
+      "heroes": [
+        {
+          "name": "Barbarian King",
+          "level": 84,
+          "maxLevel": 95
+        },
+        {
+          "name": "Archer Queen",
+          "level": 90,
+          "maxLevel": 95
+        },
+        {
+          "name": "Grand Warden",
+          "level": 63,
+          "maxLevel": 70
+        },
+        {
+          "name": "Royal Champion",
+          "level": 39,
+          "maxLevel": 45
+        },
+        {
+          "name": "Minion Prince",
+          "level": 47,
+          "maxLevel": 80
+        },
+        {
+          "name": "Dragon Duke",
+          "level": 3,
+          "maxLevel": 15
+        }
+      ],
+      "troops": [
+        {
+          "name": "Barbarian",
+          "level": 11,
+          "maxLevel": 12
+        },
+        {
+          "name": "Archer",
+          "level": 11,
+          "maxLevel": 12
+        },
+        {
+          "name": "Goblin",
+          "level": 8,
+          "maxLevel": 9
+        },
+        {
+          "name": "Giant",
+          "level": 10,
+          "maxLevel": 12
+        },
+        {
+          "name": "Wall Breaker",
+          "level": 11,
+          "maxLevel": 12
+        },
+        {
+          "name": "Balloon",
+          "level": 10,
+          "maxLevel": 11
+        },
+        {
+          "name": "Wizard",
+          "level": 11,
+          "maxLevel": 12
+        },
+        {
+          "name": "Healer",
+          "level": 8,
+          "maxLevel": 9
+        },
+        {
+          "name": "Dragon",
+          "level": 10,
+          "maxLevel": 11
+        },
+        {
+          "name": "P.E.K.K.A",
+          "level": 10,
+          "maxLevel": 11
+        },
+        {
+          "name": "Minion",
+          "level": 7,
+          "maxLevel": 12
+        },
+        {
+          "name": "Hog Rider",
+          "level": 11,
+          "maxLevel": 13
+        },
+        {
+          "name": "Valkyrie",
+          "level": 9,
+          "maxLevel": 11
+        },
+        {
+          "name": "Golem",
+          "level": 10,
+          "maxLevel": 13
+        },
+        {
+          "name": "Witch",
+          "level": 6,
+          "maxLevel": 7
+        },
+        {
+          "name": "Lava Hound",
+          "level": 6,
+          "maxLevel": 7
+        },
+        {
+          "name": "Bowler",
+          "level": 6,
+          "maxLevel": 8
+        },
+        {
+          "name": "Baby Dragon",
+          "level": 9,
+          "maxLevel": 10
+        },
+        {
+          "name": "Miner",
+          "level": 9,
+          "maxLevel": 10
+        },
+        {
+          "name": "Super Barbarian",
+          "level": 1,
+          "maxLevel": 9
+        },
+        {
+          "name": "Super Archer",
+          "level": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Super Wall Breaker",
+          "level": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Super Giant",
+          "level": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Wall Wrecker",
+          "level": 5,
+          "maxLevel": 6
+        },
+        {
+          "name": "Battle Blimp",
+          "level": 4,
+          "maxLevel": 6
+        },
+        {
+          "name": "Yeti",
+          "level": 5,
+          "maxLevel": 6
+        },
+        {
+          "name": "Sneaky Goblin",
+          "level": 1,
+          "maxLevel": 6
+        },
+        {
+          "name": "Super Miner",
+          "level": 1,
+          "maxLevel": 12
+        },
+        {
+          "name": "Rocket Balloon",
+          "level": 1,
+          "maxLevel": 9
+        },
+        {
+          "name": "Ice Golem",
+          "level": 7,
+          "maxLevel": 8
+        },
+        {
+          "name": "Electro Dragon",
+          "level": 6,
+          "maxLevel": 7
+        },
+        {
+          "name": "Stone Slammer",
+          "level": 4,
+          "maxLevel": 6
+        },
+        {
+          "name": "Inferno Dragon",
+          "level": 1,
+          "maxLevel": 12
+        },
+        {
+          "name": "Super Valkyrie",
+          "level": 1,
+          "maxLevel": 12
+        },
+        {
+          "name": "Dragon Rider",
+          "level": 3,
+          "maxLevel": 4
+        },
+        {
+          "name": "Super Witch",
+          "level": 1,
+          "maxLevel": 8
+        },
+        {
+          "name": "Siege Barracks",
+          "level": 4,
+          "maxLevel": 6
+        },
+        {
+          "name": "Ice Hound",
+          "level": 1,
+          "maxLevel": 8
+        },
+        {
+          "name": "Super Bowler",
+          "level": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Super Dragon",
+          "level": 1,
+          "maxLevel": 11
+        },
+        {
+          "name": "Headhunter",
+          "level": 3,
+          "maxLevel": 3
+        },
+        {
+          "name": "Super Wizard",
+          "level": 1,
+          "maxLevel": 10
+        },
+        {
+          "name": "Super Minion",
+          "level": 1,
+          "maxLevel": 11
+        },
+        {
+          "name": "Log Launcher",
+          "level": 4,
+          "maxLevel": 6
+        },
+        {
+          "name": "Flame Flinger",
+          "level": 4,
+          "maxLevel": 5
+        },
+        {
+          "name": "Battle Drill",
+          "level": 1,
+          "maxLevel": 6
+        },
+        {
+          "name": "Electro Titan",
+          "level": 3,
+          "maxLevel": 4
+        },
+        {
+          "name": "Apprentice Warden",
+          "level": 3,
+          "maxLevel": 4
+        },
+        {
+          "name": "Super Hog Rider",
+          "level": 1,
+          "maxLevel": 12
+        },
+        {
+          "name": "Root Rider",
+          "level": 2,
+          "maxLevel": 3
+        },
+        {
+          "name": "Druid",
+          "level": 1,
+          "maxLevel": 4
+        },
+        {
+          "name": "Super Yeti",
+          "level": 1,
+          "maxLevel": 8
+        },
+        {
+          "name": "Furnace",
+          "level": 2,
+          "maxLevel": 3
+        },
+        {
+          "name": "L.A.S.S.I",
+          "level": 3,
+          "maxLevel": 15
+        },
+        {
+          "name": "Mighty Yak",
+          "level": 8,
+          "maxLevel": 15
+        },
+        {
+          "name": "Electro Owl",
+          "level": 4,
+          "maxLevel": 15
+        },
+        {
+          "name": "Unicorn",
+          "level": 10,
+          "maxLevel": 15
+        },
+        {
+          "name": "Phoenix",
+          "level": 7,
+          "maxLevel": 10
+        },
+        {
+          "name": "Poison Lizard",
+          "level": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Diggy",
+          "level": 1,
+          "maxLevel": 15
+        },
+        {
+          "name": "Frosty",
+          "level": 2,
+          "maxLevel": 15
+        }
+      ],
+      "spells": [
+        {
+          "name": "Lightning Spell",
+          "level": 10,
+          "maxLevel": 11
+        },
+        {
+          "name": "Healing Spell",
+          "level": 9,
+          "maxLevel": 10
+        },
+        {
+          "name": "Rage Spell",
+          "level": 6,
+          "maxLevel": 6
+        },
+        {
+          "name": "Jump Spell",
+          "level": 4,
+          "maxLevel": 5
+        },
+        {
+          "name": "Freeze Spell",
+          "level": 7,
+          "maxLevel": 7
+        },
+        {
+          "name": "Poison Spell",
+          "level": 5,
+          "maxLevel": 10
+        },
+        {
+          "name": "Earthquake Spell",
+          "level": 6,
+          "maxLevel": 7
+        },
+        {
+          "name": "Haste Spell",
+          "level": 3,
+          "maxLevel": 5
+        },
+        {
+          "name": "Clone Spell",
+          "level": 8,
+          "maxLevel": 8
+        },
+        {
+          "name": "Skeleton Spell",
+          "level": 5,
+          "maxLevel": 8
+        },
+        {
+          "name": "Bat Spell",
+          "level": 5,
+          "maxLevel": 6
+        },
+        {
+          "name": "Invisibility Spell",
+          "level": 4,
+          "maxLevel": 4
+        },
+        {
+          "name": "Recall Spell",
+          "level": 4,
+          "maxLevel": 5
+        },
+        {
+          "name": "Overgrowth Spell",
+          "level": 1,
+          "maxLevel": 4
+        },
+        {
+          "name": "Revive Spell",
+          "level": 2,
+          "maxLevel": 3
+        },
+        {
+          "name": "Ice Block Spell",
+          "level": 1,
+          "maxLevel": 4
+        },
+        {
+          "name": "Angry Spell",
+          "level": 1,
+          "maxLevel": 2
+        }
+      ],
+      "heroEquipment": [
+        {
+          "name": "Giant Gauntlet",
+          "level": 15,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Spiky Ball",
+          "level": 20,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Frozen Arrow",
+          "level": 15,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Fireball",
+          "level": 20,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Dark Crown",
+          "level": 15,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Magic Mirror",
+          "level": 15,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Electro Boots",
+          "level": 23,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Lavaloon Puppet",
+          "level": 15,
+          "maxLevel": 27,
+          "village": "home"
+        },
+        {
+          "name": "Barbarian Puppet",
+          "level": 11,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Rage Vial",
+          "level": 12,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Archer Puppet",
+          "level": 13,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Invisibility Vial",
+          "level": 16,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Eternal Tome",
+          "level": 17,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Life Gem",
+          "level": 13,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Seeking Shield",
+          "level": 14,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Royal Gem",
+          "level": 14,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Earthquake Boots",
+          "level": 18,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Hog Rider Puppet",
+          "level": 17,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Giant Arrow",
+          "level": 18,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Healer Puppet",
+          "level": 17,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Dark Orb",
+          "level": 5,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Noble Iron",
+          "level": 5,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Vampstache",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Haste Vial",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Rage Gem",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Healing Tome",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Henchmen Puppet",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Metal Pants",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Fire Heart",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        },
+        {
+          "name": "Flame Blower",
+          "level": 1,
+          "maxLevel": 18,
+          "village": "home"
+        }
+      ],
+      "rushAnalysis": {
+        "isRushed": true,
+        "rushScore": 26.2,
+        "rushPercentage": 7.3,
+        "status": "🟠 Rushed",
+        "heroScore": 16.0,
+        "troopScore": 4.2,
+        "spellScore": 6.0,
+        "totalMissingHeroLevels": 16,
+        "rushedHeroes": [
+          {
+            "name": "Barbarian King",
+            "current": 84,
+            "target": 90,
+            "missing": 6
+          },
+          {
+            "name": "Grand Warden",
+            "current": 63,
+            "target": 65,
+            "missing": 2
+          },
+          {
+            "name": "Royal Champion",
+            "current": 39,
+            "target": 40,
+            "missing": 1
+          },
+          {
+            "name": "Dragon Duke",
+            "current": 3,
+            "target": 10,
+            "missing": 7
+          }
+        ],
+        "rushedTroops": [
+          {
+            "name": "Goblin",
+            "current": 8,
+            "target": 9,
+            "missing": 1
+          },
+          {
+            "name": "Giant",
+            "current": 10,
+            "target": 11,
+            "missing": 1
+          },
+          {
+            "name": "Minion",
+            "current": 7,
+            "target": 11,
+            "missing": 4
+          },
+          {
+            "name": "Hog Rider",
+            "current": 11,
+            "target": 12,
+            "missing": 1
+          },
+          {
+            "name": "Valkyrie",
+            "current": 9,
+            "target": 10,
+            "missing": 1
+          },
+          {
+            "name": "Golem",
+            "current": 10,
+            "target": 12,
+            "missing": 2
+          },
+          {
+            "name": "Bowler",
+            "current": 6,
+            "target": 7,
+            "missing": 1
+          },
+          {
+            "name": "Apprentice Warden",
+            "current": 3,
+            "target": 4,
+            "missing": 1
+          },
+          {
+            "name": "Druid",
+            "current": 1,
+            "target": 3,
+            "missing": 2
+          }
+        ],
+        "rushedSpells": [
+          {
+            "name": "Jump Spell",
+            "current": 4,
+            "target": 5,
+            "missing": 1
+          },
+          {
+            "name": "Poison Spell",
+            "current": 5,
+            "target": 9,
+            "missing": 4
+          },
+          {
+            "name": "Haste Spell",
+            "current": 3,
+            "target": 5,
+            "missing": 2
+          },
+          {
+            "name": "Skeleton Spell",
+            "current": 5,
+            "target": 8,
+            "missing": 3
+          },
+          {
+            "name": "Bat Spell",
+            "current": 5,
+            "target": 6,
+            "missing": 1
+          },
+          {
+            "name": "Overgrowth Spell",
+            "current": 1,
+            "target": 3,
+            "missing": 2
+          },
+          {
+            "name": "Ice Block Spell",
+            "current": 1,
+            "target": 3,
+            "missing": 2
           }
         ]
       },
@@ -52778,1150 +54163,6 @@
       }
     },
     {
-      "tag": "#Y0LJY82Q8",
-      "name": "kenji2.0",
-      "townHallLevel": 14,
-      "townHallWeaponLevel": 1,
-      "expLevel": 180,
-      "trophies": 0,
-      "bestTrophies": 3671,
-      "warStars": 495,
-      "attackWins": 0,
-      "defenseWins": 0,
-      "builderHallLevel": 9,
-      "builderBaseTrophies": 2690,
-      "bestBuilderBaseTrophies": 2994,
-      "role": "member",
-      "warPreference": "out",
-      "donations": 0,
-      "donationsReceived": 78,
-      "clanCapitalContributions": 925571,
-      "clan": {
-        "tag": "#2J28LL2VU",
-        "name": "Zwegerneet",
-        "clanLevel": 15,
-        "badgeUrls": {
-          "small": "https://api-assets.clashofclans.com/badges/70/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png",
-          "large": "https://api-assets.clashofclans.com/badges/512/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png",
-          "medium": "https://api-assets.clashofclans.com/badges/200/NWKIG_px_2DRMZazATAtEPHXzhU4sMgnJndQJ6I8_Js.png"
-        }
-      },
-      "league": null,
-      "leagueTier": {
-        "id": 105000018,
-        "name": "Witch League 18",
-        "iconUrls": {
-          "small": "https://api-assets.clashofclans.com/leaguetiers/125/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png",
-          "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
-        }
-      },
-      "builderBaseLeague": {
-        "id": 44000023,
-        "name": "Iron League III"
-      },
-      "achievements": [
-        {
-          "name": "Bigger Coffers",
-          "stars": 3,
-          "value": 15,
-          "target": 10,
-          "info": "Upgrade a Gold Storage to level 10",
-          "completionInfo": "Highest Gold Storage level: 15",
-          "village": "home"
-        },
-        {
-          "name": "Get those Goblins!",
-          "stars": 3,
-          "value": 198,
-          "target": 150,
-          "info": "Win 150 Stars on the Campaign Map",
-          "completionInfo": "Stars in Campaign Map: 198",
-          "village": "home"
-        },
-        {
-          "name": "Bigger & Better",
-          "stars": 3,
-          "value": 14,
-          "target": 8,
-          "info": "Upgrade Town Hall to level 8",
-          "completionInfo": "Current Town Hall level: 14",
-          "village": "home"
-        },
-        {
-          "name": "Nice and Tidy",
-          "stars": 3,
-          "value": 8226,
-          "target": 500,
-          "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 8226",
-          "village": "home"
-        },
-        {
-          "name": "Discover New Troops",
-          "stars": 3,
-          "value": 1,
-          "target": 1,
-          "info": "Unlock Dragon in the Barracks",
-          "completionInfo": null,
-          "village": "home"
-        },
-        {
-          "name": "Gold Grab",
-          "stars": 3,
-          "value": 957119825,
-          "target": 100000000,
-          "info": "Steal 100000000 Gold",
-          "completionInfo": "Total Gold looted: 957119825",
-          "village": "home"
-        },
-        {
-          "name": "Elixir Escapade",
-          "stars": 3,
-          "value": 1038890069,
-          "target": 100000000,
-          "info": "Steal 100000000 elixir",
-          "completionInfo": "Total Elixir looted: 1038890069",
-          "village": "home"
-        },
-        {
-          "name": "Sweet Victory!",
-          "stars": 3,
-          "value": 3671,
-          "target": 1250,
-          "info": "Achieve a total of 1250 trophies in Multiplayer battles",
-          "completionInfo": "Trophy record: 3671",
-          "village": "home"
-        },
-        {
-          "name": "Empire Builder",
-          "stars": 3,
-          "value": 10,
-          "target": 4,
-          "info": "Upgrade Clan Castle to level 4",
-          "completionInfo": "Current Clan Castle level: 10",
-          "village": "home"
-        },
-        {
-          "name": "Wall Buster",
-          "stars": 3,
-          "value": 28831,
-          "target": 2000,
-          "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 28831",
-          "village": "home"
-        },
-        {
-          "name": "Humiliator",
-          "stars": 2,
-          "value": 1319,
-          "target": 2000,
-          "info": "Destroy 2000 Town Halls in Multiplayer battles",
-          "completionInfo": "Total Town Halls destroyed: 1319",
-          "village": "home"
-        },
-        {
-          "name": "Union Buster",
-          "stars": 3,
-          "value": 7043,
-          "target": 2500,
-          "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 7043",
-          "village": "home"
-        },
-        {
-          "name": "Conqueror",
-          "stars": 2,
-          "value": 1871,
-          "target": 5000,
-          "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 1871",
-          "village": "home"
-        },
-        {
-          "name": "Unbreakable",
-          "stars": 3,
-          "value": 529,
-          "target": 500,
-          "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 529",
-          "village": "home"
-        },
-        {
-          "name": "Friend in Need",
-          "stars": 2,
-          "value": 22995,
-          "target": 25000,
-          "info": "Donate 25000 capacity worth of reinforcements to Clanmates",
-          "completionInfo": "Total capacity donated: 22995",
-          "village": "home"
-        },
-        {
-          "name": "Mortar Mauler",
-          "stars": 3,
-          "value": 5949,
-          "target": 5000,
-          "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 5949",
-          "village": "home"
-        },
-        {
-          "name": "Heroic Heist",
-          "stars": 3,
-          "value": 9977512,
-          "target": 1000000,
-          "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 9977512",
-          "village": "home"
-        },
-        {
-          "name": "League All-Star",
-          "stars": 3,
-          "value": 17,
-          "target": 1,
-          "info": "Become a Champion!",
-          "completionInfo": null,
-          "village": "home"
-        },
-        {
-          "name": "X-Bow Exterminator",
-          "stars": 3,
-          "value": 4356,
-          "target": 2500,
-          "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 4356",
-          "village": "home"
-        },
-        {
-          "name": "Firefighter",
-          "stars": 2,
-          "value": 2678,
-          "target": 5000,
-          "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 2678",
-          "village": "home"
-        },
-        {
-          "name": "War Hero",
-          "stars": 2,
-          "value": 495,
-          "target": 1000,
-          "info": "Score 1000 Stars for your clan in Clan War battles",
-          "completionInfo": "Total Stars scored for clan in Clan War battles: 495",
-          "village": "home"
-        },
-        {
-          "name": "Clan War Wealth",
-          "stars": 3,
-          "value": 626559085,
-          "target": 100000000,
-          "info": "Collect 100000000 Gold from the Clan Castle",
-          "completionInfo": "Total Gold collected in Clan War bonuses: 626559085",
-          "village": "home"
-        },
-        {
-          "name": "Anti-Artillery",
-          "stars": 2,
-          "value": 969,
-          "target": 2000,
-          "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
-          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 969",
-          "village": "home"
-        },
-        {
-          "name": "Sharing is caring",
-          "stars": 1,
-          "value": 1161,
-          "target": 2000,
-          "info": "Donate 2000 Spell storage capacity worth of Spells",
-          "completionInfo": "Total Spell capacity donated: 1161",
-          "village": "home"
-        },
-        {
-          "name": "Keep Your Account Safe!",
-          "stars": 0,
-          "value": 0,
-          "target": 1,
-          "info": "Protect your Village by connecting to a social network",
-          "completionInfo": "Completed!",
-          "village": "home"
-        },
-        {
-          "name": "Master Engineering",
-          "stars": 3,
-          "value": 9,
-          "target": 8,
-          "info": "Upgrade Builder Hall to level 8",
-          "completionInfo": "Current Builder Hall level: 9",
-          "village": "builderBase"
-        },
-        {
-          "name": "Next Generation Model",
-          "stars": 3,
-          "value": 1,
-          "target": 1,
-          "info": "Unlock Power P.E.K.K.A in the Builder Barracks",
-          "completionInfo": null,
-          "village": "builderBase"
-        },
-        {
-          "name": "Un-Build It",
-          "stars": 2,
-          "value": 724,
-          "target": 2000,
-          "info": "Destroy 2000 Builder Halls in Builder Battles",
-          "completionInfo": "Total Builder Halls destroyed: 724",
-          "village": "builderBase"
-        },
-        {
-          "name": "Champion Builder",
-          "stars": 2,
-          "value": 2994,
-          "target": 3000,
-          "info": "Achieve a total of 3000 trophies in Builder Battles",
-          "completionInfo": "Builder Trophy record: 2994",
-          "village": "builderBase"
-        },
-        {
-          "name": "High Gear",
-          "stars": 3,
-          "value": 3,
-          "target": 3,
-          "info": "Gear Up 3 buildings using the Master Builder",
-          "completionInfo": "Total buildings geared up: 3",
-          "village": "builderBase"
-        },
-        {
-          "name": "Hidden Treasures",
-          "stars": 3,
-          "value": 1,
-          "target": 1,
-          "info": "Rebuild Battle Machine",
-          "completionInfo": null,
-          "village": "builderBase"
-        },
-        {
-          "name": "Games Champion",
-          "stars": 1,
-          "value": 39050,
-          "target": 50000,
-          "info": "Earn 50000 points in Clan Games",
-          "completionInfo": "Total Clan Games points: 39050",
-          "village": "home"
-        },
-        {
-          "name": "Dragon Slayer",
-          "stars": 0,
-          "value": 0,
-          "target": 1,
-          "info": "Slay the Giant Dragon on the Campaign Map",
-          "completionInfo": null,
-          "village": "home"
-        },
-        {
-          "name": "War League Legend",
-          "stars": 2,
-          "value": 186,
-          "target": 250,
-          "info": "Score 250 Stars for your clan in War League battles",
-          "completionInfo": "Total Stars scored for clan in War League battles: 186",
-          "village": "home"
-        },
-        {
-          "name": "Keep Your Account Safe!",
-          "stars": 0,
-          "value": 0,
-          "target": 1,
-          "info": "Connect your account to Supercell ID for safe keeping.",
-          "completionInfo": "Completed!",
-          "village": "home"
-        },
-        {
-          "name": "Well Seasoned",
-          "stars": 3,
-          "value": 97780,
-          "target": 50000,
-          "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 97780",
-          "village": "home"
-        },
-        {
-          "name": "Shattered and Scattered",
-          "stars": 2,
-          "value": 884,
-          "target": 4000,
-          "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 884",
-          "village": "home"
-        },
-        {
-          "name": "Not So Easy This Time",
-          "stars": 2,
-          "value": 761,
-          "target": 2000,
-          "info": "Destroy 2000 weaponized Town Halls in Multiplayer battles",
-          "completionInfo": "Weaponized Town Halls destroyed: 761",
-          "village": "home"
-        },
-        {
-          "name": "Bust This!",
-          "stars": 2,
-          "value": 468,
-          "target": 2500,
-          "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 468",
-          "village": "home"
-        },
-        {
-          "name": "Superb Work",
-          "stars": 2,
-          "value": 189,
-          "target": 250,
-          "info": "Boost a Super Troop 250 times",
-          "completionInfo": "Total times Super Troops boosted: 189",
-          "village": "home"
-        },
-        {
-          "name": "Siege Sharer",
-          "stars": 1,
-          "value": 83,
-          "target": 1000,
-          "info": "Donate 1000 Siege Machines",
-          "completionInfo": "Total Siege Machines donated: 83",
-          "village": "home"
-        },
-        {
-          "name": "Aggressive Capitalism",
-          "stars": 2,
-          "value": 473735,
-          "target": 1000000,
-          "info": "Loot 1000000 Capital Gold during Raid attacks",
-          "completionInfo": "Total Capital Gold looted: 473735",
-          "village": "clanCapital"
-        },
-        {
-          "name": "Most Valuable Clanmate",
-          "stars": 2,
-          "value": 925571,
-          "target": 2000000,
-          "info": "Contribute 2000000 Capital Gold to upgrades in the Clan Capital",
-          "completionInfo": "Total Capital Gold contributed: 925571",
-          "village": "clanCapital"
-        },
-        {
-          "name": "Counterspell",
-          "stars": 1,
-          "value": 85,
-          "target": 400,
-          "info": "Destroy 400 Spell Towers in Multiplayer Battles",
-          "completionInfo": "Total Spell Towers Destroyed: 85",
-          "village": "home"
-        },
-        {
-          "name": "Monolith Masher",
-          "stars": 1,
-          "value": 37,
-          "target": 200,
-          "info": "Destroy 200 Monoliths in Multiplayer Battles",
-          "completionInfo": "Total Monoliths Destroyed: 37",
-          "village": "home"
-        },
-        {
-          "name": "Ungrateful Child",
-          "stars": 0,
-          "value": 0,
-          "target": 1,
-          "info": "Defeat M.O.M.M.A on the Campaign Map",
-          "completionInfo": null,
-          "village": "home"
-        },
-        {
-          "name": "Supercharger",
-          "stars": 0,
-          "value": 0,
-          "target": 5,
-          "info": "Supercharge buildings 5 times",
-          "completionInfo": "Total Supercharges: 0",
-          "village": "home"
-        },
-        {
-          "name": "Multi-Archer Tower Terminator",
-          "stars": 0,
-          "value": 1,
-          "target": 50,
-          "info": "Destroy 50 Multi-Archer Towers in Multiplayer Battles",
-          "completionInfo": "Total Multi-Archer Towers Destroyed: 1",
-          "village": "home"
-        },
-        {
-          "name": "Ricochet Cannon Crusher",
-          "stars": 0,
-          "value": 1,
-          "target": 50,
-          "info": "Destroy 50 Ricochet Cannons in Multiplayer Battles",
-          "completionInfo": "Total Ricochet Cannons Destroyed: 1",
-          "village": "home"
-        },
-        {
-          "name": "Firespitter Finisher",
-          "stars": 0,
-          "value": 0,
-          "target": 40,
-          "info": "Destroy 40 Firespitters in Multiplayer Battles",
-          "completionInfo": "Total Firespitters Destroyed: 0",
-          "village": "home"
-        },
-        {
-          "name": "Multi-Gear Tower Trampler",
-          "stars": 0,
-          "value": 0,
-          "target": 20,
-          "info": "Destroy 20 Multi-Gear Towers in Multiplayer Battles",
-          "completionInfo": "Total Multi-Gear Towers Destroyed: 0",
-          "village": "home"
-        },
-        {
-          "name": "Crafting Connoisseur",
-          "stars": 1,
-          "value": 15,
-          "target": 25,
-          "info": "Upgrade Crafted Defenses 25 times",
-          "completionInfo": "Total Crafted Defense upgrades: 15",
-          "village": "home"
-        },
-        {
-          "name": "Crafter’s Nightmare",
-          "stars": 1,
-          "value": 62,
-          "target": 200,
-          "info": "Destroy 200 Crafted Defenses in Multiplayer Battles",
-          "completionInfo": "Total Crafted Defenses Destroyed: 62",
-          "village": "home"
-        },
-        {
-          "name": "League Follower",
-          "stars": 3,
-          "value": 21,
-          "target": 12,
-          "info": "Reach League Wizard 12",
-          "completionInfo": null,
-          "village": "home"
-        }
-      ],
-      "labels": [
-        {
-          "id": 57000008,
-          "name": "Active Donator",
-          "iconUrls": {
-            "small": "https://api-assets.clashofclans.com/labels/64/MvL0LDt0yv9AI-Vevpu8yE5NAJUIV05Ofpsr4IfGRxQ.png",
-            "medium": "https://api-assets.clashofclans.com/labels/128/MvL0LDt0yv9AI-Vevpu8yE5NAJUIV05Ofpsr4IfGRxQ.png"
-          }
-        },
-        {
-          "id": 57000009,
-          "name": "Active Daily",
-          "iconUrls": {
-            "small": "https://api-assets.clashofclans.com/labels/64/mcWhk0ii7CyjiiHOidhRofrSulpVrxjDu24cQtGCQbE.png",
-            "medium": "https://api-assets.clashofclans.com/labels/128/mcWhk0ii7CyjiiHOidhRofrSulpVrxjDu24cQtGCQbE.png"
-          }
-        },
-        {
-          "id": 57000010,
-          "name": "Hungry Learner",
-          "iconUrls": {
-            "small": "https://api-assets.clashofclans.com/labels/64/jEvZf9PnfPaqYh2PMLBoJfB1BoBpomerqmsYWDYisKY.png",
-            "medium": "https://api-assets.clashofclans.com/labels/128/jEvZf9PnfPaqYh2PMLBoJfB1BoBpomerqmsYWDYisKY.png"
-          }
-        }
-      ],
-      "heroes": [
-        {
-          "name": "Barbarian King",
-          "level": 75,
-          "maxLevel": 85
-        },
-        {
-          "name": "Archer Queen",
-          "level": 78,
-          "maxLevel": 85
-        },
-        {
-          "name": "Grand Warden",
-          "level": 55,
-          "maxLevel": 60
-        },
-        {
-          "name": "Royal Champion",
-          "level": 30,
-          "maxLevel": 30
-        },
-        {
-          "name": "Minion Prince",
-          "level": 52,
-          "maxLevel": 60
-        }
-      ],
-      "troops": [
-        {
-          "name": "Barbarian",
-          "level": 10,
-          "maxLevel": 10
-        },
-        {
-          "name": "Archer",
-          "level": 10,
-          "maxLevel": 10
-        },
-        {
-          "name": "Goblin",
-          "level": 8,
-          "maxLevel": 8
-        },
-        {
-          "name": "Giant",
-          "level": 10,
-          "maxLevel": 10
-        },
-        {
-          "name": "Wall Breaker",
-          "level": 10,
-          "maxLevel": 10
-        },
-        {
-          "name": "Balloon",
-          "level": 10,
-          "maxLevel": 10
-        },
-        {
-          "name": "Wizard",
-          "level": 10,
-          "maxLevel": 10
-        },
-        {
-          "name": "Healer",
-          "level": 7,
-          "maxLevel": 7
-        },
-        {
-          "name": "Dragon",
-          "level": 9,
-          "maxLevel": 9
-        },
-        {
-          "name": "P.E.K.K.A",
-          "level": 9,
-          "maxLevel": 9
-        },
-        {
-          "name": "Minion",
-          "level": 9,
-          "maxLevel": 10
-        },
-        {
-          "name": "Hog Rider",
-          "level": 10,
-          "maxLevel": 11
-        },
-        {
-          "name": "Valkyrie",
-          "level": 8,
-          "maxLevel": 9
-        },
-        {
-          "name": "Golem",
-          "level": 10,
-          "maxLevel": 11
-        },
-        {
-          "name": "Witch",
-          "level": 5,
-          "maxLevel": 5
-        },
-        {
-          "name": "Lava Hound",
-          "level": 6,
-          "maxLevel": 6
-        },
-        {
-          "name": "Bowler",
-          "level": 5,
-          "maxLevel": 6
-        },
-        {
-          "name": "Baby Dragon",
-          "level": 8,
-          "maxLevel": 8
-        },
-        {
-          "name": "Miner",
-          "level": 8,
-          "maxLevel": 8
-        },
-        {
-          "name": "Super Barbarian",
-          "level": 1,
-          "maxLevel": 9
-        },
-        {
-          "name": "Super Archer",
-          "level": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Super Wall Breaker",
-          "level": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Super Giant",
-          "level": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Wall Wrecker",
-          "level": 4,
-          "maxLevel": 6
-        },
-        {
-          "name": "Battle Blimp",
-          "level": 4,
-          "maxLevel": 6
-        },
-        {
-          "name": "Yeti",
-          "level": 4,
-          "maxLevel": 4
-        },
-        {
-          "name": "Sneaky Goblin",
-          "level": 1,
-          "maxLevel": 6
-        },
-        {
-          "name": "Super Miner",
-          "level": 1,
-          "maxLevel": 12
-        },
-        {
-          "name": "Rocket Balloon",
-          "level": 1,
-          "maxLevel": 9
-        },
-        {
-          "name": "Ice Golem",
-          "level": 6,
-          "maxLevel": 6
-        },
-        {
-          "name": "Electro Dragon",
-          "level": 5,
-          "maxLevel": 5
-        },
-        {
-          "name": "Stone Slammer",
-          "level": 4,
-          "maxLevel": 6
-        },
-        {
-          "name": "Inferno Dragon",
-          "level": 1,
-          "maxLevel": 12
-        },
-        {
-          "name": "Super Valkyrie",
-          "level": 1,
-          "maxLevel": 12
-        },
-        {
-          "name": "Dragon Rider",
-          "level": 2,
-          "maxLevel": 3
-        },
-        {
-          "name": "Super Witch",
-          "level": 1,
-          "maxLevel": 8
-        },
-        {
-          "name": "Siege Barracks",
-          "level": 4,
-          "maxLevel": 6
-        },
-        {
-          "name": "Ice Hound",
-          "level": 1,
-          "maxLevel": 8
-        },
-        {
-          "name": "Super Bowler",
-          "level": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Super Dragon",
-          "level": 1,
-          "maxLevel": 11
-        },
-        {
-          "name": "Headhunter",
-          "level": 3,
-          "maxLevel": 3
-        },
-        {
-          "name": "Super Wizard",
-          "level": 1,
-          "maxLevel": 10
-        },
-        {
-          "name": "Super Minion",
-          "level": 1,
-          "maxLevel": 11
-        },
-        {
-          "name": "Log Launcher",
-          "level": 4,
-          "maxLevel": 6
-        },
-        {
-          "name": "Flame Flinger",
-          "level": 4,
-          "maxLevel": 5
-        },
-        {
-          "name": "Electro Titan",
-          "level": 2,
-          "maxLevel": 2
-        },
-        {
-          "name": "Apprentice Warden",
-          "level": 3,
-          "maxLevel": 3
-        },
-        {
-          "name": "Super Hog Rider",
-          "level": 1,
-          "maxLevel": 12
-        },
-        {
-          "name": "Druid",
-          "level": 1,
-          "maxLevel": 2
-        },
-        {
-          "name": "Super Yeti",
-          "level": 1,
-          "maxLevel": 8
-        },
-        {
-          "name": "L.A.S.S.I",
-          "level": 5,
-          "maxLevel": 15
-        },
-        {
-          "name": "Mighty Yak",
-          "level": 8,
-          "maxLevel": 15
-        },
-        {
-          "name": "Electro Owl",
-          "level": 3,
-          "maxLevel": 15
-        },
-        {
-          "name": "Unicorn",
-          "level": 9,
-          "maxLevel": 15
-        }
-      ],
-      "spells": [
-        {
-          "name": "Lightning Spell",
-          "level": 9,
-          "maxLevel": 9
-        },
-        {
-          "name": "Healing Spell",
-          "level": 8,
-          "maxLevel": 8
-        },
-        {
-          "name": "Rage Spell",
-          "level": 6,
-          "maxLevel": 6
-        },
-        {
-          "name": "Jump Spell",
-          "level": 4,
-          "maxLevel": 4
-        },
-        {
-          "name": "Freeze Spell",
-          "level": 7,
-          "maxLevel": 7
-        },
-        {
-          "name": "Poison Spell",
-          "level": 7,
-          "maxLevel": 8
-        },
-        {
-          "name": "Earthquake Spell",
-          "level": 5,
-          "maxLevel": 6
-        },
-        {
-          "name": "Haste Spell",
-          "level": 5,
-          "maxLevel": 5
-        },
-        {
-          "name": "Clone Spell",
-          "level": 6,
-          "maxLevel": 7
-        },
-        {
-          "name": "Skeleton Spell",
-          "level": 7,
-          "maxLevel": 7
-        },
-        {
-          "name": "Bat Spell",
-          "level": 5,
-          "maxLevel": 5
-        },
-        {
-          "name": "Invisibility Spell",
-          "level": 4,
-          "maxLevel": 4
-        },
-        {
-          "name": "Recall Spell",
-          "level": 2,
-          "maxLevel": 3
-        },
-        {
-          "name": "Overgrowth Spell",
-          "level": 2,
-          "maxLevel": 3
-        },
-        {
-          "name": "Ice Block Spell",
-          "level": 2,
-          "maxLevel": 2
-        }
-      ],
-      "heroEquipment": [
-        {
-          "name": "Giant Gauntlet",
-          "level": 18,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Rocket Spear",
-          "level": 18,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Spiky Ball",
-          "level": 20,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Frozen Arrow",
-          "level": 12,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Monolith Arrow",
-          "level": 1,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Fireball",
-          "level": 14,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Magic Mirror",
-          "level": 13,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Lavaloon Puppet",
-          "level": 1,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Action Figure",
-          "level": 1,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Meteor Staff",
-          "level": 13,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Rocket Backpack",
-          "level": 1,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Revenge Deck",
-          "level": 1,
-          "maxLevel": 27,
-          "village": "home"
-        },
-        {
-          "name": "Barbarian Puppet",
-          "level": 9,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Rage Vial",
-          "level": 16,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Archer Puppet",
-          "level": 10,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Invisibility Vial",
-          "level": 15,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Eternal Tome",
-          "level": 18,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Life Gem",
-          "level": 11,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Seeking Shield",
-          "level": 14,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Royal Gem",
-          "level": 14,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Earthquake Boots",
-          "level": 16,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Giant Arrow",
-          "level": 18,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Healer Puppet",
-          "level": 18,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Rage Gem",
-          "level": 17,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Healing Tome",
-          "level": 5,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Henchmen Puppet",
-          "level": 11,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Dark Orb",
-          "level": 11,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Metal Pants",
-          "level": 2,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Noble Iron",
-          "level": 2,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Hog Rider Puppet",
-          "level": 1,
-          "maxLevel": 18,
-          "village": "home"
-        },
-        {
-          "name": "Vampstache",
-          "level": 1,
-          "maxLevel": 18,
-          "village": "home"
-        }
-      ],
-      "rushAnalysis": {
-        "isRushed": false,
-        "rushScore": 0,
-        "rushPercentage": 0.0,
-        "status": "✅ Maxed",
-        "heroScore": 0,
-        "troopScore": 0,
-        "spellScore": 0,
-        "totalMissingHeroLevels": 0,
-        "rushedHeroes": [],
-        "rushedTroops": [],
-        "rushedSpells": []
-      },
-      "warStats": {
-        "totalAttacks": 0,
-        "totalStars": 0,
-        "totalDestruction": 0,
-        "threeStars": 0,
-        "twoStars": 0,
-        "oneStars": 0,
-        "zeroStars": 0,
-        "warsParticipated": 0
-      }
-    },
-    {
       "tag": "#YG8Q92GJ9",
       "name": "Hout Weylen",
       "townHallLevel": 12,
@@ -56560,12 +56801,12 @@
       "heroes": [
         {
           "name": "Barbarian King",
-          "level": 64,
+          "level": 65,
           "maxLevel": 75
         },
         {
           "name": "Archer Queen",
-          "level": 74,
+          "level": 75,
           "maxLevel": 75
         },
         {
@@ -57047,21 +57288,14 @@
       ],
       "rushAnalysis": {
         "isRushed": false,
-        "rushScore": 7.4,
-        "rushPercentage": 5.1,
+        "rushScore": 6.4,
+        "rushPercentage": 4.9,
         "status": "🟢 Slightly Behind",
-        "heroScore": 1.0,
+        "heroScore": 0,
         "troopScore": 3.6,
         "spellScore": 2.8,
-        "totalMissingHeroLevels": 1,
-        "rushedHeroes": [
-          {
-            "name": "Barbarian King",
-            "current": 64,
-            "target": 65,
-            "missing": 1
-          }
-        ],
+        "totalMissingHeroLevels": 0,
+        "rushedHeroes": [],
         "rushedTroops": [
           {
             "name": "Minion",
@@ -60287,7 +60521,7 @@
       "name": "lever",
       "townHallLevel": 10,
       "townHallWeaponLevel": null,
-      "expLevel": 62,
+      "expLevel": 63,
       "trophies": 127,
       "bestTrophies": 289,
       "warStars": 0,
@@ -60463,10 +60697,10 @@
         {
           "name": "Mortar Mauler",
           "stars": 2,
-          "value": 1007,
+          "value": 1009,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 1007",
+          "completionInfo": "Total Mortars destroyed: 1009",
           "village": "home"
         },
         {
@@ -60643,10 +60877,10 @@
         {
           "name": "Well Seasoned",
           "stars": 2,
-          "value": 27430,
+          "value": 27480,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 27430",
+          "completionInfo": "Total Season Challenges points: 27480",
           "village": "home"
         },
         {
@@ -60816,7 +61050,7 @@
       "heroes": [
         {
           "name": "Barbarian King",
-          "level": 28,
+          "level": 29,
           "maxLevel": 40
         },
         {
@@ -61152,19 +61386,19 @@
       ],
       "rushAnalysis": {
         "isRushed": false,
-        "rushScore": 6.9,
-        "rushPercentage": 10.8,
+        "rushScore": 5.9,
+        "rushPercentage": 10.2,
         "status": "🟢 Slightly Behind",
-        "heroScore": 2.0,
+        "heroScore": 1.0,
         "troopScore": 4.5,
         "spellScore": 0.4,
-        "totalMissingHeroLevels": 2,
+        "totalMissingHeroLevels": 1,
         "rushedHeroes": [
           {
             "name": "Barbarian King",
-            "current": 28,
+            "current": 29,
             "target": 30,
-            "missing": 2
+            "missing": 1
           }
         ],
         "rushedTroops": [
@@ -62068,7 +62302,7 @@
         },
         {
           "name": "Electro Owl",
-          "level": 1,
+          "level": 2,
           "maxLevel": 15
         }
       ],
@@ -63832,10 +64066,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 6389,
+          "value": 6390,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 6389",
+          "completionInfo": "Total obstacles removed: 6390",
           "village": "home"
         },
         {
@@ -65912,10 +66146,10 @@
       "state": "ongoing",
       "startTime": "20261113T070000.000Z",
       "endTime": "20261116T070000.000Z",
-      "capitalTotalLoot": 113095,
-      "raidsCompleted": 1,
-      "totalAttacks": 44,
-      "enemyDistrictsDestroyed": 14,
+      "capitalTotalLoot": 131791,
+      "raidsCompleted": 2,
+      "totalAttacks": 50,
+      "enemyDistrictsDestroyed": 16,
       "offensiveReward": 0,
       "defensiveReward": 0,
       "members": [
@@ -65982,6 +66216,14 @@
           "attackLimit": 5,
           "bonusAttackLimit": 1,
           "capitalResourcesLooted": 10993
+        },
+        {
+          "tag": "#9JQLPLCLV",
+          "name": "henk",
+          "attacks": 6,
+          "attackLimit": 5,
+          "bonusAttackLimit": 1,
+          "capitalResourcesLooted": 18696
         }
       ],
       "attackLog": [
@@ -66301,18 +66543,52 @@
               "medium": "https://api-assets.clashofclans.com/badges/200/imY86N7RGm-NKM1HjcZAAsRd8JDmQt36dewycxHyyck.png"
             }
           },
-          "attackCount": 19,
+          "attackCount": 23,
           "districtCount": 7,
-          "districtsDestroyed": 6,
+          "districtsDestroyed": 7,
           "districts": [
             {
               "id": 70000000,
               "name": "Capital Peak",
               "districtHallLevel": 7,
-              "destructionPercent": 0,
-              "stars": 0,
-              "attackCount": 0,
-              "totalLooted": 0
+              "destructionPercent": 100,
+              "stars": 3,
+              "attackCount": 4,
+              "totalLooted": 10558,
+              "attacks": [
+                {
+                  "attacker": {
+                    "tag": "#9JQLPLCLV",
+                    "name": "henk"
+                  },
+                  "destructionPercent": 100,
+                  "stars": 3
+                },
+                {
+                  "attacker": {
+                    "tag": "#9JQLPLCLV",
+                    "name": "henk"
+                  },
+                  "destructionPercent": 95,
+                  "stars": 2
+                },
+                {
+                  "attacker": {
+                    "tag": "#9JQLPLCLV",
+                    "name": "henk"
+                  },
+                  "destructionPercent": 75,
+                  "stars": 1
+                },
+                {
+                  "attacker": {
+                    "tag": "#9JQLPLCLV",
+                    "name": "henk"
+                  },
+                  "destructionPercent": 58,
+                  "stars": 1
+                }
+              ]
             },
             {
               "id": 70000001,
@@ -66531,6 +66807,113 @@
                   "stars": 2
                 }
               ]
+            }
+          ]
+        },
+        {
+          "defender": {
+            "tag": "#28PGC92CY",
+            "name": "BLUE ARMY",
+            "level": 18,
+            "badgeUrls": {
+              "small": "https://api-assets.clashofclans.com/badges/70/lJF3ERKUeFnFwy54N6COde1xxNAQd5eGn4GeAgokncc.png",
+              "large": "https://api-assets.clashofclans.com/badges/512/lJF3ERKUeFnFwy54N6COde1xxNAQd5eGn4GeAgokncc.png",
+              "medium": "https://api-assets.clashofclans.com/badges/200/lJF3ERKUeFnFwy54N6COde1xxNAQd5eGn4GeAgokncc.png"
+            }
+          },
+          "attackCount": 2,
+          "districtCount": 8,
+          "districtsDestroyed": 1,
+          "districts": [
+            {
+              "id": 70000000,
+              "name": "Capital Peak",
+              "districtHallLevel": 8,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
+            },
+            {
+              "id": 70000001,
+              "name": "Barbarian Camp",
+              "districtHallLevel": 4,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
+            },
+            {
+              "id": 70000002,
+              "name": "Wizard Valley",
+              "districtHallLevel": 4,
+              "destructionPercent": 100,
+              "stars": 3,
+              "attackCount": 2,
+              "totalLooted": 8138,
+              "attacks": [
+                {
+                  "attacker": {
+                    "tag": "#9JQLPLCLV",
+                    "name": "henk"
+                  },
+                  "destructionPercent": 100,
+                  "stars": 3
+                },
+                {
+                  "attacker": {
+                    "tag": "#9JQLPLCLV",
+                    "name": "henk"
+                  },
+                  "destructionPercent": 48,
+                  "stars": 1
+                }
+              ]
+            },
+            {
+              "id": 70000003,
+              "name": "Balloon Lagoon",
+              "districtHallLevel": 4,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
+            },
+            {
+              "id": 70000004,
+              "name": "Builder's Workshop",
+              "districtHallLevel": 3,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
+            },
+            {
+              "id": 70000005,
+              "name": "Dragon Cliffs",
+              "districtHallLevel": 3,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
+            },
+            {
+              "id": 70000006,
+              "name": "Golem Quarry",
+              "districtHallLevel": 3,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
+            },
+            {
+              "id": 70000007,
+              "name": "Skeleton Park",
+              "districtHallLevel": 2,
+              "destructionPercent": 0,
+              "stars": 0,
+              "attackCount": 0,
+              "totalLooted": 0
             }
           ]
         }
@@ -73565,11 +73948,11 @@
         "wars_analyzed": 7,
         "total_attacks": 207,
         "total_stars": 551,
-        "recorded_date": "2026-11-13T23:17:08.202467+00:00",
+        "recorded_date": "2026-11-14T05:06:27.081453+00:00",
         "complete": true
       }
     },
-    "lastUpdated": "2026-11-13T23:17:08.864003+00:00"
+    "lastUpdated": "2026-11-14T05:06:27.438520+00:00"
   },
   "rushMethod": {
     "weights": {
@@ -77699,10 +78082,10 @@
     "thDistribution": {
       "18": 9,
       "17": 8,
-      "16": 13,
-      "15": 8,
+      "16": 15,
+      "15": 7,
       "13": 4,
-      "14": 4,
+      "14": 3,
       "12": 2,
       "10": 2
     },
@@ -77726,9 +78109,9 @@
       "P.E.K.K.A League 23": 1,
       "P.E.K.K.A League 22": 3,
       "Golem League 21": 1,
-      "Golem League 20": 2,
+      "Golem League 20": 3,
       "Golem League 19": 4,
-      "Witch League 18": 3,
+      "Witch League 18": 2,
       "Valkyrie League 14": 2,
       "Valkyrie League 13": 2,
       "Wizard League 10": 1,
@@ -77738,16 +78121,16 @@
     },
     "rushDistribution": {
       "Severely Rushed": 7,
-      "Rushed": 14,
-      "Moderately Rushed": 7,
-      "Slightly Behind": 14,
-      "Maxed": 8
+      "Rushed": 15,
+      "Moderately Rushed": 8,
+      "Slightly Behind": 13,
+      "Maxed": 7
     },
-    "totalWarStars": 37749,
+    "totalWarStars": 37864,
     "totalDonations": 26052,
-    "totalCapitalContributions": 45713516,
-    "averageTrophies": 264.96,
-    "rushedCount": 28,
-    "averageRushScore": 23.601999999999997
+    "totalCapitalContributions": 47020341,
+    "averageTrophies": 266.22,
+    "rushedCount": 30,
+    "averageRushScore": 24.218000000000004
   }
 }
