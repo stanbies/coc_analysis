@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-15T13:29:14.084128+00:00",
+  "last_updated": "2026-11-15T22:31:11.117187+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -125,14 +125,14 @@
       "name": "De Buikies",
       "tag": "#R080CV0Q",
       "current_th": 18,
-      "total_attacks": 11,
-      "total_stars": 30,
-      "total_destruction": 1069.0,
+      "total_attacks": 12,
+      "total_stars": 32,
+      "total_destruction": 1158.0,
       "three_stars": 8,
-      "two_stars": 3,
+      "two_stars": 4,
       "one_star": 0,
       "zero_stars": 0,
-      "wars_participated": 13,
+      "wars_participated": 14,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -244,6 +244,16 @@
           "defender_th": 18,
           "attacker_th": 18,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 89,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
@@ -259,7 +269,8 @@
         "cwl_2026-11-01_round4_#8LR2RPPQG",
         "cwl_2026-11-01_round5_#8LRP28CLJ",
         "cwl_2026-11-01_round6_#8LRLLUULL",
-        "cwl_2026-11-01_round7_#8LRGUL9QU"
+        "cwl_2026-11-01_round7_#8LRGUL9QU",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#JQ9GP2RP": {
@@ -525,14 +536,14 @@
       "name": "San Deere",
       "tag": "#LJRP8QPPC",
       "current_th": 17,
-      "total_attacks": 11,
-      "total_stars": 33,
-      "total_destruction": 1100.0,
-      "three_stars": 11,
+      "total_attacks": 13,
+      "total_stars": 36,
+      "total_destruction": 1214.0,
+      "three_stars": 12,
       "two_stars": 0,
       "one_star": 0,
-      "zero_stars": 0,
-      "wars_participated": 11,
+      "zero_stars": 1,
+      "wars_participated": 12,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -644,6 +655,26 @@
           "defender_th": 17,
           "attacker_th": 17,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 0,
+          "destruction": 14,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
@@ -657,7 +688,8 @@
         "cwl_2026-11-01_round4_#8LR2RPPQG",
         "cwl_2026-11-01_round5_#8LRP28CLJ",
         "cwl_2026-11-01_round6_#8LRLLUULL",
-        "cwl_2026-11-01_round7_#8LRGUL9QU"
+        "cwl_2026-11-01_round7_#8LRGUL9QU",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#8C8JU2LQV": {
@@ -1698,15 +1730,15 @@
     "#2LYLYGYU2": {
       "name": "stan",
       "tag": "#2LYLYGYU2",
-      "current_th": 17,
-      "total_attacks": 12,
-      "total_stars": 29,
-      "total_destruction": 1120.0,
-      "three_stars": 6,
+      "current_th": 18,
+      "total_attacks": 14,
+      "total_stars": 35,
+      "total_destruction": 1320.0,
+      "three_stars": 8,
       "two_stars": 5,
       "one_star": 1,
       "zero_stars": 0,
-      "wars_participated": 13,
+      "wars_participated": 14,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -1828,6 +1860,26 @@
           "defender_th": 17,
           "attacker_th": 17,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
@@ -1843,7 +1895,8 @@
         "cwl_2026-11-01_round4_#8LR2RPPQG",
         "cwl_2026-11-01_round5_#8LRP28CLJ",
         "cwl_2026-11-01_round6_#8LRLLUULL",
-        "cwl_2026-11-01_round7_#8LRGUL9QU"
+        "cwl_2026-11-01_round7_#8LRGUL9QU",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#PJJ099YG": {
@@ -2173,14 +2226,14 @@
       "name": "linters42O",
       "tag": "#LVRQRQCR",
       "current_th": 17,
-      "total_attacks": 11,
-      "total_stars": 30,
-      "total_destruction": 1075.0,
-      "three_stars": 8,
-      "two_stars": 3,
+      "total_attacks": 13,
+      "total_stars": 35,
+      "total_destruction": 1264.0,
+      "three_stars": 9,
+      "two_stars": 4,
       "one_star": 0,
       "zero_stars": 0,
-      "wars_participated": 9,
+      "wars_participated": 10,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -2292,6 +2345,26 @@
           "defender_th": 17,
           "attacker_th": 17,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 89,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 16,
+          "attacker_th": 17,
+          "hit_type": "↓ DOWN"
         }
       ],
       "war_ids": [
@@ -2303,7 +2376,8 @@
         "cwl_2026-11-01_round4_#8LR2RPPQG",
         "cwl_2026-11-01_round5_#8LRP28CLJ",
         "cwl_2026-11-01_round6_#8LRLLUULL",
-        "cwl_2026-11-01_round7_#8LRGUL9QU"
+        "cwl_2026-11-01_round7_#8LRGUL9QU",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#PC8JQL9PJ": {
@@ -2936,7 +3010,7 @@
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
-      "wars_participated": 2,
+      "wars_participated": 3,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -2952,7 +3026,8 @@
       ],
       "war_ids": [
         "#2J28LL2VU_#2RVUGVV8U_20261027T200352.000Z",
-        "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z"
+        "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#2LRURCY92": {
@@ -2966,7 +3041,7 @@
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
-      "wars_participated": 8,
+      "wars_participated": 9,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -3048,7 +3123,8 @@
         "cwl_2026-11-01_round4_#8LR2RPPQG",
         "cwl_2026-11-01_round5_#8LRP28CLJ",
         "cwl_2026-11-01_round6_#8LRLLUULL",
-        "cwl_2026-11-01_round7_#8LRGUL9QU"
+        "cwl_2026-11-01_round7_#8LRGUL9QU",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#P2CVRCG0": {
@@ -3246,15 +3322,15 @@
     "#PVYY9GJJP": {
       "name": "killer boy(d)",
       "tag": "#PVYY9GJJP",
-      "current_th": 15,
-      "total_attacks": 5,
-      "total_stars": 15,
-      "total_destruction": 500.0,
+      "current_th": 16,
+      "total_attacks": 7,
+      "total_stars": 19,
+      "total_destruction": 664.0,
       "three_stars": 5,
-      "two_stars": 0,
+      "two_stars": 2,
       "one_star": 0,
       "zero_stars": 0,
-      "wars_participated": 4,
+      "wars_participated": 5,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -3306,13 +3382,34 @@
           "defender_th": 16,
           "attacker_th": 15,
           "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 78,
+          "defender_th": 16,
+          "attacker_th": 16,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 86,
+          "defender_th": 17,
+          "attacker_th": 16,
+          "hit_type": "↑ UP"
         }
       ],
       "war_ids": [
         "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
         "cwl_2026-11-01_round5_#8LRP28CLJ",
         "cwl_2026-11-01_round6_#8LRLLUULL",
-        "cwl_2026-11-01_round7_#8LRGUL9QU"
+        "cwl_2026-11-01_round7_#8LRGUL9QU",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#2L98UV0U0": {
@@ -3628,15 +3725,15 @@
     "#L9JQPCPV8": {
       "name": "milanxxii",
       "tag": "#L9JQPCPV8",
-      "current_th": 12,
-      "total_attacks": 2,
-      "total_stars": 3,
-      "total_destruction": 129.0,
+      "current_th": 13,
+      "total_attacks": 3,
+      "total_stars": 5,
+      "total_destruction": 186.0,
       "three_stars": 0,
-      "two_stars": 1,
+      "two_stars": 2,
       "one_star": 1,
       "zero_stars": 0,
-      "wars_participated": 1,
+      "wars_participated": 2,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -3658,10 +3755,21 @@
           "defender_th": 13,
           "attacker_th": 12,
           "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 57,
+          "defender_th": 13,
+          "attacker_th": 13,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
-        "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z"
+        "#2J28LL2VU_#2QLCV9GYV_20261029T194614.000Z",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     },
     "#R2QPVCGJY": {
@@ -3875,15 +3983,15 @@
     "#9J0RPQ9C": {
       "name": "Cavaleiro-Alex",
       "tag": "#9J0RPQ9C",
-      "current_th": 15,
-      "total_attacks": 1,
-      "total_stars": 2,
-      "total_destruction": 67.0,
-      "three_stars": 0,
-      "two_stars": 1,
+      "current_th": 16,
+      "total_attacks": 3,
+      "total_stars": 7,
+      "total_destruction": 236.0,
+      "three_stars": 1,
+      "two_stars": 2,
       "one_star": 0,
       "zero_stars": 0,
-      "wars_participated": 1,
+      "wars_participated": 2,
       "cwl_seasons": 0,
       "attacks_history": [
         {
@@ -3895,10 +4003,70 @@
           "defender_th": 15,
           "attacker_th": 15,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 69,
+          "defender_th": 16,
+          "attacker_th": 16,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 15,
+          "attacker_th": 16,
+          "hit_type": "↓ DOWN"
         }
       ],
       "war_ids": [
-        "cwl_2026-11-01_round1_#8LGGVCPPJ"
+        "cwl_2026-11-01_round1_#8LGGVCPPJ",
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
+      ]
+    },
+    "#9JQLPLCLV": {
+      "name": "henk",
+      "tag": "#9JQLPLCLV",
+      "current_th": 16,
+      "total_attacks": 2,
+      "total_stars": 6,
+      "total_destruction": 200.0,
+      "three_stars": 2,
+      "two_stars": 0,
+      "one_star": 0,
+      "zero_stars": 0,
+      "wars_participated": 1,
+      "cwl_seasons": 0,
+      "attacks_history": [
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 16,
+          "attacker_th": 16,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 13,
+          "attacker_th": 16,
+          "hit_type": "↓ DOWN"
+        }
+      ],
+      "war_ids": [
+        "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z"
       ]
     }
   },
