@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T17:23:13.436699+00:00",
+  "lastUpdated": "2026-11-16T17:40:15.414112+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -14383,7 +14383,7 @@
       "bestTrophies": 2569,
       "warStars": 1308,
       "attackWins": 0,
-      "defenseWins": 0,
+      "defenseWins": 1,
       "builderHallLevel": 9,
       "builderBaseTrophies": 2675,
       "bestBuilderBaseTrophies": 2840,
@@ -14544,10 +14544,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 1259,
+          "value": 1260,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 1259",
+          "completionInfo": "Total defenses won: 1260",
           "village": "home"
         },
         {
@@ -18975,10 +18975,10 @@
         {
           "name": "Un-Build It",
           "stars": 2,
-          "value": 1624,
+          "value": 1625,
           "target": 2000,
           "info": "Destroy 2000 Builder Halls in Builder Battles",
-          "completionInfo": "Total Builder Halls destroyed: 1624",
+          "completionInfo": "Total Builder Halls destroyed: 1625",
           "village": "builderBase"
         },
         {
@@ -74405,7 +74405,7 @@
         "complete": true
       }
     },
-    "lastUpdated": "2026-11-16T17:23:13.431010+00:00"
+    "lastUpdated": "2026-11-16T17:40:15.409212+00:00"
   },
   "rushMethod": {
     "weights": {
