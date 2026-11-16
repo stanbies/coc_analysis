@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T14:13:11.762234+00:00",
+  "lastUpdated": "2026-11-16T14:54:42.438568+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -26,10 +26,10 @@
     },
     "requiredTrophies": 0,
     "warFrequency": "always",
-    "warWinStreak": 2,
+    "warWinStreak": 0,
     "warWins": 71,
     "warTies": 14,
-    "warLosses": 48,
+    "warLosses": 49,
     "isWarLogPublic": true,
     "warLeague": {
       "id": 48000013,
@@ -118,7 +118,7 @@
     {
       "tag": "#28VPLJQCY",
       "name": "Quinten",
-      "townHallLevel": 18,
+      "townHallLevel": 19,
       "townHallWeaponLevel": null,
       "expLevel": 248,
       "trophies": 0,
@@ -179,10 +179,10 @@
         {
           "name": "Bigger & Better",
           "stars": 3,
-          "value": 18,
+          "value": 19,
           "target": 8,
           "info": "Upgrade Town Hall to level 8",
-          "completionInfo": "Current Town Hall level: 18",
+          "completionInfo": "Current Town Hall level: 19",
           "village": "home"
         },
         {
@@ -476,10 +476,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 241100,
+          "value": 241130,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 241100",
+          "completionInfo": "Total Season Challenges points: 241130",
           "village": "home"
         },
         {
@@ -650,129 +650,129 @@
         {
           "name": "Barbarian King",
           "level": 105,
-          "maxLevel": 110
+          "maxLevel": 115
         },
         {
           "name": "Archer Queen",
           "level": 107,
-          "maxLevel": 110
+          "maxLevel": 115
         },
         {
           "name": "Grand Warden",
           "level": 84,
-          "maxLevel": 85
+          "maxLevel": 90
         },
         {
           "name": "Royal Champion",
           "level": 55,
-          "maxLevel": 55
+          "maxLevel": 60
         },
         {
           "name": "Minion Prince",
           "level": 72,
-          "maxLevel": 95
+          "maxLevel": 100
         },
         {
           "name": "Dragon Duke",
           "level": 25,
-          "maxLevel": 25
+          "maxLevel": 30
         }
       ],
       "troops": [
         {
           "name": "Barbarian",
           "level": 12,
-          "maxLevel": 13
+          "maxLevel": 14
         },
         {
           "name": "Archer",
           "level": 13,
-          "maxLevel": 14
+          "maxLevel": 15
         },
         {
           "name": "Goblin",
           "level": 9,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "Giant",
           "level": 13,
-          "maxLevel": 14
+          "maxLevel": 15
         },
         {
           "name": "Wall Breaker",
           "level": 14,
-          "maxLevel": 14
+          "maxLevel": 15
         },
         {
           "name": "Balloon",
           "level": 13,
-          "maxLevel": 13
+          "maxLevel": 14
         },
         {
           "name": "Wizard",
           "level": 12,
-          "maxLevel": 14
+          "maxLevel": 15
         },
         {
           "name": "Healer",
           "level": 11,
-          "maxLevel": 11
+          "maxLevel": 12
         },
         {
           "name": "Dragon",
           "level": 13,
-          "maxLevel": 13
+          "maxLevel": 14
         },
         {
           "name": "P.E.K.K.A",
           "level": 11,
-          "maxLevel": 13
+          "maxLevel": 14
         },
         {
           "name": "Minion",
           "level": 14,
-          "maxLevel": 14
+          "maxLevel": 15
         },
         {
           "name": "Hog Rider",
           "level": 13,
-          "maxLevel": 15
+          "maxLevel": 16
         },
         {
           "name": "Valkyrie",
           "level": 12,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Golem",
           "level": 13,
-          "maxLevel": 15
+          "maxLevel": 16
         },
         {
           "name": "Witch",
           "level": 7,
-          "maxLevel": 8
+          "maxLevel": 9
         },
         {
           "name": "Lava Hound",
           "level": 7,
-          "maxLevel": 8
+          "maxLevel": 9
         },
         {
           "name": "Bowler",
           "level": 9,
-          "maxLevel": 10
+          "maxLevel": 11
         },
         {
           "name": "Baby Dragon",
           "level": 12,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Miner",
           "level": 10,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Super Barbarian",
@@ -807,7 +807,7 @@
         {
           "name": "Yeti",
           "level": 8,
-          "maxLevel": 8
+          "maxLevel": 9
         },
         {
           "name": "Sneaky Goblin",
@@ -832,7 +832,7 @@
         {
           "name": "Electro Dragon",
           "level": 9,
-          "maxLevel": 9
+          "maxLevel": 10
         },
         {
           "name": "Stone Slammer",
@@ -852,7 +852,7 @@
         {
           "name": "Dragon Rider",
           "level": 6,
-          "maxLevel": 6
+          "maxLevel": 7
         },
         {
           "name": "Super Witch",
@@ -882,7 +882,7 @@
         {
           "name": "Headhunter",
           "level": 4,
-          "maxLevel": 4
+          "maxLevel": 5
         },
         {
           "name": "Super Wizard",
@@ -912,7 +912,7 @@
         {
           "name": "Electro Titan",
           "level": 5,
-          "maxLevel": 5
+          "maxLevel": 6
         },
         {
           "name": "Apprentice Warden",
@@ -927,22 +927,22 @@
         {
           "name": "Ruin Witch",
           "level": 4,
-          "maxLevel": 4
+          "maxLevel": 5
         },
         {
           "name": "Root Rider",
           "level": 4,
-          "maxLevel": 4
+          "maxLevel": 5
         },
         {
           "name": "Druid",
           "level": 4,
-          "maxLevel": 6
+          "maxLevel": 7
         },
         {
           "name": "Thrower",
           "level": 4,
-          "maxLevel": 4
+          "maxLevel": 5
         },
         {
           "name": "Troop Launcher",
@@ -962,7 +962,7 @@
         {
           "name": "Meteor Golem",
           "level": 3,
-          "maxLevel": 3
+          "maxLevel": 4
         },
         {
           "name": "Sky Wagon",
@@ -1034,12 +1034,12 @@
         {
           "name": "Lightning Spell",
           "level": 12,
-          "maxLevel": 13
+          "maxLevel": 14
         },
         {
           "name": "Healing Spell",
           "level": 11,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Rage Spell",
@@ -1059,7 +1059,7 @@
         {
           "name": "Poison Spell",
           "level": 9,
-          "maxLevel": 12
+          "maxLevel": 13
         },
         {
           "name": "Earthquake Spell",
@@ -1069,7 +1069,7 @@
         {
           "name": "Haste Spell",
           "level": 5,
-          "maxLevel": 7
+          "maxLevel": 8
         },
         {
           "name": "Clone Spell",
@@ -1084,7 +1084,7 @@
         {
           "name": "Bat Spell",
           "level": 6,
-          "maxLevel": 8
+          "maxLevel": 9
         },
         {
           "name": "Invisibility Spell",
@@ -1114,7 +1114,7 @@
         {
           "name": "Totem Spell",
           "level": 4,
-          "maxLevel": 4
+          "maxLevel": 5
         },
         {
           "name": "Angry Spell",
@@ -1353,89 +1353,168 @@
         }
       ],
       "rushAnalysis": {
-        "isRushed": false,
-        "rushScore": 5.4,
-        "rushPercentage": 2.0,
-        "status": "🟢 Slightly Behind",
-        "heroScore": 0,
-        "troopScore": 1.8,
-        "spellScore": 3.6,
-        "totalMissingHeroLevels": 0,
-        "rushedHeroes": [],
+        "isRushed": true,
+        "rushScore": 21.9,
+        "rushPercentage": 5.6,
+        "status": "🟡 Moderately Rushed",
+        "heroScore": 9.0,
+        "troopScore": 5.7,
+        "spellScore": 7.2,
+        "totalMissingHeroLevels": 9,
+        "rushedHeroes": [
+          {
+            "name": "Barbarian King",
+            "current": 105,
+            "target": 110,
+            "missing": 5
+          },
+          {
+            "name": "Archer Queen",
+            "current": 107,
+            "target": 110,
+            "missing": 3
+          },
+          {
+            "name": "Grand Warden",
+            "current": 84,
+            "target": 85,
+            "missing": 1
+          }
+        ],
         "rushedTroops": [
           {
-            "name": "Wizard",
+            "name": "Barbarian",
             "current": 12,
             "target": 13,
             "missing": 1
           },
           {
+            "name": "Archer",
+            "current": 13,
+            "target": 14,
+            "missing": 1
+          },
+          {
+            "name": "Goblin",
+            "current": 9,
+            "target": 10,
+            "missing": 1
+          },
+          {
+            "name": "Giant",
+            "current": 13,
+            "target": 14,
+            "missing": 1
+          },
+          {
+            "name": "Wizard",
+            "current": 12,
+            "target": 14,
+            "missing": 2
+          },
+          {
             "name": "P.E.K.K.A",
             "current": 11,
-            "target": 12,
-            "missing": 1
+            "target": 13,
+            "missing": 2
           },
           {
             "name": "Hog Rider",
             "current": 13,
-            "target": 14,
-            "missing": 1
+            "target": 15,
+            "missing": 2
           },
           {
             "name": "Golem",
             "current": 13,
-            "target": 14,
+            "target": 15,
+            "missing": 2
+          },
+          {
+            "name": "Witch",
+            "current": 7,
+            "target": 8,
+            "missing": 1
+          },
+          {
+            "name": "Lava Hound",
+            "current": 7,
+            "target": 8,
+            "missing": 1
+          },
+          {
+            "name": "Bowler",
+            "current": 9,
+            "target": 10,
             "missing": 1
           },
           {
             "name": "Miner",
             "current": 10,
-            "target": 11,
-            "missing": 1
+            "target": 12,
+            "missing": 2
           },
           {
             "name": "Druid",
             "current": 4,
-            "target": 5,
-            "missing": 1
+            "target": 6,
+            "missing": 2
           }
         ],
         "rushedSpells": [
           {
+            "name": "Lightning Spell",
+            "current": 12,
+            "target": 13,
+            "missing": 1
+          },
+          {
+            "name": "Healing Spell",
+            "current": 11,
+            "target": 12,
+            "missing": 1
+          },
+          {
             "name": "Poison Spell",
             "current": 9,
-            "target": 11,
-            "missing": 2
+            "target": 12,
+            "missing": 3
           },
           {
             "name": "Haste Spell",
             "current": 5,
-            "target": 6,
-            "missing": 1
+            "target": 7,
+            "missing": 2
           },
           {
             "name": "Bat Spell",
             "current": 6,
-            "target": 7,
-            "missing": 1
+            "target": 8,
+            "missing": 2
           },
           {
             "name": "Recall Spell",
             "current": 5,
-            "target": 6,
+            "target": 7,
+            "missing": 2
+          },
+          {
+            "name": "Overgrowth Spell",
+            "current": 4,
+            "target": 5,
             "missing": 1
           },
           {
             "name": "Ice Block Spell",
             "current": 3,
-            "target": 5,
-            "missing": 2
+            "target": 6,
+            "missing": 3
           },
           {
             "name": "Angry Spell",
             "current": 1,
-            "target": 3,
-            "missing": 2
+            "target": 4,
+            "missing": 3
           }
         ]
       },
@@ -1523,10 +1602,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 6972,
+          "value": 6977,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 6972",
+          "completionInfo": "Total obstacles removed: 6977",
           "village": "home"
         },
         {
@@ -5831,7 +5910,7 @@
       "tag": "#LVRQRQCR",
       "name": "linters42O",
       "townHallLevel": 17,
-      "townHallWeaponLevel": 3,
+      "townHallWeaponLevel": 1,
       "expLevel": 223,
       "trophies": 0,
       "bestTrophies": 5562,
@@ -5990,10 +6069,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 1908,
+          "value": 1909,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 1908",
+          "completionInfo": "Total defenses won: 1909",
           "village": "home"
         },
         {
@@ -6350,7 +6429,7 @@
         {
           "name": "League Follower",
           "stars": 3,
-          "value": 30,
+          "value": 31,
           "target": 12,
           "info": "Reach League Wizard 12",
           "completionInfo": null,
@@ -20128,37 +20207,37 @@
         {
           "name": "Wall Buster",
           "stars": 3,
-          "value": 75326,
+          "value": 75335,
           "target": 2000,
           "info": "Destroy 2000 Walls in Multiplayer battles",
-          "completionInfo": "Total Walls destroyed: 75326",
+          "completionInfo": "Total Walls destroyed: 75335",
           "village": "home"
         },
         {
           "name": "Humiliator",
           "stars": 3,
-          "value": 2759,
+          "value": 2760,
           "target": 2000,
           "info": "Destroy 2000 Town Halls in Multiplayer battles",
-          "completionInfo": "Total Town Halls destroyed: 2759",
+          "completionInfo": "Total Town Halls destroyed: 2760",
           "village": "home"
         },
         {
           "name": "Union Buster",
           "stars": 3,
-          "value": 12691,
+          "value": 12696,
           "target": 2500,
           "info": "Destroy 2500 Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total Builder's Huts destroyed: 12691",
+          "completionInfo": "Total Builder's Huts destroyed: 12696",
           "village": "home"
         },
         {
           "name": "Conqueror",
           "stars": 2,
-          "value": 3191,
+          "value": 3192,
           "target": 5000,
           "info": "Win 5000 Multiplayer battles",
-          "completionInfo": "Total multiplayer battles won: 3191",
+          "completionInfo": "Total multiplayer battles won: 3192",
           "village": "home"
         },
         {
@@ -20182,19 +20261,19 @@
         {
           "name": "Mortar Mauler",
           "stars": 3,
-          "value": 10498,
+          "value": 10502,
           "target": 5000,
           "info": "Destroy 5000 Mortars in Multiplayer battles",
-          "completionInfo": "Total Mortars destroyed: 10498",
+          "completionInfo": "Total Mortars destroyed: 10502",
           "village": "home"
         },
         {
           "name": "Heroic Heist",
           "stars": 3,
-          "value": 22145941,
+          "value": 22188253,
           "target": 1000000,
           "info": "Steal 1000000 Dark Elixir",
-          "completionInfo": "Total Dark Elixir looted: 22145941",
+          "completionInfo": "Total Dark Elixir looted: 22188253",
           "village": "home"
         },
         {
@@ -20209,19 +20288,19 @@
         {
           "name": "X-Bow Exterminator",
           "stars": 3,
-          "value": 8962,
+          "value": 8966,
           "target": 2500,
           "info": "Destroy 2500 X-Bows in Multiplayer battles",
-          "completionInfo": "Total X-Bows destroyed: 8962",
+          "completionInfo": "Total X-Bows destroyed: 8966",
           "village": "home"
         },
         {
           "name": "Firefighter",
           "stars": 3,
-          "value": 6008,
+          "value": 6011,
           "target": 5000,
           "info": "Destroy 5000 Inferno Towers in Multiplayer battles",
-          "completionInfo": "Total Inferno Towers destroyed: 6008",
+          "completionInfo": "Total Inferno Towers destroyed: 6011",
           "village": "home"
         },
         {
@@ -20245,10 +20324,10 @@
         {
           "name": "Anti-Artillery",
           "stars": 3,
-          "value": 2074,
+          "value": 2075,
           "target": 2000,
           "info": "Destroy 2000 Eagle or Inferno Artilleries in Multiplayer battles",
-          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 2074",
+          "completionInfo": "Total Eagle or Inferno Artilleries destroyed: 2075",
           "village": "home"
         },
         {
@@ -20371,28 +20450,28 @@
         {
           "name": "Shattered and Scattered",
           "stars": 2,
-          "value": 3129,
+          "value": 3131,
           "target": 4000,
           "info": "Destroy 4000 Scattershots in Multiplayer battles",
-          "completionInfo": "Total Scattershots destroyed: 3129",
+          "completionInfo": "Total Scattershots destroyed: 3131",
           "village": "home"
         },
         {
           "name": "Not So Easy This Time",
           "stars": 2,
-          "value": 1879,
+          "value": 1880,
           "target": 2000,
           "info": "Destroy 2000 weaponized Town Halls in Multiplayer battles",
-          "completionInfo": "Weaponized Town Halls destroyed: 1879",
+          "completionInfo": "Weaponized Town Halls destroyed: 1880",
           "village": "home"
         },
         {
           "name": "Bust This!",
           "stars": 3,
-          "value": 5438,
+          "value": 5442,
           "target": 2500,
           "info": "Destroy 2500 weaponized Builder's Huts in Multiplayer battles",
-          "completionInfo": "Total weaponized Builder's Huts destroyed: 5438",
+          "completionInfo": "Total weaponized Builder's Huts destroyed: 5442",
           "village": "home"
         },
         {
@@ -20434,19 +20513,19 @@
         {
           "name": "Counterspell",
           "stars": 2,
-          "value": 1642,
+          "value": 1644,
           "target": 4000,
           "info": "Destroy 4000 Spell Towers in Multiplayer Battles",
-          "completionInfo": "Total Spell Towers Destroyed: 1642",
+          "completionInfo": "Total Spell Towers Destroyed: 1644",
           "village": "home"
         },
         {
           "name": "Monolith Masher",
           "stars": 2,
-          "value": 747,
+          "value": 748,
           "target": 2000,
           "info": "Destroy 2000 Monoliths in Multiplayer Battles",
-          "completionInfo": "Total Monoliths Destroyed: 747",
+          "completionInfo": "Total Monoliths Destroyed: 748",
           "village": "home"
         },
         {
@@ -20515,10 +20594,10 @@
         {
           "name": "Crafter’s Nightmare",
           "stars": 2,
-          "value": 456,
+          "value": 457,
           "target": 2000,
           "info": "Destroy 2000 Crafted Defenses in Multiplayer Battles",
-          "completionInfo": "Total Crafted Defenses Destroyed: 456",
+          "completionInfo": "Total Crafted Defenses Destroyed: 457",
           "village": "home"
         },
         {
@@ -50648,10 +50727,10 @@
         {
           "name": "Unbreakable",
           "stars": 1,
-          "value": 140,
+          "value": 141,
           "target": 250,
           "info": "Successfully defend against 250 attacks",
-          "completionInfo": "Total defenses won: 140",
+          "completionInfo": "Total defenses won: 141",
           "village": "home"
         },
         {
@@ -65307,6 +65386,25 @@
   ],
   "warLog": [
     {
+      "result": "lose",
+      "endTime": "20261116T144003.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "clan": {
+        "tag": "#2J28LL2VU",
+        "name": "Zwegerneet",
+        "stars": 27,
+        "destructionPercentage": 93.6,
+        "expEarned": 169
+      },
+      "opponent": {
+        "tag": "#GGR9UPQU",
+        "name": "AE SơnLa",
+        "stars": 30,
+        "destructionPercentage": 100.0
+      }
+    },
+    {
       "result": "win",
       "endTime": "20261109T235815.000Z",
       "teamSize": 30,
@@ -66236,29 +66334,10 @@
         "stars": 73,
         "destructionPercentage": 98.4
       }
-    },
-    {
-      "result": "win",
-      "endTime": "20260417T115505.000Z",
-      "teamSize": 20,
-      "attacksPerMember": 2,
-      "clan": {
-        "tag": "#2J28LL2VU",
-        "name": "Zwegerneet",
-        "stars": 60,
-        "destructionPercentage": 100.0,
-        "expEarned": 299
-      },
-      "opponent": {
-        "tag": "#2LYL9V0L2",
-        "name": "星辰阁",
-        "stars": 53,
-        "destructionPercentage": 94.85
-      }
     }
   ],
   "currentWar": {
-    "state": "inWar",
+    "state": "warEnded",
     "teamSize": 10,
     "attacksPerMember": 2,
     "preparationStartTime": "20261114T145158.000Z",
@@ -74303,7 +74382,7 @@
         "complete": true
       }
     },
-    "lastUpdated": "2026-11-16T14:13:11.755353+00:00"
+    "lastUpdated": "2026-11-16T14:54:42.432219+00:00"
   },
   "rushMethod": {
     "weights": {
@@ -78896,7 +78975,8 @@
   },
   "statistics": {
     "thDistribution": {
-      "18": 10,
+      "19": 1,
+      "18": 9,
       "17": 7,
       "16": 15,
       "15": 7,
@@ -78938,15 +79018,15 @@
     "rushDistribution": {
       "Severely Rushed": 7,
       "Rushed": 13,
-      "Moderately Rushed": 12,
-      "Slightly Behind": 10,
+      "Moderately Rushed": 13,
+      "Slightly Behind": 9,
       "Maxed": 8
     },
     "totalWarStars": 37895,
     "totalDonations": 28121,
     "totalCapitalContributions": 47290153,
     "averageTrophies": 0.0,
-    "rushedCount": 32,
-    "averageRushScore": 24.066
+    "rushedCount": 33,
+    "averageRushScore": 24.396
   }
 }
