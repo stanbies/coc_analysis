@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-16T11:16:18.236529+00:00",
+  "last_updated": "2026-11-16T14:13:11.755353+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -125,11 +125,11 @@
       "name": "De Buikies",
       "tag": "#R080CV0Q",
       "current_th": 18,
-      "total_attacks": 12,
-      "total_stars": 32,
-      "total_destruction": 1158.0,
+      "total_attacks": 13,
+      "total_stars": 34,
+      "total_destruction": 1216.0,
       "three_stars": 8,
-      "two_stars": 4,
+      "two_stars": 5,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 14,
@@ -251,6 +251,16 @@
           "date": "2026-11-15T13:51:58+00:00",
           "stars": 2,
           "destruction": 89,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#GGR9UPQU_20261114T145158.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-15T13:51:58+00:00",
+          "stars": 2,
+          "destruction": 58,
           "defender_th": 18,
           "attacker_th": 18,
           "hit_type": "= SAME"
