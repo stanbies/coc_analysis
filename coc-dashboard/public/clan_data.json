@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T23:43:07.517716+00:00",
+  "lastUpdated": "2026-11-21T05:46:59.425720+00:00",
   "clan": {
     "tag": "#2J28LL2VU",
     "name": "Zwegerneet",
@@ -18,7 +18,7 @@
     },
     "clanLevel": 15,
     "clanPoints": 104500,
-    "clanBuilderBasePoints": 36123,
+    "clanBuilderBasePoints": 36127,
     "clanCapitalPoints": 2462,
     "capitalLeague": {
       "id": 85000012,
@@ -7252,7 +7252,7 @@
       "townHallLevel": 17,
       "townHallWeaponLevel": 1,
       "expLevel": 223,
-      "trophies": 349,
+      "trophies": 360,
       "bestTrophies": 5562,
       "warStars": 2038,
       "attackWins": 0,
@@ -10769,7 +10769,7 @@
         },
         {
           "name": "Dragon",
-          "level": 12,
+          "level": 13,
           "maxLevel": 13
         },
         {
@@ -17191,7 +17191,7 @@
       "attackWins": 0,
       "defenseWins": 0,
       "builderHallLevel": 9,
-      "builderBaseTrophies": 3042,
+      "builderBaseTrophies": 3075,
       "bestBuilderBaseTrophies": 3089,
       "role": "member",
       "warPreference": "in",
@@ -17252,10 +17252,10 @@
         {
           "name": "Nice and Tidy",
           "stars": 3,
-          "value": 2431,
+          "value": 2432,
           "target": 500,
           "info": "Remove 500 obstacles (trees, rocks, bushes)",
-          "completionInfo": "Total obstacles removed: 2431",
+          "completionInfo": "Total obstacles removed: 2432",
           "village": "home"
         },
         {
@@ -17468,10 +17468,10 @@
         {
           "name": "Un-Build It",
           "stars": 2,
-          "value": 1271,
+          "value": 1274,
           "target": 2000,
           "info": "Destroy 2000 Builder Halls in Builder Battles",
-          "completionInfo": "Total Builder Halls destroyed: 1271",
+          "completionInfo": "Total Builder Halls destroyed: 1274",
           "village": "builderBase"
         },
         {
@@ -17540,10 +17540,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 83850,
+          "value": 83930,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 83850",
+          "completionInfo": "Total Season Challenges points: 83930",
           "village": "home"
         },
         {
@@ -18529,7 +18529,7 @@
       "bestTrophies": 2569,
       "warStars": 1308,
       "attackWins": 13,
-      "defenseWins": 3,
+      "defenseWins": 4,
       "builderHallLevel": 9,
       "builderBaseTrophies": 2675,
       "bestBuilderBaseTrophies": 2840,
@@ -18690,10 +18690,10 @@
         {
           "name": "Unbreakable",
           "stars": 3,
-          "value": 1262,
+          "value": 1263,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 1262",
+          "completionInfo": "Total defenses won: 1263",
           "village": "home"
         },
         {
@@ -24268,7 +24268,7 @@
       "townHallLevel": 16,
       "townHallWeaponLevel": 1,
       "expLevel": 185,
-      "trophies": 497,
+      "trophies": 518,
       "bestTrophies": 4672,
       "warStars": 978,
       "attackWins": 14,
@@ -36787,7 +36787,7 @@
       "townHallLevel": 16,
       "townHallWeaponLevel": 1,
       "expLevel": 206,
-      "trophies": 540,
+      "trophies": 569,
       "bestTrophies": 5066,
       "warStars": 699,
       "attackWins": 0,
@@ -37142,10 +37142,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 134890,
+          "value": 134900,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 134890",
+          "completionInfo": "Total Season Challenges points: 134900",
           "village": "home"
         },
         {
@@ -37656,6 +37656,11 @@
           "maxLevel": 3
         },
         {
+          "name": "Giant Wizard Squad",
+          "level": 1,
+          "maxLevel": 3
+        },
+        {
           "name": "L.A.S.S.I",
           "level": 6,
           "maxLevel": 15
@@ -37667,7 +37672,7 @@
         },
         {
           "name": "Electro Owl",
-          "level": 6,
+          "level": 7,
           "maxLevel": 15
         },
         {
@@ -41371,7 +41376,7 @@
         },
         {
           "name": "Stone Slammer",
-          "level": 2,
+          "level": 3,
           "maxLevel": 6
         },
         {
@@ -42236,10 +42241,10 @@
         {
           "name": "Well Seasoned",
           "stars": 3,
-          "value": 85570,
+          "value": 85580,
           "target": 50000,
           "info": "Earn 50000 points in Season Challenges",
-          "completionInfo": "Total Season Challenges points: 85570",
+          "completionInfo": "Total Season Challenges points: 85580",
           "village": "home"
         },
         {
@@ -42970,7 +42975,7 @@
         },
         {
           "name": "Fire Heart",
-          "level": 11,
+          "level": 14,
           "maxLevel": 18,
           "village": "home"
         },
@@ -43357,10 +43362,10 @@
         {
           "name": "Unbreakable",
           "stars": 2,
-          "value": 325,
+          "value": 326,
           "target": 500,
           "info": "Successfully defend against 500 attacks",
-          "completionInfo": "Total defenses won: 325",
+          "completionInfo": "Total defenses won: 326",
           "village": "home"
         },
         {
@@ -44050,7 +44055,7 @@
         },
         {
           "name": "Furnace",
-          "level": 2,
+          "level": 3,
           "maxLevel": 3
         },
         {
@@ -53289,7 +53294,7 @@
       "townHallLevel": 12,
       "townHallWeaponLevel": 1,
       "expLevel": 123,
-      "trophies": 320,
+      "trophies": 329,
       "bestTrophies": 1745,
       "warStars": 442,
       "attackWins": 0,
@@ -54792,7 +54797,7 @@
         },
         {
           "name": "Archer Queen",
-          "level": 65,
+          "level": 66,
           "maxLevel": 75
         },
         {
@@ -57229,7 +57234,7 @@
         },
         {
           "name": "Wall Breaker",
-          "level": 8,
+          "level": 9,
           "maxLevel": 9
         },
         {
@@ -59399,7 +59404,7 @@
         },
         {
           "name": "Minion Prince",
-          "level": 10,
+          "level": 11,
           "maxLevel": 20
         }
       ],
@@ -71740,7 +71745,7 @@
         "complete": true
       }
     },
-    "lastUpdated": "2026-11-20T23:43:07.512277+00:00"
+    "lastUpdated": "2026-11-21T05:46:59.420930+00:00"
   },
   "rushMethod": {
     "weights": {
@@ -76383,7 +76388,7 @@
     "totalWarStars": 37477,
     "totalDonations": 33395,
     "totalCapitalContributions": 46203270,
-    "averageTrophies": 313.0816326530612,
+    "averageTrophies": 314.51020408163265,
     "rushedCount": 32,
     "averageRushScore": 24.804081632653062
   }
