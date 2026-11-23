@@ -596,6 +596,17 @@
           "league": 0,
           "leagueName": "Unranked",
           "trophies": 0
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 71,
+            "trophies": 866,
+            "attacks": 24,
+            "maxAttacks": 24
+          }
         }
       },
       "recorded_at": "2026-10-30T21:13:24.630062+00:00"
@@ -2487,6 +2498,17 @@
             "attacks": 6,
             "maxAttacks": 6
           }
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 81,
+            "trophies": 803,
+            "attacks": 24,
+            "maxAttacks": 24
+          }
         }
       }
     },
@@ -2898,6 +2920,17 @@
             "attacks": 6,
             "maxAttacks": 6
           }
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 64,
+            "trophies": 861,
+            "attacks": 22,
+            "maxAttacks": 24
+          }
         }
       }
     },
@@ -3286,6 +3319,17 @@
             "trophies": 158,
             "attacks": 6,
             "maxAttacks": 6
+          }
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 73,
+            "trophies": 844,
+            "attacks": 24,
+            "maxAttacks": 24
           }
         }
       }
@@ -3741,6 +3785,17 @@
             "trophies": 252,
             "attacks": 6,
             "maxAttacks": 6
+          }
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 52,
+            "trophies": 896,
+            "attacks": 21,
+            "maxAttacks": 24
           }
         }
       }
@@ -4348,6 +4403,17 @@
           "league": 0,
           "leagueName": "Unranked",
           "trophies": 0
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 29,
+            "trophies": 983,
+            "attacks": 24,
+            "maxAttacks": 24
+          }
         }
       },
       "recorded_at": "2026-11-02T20:28:55.944671+00:00"
@@ -4962,6 +5028,17 @@
           "league": 0,
           "leagueName": "Unranked",
           "trophies": 0
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 76,
+            "trophies": 815,
+            "attacks": 24,
+            "maxAttacks": 24
+          }
         }
       },
       "recorded_at": "2026-11-09T14:21:51.160513+00:00"
@@ -4973,17 +5050,677 @@
           "townHallLevel": 19,
           "league": 33,
           "leagueName": "Electro League 33",
-          "trophies": 0
+          "trophies": 0,
+          "result": {
+            "league": 33,
+            "placement": 18,
+            "trophies": 798,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
         },
         "#2GJGRYCP0": {
           "name": "oli",
           "townHallLevel": 18,
           "league": 33,
           "leagueName": "Electro League 33",
+          "trophies": 0,
+          "result": {
+            "league": 33,
+            "placement": 47,
+            "trophies": 712,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#JQ9GP2RP": {
+          "name": "laurens",
+          "townHallLevel": 18,
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "trophies": 0,
+          "result": {
+            "league": 32,
+            "placement": 26,
+            "trophies": 780,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#LJRP8QPPC": {
+          "name": "San Deere",
+          "townHallLevel": 17,
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "trophies": 0,
+          "result": {
+            "league": 32,
+            "placement": 56,
+            "trophies": 651,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#8C8JU2LQV": {
+          "name": "MrLarsDHG",
+          "townHallLevel": 18,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 0,
+          "result": {
+            "league": 31,
+            "placement": 94,
+            "trophies": 297,
+            "attacks": 2,
+            "maxAttacks": 18
+          }
+        },
+        "#Y98J8J9VJ": {
+          "name": "nicolaas",
+          "townHallLevel": 17,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 41,
+            "trophies": 542,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8RUGYCVG9": {
+          "name": "jari",
+          "townHallLevel": 18,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 0,
+          "result": {
+            "league": 31,
+            "placement": 37,
+            "trophies": 665,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#2LRURCY92": {
+          "name": "kenji",
+          "townHallLevel": 18,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 0,
+          "result": {
+            "league": 31,
+            "placement": 10,
+            "trophies": 871,
+            "attacks": 18,
+            "maxAttacks": 18
+          }
+        },
+        "#R080CV0Q": {
+          "name": "De Buikies",
+          "townHallLevel": 18,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 0,
+          "result": {
+            "league": 31,
+            "placement": 96,
+            "trophies": 382,
+            "attacks": 6,
+            "maxAttacks": 18
+          }
+        },
+        "#LVRQRQCR": {
+          "name": "linters42O",
+          "townHallLevel": 17,
+          "league": 31,
+          "leagueName": "Electro League 31",
+          "trophies": 0,
+          "result": {
+            "league": 31,
+            "placement": 47,
+            "trophies": 628,
+            "attacks": 15,
+            "maxAttacks": 18
+          }
+        },
+        "#J9G8Q2L2": {
+          "name": "quinie cuck",
+          "townHallLevel": 16,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 52,
+            "trophies": 487,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PC8JQL9PJ": {
+          "name": "Andres",
+          "townHallLevel": 17,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 45,
+            "trophies": 494,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#Q8QY9JULJ": {
+          "name": "bram",
+          "townHallLevel": 16,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 56,
+            "trophies": 449,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CGPQYG88": {
+          "name": "nicolassss",
+          "townHallLevel": 18,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 7,
+            "trophies": 748,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#2LYLYGYU2": {
+          "name": "stan",
+          "townHallLevel": 18,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 75,
+            "trophies": 409,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#LYVLQ8C02": {
+          "name": "Quinquin",
+          "townHallLevel": 16,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 0,
+          "result": {
+            "league": 29,
+            "placement": 21,
+            "trophies": 577,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8CRCQ92QV": {
+          "name": "Nils",
+          "townHallLevel": 16,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0,
+          "result": {
+            "league": 30,
+            "placement": 75,
+            "trophies": 383,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#PJJ099YG": {
+          "name": "El Sambi",
+          "townHallLevel": 16,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 0,
+          "result": {
+            "league": 29,
+            "placement": 30,
+            "trophies": 553,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#88VCU9C8": {
+          "name": "Servaas",
+          "townHallLevel": 18,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 0
+        },
+        "#28GR98PC2": {
+          "name": "wannes",
+          "townHallLevel": 17,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 0,
+          "result": {
+            "league": 29,
+            "placement": 47,
+            "trophies": 482,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#9CRYUCRL": {
+          "name": "LukasXIV",
+          "townHallLevel": 16,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 0,
+          "result": {
+            "league": 28,
+            "placement": 25,
+            "trophies": 569,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#P2CVJUGL8": {
+          "name": "XWIZARDX",
+          "townHallLevel": 17,
+          "league": 28,
+          "leagueName": "Dragon League 28",
+          "trophies": 0,
+          "result": {
+            "league": 28,
+            "placement": 16,
+            "trophies": 703,
+            "attacks": 14,
+            "maxAttacks": 14
+          }
+        },
+        "#8PGLYQVV9": {
+          "name": "Kokovic",
+          "townHallLevel": 15,
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "trophies": 0
+        },
+        "#P2CVRCG0": {
+          "name": "Jules",
+          "townHallLevel": 17,
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "trophies": 14,
+          "result": {
+            "league": 27,
+            "placement": 6,
+            "trophies": 592,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8VCUC88VP": {
+          "name": "florian",
+          "townHallLevel": 16,
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "trophies": 0,
+          "result": {
+            "league": 26,
+            "placement": 21,
+            "trophies": 520,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9J0RPQ9C": {
+          "name": "Cavaleiro-Alex",
+          "townHallLevel": 16,
+          "league": 25,
+          "leagueName": "Titan League 25",
+          "trophies": 0,
+          "result": {
+            "league": 25,
+            "placement": 6,
+            "trophies": 630,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#L2VGUVVGC": {
+          "name": "☔|Arne",
+          "townHallLevel": 16,
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "trophies": 0
+        },
+        "#G082YJJJL": {
+          "name": "Quinie",
+          "townHallLevel": 15,
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "trophies": 0,
+          "result": {
+            "league": 23,
+            "placement": 68,
+            "trophies": 239,
+            "attacks": 7,
+            "maxAttacks": 12
+          }
+        },
+        "#YYU2CQY2C": {
+          "name": "Bernaar",
+          "townHallLevel": 16,
+          "league": 23,
+          "leagueName": "P.E.K.K.A League 23",
+          "trophies": 0,
+          "result": {
+            "league": 23,
+            "placement": 10,
+            "trophies": 661,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#2LY9RCUJP": {
+          "name": "maan",
+          "townHallLevel": 15,
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "trophies": 0,
+          "result": {
+            "league": 22,
+            "placement": 58,
+            "trophies": 390,
+            "attacks": 9,
+            "maxAttacks": 12
+          }
+        },
+        "#9U08VL8JU": {
+          "name": "itsjeff",
+          "townHallLevel": 15,
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "trophies": 0,
+          "result": {
+            "league": 22,
+            "placement": 69,
+            "trophies": 281,
+            "attacks": 2,
+            "maxAttacks": 12
+          }
+        },
+        "#YUP00J02V": {
+          "name": "REZKA",
+          "townHallLevel": 15,
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "trophies": 0,
+          "result": {
+            "league": 21,
+            "placement": 5,
+            "trophies": 624,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9CPLG0Y9C": {
+          "name": "Martini",
+          "townHallLevel": 16,
+          "league": 21,
+          "leagueName": "Golem League 21",
+          "trophies": 0,
+          "result": {
+            "league": 21,
+            "placement": 13,
+            "trophies": 562,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#9JQLPLCLV": {
+          "name": "henk",
+          "townHallLevel": 16,
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "trophies": 0,
+          "result": {
+            "league": 20,
+            "placement": 15,
+            "trophies": 617,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#8Q982L9": {
+          "name": "the OG wizard",
+          "townHallLevel": 16,
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "trophies": 0
+        },
+        "#PVYY9GJJP": {
+          "name": "killer boy(d)",
+          "townHallLevel": 16,
+          "league": 20,
+          "leagueName": "Golem League 20",
+          "trophies": 0,
+          "result": {
+            "league": 20,
+            "placement": 3,
+            "trophies": 710,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#V90LCPR0": {
+          "name": "Samber",
+          "townHallLevel": 13,
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "trophies": 0,
+          "result": {
+            "league": 19,
+            "placement": 54,
+            "trophies": 394,
+            "attacks": 12,
+            "maxAttacks": 12
+          }
+        },
+        "#GRL2GV0JR": {
+          "name": "Goblin ✡️",
+          "townHallLevel": 14,
+          "league": 19,
+          "leagueName": "Golem League 19",
+          "trophies": 0,
+          "result": {
+            "league": 19,
+            "placement": 99,
+            "trophies": 152,
+            "attacks": 2,
+            "maxAttacks": 12
+          }
+        },
+        "#YUYVPQRP9": {
+          "name": "kutkop",
+          "townHallLevel": 14,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 0,
+          "result": {
+            "league": 18,
+            "placement": 77,
+            "trophies": 220,
+            "attacks": 4,
+            "maxAttacks": 10
+          }
+        },
+        "#LRQ0J2UJ": {
+          "name": "Kappa",
+          "townHallLevel": 15,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 0
+        },
+        "#YG8Q92GJ9": {
+          "name": "Hout Weylen",
+          "townHallLevel": 12,
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "trophies": 0,
+          "result": {
+            "league": 15,
+            "placement": 45,
+            "trophies": 337,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#L9JQPCPV8": {
+          "name": "milanxxii",
+          "townHallLevel": 13,
+          "league": 15,
+          "leagueName": "Valkyrie League 15",
+          "trophies": 0,
+          "result": {
+            "league": 15,
+            "placement": 27,
+            "trophies": 374,
+            "attacks": 10,
+            "maxAttacks": 10
+          }
+        },
+        "#8VVC8VRYL": {
+          "name": "noudroels",
+          "townHallLevel": 14,
+          "league": 14,
+          "leagueName": "Valkyrie League 14",
+          "trophies": 0
+        },
+        "#G8Y08920C": {
+          "name": "dj yonder",
+          "townHallLevel": 13,
+          "league": 13,
+          "leagueName": "Valkyrie League 13",
+          "trophies": 0,
+          "result": {
+            "league": 13,
+            "placement": 68,
+            "trophies": 194,
+            "attacks": 0,
+            "maxAttacks": 10
+          }
+        },
+        "#9CGVPCJU2": {
+          "name": "lokeren7",
+          "townHallLevel": 12,
+          "league": 10,
+          "leagueName": "Wizard League 10",
+          "trophies": 0,
+          "result": {
+            "league": 10,
+            "placement": 87,
+            "trophies": 153,
+            "attacks": 0,
+            "maxAttacks": 8
+          }
+        },
+        "#PJ80PJP8Q": {
+          "name": "quinie cuck II",
+          "townHallLevel": 10,
+          "league": 9,
+          "leagueName": "Archer League 9",
+          "trophies": 0
+        },
+        "#R2QPVCGJY": {
+          "name": "lever",
+          "townHallLevel": 10,
+          "league": 6,
+          "leagueName": "Barbarian League 6",
+          "trophies": 0,
+          "result": {
+            "league": 6,
+            "placement": 58,
+            "trophies": 190,
+            "attacks": 6,
+            "maxAttacks": 6
+          }
+        },
+        "#JG8R90RJ": {
+          "name": "okan",
+          "townHallLevel": 14,
+          "league": 0,
+          "leagueName": "Unranked",
+          "trophies": 0
+        },
+        "#YG9YYGY0Q": {
+          "name": "jeensh",
+          "townHallLevel": 16,
+          "league": 0,
+          "leagueName": "Unranked",
+          "trophies": 0
+        },
+        "#2L98UV0U0": {
+          "name": "Ferre",
+          "townHallLevel": 15,
+          "league": 0,
+          "leagueName": "Unranked",
+          "trophies": 0
+        },
+        "#P2GV99R9": {
+          "league": 34,
+          "leagueName": "Legend III",
+          "result": {
+            "league": 34,
+            "placement": 35,
+            "trophies": 1004,
+            "attacks": 24,
+            "maxAttacks": 24
+          }
+        }
+      },
+      "recorded_at": "2026-11-16T17:37:36.019774+00:00"
+    },
+    "2026-W48": {
+      "players": {
+        "#P2GV99R9": {
+          "name": "Lazarus",
+          "townHallLevel": 19,
+          "league": 34,
+          "leagueName": "Legend League III",
+          "trophies": 93
+        },
+        "#2GJGRYCP0": {
+          "name": "oli",
+          "townHallLevel": 18,
+          "league": 33,
+          "leagueName": "Electro League 33",
+          "trophies": 8
+        },
+        "#28VPLJQCY": {
+          "name": "Quinten",
+          "townHallLevel": 19,
+          "league": 33,
+          "leagueName": "Electro League 33",
           "trophies": 0
         },
         "#JQ9GP2RP": {
           "name": "laurens",
+          "townHallLevel": 18,
+          "league": 32,
+          "leagueName": "Electro League 32",
+          "trophies": 0
+        },
+        "#2LRURCY92": {
+          "name": "kenji",
           "townHallLevel": 18,
           "league": 32,
           "leagueName": "Electro League 32",
@@ -4996,19 +5733,12 @@
           "leagueName": "Electro League 32",
           "trophies": 0
         },
-        "#8C8JU2LQV": {
-          "name": "MrLarsDHG",
-          "townHallLevel": 18,
+        "#LVRQRQCR": {
+          "name": "linters42O",
+          "townHallLevel": 17,
           "league": 31,
           "leagueName": "Electro League 31",
-          "trophies": 0
-        },
-        "#Y98J8J9VJ": {
-          "name": "nicolaas",
-          "townHallLevel": 17,
-          "league": 30,
-          "leagueName": "Dragon League 30",
-          "trophies": 0
+          "trophies": 10
         },
         "#8RUGYCVG9": {
           "name": "jari",
@@ -5017,30 +5747,30 @@
           "leagueName": "Electro League 31",
           "trophies": 0
         },
-        "#2LRURCY92": {
-          "name": "kenji",
+        "#8CGPQYG88": {
+          "name": "nicolassss",
           "townHallLevel": 18,
           "league": 31,
           "leagueName": "Electro League 31",
           "trophies": 0
         },
-        "#R080CV0Q": {
-          "name": "De Buikies",
-          "townHallLevel": 18,
-          "league": 31,
-          "leagueName": "Electro League 31",
-          "trophies": 0
-        },
-        "#LVRQRQCR": {
-          "name": "linters42O",
+        "#8CRCQ92QV": {
+          "name": "Nils",
           "townHallLevel": 17,
-          "league": 31,
-          "leagueName": "Electro League 31",
+          "league": 30,
+          "leagueName": "Dragon League 30",
           "trophies": 0
         },
         "#J9G8Q2L2": {
           "name": "quinie cuck",
           "townHallLevel": 16,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0
+        },
+        "#2LYLYGYU2": {
+          "name": "stan",
+          "townHallLevel": 18,
           "league": 30,
           "leagueName": "Dragon League 30",
           "trophies": 0
@@ -5054,20 +5784,27 @@
         },
         "#Q8QY9JULJ": {
           "name": "bram",
-          "townHallLevel": 16,
+          "townHallLevel": 17,
           "league": 30,
           "leagueName": "Dragon League 30",
           "trophies": 0
         },
-        "#8CGPQYG88": {
-          "name": "nicolassss",
+        "#Y98J8J9VJ": {
+          "name": "nicolaas",
+          "townHallLevel": 17,
+          "league": 30,
+          "leagueName": "Dragon League 30",
+          "trophies": 0
+        },
+        "#R080CV0Q": {
+          "name": "De Buikies",
           "townHallLevel": 18,
           "league": 30,
           "leagueName": "Dragon League 30",
           "trophies": 0
         },
-        "#2LYLYGYU2": {
-          "name": "stan",
+        "#8C8JU2LQV": {
+          "name": "MrLarsDHG",
           "townHallLevel": 18,
           "league": 30,
           "leagueName": "Dragon League 30",
@@ -5078,13 +5815,20 @@
           "townHallLevel": 16,
           "league": 29,
           "leagueName": "Dragon League 29",
-          "trophies": 0
+          "trophies": 26
         },
-        "#8CRCQ92QV": {
-          "name": "Nils",
+        "#28GR98PC2": {
+          "name": "wannes",
+          "townHallLevel": 17,
+          "league": 29,
+          "leagueName": "Dragon League 29",
+          "trophies": 11
+        },
+        "#9CRYUCRL": {
+          "name": "LukasXIV",
           "townHallLevel": 16,
-          "league": 30,
-          "leagueName": "Dragon League 30",
+          "league": 29,
+          "leagueName": "Dragon League 29",
           "trophies": 0
         },
         "#PJJ099YG": {
@@ -5101,26 +5845,26 @@
           "leagueName": "Dragon League 29",
           "trophies": 0
         },
-        "#28GR98PC2": {
-          "name": "wannes",
+        "#P2CVJUGL8": {
+          "name": "XWIZARDX",
           "townHallLevel": 17,
           "league": 29,
           "leagueName": "Dragon League 29",
           "trophies": 0
         },
-        "#9CRYUCRL": {
-          "name": "LukasXIV",
-          "townHallLevel": 16,
-          "league": 28,
-          "leagueName": "Dragon League 28",
-          "trophies": 0
-        },
-        "#P2CVJUGL8": {
-          "name": "XWIZARDX",
+        "#P2CVRCG0": {
+          "name": "Jules",
           "townHallLevel": 17,
           "league": 28,
           "leagueName": "Dragon League 28",
           "trophies": 0
+        },
+        "#8VCUC88VP": {
+          "name": "florian",
+          "townHallLevel": 16,
+          "league": 27,
+          "leagueName": "Titan League 27",
+          "trophies": 15
         },
         "#8PGLYQVV9": {
           "name": "Kokovic",
@@ -5129,32 +5873,18 @@
           "leagueName": "Titan League 27",
           "trophies": 0
         },
-        "#P2CVRCG0": {
-          "name": "Jules",
-          "townHallLevel": 17,
-          "league": 27,
-          "leagueName": "Titan League 27",
-          "trophies": 14
-        },
-        "#8VCUC88VP": {
-          "name": "florian",
-          "townHallLevel": 16,
-          "league": 26,
-          "leagueName": "Titan League 26",
-          "trophies": 0
-        },
         "#9J0RPQ9C": {
           "name": "Cavaleiro-Alex",
           "townHallLevel": 16,
-          "league": 25,
-          "leagueName": "Titan League 25",
-          "trophies": 0
+          "league": 26,
+          "leagueName": "Titan League 26",
+          "trophies": 11
         },
-        "#L2VGUVVGC": {
-          "name": "☔|Arne",
+        "#YYU2CQY2C": {
+          "name": "Bernaar",
           "townHallLevel": 16,
-          "league": 23,
-          "leagueName": "P.E.K.K.A League 23",
+          "league": 24,
+          "leagueName": "P.E.K.K.A League 24",
           "trophies": 0
         },
         "#G082YJJJL": {
@@ -5164,11 +5894,18 @@
           "leagueName": "P.E.K.K.A League 23",
           "trophies": 0
         },
-        "#YYU2CQY2C": {
-          "name": "Bernaar",
+        "#9CPLG0Y9C": {
+          "name": "Martini",
           "townHallLevel": 16,
-          "league": 23,
-          "leagueName": "P.E.K.K.A League 23",
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
+          "trophies": 18
+        },
+        "#9U08VL8JU": {
+          "name": "itsjeff",
+          "townHallLevel": 15,
+          "league": 22,
+          "leagueName": "P.E.K.K.A League 22",
           "trophies": 0
         },
         "#2LY9RCUJP": {
@@ -5178,32 +5915,25 @@
           "leagueName": "P.E.K.K.A League 22",
           "trophies": 0
         },
-        "#9U08VL8JU": {
-          "name": "itsjeff",
+        "#YUP00J02V": {
+          "name": "REZKA",
           "townHallLevel": 15,
           "league": 22,
           "leagueName": "P.E.K.K.A League 22",
           "trophies": 0
         },
-        "#YUP00J02V": {
-          "name": "REZKA",
-          "townHallLevel": 15,
-          "league": 21,
-          "leagueName": "Golem League 21",
-          "trophies": 0
-        },
-        "#9CPLG0Y9C": {
-          "name": "Martini",
+        "#PVYY9GJJP": {
+          "name": "killer boy(d)",
           "townHallLevel": 16,
           "league": 21,
           "leagueName": "Golem League 21",
-          "trophies": 0
+          "trophies": 18
         },
         "#9JQLPLCLV": {
           "name": "henk",
           "townHallLevel": 16,
-          "league": 20,
-          "leagueName": "Golem League 20",
+          "league": 21,
+          "leagueName": "Golem League 21",
           "trophies": 0
         },
         "#8Q982L9": {
@@ -5211,34 +5941,13 @@
           "townHallLevel": 16,
           "league": 20,
           "leagueName": "Golem League 20",
-          "trophies": 0
-        },
-        "#PVYY9GJJP": {
-          "name": "killer boy(d)",
-          "townHallLevel": 16,
-          "league": 20,
-          "leagueName": "Golem League 20",
-          "trophies": 0
+          "trophies": 25
         },
         "#V90LCPR0": {
           "name": "Samber",
           "townHallLevel": 13,
           "league": 19,
           "leagueName": "Golem League 19",
-          "trophies": 0
-        },
-        "#GRL2GV0JR": {
-          "name": "Goblin ✡️",
-          "townHallLevel": 14,
-          "league": 19,
-          "leagueName": "Golem League 19",
-          "trophies": 0
-        },
-        "#YUYVPQRP9": {
-          "name": "kutkop",
-          "townHallLevel": 14,
-          "league": 18,
-          "leagueName": "Witch League 18",
           "trophies": 0
         },
         "#LRQ0J2UJ": {
@@ -5248,16 +5957,30 @@
           "leagueName": "Witch League 18",
           "trophies": 0
         },
-        "#YG8Q92GJ9": {
-          "name": "Hout Weylen",
-          "townHallLevel": 12,
-          "league": 15,
-          "leagueName": "Valkyrie League 15",
+        "#YUYVPQRP9": {
+          "name": "kutkop",
+          "townHallLevel": 14,
+          "league": 18,
+          "leagueName": "Witch League 18",
+          "trophies": 0
+        },
+        "#GRL2GV0JR": {
+          "name": "Goblin ✡️",
+          "townHallLevel": 14,
+          "league": 18,
+          "leagueName": "Witch League 18",
           "trophies": 0
         },
         "#L9JQPCPV8": {
           "name": "milanxxii",
           "townHallLevel": 13,
+          "league": 16,
+          "leagueName": "Witch League 16",
+          "trophies": 0
+        },
+        "#YG8Q92GJ9": {
+          "name": "Hout Weylen",
+          "townHallLevel": 12,
           "league": 15,
           "leagueName": "Valkyrie League 15",
           "trophies": 0
@@ -5319,7 +6042,7 @@
           "trophies": 0
         }
       },
-      "recorded_at": "2026-11-16T17:37:36.019774+00:00"
+      "recorded_at": "2026-11-23T19:15:58.282144+00:00"
     }
   }
 }
