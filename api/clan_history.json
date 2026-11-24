@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-24T03:51:25.787022+00:00",
+  "last_updated": "2026-11-24T17:00:40.890333+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -2398,11 +2398,11 @@
       "name": "Andres",
       "tag": "#PC8JQL9PJ",
       "current_th": 17,
-      "total_attacks": 9,
-      "total_stars": 20,
-      "total_destruction": 821.0,
-      "three_stars": 4,
-      "two_stars": 3,
+      "total_attacks": 11,
+      "total_stars": 25,
+      "total_destruction": 1006.0,
+      "three_stars": 5,
+      "two_stars": 4,
       "one_star": 2,
       "zero_stars": 0,
       "wars_participated": 10,
@@ -2494,6 +2494,26 @@
           "date": "2026-11-08T23:33:44+00:00",
           "stars": 2,
           "destruction": 96,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 17,
+          "attacker_th": 17,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 2,
+          "destruction": 85,
           "defender_th": 17,
           "attacker_th": 17,
           "hit_type": "= SAME"
@@ -2883,12 +2903,12 @@
       "name": "itsjeff",
       "tag": "#9U08VL8JU",
       "current_th": 15,
-      "total_attacks": 11,
-      "total_stars": 31,
-      "total_destruction": 1065.0,
+      "total_attacks": 13,
+      "total_stars": 34,
+      "total_destruction": 1192.0,
       "three_stars": 9,
-      "two_stars": 2,
-      "one_star": 0,
+      "two_stars": 3,
+      "one_star": 1,
       "zero_stars": 0,
       "wars_participated": 10,
       "cwl_seasons": 0,
@@ -3000,6 +3020,26 @@
           "stars": 3,
           "destruction": 100,
           "defender_th": 16,
+          "attacker_th": 15,
+          "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 1,
+          "destruction": 63,
+          "defender_th": 18,
+          "attacker_th": 15,
+          "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 2,
+          "destruction": 64,
+          "defender_th": 17,
           "attacker_th": 15,
           "hit_type": "↑ UP"
         }
@@ -4227,10 +4267,10 @@
       "name": "Lazarus",
       "tag": "#P2GV99R9",
       "current_th": 19,
-      "total_attacks": 1,
-      "total_stars": 3,
-      "total_destruction": 100.0,
-      "three_stars": 1,
+      "total_attacks": 2,
+      "total_stars": 6,
+      "total_destruction": 200.0,
+      "three_stars": 2,
       "two_stars": 0,
       "one_star": 0,
       "zero_stars": 0,
@@ -4246,6 +4286,16 @@
           "defender_th": 19,
           "attacker_th": 19,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 19,
+          "hit_type": "↓ DOWN"
         }
       ],
       "war_ids": [
