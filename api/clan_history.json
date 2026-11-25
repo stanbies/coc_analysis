@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-24T17:00:40.890333+00:00",
+  "last_updated": "2026-11-25T01:56:27.941675+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -407,10 +407,10 @@
       "name": "jari",
       "tag": "#8RUGYCVG9",
       "current_th": 18,
-      "total_attacks": 11,
-      "total_stars": 28,
-      "total_destruction": 1073.0,
-      "three_stars": 6,
+      "total_attacks": 13,
+      "total_stars": 34,
+      "total_destruction": 1273.0,
+      "three_stars": 8,
       "two_stars": 5,
       "one_star": 0,
       "zero_stars": 0,
@@ -526,6 +526,26 @@
           "defender_th": 18,
           "attacker_th": 17,
           "hit_type": "↑ UP"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 3,
+          "destruction": 100,
+          "defender_th": 18,
+          "attacker_th": 18,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
@@ -1743,11 +1763,11 @@
       "name": "stan",
       "tag": "#2LYLYGYU2",
       "current_th": 18,
-      "total_attacks": 14,
-      "total_stars": 35,
-      "total_destruction": 1320.0,
+      "total_attacks": 15,
+      "total_stars": 37,
+      "total_destruction": 1389.0,
       "three_stars": 8,
-      "two_stars": 5,
+      "two_stars": 6,
       "one_star": 1,
       "zero_stars": 0,
       "wars_participated": 15,
@@ -1892,6 +1912,16 @@
           "defender_th": 18,
           "attacker_th": 18,
           "hit_type": "= SAME"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2QV002RUG_20261122T192407.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-23T18:24:07+00:00",
+          "stars": 2,
+          "destruction": 69,
+          "defender_th": 17,
+          "attacker_th": 18,
+          "hit_type": "↓ DOWN"
         }
       ],
       "war_ids": [
