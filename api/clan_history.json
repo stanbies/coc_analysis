@@ -1,6 +1,6 @@
 {
   "clan_tag": "#2J28LL2VU",
-  "last_updated": "2026-11-27T16:13:46.637300+00:00",
+  "last_updated": "2026-11-28T01:08:38.653497+00:00",
   "players": {
     "#28VPLJQCY": {
       "name": "Quinten",
@@ -4354,11 +4354,11 @@
       "name": "Lazarus",
       "tag": "#P2GV99R9",
       "current_th": 19,
-      "total_attacks": 2,
-      "total_stars": 6,
-      "total_destruction": 200.0,
+      "total_attacks": 3,
+      "total_stars": 8,
+      "total_destruction": 288.0,
       "three_stars": 2,
-      "two_stars": 0,
+      "two_stars": 1,
       "one_star": 0,
       "zero_stars": 0,
       "wars_participated": 2,
@@ -4383,6 +4383,16 @@
           "defender_th": 18,
           "attacker_th": 19,
           "hit_type": "↓ DOWN"
+        },
+        {
+          "war_id": "#2J28LL2VU_#2L2UCG8CC_20261126T114555.000Z",
+          "war_type": "regular_war",
+          "date": "2026-11-27T10:45:55+00:00",
+          "stars": 2,
+          "destruction": 88,
+          "defender_th": 19,
+          "attacker_th": 19,
+          "hit_type": "= SAME"
         }
       ],
       "war_ids": [
